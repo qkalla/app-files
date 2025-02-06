@@ -1025,24 +1025,7 @@ class MobileInterface {
                     </button>
                 </div>
 
-                <div class="bottom-nav">
-                    <button class="nav-item active">
-                        <i class="fas fa-store"></i>
-                        <span>Store</span>
-                    </button>
-                    <button class="nav-item">
-                        <i class="fas fa-th-large"></i>
-                        <span>Categories</span>
-                    </button>
-                    <button class="nav-item">
-                        <i class="fas fa-shopping-bag"></i>
-                        <span>Cart</span>
-                    </button>
-                    <button class="nav-item">
-                        <i class="fas fa-user"></i>
-                        <span>Profile</span>
-                    </button>
-                </div>
+                
             </div>
         `;
 

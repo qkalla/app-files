@@ -1266,7 +1266,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 /* Responsive layout adjustments */
-.navigation-controls {
+.navigation-controls 
     position: fixed;
     z-index: 1000;
     display: flex;
@@ -1291,7 +1291,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 /* Touch-friendly buttons */
-.nav-btn {
+.nav-btn 
     width: var(--control-size);
     height: var(--control-size);
     border-radius: 50%;
@@ -1384,7 +1384,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 /* Top Controls */
-.top-controls {
+.top-controls 
     position: fixed;
     top: 0;
     left: 0;
@@ -1408,7 +1408,7 @@ body.view-control-buttons .viewControlButton {
     backdrop-filter: blur(5px);
 }
 
-.location-indicator {
+.location-indicator 
     background: rgba(255, 255, 255, 0.2);
     padding: 8px 15px;
     border-radius: 20px;
@@ -1439,7 +1439,7 @@ body.view-control-buttons .viewControlButton {
 }
 
 /* Navigation Controls */
-.navigation-controls {
+.navigation-controls 
     position: fixed;
     right: 15px;
     top: 50%;

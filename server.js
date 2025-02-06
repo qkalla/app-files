@@ -6,6 +6,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const dotenv = require('dotenv');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 dotenv.config();
 
@@ -41,6 +42,7 @@ const io = socketIo(server, {
 app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
+app.use(bodyParser.json());
 
 // Import Order model
 const Order = require('./models/Order');

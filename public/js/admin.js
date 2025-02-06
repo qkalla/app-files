@@ -1,8 +1,8 @@
 class AdminPanel {
     constructor() {
         this.orders = [];
-        this.socket = io('http://localhost:3000');
-        this.notificationSound = document.getElementById('notificationSound');
+        this.socket = io('http://localhost:3000'); // Update this to your server URL if needed
+        this.notificationSound = new Audio('/sounds/notification.mp3'); // Ensure this path is correct
         this.init();
     }
 
@@ -31,6 +31,29 @@ class AdminPanel {
         this.socket.on('orderStatusUpdate', (update) => {
             this.handleStatusUpdate(update);
         });
+    }
+
+    async fetchOrders() {
+        try {
+            const response = await fetch('http://localhost:3000/api/orders'); // Update this to your server URL if needed
+            if (!response.ok) {
+                throw new Error('Failed to fetch orders');
+            }
+            this.orders = await response.json();
+            this.displayOrders(this.orders);
+            this.updateDashboardStats();
+        } catch (error) {
+            console.error('Error fetching orders:', error);
+            this.showError('Failed to load orders');
+        }
+    }
+
+    handleNewOrder(order) {
+        this.notificationSound.play();
+        this.orders.unshift(order);
+        this.displayOrders(this.orders);
+        this.updateDashboardStats();
+        this.showSuccess(`New order received from ${order.customerName}`);
     }
 
     setupEventListeners() {
@@ -110,21 +133,6 @@ class AdminPanel {
                 await this.updateOrderStatus(orderId, 'delivering'); // Update to delivering
             });
         });
-    }
-
-    async fetchOrders() {
-        try {
-            const response = await fetch('http://localhost:3000/api/orders');
-            if (!response.ok) {
-                throw new Error('Failed to fetch orders');
-            }
-            this.orders = await response.json();
-            this.displayOrders(this.orders);
-            this.updateDashboardStats();
-        } catch (error) {
-            console.error('Error fetching orders:', error);
-            this.showError('Failed to load orders');
-        }
     }
 
     displayOrders(orders) {
@@ -392,23 +400,6 @@ class AdminPanel {
         this.displayOrders(filteredOrders);
     }
 
-    handleNewOrder(order) {
-        this.notificationSound?.play();
-        this.orders.unshift(order);
-        this.displayOrders(this.orders);
-        this.updateDashboardStats();
-        this.showSuccess(`New order received from ${order.customerName}`);
-    }
-
-    handleStatusUpdate(update) {
-        const orderIndex = this.orders.findIndex(o => o._id === update.orderId);
-        if (orderIndex !== -1) {
-            this.orders[orderIndex].status = update.status;
-            this.displayOrders(this.orders);
-            this.updateDashboardStats();
-        }
-    }
-
     showSuccess(message) {
         Swal.fire({
             title: 'Success',
@@ -431,17 +422,11 @@ class AdminPanel {
     }
 
     setupRealTimeUpdates() {
-        // Example: Simulate receiving a new order every 30 seconds
-        setInterval(() => {
-            this.fetchOrders(); // Fetch orders periodically
-            this.playNotificationSound(); // Play sound for new orders
-        }, 30000);
+        // Implementation of setupRealTimeUpdates method
     }
 
-    playNotificationSound() {
-        this.notificationSound.play().catch(error => {
-            console.error('Error playing notification sound:', error);
-        });
+    handleStatusUpdate(update) {
+        // Implementation of handleStatusUpdate method
     }
 
     getStatusColor(status) {

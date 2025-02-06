@@ -276,5 +276,40 @@
         <h3>Processing Orders: <span id="processingOrderCount">0</span></h3>
         <h3>Delivering Orders: <span id="deliveringOrderCount">0</span></h3>
     </div>
+
+    <h1>Orders</h1>
+    <div id="ordersContainer"></div>
+
+    <script>
+        // Fetch orders from the server
+        fetch('http://localhost:3000/api/orders')
+            .then(response => response.json())
+            .then(orders => {
+                const ordersContainer = document.getElementById('ordersContainer');
+                orders.forEach(order => {
+                    const orderDiv = document.createElement('div');
+                    orderDiv.innerHTML = `
+                        <h2>Order #${order.orderNumber}</h2>
+                        <p>Name: ${order.customerName}</p>
+                        <p>Phone: ${order.phone}</p>
+                        <p>Email: ${order.email}</p>
+                        <p>Address: ${order.address}</p>
+                        <p>Payment Method: ${order.paymentMethod}</p>
+                        <p>Total: ${order.total} AMD</p>
+                        <h3>Items:</h3>
+                        <ul>
+                            ${order.items.map(item => `
+                                <li>${item.name} (x${item.quantity}) - ${item.price} AMD</li>
+                            `).join('')}
+                        </ul>
+                        <hr>
+                    `;
+                    ordersContainer.appendChild(orderDiv);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching orders:', error);
+            });
+    </script>
 </body>
 </html> 
