@@ -1269,10 +1269,36 @@ function closeModal() {
 
 // Example function to submit the order
 function submitOrder() {
-    // Your order submission logic here
+    const orderData = {
+        name: document.getElementById('fullName').value,
+        phone: document.getElementById('phoneNumber').value,
+        email: document.getElementById('email').value,
+        address: document.getElementById('deliveryAddress').value,
+        paymentMethod: document.querySelector('input[name="paymentMethod"]:checked').value,
+        items: window.cart // Include cart items if applicable
+    };
 
-    // After successful submission, open the modal
-    openModal();
+    fetch('https://e3a4-83-139-26-190.ngrok-free.app/api/orders', { // Use the Ngrok URL
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(orderData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Success:', data);
+        alert('Order placed successfully!');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Failed to place order. Please try again.');
+    });
 }
 
 // Close the modal when the user clicks anywhere outside of it
@@ -1289,3 +1315,114 @@ window.generateOrderNumber = function() {
     const random = Math.floor(Math.random() * 1000);
     return `ORD-${timestamp}-${random}`;
 };
+
+// Find the form submit event listener and update it:
+document.querySelector('.checkout-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    console.log('Form submitted');
+
+    const formData = {
+        orderNumber: generateOrderNumber(),
+        customerName: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        address: document.getElementById('selectedAddress').value,
+        paymentMethod: document.querySelector('input[name="paymentMethod"]:checked').value,
+        items: window.cart,
+        total: window.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0)
+    };
+
+    console.log('Sending order:', formData);
+
+    try {
+        const response = await fetch('http://localhost:3000/api/orders', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        console.log('Response:', response);
+        
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const result = await response.json();
+        console.log('Success:', result);
+        
+        // Clear cart and show success
+        window.cart = [];
+        updateCartDisplay();
+        hideCheckout();
+        alert('Order placed successfully!');
+        
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Failed to submit order: ' + error.message);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Document loaded');
+    
+    const orderForm = document.getElementById('orderForm');
+    if (orderForm) {
+        console.log('Form found');
+        
+        // Add device detection function here
+        function detectDevice() {
+            const ua = navigator.userAgent;
+            const platform = {
+                device: 'unknown',
+                os: 'unknown',
+                browser: 'unknown',
+                userAgent: ua,
+                screenSize: `${window.screen.width}x${window.screen.height}`
+            };
+
+            if (/iPad|Tablet|PlayBook/i.test(ua)) {
+                platform.device = 'tablet';
+            } else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle/i.test(ua)) {
+                platform.device = 'mobile';
+            } else {
+                platform.device = 'desktop';
+            }
+
+            if (/Windows/i.test(ua)) platform.os = 'Windows';
+            else if (/iPhone|iPad|iPod/.test(ua)) platform.os = 'iOS';
+            else if (/Android/.test(ua)) platform.os = 'Android';
+            else if (/Mac/i.test(ua)) platform.os = 'MacOS';
+            else if (/Linux/i.test(ua)) platform.os = 'Linux';
+
+            if (/Chrome/i.test(ua)) platform.browser = 'Chrome';
+            else if (/Firefox/i.test(ua)) platform.browser = 'Firefox';
+            else if (/Safari/i.test(ua)) platform.browser = 'Safari';
+            else if (/Edge/i.test(ua)) platform.browser = 'Edge';
+
+            return platform;
+        }
+
+        // Update form submission with device info
+        orderForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const deviceInfo = detectDevice();
+            
+            const orderData = {
+                orderNumber: window.generateOrderNumber(),
+                customerName: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                address: document.getElementById('selectedAddress').value,
+                paymentMethod: document.querySelector('input[name="paymentMethod"]:checked')?.value,
+                items: window.cart,
+                total: window.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0),
+                deviceInfo: deviceInfo
+            };
+
+            // ...existing fetch code...
+        });
+    }
+});

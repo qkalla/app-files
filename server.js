@@ -7,6 +7,7 @@ const socketIo = require('socket.io');
 const dotenv = require('dotenv');
 const path = require('path');
 const bodyParser = require('body-parser');
+const WebSocket = require('ws');
 
 dotenv.config();
 
@@ -31,15 +32,56 @@ mongoose.connect('mongodb+srv://aliilaamin12331:85kDehRgnFBxqYwU@cluster0.9u48b.
 
 const app = express();
 const server = http.createServer(app);
+
+// Update CORS config
+const corsOptions = {
+    origin: ['https://mysupermarket.loca.lt', 'http://localhost:8000'],
+    methods: ['GET', 'POST'],
+    credentials: true
+};
+
+app.use(cors({
+    origin: ['https://supermarket.loca.lt', 'http://localhost:8000'],
+    methods: ['GET', 'POST', 'OPTIONS'],
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+app.use(express.json());
+app.use(express.static('public'));
+app.use(bodyParser.json());
+
+// Update Socket.IO config
 const io = socketIo(server, {
     cors: {
-        origin: "*",
-        methods: ["GET", "POST"]
+        origin: ['https://mysupermarket.loca.lt', 'http://localhost:8000'],
+        methods: ["GET", "POST"],
+        credentials: true
     }
 });
 
+// Add WebSocket for real-time updates
+// Update WebSocket config
+const wss = new WebSocket.Server({ 
+    server,
+    verifyClient: (info) => {
+        const origin = info.origin;
+        return origin === 'https://mysupermarket.loca.lt' || 
+               origin === 'http://localhost:8000';
+    }
+});
+
+// Store admin connections
+let adminConnections = new Set();
+
+wss.on('connection', (ws) => {
+    adminConnections.add(ws);
+    
+    ws.on('close', () => {
+        adminConnections.delete(ws);
+    });
+});
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -71,6 +113,18 @@ app.post('/api/orders', async (req, res) => {
             }
             console.log('Email sent successfully:', info.response);
         });
+
+        // Notify all admin panels
+        adminConnections.forEach(client => {
+            client.send(JSON.stringify({
+                type: 'NEW_ORDER',
+                order: {
+                    ...order._doc,
+                    _id: savedOrder._id
+                }
+            }));
+        });
+
         res.status(200).json({ success: true, orderId: savedOrder._id });
     } catch (error) {
         console.error('Error saving order:', error);
