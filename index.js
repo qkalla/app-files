@@ -1552,7 +1552,7 @@ function submitOrder() {
         items: window.cart // Include cart items if applicable
     };
 
-    fetch('https://e3a4-83-139-26-190.ngrok-free.app/api/orders', { // Use the Ngrok URL
+    fetch('https://app-files.onrender.com/api/orders', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
