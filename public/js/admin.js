@@ -124,7 +124,7 @@ class AdminPanel {
                 order._id === orderId ? { ...order, status: newStatus } : order
             );
             this.displayOrders();
-            this.showSuccess(`Order status updated to ${newStatus}`);
+            this.showSuccess('Order status updated successfully');
         } catch (error) {
             console.error('Error updating order status:', error);
             this.showError('Failed to update order status');
@@ -137,14 +137,12 @@ class AdminPanel {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' }
             });
-            if (!response.ok) {
-                throw new Error('Failed to refuse order');
-            }
+            if (!response.ok) throw new Error('Failed to refuse order');
             this.orders = this.orders.map(order => 
                 order._id === orderId ? { ...order, status: 'archived' } : order
             );
             this.displayOrders();
-            this.showSuccess(`Order has been refused and archived.`);
+            this.showSuccess('Order refused successfully');
         } catch (error) {
             console.error('Error refusing order:', error);
             this.showError('Failed to refuse order');

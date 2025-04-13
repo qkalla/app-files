@@ -35,10 +35,10 @@ const server = http.createServer(app);
 
 // CORS configuration
 const corsOptions = {
-    origin: ['http://localhost:8000', 'https://app-files-1.onrender.com'],
-    methods: ['GET', 'POST', 'OPTIONS'],
+    origin: ['http://localhost:8000', 'https://app-files-1.onrender.com', 'https://app-files-1.onrender.com/'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true,
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 };
 
 app.use(cors(corsOptions));
