@@ -23,7 +23,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://aliilaamin12331:85kDehRgnFBxqYwU@cluster0.9u48b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongodb+srv://aliilaamin12331:lolipop12@cluster0.9u48b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -33,19 +33,15 @@ mongoose.connect('mongodb+srv://aliilaamin12331:85kDehRgnFBxqYwU@cluster0.9u48b.
 const app = express();
 const server = http.createServer(app);
 
-// Update CORS config
+// CORS configuration
 const corsOptions = {
-    origin: ['https://mysupermarket.loca.lt', 'http://localhost:8000'],
-    methods: ['GET', 'POST'],
-    credentials: true
-};
-
-app.use(cors({
-    origin: ['https://supermarket.loca.lt', 'http://localhost:8000'],
+    origin: ['http://localhost:8000', 'https://supermarketn.loca.lt'],
     methods: ['GET', 'POST', 'OPTIONS'],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization']
-}));
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -53,7 +49,7 @@ app.use(bodyParser.json());
 // Update Socket.IO config
 const io = socketIo(server, {
     cors: {
-        origin: ['https://mysupermarket.loca.lt', 'http://localhost:8000'],
+        origin: ['https://mysupermarketn.loca.lt', 'http://localhost:8000'],
         methods: ["GET", "POST"],
         credentials: true
     }
@@ -65,7 +61,7 @@ const wss = new WebSocket.Server({
     server,
     verifyClient: (info) => {
         const origin = info.origin;
-        return origin === 'https://mysupermarket.loca.lt' || 
+        return origin === 'https://mysupermarketn.loca.lt' || 
                origin === 'http://localhost:8000';
     }
 });
@@ -92,11 +88,17 @@ const Order = require('./models/Order');
 // API Routes
 app.post('/api/orders', async (req, res) => {
     console.log('Received order:', req.body); // Log the received order
-    const order = new Order(req.body);
+
+    const orderNumber = `ORD-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+    const order = new Order({
+        ...req.body,
+        orderNumber: orderNumber
+    });
+
     try {
         const savedOrder = await order.save();
         io.emit('newOrder', savedOrder);
-        console.log('New order saved:', savedOrder); // Log the saved order
+        console.log('New order saved:', savedOrder);
 
         // Send email notification
         const mailOptions = {
@@ -127,8 +129,12 @@ app.post('/api/orders', async (req, res) => {
 
         res.status(200).json({ success: true, orderId: savedOrder._id });
     } catch (error) {
-        console.error('Error saving order:', error);
-        res.status(500).json({ success: false, message: 'Error saving order' });
+        console.error('Error saving order:', error); // Log the error
+        if (error.name === 'ValidationError') {
+            res.status(400).json({ success: false, message: 'Validation error', details: error.errors });
+        } else {
+            res.status(500).json({ success: false, message: 'Error saving order' });
+        }
     }
 });
 
@@ -252,6 +258,8 @@ io.on('connection', (socket) => {
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'admin.html')); // Adjust the path if necessary
 });
+
+app.options('/api/orders', cors(corsOptions)); // Preflight request for the orders endpoint
 
 // Start server
 const PORT = process.env.PORT || 3000;

@@ -1,0 +1,1829 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -ms-content-zooming: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background-color: #1a1f36;
+  color: #ecf0f1;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+#pano {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#titleBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile #titleBar {
+  height: 50px;
+  right: 50px;
+}
+
+/* If there is a fullscreen button the title bar must make space for it */
+body.fullscreen-enabled #titleBar {
+  right: 80px;
+}
+
+body.fullscreen-enabled.mobile #titleBar {
+  right: 100px;
+}
+
+/* If there are multiple scenes the title bar must make space for the scene list toggle */
+body.multiple-scenes #titleBar {
+  left: 40px;
+}
+
+body.multiple-scenes.mobile #titleBar {
+  left: 50px;
+}
+
+#titleBar .sceneName {
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  padding: 5px;
+  background-color: rgba(15, 23, 42, 0.8);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  font-size: 1.5em;
+  color: #ecf0f1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.mobile #titleBar .sceneName {
+  line-height: 40px;
+}
+
+#fullscreenToggle {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+}
+
+.mobile #fullscreenToggle {
+  width: 50px;
+  height: 50px;
+}
+
+body.fullscreen-enabled #fullscreenToggle {
+  display: block;
+}
+
+#fullscreenToggle .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.mobile #fullscreenToggle .icon {
+  top: 10px;
+  right: 10px;
+}
+
+#fullscreenToggle .icon.on {
+  display: none;
+}
+
+#fullscreenToggle .icon.off {
+  display: block;
+}
+
+#fullscreenToggle.enabled .icon.on {
+  display: block;
+}
+
+#fullscreenToggle.enabled .icon.off {
+  display: none;
+}
+
+#autorotateToggle {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+}
+
+.mobile #autorotateToggle {
+  width: 50px;
+  height: 50px;
+}
+
+/* If there is a fullscreen button, autorotate must placed a bit to the left */
+body.fullscreen-enabled #autorotateToggle {
+  right: 40px;
+}
+
+body.fullscreen-enabled.mobile #autorotateToggle {
+  right: 50px;
+}
+
+#autorotateToggle .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.mobile #autorotateToggle .icon {
+  top: 10px;
+  right: 10px;
+}
+
+#autorotateToggle .icon.on {
+  display: none;
+}
+
+#autorotateToggle .icon.off {
+  display: block;
+}
+
+#autorotateToggle.enabled .icon.on {
+  display: block;
+}
+
+#autorotateToggle.enabled .icon.off {
+  display: none;
+}
+
+#sceneListToggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+}
+
+.mobile #sceneListToggle {
+  width: 50px;
+  height: 50px;
+}
+
+#sceneListToggle .text {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 100%;
+  line-height: 30px;
+}
+
+#sceneListToggle .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.mobile #sceneListToggle .icon {
+  top: 10px;
+  right: 10px;
+}
+
+#sceneListToggle .icon.on {
+  display: none;
+}
+
+#sceneListToggle .icon.off {
+  display: block;
+}
+
+#sceneListToggle.enabled .icon.on {
+  display: block;
+}
+
+#sceneListToggle.enabled .icon.off {
+  display: none;
+}
+
+#sceneList {
+  position: absolute;
+  top: 0;
+  left: -220px;
+  padding-top: 40px;
+  width: 220px;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-left: 0;
+  -webkit-transition: margin-left 0.5s ease-in-out;
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.mobile #sceneList {
+  padding-top: 50px;
+}
+
+#sceneList .scenes {
+  width: 100%;
+  background-color: rgba(26, 31, 54, 0.8);
+}
+
+.mobile #sceneList {
+  width: 100%;
+  height: 100%;
+  left: -100%;
+}
+
+.mobile #sceneList.enabled {
+  margin-left: 100%;
+}
+
+.mobile #sceneList .scenes {
+  height: 100%;
+}
+
+#sceneList.enabled {
+  margin-left: 220px;
+}
+
+#sceneList .scene {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(52, 73, 94, 0.8);
+  color: #ecf0f1;
+  transition: background-color 0.3s, transform 0.3s;
+  transform: perspective(500px) translateZ(20px);
+}
+
+.mobile #sceneList .scene {
+  height: 40px;
+}
+
+#sceneList .scene:hover {
+  background-color: rgba(41, 128, 185, 0.8);
+  transform: perspective(500px) translateZ(40px) scale(1.05);
+}
+
+#sceneList .scene .text {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mobile #sceneList .scene .text {
+  line-height: 40px;
+}
+
+.no-touch #sceneList .scene:hover {
+  background-color: rgba(58, 68, 84, 0.8);
+  transform: translateZ(10px);
+}
+
+#sceneList .scene.current {
+  background-color: rgba(58, 68, 84, 0.8);
+}
+
+/* Hide scene list when only a single scene exists */
+body.single-scene #sceneList, body.single-scene #sceneListToggle {
+  display: none;
+}
+
+/* Link hotspot */
+
+.link-hotspot {
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.no-touch .link-hotspot:hover {
+  opacity: 1;
+}
+
+.mobile .link-hotspot {
+  width: 70px;
+  height: 70px;
+}
+
+.link-hotspot-icon {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.link-hotspot-tooltip {
+  position: absolute;
+  left: 100%;
+  top: 14px; /* ( 60 - (16 + 2*8) ) / 2 */
+
+  margin-left: 3px;
+
+  font-size: 16px;
+
+  max-width: 300px;
+
+  padding: 8px 10px;
+
+  border-radius: 5px;
+
+  background-color: rgba(26, 31, 54, 0.8);
+  background-color: rgba(26, 31, 54, 0.8);
+
+  color: #ffffff;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  opacity: 0;
+
+  -ms-transform: translateX(-8px);
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+
+  -webkit-transition: -ms-transform 0.3s,
+                      -webkit-transform 0.3s,
+                      transform 0.3s,
+                      opacity 0.3s;
+  transition: -ms-transform 0.3s,
+              -webkit-transform 0.3s,
+              transform 0.3s,
+              opacity 0.3s;
+}
+
+.mobile .link-hotspot {
+  top: 19px; /* ( 70 - (16 + 2*8) ) / 2 */
+}
+
+.no-touch .link-hotspot:hover .link-hotspot-tooltip {
+  opacity: 1;
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* Prevent tooltip from triggering */
+.link-hotspot-tooltip {
+  pointer-events: none;
+}
+.no-touch .link-hotspot:hover .link-hotspot-tooltip {
+  pointer-events: all;
+}
+
+/* Fallback mode without pointer-events (IE8-10) */
+.tooltip-fallback .link-hotspot-tooltip {
+  display: none;
+}
+.no-touch .tooltip-fallback .link-hotspot:hover .link-hotspot-tooltip {
+  display: block;
+}
+
+/* Modern Hotspots */
+.info-hotspot {
+  line-height: 1.2em;
+  opacity: 0.9;
+  transition: opacity 0.2s 0.2s;
+  background: none !important;
+  position: relative;
+  z-index: 100;
+}
+
+.info-hotspot.visible {
+  opacity: 1;
+}
+
+.info-hotspot .info-hotspot-text {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  max-height: 200px;
+  top: 40px;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(26, 31, 54, 0.95);
+  border-radius: 5px;
+  overflow-y: auto;
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  transition: all 0.3s ease;
+  z-index: 101;
+}
+
+.info-hotspot.visible .info-hotspot-text {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-hotspot:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+.info-hotspot-header {
+  background: rgba(23, 25, 35, 0.9);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.info-hotspot-text {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Info hotspot */
+
+.info-hotspot {
+  line-height: 1.2em;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.2s 0.2s;
+  transition: opacity 0.2s 0.2s;
+  background: none !important;
+}
+
+.no-touch .info-hotspot:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.info-hotspot.visible {
+  opacity: 1;
+}
+
+.info-hotspot .info-hotspot-header {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgba(26, 31, 54, 0.8);
+  cursor: pointer;
+  -webkit-transition: width 0.3s ease-in-out 0.5s,
+                      border-radius 0.3s ease-in-out 0.5s;
+  transition: width 0.3s ease-in-out 0.5s,
+              border-radius 0.3s ease-in-out 0.5s;
+  background: rgba(26, 31, 54, 0.8); /* Dark semi-transparent background */
+}
+
+.mobile .info-hotspot .info-hotspot-header {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.desktop.no-touch .info-hotspot .info-hotspot-header:hover {
+  width: 260px;
+  border-radius: 5px;
+  -webkit-transition: width 0.3s ease-in-out,
+                      border-radius 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out,
+              border-radius 0.3s ease-in-out;
+}
+
+.desktop .info-hotspot.visible .info-hotspot-header,
+.desktop.no-touch .info-hotspot.visible .info-hotspot-header:hover {
+  width: 260px;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-transition: width 0.3s ease-in-out,
+                      border-radius 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out,
+              border-radius 0.3s ease-in-out;
+}
+
+.info-hotspot .info-hotspot-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background: none !important;
+}
+
+.mobile .info-hotspot .info-hotspot-icon-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.info-hotspot .info-hotspot-icon {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+.info-hotspot .info-hotspot-title-wrapper {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  width: 0;
+  height: 40px;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: width 0s 0.4s,
+                      padding 0s 0.4s;
+  transition: width 0s 0.4s,
+              padding 0s 0.4s;
+  background: none !important;
+}
+
+.desktop .info-hotspot.visible .info-hotspot-title-wrapper,
+.desktop.no-touch .info-hotspot .info-hotspot-header:hover .info-hotspot-title-wrapper {
+  width: 220px;
+  padding: 0 5px;
+  -webkit-transition: width 0s 0.4s,
+                      padding 0s 0.4s;
+  transition: width 0s 0.4s,
+              padding 0s 0.4s;
+}
+
+.info-hotspot .info-hotspot-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.info-hotspot .info-hotspot-title {
+  display: inline-block;
+  vertical-align: middle;
+
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.info-hotspot .info-hotspot-close-wrapper {
+  position: absolute;
+  left: 260px;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  border-top-right-radius: 5px;
+  background-color: rgba(26, 31, 54, 0.8);
+  visibility: hidden;
+  -ms-transform: perspective(200px) rotateY(90deg);
+  -webkit-transform: perspective(200px) rotateY(90deg);
+  transform: perspective(200px) rotateY(90deg);
+  -ms-transform-origin: 0 50% 0;
+  -webkit-transform-origin: 0 50% 0;
+  transform-origin: 0 50% 0;
+  -webkit-transition: -ms-transform 0.3s 0.3s,
+                      -webkit-transform 0.3s 0.3s,
+                      transform 0.3s 0.3s,
+                      visibility 0s 0.6s;
+  transition: -ms-transform 0.3s 0.3s,
+              -webkit-transform 0.3s 0.3s,
+              transform 0.3s 0.3s,
+              visibility 0s 0.6s;
+  background: none !important;
+}
+
+.desktop .info-hotspot.visible .info-hotspot-close-wrapper {
+  visibility: visible;
+  -ms-transform: perspective(200px) rotateY(0deg);
+  -webkit-transform: perspective(200px) rotateY(0deg);
+  transform: perspective(200px) rotateY(0deg);
+  -webkit-transition: -ms-transform 0.3s,
+                      -webkit-transform 0.3s,
+                      transform 0.3s,
+                      visibility 0s 0s;
+  transition: -ms-transform 0.3s,
+              -webkit-transform 0.3s,
+              transform 0.3s,
+              visibility 0s 0s;
+}
+
+.info-hotspot .info-hotspot-close-icon {
+  width: 70%;
+  height: 70%;
+  margin: 15%;
+}
+
+.info-hotspot .info-hotspot-text {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  max-height: 200px;
+  top: 40px;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(26, 31, 54, 0.8);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow-y: auto;
+  visibility: hidden;
+  /* rotate(90deg) causes transition flicker on Firefox 58 */
+  -ms-transform: perspective(200px) rotateX(-89.999deg);
+  -webkit-transform: perspective(200px) rotateX(-89.999deg);
+  transform: perspective(200px) rotateX(-89.999deg);
+  -ms-transform-origin: 50% 0 0;
+  -webkit-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
+  -webkit-transition: -ms-transform 0.3s,
+                      -webkit-transform 0.3s,
+                      transform 0.3s,
+                      visibility 0s 0.3s;
+  transition: -ms-transform 0.3s,
+              -webkit-transform 0.3s,
+              transform 0.3s,
+              visibility 0s 0.3s;
+
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  background: rgba(26, 31, 54, 0.8); /* Dark semi-transparent background */
+  color: white;
+}
+
+.desktop .info-hotspot.visible .info-hotspot-text {
+  visibility: visible;
+  -ms-transform: perspective(200px) rotateX(0deg);
+  -webkit-transform: perspective(200px) rotateX(0deg);
+  transform: perspective(200px) rotateX(0deg);
+  -webkit-transition: -ms-transform 0.3s,
+                      -webkit-transform 0.3s,
+                      transform 0.3s,
+                      visibility 0s 0s;
+  transition: -ms-transform 0.3s,
+              -webkit-transform 0.3s,
+              transform 0.3s,
+              visibility 0s 0s;
+}
+
+/* Info hotspot modal */
+
+.desktop .info-hotspot-modal {
+  display: none;
+}
+
+.info-hotspot-modal {
+  display: block; /* Ensure it is visible when active */
+  visibility: visible;
+  opacity: 1;
+  background: rgba(26, 31, 54, 0.9); /* Slightly darker background for better readability */
+  color: #ffffff; /* White text for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Soft shadow for 3D effect */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Ensure the modal content is also styled appropriately */
+.info-hotspot-modal .info-hotspot-text {
+  font-size: 16px; /* Readable text size */
+  line-height: 1.6; /* Adequate line spacing for readability */
+}
+
+/* View control buttons */
+
+.viewControlButton {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgba(26, 31, 54, 0.8);
+  background-color: rgba(26, 31, 54, 0.8);
+}
+
+body.view-control-buttons .viewControlButton {
+  display: block;
+}
+
+/* Hide controls when width is too small */
+@media (max-width: 600px) {
+  body.view-control-buttons .viewControlButton {
+    /* display: none; */ /* Commented out to keep controls visible */
+  }
+}
+
+.viewControlButton .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Center is at margin-left: -20px */
+.viewControlButton-1 {
+  margin-left: -145px;
+}
+.viewControlButton-2 {
+  margin-left: -95px;
+}
+.viewControlButton-3 {
+  margin-left: -45px;
+}
+.viewControlButton-4 {
+  margin-left: 5px;
+}
+.viewControlButton-5 {
+  margin-left: 55px;
+}
+.viewControlButton-6 {
+  margin-left: 105px;
+}
+
+/* Modern Shopping Cart */
+#shoppingCart {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  width: 90%;
+  max-width: 350px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer; /* Add cursor pointer to header */
+}
+
+.cart-header h3 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: auto; /* Push controls to the right */
+}
+
+.cart-header h3 i {
+  margin-right: 8px;
+}
+
+.cart-controls {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px; /* Space between title and controls */
+  margin-right: 10px; /* Space between controls and count */
+}
+
+.cart-control-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9em; /* Slightly smaller icon */
+  cursor: pointer;
+  padding: 0; /* Remove padding */
+  line-height: 1; /* Align icon vertically */
+  transition: color 0.2s;
+}
+
+.cart-control-btn:hover {
+  color: #ffffff;
+}
+
+#cartCount {
+  font-size: 0.9em;
+  color: #eee;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 3px 8px;
+  border-radius: 12px;
+  white-space: nowrap; /* Prevent count from wrapping */
+}
+
+.cart-items {
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 10px 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 1;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 18px;
+  /* Removed animation properties as they conflict with minimize */
+  /* transform: translateX(-100%); */
+  /* animation: slideIn 0.3s forwards; */
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+}
+
+.item-details {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.item-name {
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: #ffffff;
+}
+
+.item-price {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.remove-item-btn {
+  background: rgba(255, 0, 0, 0.5);
+  border: none;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.remove-item-btn:hover {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.cart-footer {
+  padding: 12px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.3s ease-out, border 0.3s ease-out;
+  opacity: 1;
+}
+
+.cart-total {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.cart-total span {
+  color: #90EE90; /* Light green for total */
+}
+
+.checkout-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 16px;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.checkout-btn:hover {
+  background: #45a049;
+}
+
+.checkout-btn i {
+  font-size: 1.1em;
+}
+
+/* Minimized state for the shopping cart */
+#shoppingCart.minimized {
+  width: auto;
+  min-width: 200px; /* Adjust min-width as needed */
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#shoppingCart.minimized .cart-items,
+#shoppingCart.minimized .cart-footer {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  overflow: hidden;
+  border-top: none; /* Hide borders when minimized */
+}
+
+#shoppingCart.minimized .cart-header {
+  border-bottom: none;
+}
+
+/* Hide minimize btn when minimized, show maximize */
+#shoppingCart.minimized #minimizeCartBtn {
+  display: none;
+}
+#shoppingCart.minimized #maximizeCartBtn {
+  display: inline-block;
+}
+
+/* Show minimize btn when maximized, hide maximize */
+#shoppingCart:not(.minimized) #minimizeCartBtn {
+  display: inline-block;
+}
+#shoppingCart:not(.minimized) #maximizeCartBtn {
+  display: none;
+}
+
+/* Empty Cart State */
+#shoppingCart:empty {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#shoppingCart:empty::after {
+  content: '🛒 Your cart is empty';
+  animation: fadeInOut 2s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* Cart Items Animation */
+.cart-item {
+  transform: translateX(-100%);
+  animation: slideIn 0.3s forwards;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px;
+  border-radius: 16px;
+  padding: 12px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+@keyframes slideIn {
+  to { transform: translateX(0); }
+}
+
+/* Modern Button Styles */
+.add-to-basket-btn,
+.checkout-btn,
+.item-remove {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add to Basket Button */
+.add-to-basket-btn {
+    background: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.add-to-basket-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.add-to-basket-btn:active {
+    transform: translateY(0);
+}
+
+/* Checkout Button */
+.checkout-btn {
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.checkout-btn:not(:disabled):hover {
+    background: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+}
+
+/* Disabled Checkout Button */
+.checkout-btn:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Remove Item Button */
+.item-remove {
+    background: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.item-remove:hover {
+    background: #dc3545;
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* Button Ripple Effect */
+.add-to-basket-btn::after,
+.checkout-btn:not(:disabled)::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.add-to-basket-btn:hover::after,
+.checkout-btn:not(:disabled):hover::after {
+    left: 100%;
+}
+
+/* Cart Total */
+#cartTotal {
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: right;
+}
+
+/* Scrollbar Styling */
+#cartItems::-webkit-scrollbar {
+  width: 6px;
+}
+
+#cartItems::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+#cartItems::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+#shoppingCart:empty {
+  padding: 10px;
+  min-height: auto;
+}
+
+.map-modal {
+  z-index: 2000; /* Higher z-index to ensure it appears above other elements */
+}
+
+/* Ensure the map takes full width */
+#map {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .checkout-modal, .map-modal {
+    width: 95%;
+  }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.modal-content {
+    background-color: #fff; /* White background for modal content */
+    margin: auto; /* Center the modal */
+    padding: 20px; /* Padding inside modal */
+    border: 1px solid #888; /* Border around modal */
+    width: 80%; /* Width of modal */
+    max-width: 600px; /* Max width */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.modal.active {
+    display: flex; /* Show the modal */
+}
+
+/* Floating summary styles */
+#checkoutSummary {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Close button styles for map */
+.close-map {
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+}
+
+/* Success popup styles */
+.success-popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.success-popup .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.success-popup button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.success-popup button:hover {
+    background-color: #0056b3;
+}
+
+/* Remove the modal completely */
+.info-hotspot-modal,
+.info-hotspot-modal.visible {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Ensure desktop modal is also hidden */
+.desktop .info-hotspot-modal {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Keep only the direct hotspot popup */
+.info-hotspot {
+    background: rgba(26, 31, 54, 0.8);
+    border-radius: 5px;
+}
+
+/* Mobile-specific popup styles (under 430px) */
+@media screen and (max-width: 430px) {
+    /* Make mobile hotspots behave exactly like desktop */
+    .info-hotspot .info-hotspot-text {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        max-height: 200px;
+        top: 40px;
+        left: 0;
+        padding: 10px;
+        background-color: rgba(26, 31, 54, 0.95);
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        border-radius: 5px;
+        overflow-y: auto;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 101;
+        color: #ffffff;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        transform: perspective(200px) rotateX(-89.999deg);
+        transform-origin: 50% 0 0;
+        transition: transform 0.3s, visibility 0s 0.3s;
+    }
+
+    .info-hotspot.visible .info-hotspot-text {
+        visibility: visible;
+        opacity: 1;
+        transform: perspective(200px) rotateX(0deg);
+        transition: transform 0.3s, visibility 0s 0s;
+    }
+    
+    /* Fix the title display on mobile */
+    .mobile .info-hotspot .info-hotspot-title-wrapper {
+        width: auto !important;
+        padding: 0 5px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: none !important;
+    }
+    
+    .mobile .info-hotspot.visible .info-hotspot-header {
+        width: 260px !important;
+        border-radius: 5px !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+    
+    .mobile .info-hotspot .info-hotspot-title {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        padding: 0 5px !important;
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+
+    /* Match the desktop product info styling */
+    .product-info {
+        color: #ffffff;
+    }
+
+    .product-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .product-price {
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .product-description {
+        font-size: 14px;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .add-to-basket-btn {
+        background: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}
+
+/* Safari compatibility fixes */
+.info-hotspot-header {
+    background: rgba(23, 25, 35, 0.9);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+.info-hotspot-text {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+#shoppingCart {
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+}
+
+.cart-item {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+#checkoutBtn.disabled {
+    -webkit-backdrop-filter: grayscale(1);
+    backdrop-filter: grayscale(1);
+}
+
+.swal2-toast {
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* Update the checkout panel's font and other styles */
+#checkoutPanel {
+    font-family: 'Poppins', sans-serif; /* Consistent font with the rest of the application */
+    color: #333; /* Darker text for better readability */
+    background-color: #f8f9fa; /* Light background for a modern look */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Update button styles in the checkout panel */
+.checkout-btn {
+    font-size: 14px; /* Suitable font size for buttons */
+    font-weight: 600; /* Slightly bolder text for emphasis */
+    text-transform: uppercase; /* Uppercase text for a modern touch */
+    letter-spacing: 1px; /* Spacing out letters for readability */
+}
+
+/* Checkout Modal Background and Layout */
+.checkout-modal {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 12px; /* Rounded corners for a softer look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px;
+    width: auto; /* Adjust width based on content */
+    max-width: 600px; /* Maximum width to maintain form structure */
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    color: #333; /* Dark grey color for text */
+}
+
+/* Input Fields Styling */
+.checkout-modal input[type="text"],
+.checkout-modal input[type="email"],
+.checkout-modal input[type="tel"] {
+    width: 100%; /* Full width to fill the form */
+    padding: 10px; /* Padding for better text entry */
+    margin: 8px 0; /* Margin for spacing between fields */
+    box-sizing: border-box; /* Border-box to include padding in width */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Slightly rounded borders for the inputs */
+    font-size: 16px; /* Readable font size */
+}
+
+/* Button Styling */
+.checkout-modal .checkout-btn {
+    background-color: #4CAF50; /* Green background for primary actions */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase; /* Uppercase text for button */
+    letter-spacing: 1px; /* Spacing between letters */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.checkout-modal .checkout-btn:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+    transform: translateY(-2px); /* Slight raise effect on hover */
+}
+
+/* Cancel Button Styling */
+.checkout-modal .cancel-btn {
+    background-color: #f44336; /* Red background for cancel actions */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase; /* Uppercase text for button */
+    letter-spacing: 1px; /* Spacing between letters */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.checkout-modal .cancel-btn:hover {
+    background-color: #d32f2f; /* Darker shade of red on hover */
+    transform: translateY(-2px); /* Slight raise effect on hover */
+}
+
+/* Enhance the overall modal appearance */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Align items to stretch to fill the modal */
+}
+
+/* Minimal updates to Checkout Modal */
+#checkoutModal {
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+}
+
+/* Adjust spacing between input fields */
+#checkoutModal input[type="text"],
+#checkoutModal input[type="email"],
+#checkoutModal input[type="tel"] {
+    margin-top: 12px; /* Increased spacing for better visual separation */
+    margin-bottom: 12px; /* Consistent spacing below each field */
+}
+
+/* Ensure the rest of the modal's design remains unchanged */
+
+/* Bold labels for specific fields */
+#checkoutModal label {
+    font-weight: bold; /* Make labels bold */
+    color: #333; /* Dark color for readability */
+}
+
+/* Modernize the Place Order button */
+#checkoutModal .checkout-btn {
+    background-color: #4CAF50; /* Vibrant green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-transform: uppercase; /* Uppercase text for a modern look */
+    letter-spacing: 1px; /* Spacing between letters */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+#checkoutModal .checkout-btn:hover {
+    background-color: #369636; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Modernize the Pick Location button */
+#checkoutModal .location-btn {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: uppercase; /* Uppercase text for a modern look */
+    letter-spacing: 1px; /* Spacing between letters */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+#checkoutModal .location-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 600px) {
+    .info-hotspot {
+        width: 90%; /* Adjust width for smaller screens */
+        left: 5%; /* Center horizontally */
+        transform: none; /* Reset any transforms */
+    }
+
+    .info-hotspot-text {
+        font-size: 14px; /* Adjust font size */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .add-to-basket-btn {
+        width: 100%; /* Full width button */
+    }
+}
+
+/* === Force Dark Theme for Checkout Modal === */
+
+#checkoutModal {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Darker overlay */
+    transition: opacity 0.3s ease, visibility 0.3s ease !important;
+    align-items: flex-start !important; /* Align content to the top */
+    /* padding-top: 10vh !important; */ /* REMOVED - Replaced with margin on content */
+}
+
+#checkoutModal .modal-content {
+    background: rgba(23, 25, 35, 0.9) !important; 
+    -webkit-backdrop-filter: blur(15px) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+    color: #ffffff !important; 
+    margin-top: 5vh !important; /* Add margin from the top */
+    margin-bottom: 5vh !important; /* Add some margin at bottom for scroll */
+}
+
+#checkoutModal .close {
+    color: #aaa !important;
+}
+#checkoutModal .close:hover,
+#checkoutModal .close:focus {
+    color: #ffffff !important;
+}
+
+#checkoutModal h2 {
+    color: #ffffff !important; 
+    font-weight: 600 !important;
+}
+
+#checkoutModal label {
+    color: rgba(255, 255, 255, 0.85) !important; 
+    font-weight: 500 !important;
+}
+
+#checkoutModal input[type="text"],
+#checkoutModal input[type="tel"],
+#checkoutModal input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 12px 15px !important;
+}
+
+#checkoutModal input[type="text"]:focus,
+#checkoutModal input[type="tel"]:focus,
+#checkoutModal input[type="email"]:focus {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+#checkoutModal input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#checkoutModal input#selectedAddress[readonly] {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    cursor: pointer !important;
+}
+
+#checkoutModal .pick-location-btn {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 8px !important;
+}
+#checkoutModal .pick-location-btn:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+#checkoutModal .payment-methods label {
+    color: #ffffff !important;
+    font-weight: 400 !important;
+}
+
+#checkoutModal .payment-methods input[type="radio"] {
+    accent-color: #4CAF50 !important; 
+}
+
+#checkoutModal .checkout-buttons {
+    border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+#checkoutModal .checkout-buttons button {
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+
+#checkoutModal .cancel-btn {
+    background-color: rgba(255, 82, 82, 0.7) !important; 
+    color: white !important;
+}
+#checkoutModal .cancel-btn:hover {
+    background-color: rgba(255, 82, 82, 1) !important; 
+}
+
+#checkoutModal .order-btn {
+    background-color: #4CAF50 !important; 
+    color: white !important;
+}
+#checkoutModal .order-btn:hover {
+    background-color: #45a049 !important;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4) !important;
+}
+
+/* Ensure map modal is NOT affected */
+#mapModal .modal-content {
+    background-color: #fff !important;
+    color: #333 !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+}
+#mapModal label, #mapModal h2 {
+    color: #333 !important;
+}
+
+/* === Force Dark Theme for Map Modal === */
+
+#mapModal {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Match checkout overlay */
+}
+
+#mapModal .modal-content {
+    background: rgba(23, 25, 35, 0.9) !important; 
+    -webkit-backdrop-filter: blur(15px) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+    color: #ffffff !important; 
+    /* Remove potential conflicting white background from previous rules */
+    /* background-color: #fff !important; */ 
+}
+
+/* Style the close button for the map modal */
+#mapModal .close-map {
+    color: #aaa !important;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.2s;
+    z-index: 10; /* Ensure it's above map */
+}
+
+#mapModal .close-map:hover,
+#mapModal .close-map:focus {
+    color: #ffffff !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the map container itself */
+#mapModal #map {
+    border-radius: 8px !important; /* Slightly rounded corners for the map */
+    border: 1px solid rgba(255, 255, 255, 0.15) !important; /* Subtle border */
+    margin-bottom: 15px !important; /* Space below map */
+}
+
+/* Style the Confirm Location button */
+#mapModal .confirm-location-btn {
+    display: block !important;
+    width: 100% !important;
+    padding: 12px 25px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    background-color: #4CAF50 !important; /* Green background */
+    color: white !important;
+}
+
+#mapModal .confirm-location-btn:hover {
+    background-color: #45a049 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4) !important;
+}
+
+/* Optional: Adjust Leaflet controls for dark theme if needed */
+#mapModal .leaflet-control-zoom a {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+#mapModal .leaflet-control-zoom a:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
+#mapModal .leaflet-control-attribution {
+    background: rgba(0, 0, 0, 0.6) !important;
+    color: #ffffff !important;
+}
+#mapModal .leaflet-control-attribution a {
+    color: #ffffff !important;
+}
+
+/* Hide mini-map components */
+.mini-map-container {
+  display: none !important;
+}
+
+/* 3D Icon Effects */
+.control-buttons img.icon {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.control-buttons img.icon:hover {
+    transform: scale(1.2) translateZ(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D Model Icons for Scene List */
+#sceneList .scene i {
+    font-size: 1.5em;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: perspective(100px) translateZ(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#sceneList .scene i:hover {
+    transform: perspective(100px) translateZ(10px) scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
