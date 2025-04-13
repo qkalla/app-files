@@ -35,7 +35,7 @@ const server = http.createServer(app);
 
 // CORS configuration
 const corsOptions = {
-    origin: ['http://localhost:8000', 'https://app-files-1.onrender.com],
+    origin: ['http://localhost:8000', 'https://app-files-1.onrender.com'],
     methods: ['GET', 'POST', 'OPTIONS'],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization']
@@ -49,9 +49,8 @@ app.use(bodyParser.json());
 // Update Socket.IO config
 const io = socketIo(server, {
     cors: {
-        origin: ['https://app-files-1.onrender.com', 'http://localhost:8000'],
-        methods: ["GET", "POST"],
-        credentials: true
+        origin: ["https://app-files.onrender.com", "https://app-files-1.onrender.com"],
+        methods: ["GET", "POST"]
     }
 });
 

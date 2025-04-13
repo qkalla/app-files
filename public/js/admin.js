@@ -1,7 +1,7 @@
 class AdminPanel {
     constructor() {
         this.orders = [];
-        this.socket = io('http://localhost:3000'); // Update this to your server URL if needed
+        this.socket = io('https://app-files.onrender.com');
         this.notificationSound = new Audio('/sounds/notification.mp3'); // Ensure this path is correct
         this.init();
     }
@@ -34,7 +34,7 @@ class AdminPanel {
     async fetchOrders() {
         this.showLoadingIndicator(); // Show loading indicator
         try {
-            const response = await fetch('http://localhost:3000/api/orders');
+            const response = await fetch('https://app-files.onrender.com/api/orders');
             if (!response.ok) throw new Error('Failed to fetch orders');
             let fetchedOrders = await response.json();
             // Filter out orders without a valid status
@@ -114,7 +114,7 @@ class AdminPanel {
 
     async updateOrderStatus(orderId, newStatus) {
         try {
-            const response = await fetch(`/api/orders/${orderId}/status`, {
+            const response = await fetch(`https://app-files.onrender.com/api/orders/${orderId}/status`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ status: newStatus })
@@ -133,7 +133,7 @@ class AdminPanel {
 
     async refuseOrder(orderId) {
         try {
-            const response = await fetch(`/api/orders/${orderId}/refuse`, {
+            const response = await fetch(`https://app-files.onrender.com/api/orders/${orderId}/refuse`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' }
             });
