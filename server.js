@@ -9,7 +9,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const WebSocket = require('ws');
 
-// Load environment variables
 dotenv.config();
 
 // Resend Email service setup
@@ -26,13 +25,9 @@ mongoose.connect(process.env.MONGO_URI, {
 const app = express();
 const server = http.createServer(app);
 
-// Parse allowed origins from environment variable
-const allowedOrigins = process.env.ALLOWED_ORIGINS.split(',');
-const wsAllowedOrigins = process.env.WS_ALLOWED_ORIGINS.split(',');
-
 // CORS configuration
 const corsOptions = {
-  origin: allowedOrigins,
+  origin: ['http://localhost:8000', 'https://app-files-1.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
@@ -43,62 +38,33 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
-// Socket.IO setup with security configurations
+// Socket.IO setup
 const io = socketIo(server, {
   cors: {
-    origin: allowedOrigins,
-    methods: ["GET", "POST"],
-    credentials: true
+    origin: ["https://app-files.onrender.com", "https://app-files-1.onrender.com"],
+    methods: ["GET", "POST"]
   }
 });
 
-// WebSocket setup with security configurations
+// WebSocket setup
 const wss = new WebSocket.Server({ 
   server,
   verifyClient: (info) => {
     const origin = info.origin;
-    return wsAllowedOrigins.includes(origin);
+    return origin === 'https://app-files-1.onrender.com' || 
+           origin === 'http://localhost:8000';
   }
 });
 
 // Track connected admin panels
 let adminConnections = new Set();
 
-wss.on('connection', (ws, req) => {
-  // Add security checks
-  const origin = req.headers.origin;
-  if (!wsAllowedOrigins.includes(origin)) {
-    ws.close();
-    return;
-  }
-
+wss.on('connection', (ws) => {
   adminConnections.add(ws);
   
   ws.on('close', () => {
     adminConnections.delete(ws);
   });
-
-  // Add ping/pong for connection health check
-  ws.isAlive = true;
-  ws.on('pong', () => {
-    ws.isAlive = true;
-  });
-});
-
-// WebSocket connection health check
-const interval = setInterval(() => {
-  wss.clients.forEach((ws) => {
-    if (ws.isAlive === false) {
-      adminConnections.delete(ws);
-      return ws.terminate();
-    }
-    ws.isAlive = false;
-    ws.ping();
-  });
-}, 30000);
-
-wss.on('close', () => {
-  clearInterval(interval);
 });
 
 // Mongoose model
@@ -111,8 +77,7 @@ app.post('/api/orders', async (req, res) => {
   const orderNumber = `ORD-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
   const order = new Order({
     ...req.body,
-    orderNumber: orderNumber,
-    orderDate: new Date()
+    orderNumber: orderNumber
   });
 
   try {
@@ -127,25 +92,24 @@ app.post('/api/orders', async (req, res) => {
       subject: 'Order Confirmation',
       html: `
         <h2>Thank you for your order!</h2>
-        <p>Your order number is: ${orderNumber}</p>
         <p>Your order is being processed.</p>
         <h3>Order Summary:</h3>
         <ul>
-          ${order.items.map(item => `<li>${item.name} — ${item.quantity} x ${item.price} AMD</li>`).join('')}
+          ${order.items.map(item => `<li>${item.product} — ${item.qty} x ${item.price} AMD</li>`).join('')}
         </ul>
         <p><strong>Total:</strong> ${order.total} AMD</p>
-        <p><strong>Delivery Address:</strong> ${order.address}</p>
       `
     });
 
     // Notify all connected admin panels via WebSocket
     adminConnections.forEach(client => {
-      if (client.readyState === WebSocket.OPEN) {
-        client.send(JSON.stringify({
-          type: 'NEW_ORDER',
-          order: savedOrder
-        }));
-      }
+      client.send(JSON.stringify({
+        type: 'NEW_ORDER',
+        order: {
+          ...order._doc,
+          _id: savedOrder._id
+        }
+      }));
     });
 
     res.status(200).json({ success: true, orderId: savedOrder._id });
@@ -222,35 +186,10 @@ app.get('/api/orders', async (req, res) => {
 app.post('/api/orders/:id/status', async (req, res) => {
   const { status } = req.body;
   try {
-    const updatedOrder = await Order.findByIdAndUpdate(
-      req.params.id, 
-      { status, updatedAt: new Date() }, 
-      { new: true }
-    );
-    
+    const updatedOrder = await Order.findByIdAndUpdate(req.params.id, { status }, { new: true });
     if (!updatedOrder) {
       return res.status(404).json({ message: 'Order not found' });
     }
-
-    // Notify connected clients about the status update
-    io.emit('orderStatusUpdate', {
-      orderId: updatedOrder._id,
-      newStatus: status
-    });
-
-    // Send email notification to customer
-    await resend.emails.send({
-      from: 'supermarket@resend.dev',
-      to: updatedOrder.email,
-      subject: `Order ${updatedOrder.orderNumber} Status Update`,
-      html: `
-        <h2>Your order status has been updated!</h2>
-        <p>Order Number: ${updatedOrder.orderNumber}</p>
-        <p>New Status: ${status}</p>
-        <p>Updated at: ${new Date().toLocaleString()}</p>
-      `
-    });
-
     res.json(updatedOrder);
   } catch (error) {
     console.error('Error updating order status:', error);
@@ -274,7 +213,6 @@ app.get('/', (req, res) => {
 // Enable CORS preflight
 app.options('/api/orders', cors(corsOptions));
 
-// Start server
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
