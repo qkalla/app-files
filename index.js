@@ -15,6 +15,9 @@
  */
 'use strict';
 
+// Import the fetch function from traffic.js
+import { fetch as apiFetch } from './js/traffic.js';
+
 (function() {
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
@@ -1542,7 +1545,7 @@ function closeModal() {
 }
 
 // Example function to submit the order
-function submitOrder() {
+async function submitOrder() {
     const orderData = {
         name: document.getElementById('fullName').value,
         phone: document.getElementById('phoneNumber').value,
@@ -1552,28 +1555,17 @@ function submitOrder() {
         items: window.cart // Include cart items if applicable
     };
 
-    fetch('https://app-files.onrender.com/api/orders', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify(orderData)
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
+    try {
+        const data = await apiFetch('/api/orders', {
+            method: 'POST',
+            body: JSON.stringify(orderData)
+        });
         console.log('Success:', data);
         alert('Order placed successfully!');
-    })
-    .catch((error) => {
+    } catch (error) {
         console.error('Error:', error);
         alert('Failed to place order. Please try again.');
-    });
+    }
 }
 
 // Close the modal when the user clicks anywhere outside of it
