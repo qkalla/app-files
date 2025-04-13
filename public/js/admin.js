@@ -4,6 +4,7 @@ class AdminPanel {
         this.socket = io('https://app-files.onrender.com');
         this.notificationSound = new Audio('/sounds/notification.mp3'); // Ensure this path is correct
         this.init();
+        this.requestNotificationPermission();
     }
 
     init() {
@@ -149,8 +150,44 @@ class AdminPanel {
         }
     }
 
+    requestNotificationPermission() {
+        if (!("Notification" in window)) {
+            console.log("This browser does not support desktop notifications");
+            return;
+        }
+        Notification.requestPermission().then(permission => {
+            if (permission === "granted") {
+                console.log("Notification permission granted");
+            }
+        });
+    }
+
+    showOrderNotification(order) {
+        if (Notification.permission === "granted") {
+            const notification = new Notification("🛍️ New Order Received!", {
+                body: `Order #${order.orderNumber}\nCustomer: ${order.customerName}\nTotal: ${order.total} AMD\nItems: ${order.items.length}`,
+                icon: "/img/logo.png",
+                badge: "/img/logo.png",
+                vibrate: [200, 100, 200],
+                requireInteraction: true
+            });
+
+            notification.onclick = () => {
+                window.focus();
+                notification.close();
+                const orderElement = document.querySelector(`[data-order-id="${order._id}"]`);
+                if (orderElement) {
+                    orderElement.scrollIntoView({ behavior: 'smooth' });
+                    orderElement.classList.add('highlight');
+                    setTimeout(() => orderElement.classList.remove('highlight'), 2000);
+                }
+            };
+        }
+    }
+
     handleNewOrder(order) {
-        this.notificationSound.play();
+        this.notificationSound.play().catch(error => console.log('Error playing sound:', error));
+        this.showOrderNotification(order);
         this.orders.unshift(order);
         this.displayOrders();
         this.updateDashboardStats();
