@@ -93,11 +93,12 @@ app.post('/api/orders', async (req, res) => {
       html: `
         <h2>Thank you for your order!</h2>
         <p>Your order is being processed.</p>
+        <p><strong>Location:</strong> ${order.address}</p>
         <h3>Order Summary:</h3>
         <ul>
-          ${order.items.map(item => `<li>${item.product} — ${item.qty} x ${item.price} AMD</li>`).join('')}
-        </ul>
-        <p><strong>Total:</strong> ${order.total} AMD</p>
+      ${order.items.map(item => `<li>${item.name} — ${item.quantity} × ${item.price} AMD</li>`).join('')}
+    </ul>
+    <p><strong>Total:</strong> ${order.total} AMD</p>>
       `
     });
 
