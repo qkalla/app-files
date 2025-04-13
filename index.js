@@ -18,6 +18,15 @@
 // Import the fetch function from traffic.js
 import { fetch as apiFetch } from './js/traffic.js';
 
+// Add Socket.IO connection
+const socket = io('https://app-files.onrender.com');
+
+// Listen for new orders
+socket.on('newOrder', function(order) {
+    console.log('New order received:', order);
+    showOrderNotification(order);
+});
+
 (function() {
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
@@ -4469,4 +4478,50 @@ if ('webkitSpeechRecognition' in window) {
     // Start listening
     recognition.start();
     console.log('Voice recognition started');
+}
+
+// Add notification functionality
+function requestNotificationPermission() {
+    if (!("Notification" in window)) {
+        console.log("This browser does not support desktop notifications");
+        return;
+    }
+
+    Notification.requestPermission().then(function(permission) {
+        if (permission === "granted") {
+            console.log("Notification permission granted");
+        }
+    });
+}
+
+function showOrderNotification(order) {
+    if (Notification.permission === "granted") {
+        const notification = new Notification("New Order Received!", {
+            body: `Order #${order.orderNumber}\nCustomer: ${order.customerName}\nTotal: ${order.total} AMD`,
+            icon: "/img/logo.png", // Make sure to add your logo image
+            badge: "/img/logo.png",
+            vibrate: [200, 100, 200]
+        });
+
+        notification.onclick = function() {
+            window.focus();
+            this.close();
+        };
+
+        // Play notification sound
+        playNotificationSound();
+    }
+}
+
+function playNotificationSound() {
+    const audio = new Audio('/sounds/notification.mp3');
+    audio.play().catch(error => console.log('Error playing sound:', error));
+}
+
+// Request notification permission when the page loads
+document.addEventListener('DOMContentLoaded', requestNotificationPermission);
+
+// Example function to submit the order
+async function submitOrder() {
+// ... existing code ...
 }
