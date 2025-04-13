@@ -79,7 +79,7 @@ app.post('/api/orders', async (req, res) => {
     ...req.body,
     orderNumber: orderNumber
   });
-
+  
   try {
     const savedOrder = await order.save();
     io.emit('newOrder', savedOrder);
