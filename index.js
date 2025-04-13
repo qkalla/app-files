@@ -1,1 +1,4480 @@
-'use strict';const _0x54618a=_0x3b99;(function(_0x384a2a,_0xbba1ea){const _0x57b231=_0x3b99,_0x20348f=_0x384a2a();while(!![]){try{const _0x56338e=-parseInt(_0x57b231(0x2b3))/0x1*(-parseInt(_0x57b231(0x195))/0x2)+parseInt(_0x57b231(0x3d8))/0x3*(parseInt(_0x57b231(0x276))/0x4)+parseInt(_0x57b231(0x202))/0x5+-parseInt(_0x57b231(0x41c))/0x6*(parseInt(_0x57b231(0x1ab))/0x7)+parseInt(_0x57b231(0x445))/0x8*(parseInt(_0x57b231(0x37c))/0x9)+parseInt(_0x57b231(0x4ba))/0xa+parseInt(_0x57b231(0x400))/0xb*(-parseInt(_0x57b231(0x266))/0xc);if(_0x56338e===_0xbba1ea)break;else _0x20348f['push'](_0x20348f['shift']());}catch(_0x15add5){_0x20348f['push'](_0x20348f['shift']());}}}(_0x45c1,0xbb77a));(function(){const _0x25f1e4=_0x3b99;var _0x4c80ee=window[_0x25f1e4(0x437)],_0x3c8714=window['bowser'],_0x460d5a=window['screenfull'],_0x3ce786=window[_0x25f1e4(0x4ab)],_0x301c83=[],_0x1022aa=document[_0x25f1e4(0x3e1)](_0x25f1e4(0x29e)),_0x296f18=document[_0x25f1e4(0x3e1)]('#titleBar\x20.sceneName'),_0xd5db24=document['querySelector'](_0x25f1e4(0x2ef)),_0x23b00a=document[_0x25f1e4(0x4cf)](_0x25f1e4(0x373)),_0x3a6938=document[_0x25f1e4(0x3e1)](_0x25f1e4(0x2e9)),_0xf6746b=document[_0x25f1e4(0x3e1)]('#autorotateToggle'),_0x3398d9=document[_0x25f1e4(0x3e1)](_0x25f1e4(0x3c0));if(window['matchMedia']){var _0x14c4cc=function(){const _0x485fd7=_0x25f1e4;_0x36abc8[_0x485fd7(0x3aa)]?(document[_0x485fd7(0x252)][_0x485fd7(0x3e2)][_0x485fd7(0x29a)](_0x485fd7(0x26c)),document[_0x485fd7(0x252)]['classList'][_0x485fd7(0x3ce)]('mobile')):(document[_0x485fd7(0x252)][_0x485fd7(0x3e2)][_0x485fd7(0x29a)](_0x485fd7(0x207)),document[_0x485fd7(0x252)]['classList']['add']('desktop'));},_0x36abc8=matchMedia(_0x25f1e4(0x476));_0x14c4cc(),_0x36abc8[_0x25f1e4(0x2b0)](_0x14c4cc);}else document['body'][_0x25f1e4(0x3e2)][_0x25f1e4(0x3ce)]('desktop');document[_0x25f1e4(0x252)][_0x25f1e4(0x3e2)][_0x25f1e4(0x3ce)](_0x25f1e4(0x3c5)),window[_0x25f1e4(0x1a9)](_0x25f1e4(0x189),function(){const _0x136596=_0x25f1e4;document[_0x136596(0x252)][_0x136596(0x3e2)]['remove'](_0x136596(0x3c5)),document[_0x136596(0x252)][_0x136596(0x3e2)][_0x136596(0x3ce)](_0x136596(0x3e4));});_0x3c8714[_0x25f1e4(0x212)]&&parseFloat(_0x3c8714['version'])<0xb&&document[_0x25f1e4(0x252)][_0x25f1e4(0x3e2)][_0x25f1e4(0x3ce)](_0x25f1e4(0x377));var _0x51d1bb={'controls':{'mouseViewMode':_0x3ce786['settings'][_0x25f1e4(0x232)]}},_0x44fc96=new _0x4c80ee['Viewer'](_0x1022aa,_0x51d1bb),_0x4b205f=_0x3ce786[_0x25f1e4(0x3f8)][_0x25f1e4(0x24c)](function(_0x2f0c21){const _0x322654=_0x25f1e4;var _0x9092d7=_0x322654(0x38e),_0x2473f0=_0x4c80ee[_0x322654(0x1c6)][_0x322654(0x1cf)](_0x9092d7+'/'+_0x2f0c21['id']+_0x322654(0x407),{'cubeMapPreviewUrl':_0x9092d7+'/'+_0x2f0c21['id']+'/preview.jpg'}),_0x4f1cf9=new _0x4c80ee[(_0x322654(0x1e9))](_0x2f0c21['levels']),_0x4aea5b=_0x4c80ee[_0x322654(0x260)]['limit'][_0x322654(0x3ed)](_0x2f0c21[_0x322654(0x39e)],0x64*Math['PI']/0xb4,0x78*Math['PI']/0xb4),_0x282dc3=new _0x4c80ee[(_0x322654(0x260))](_0x2f0c21['initialViewParameters'],_0x4aea5b),_0x54e26c=_0x44fc96['createScene']({'source':_0x2473f0,'geometry':_0x4f1cf9,'view':_0x282dc3,'pinFirstLevel':!![]});return _0x2f0c21['linkHotspots'][_0x322654(0x457)](function(_0x97e4cf){const _0x439a48=_0x322654;var _0x4beb5b=_0x3c50a4(_0x97e4cf);_0x54e26c['hotspotContainer']()[_0x439a48(0x2db)](_0x4beb5b,{'yaw':_0x97e4cf[_0x439a48(0x24a)],'pitch':_0x97e4cf[_0x439a48(0x1f4)]});}),_0x2f0c21[_0x322654(0x2a6)][_0x322654(0x457)](function(_0x3ae951){const _0x8132ef=_0x322654;var _0x343898=_0x5d450f(_0x3ae951);_0x54e26c['hotspotContainer']()[_0x8132ef(0x2db)](_0x343898,{'yaw':_0x3ae951[_0x8132ef(0x24a)],'pitch':_0x3ae951[_0x8132ef(0x1f4)]});}),{'data':_0x2f0c21,'scene':_0x54e26c,'view':_0x282dc3};}),_0x2a45df=_0x4c80ee[_0x25f1e4(0x49c)]({'yawSpeed':0.03,'targetPitch':0x0,'targetFov':Math['PI']/0x2});_0x3ce786[_0x25f1e4(0x3f4)]['autorotateEnabled']&&_0xf6746b[_0x25f1e4(0x3e2)]['add'](_0x25f1e4(0x3db));_0xf6746b[_0x25f1e4(0x1a9)](_0x25f1e4(0x17e),_0x257517);_0x460d5a[_0x25f1e4(0x3db)]&&_0x3ce786['settings'][_0x25f1e4(0x21b)]?(document[_0x25f1e4(0x252)][_0x25f1e4(0x3e2)]['add'](_0x25f1e4(0x4b2)),_0x3398d9[_0x25f1e4(0x1a9)]('click',function(){const _0x180094=_0x25f1e4;_0x460d5a[_0x180094(0x3e3)]();}),_0x460d5a['on'](_0x25f1e4(0x432),function(){const _0x5d2e32=_0x25f1e4;_0x460d5a[_0x5d2e32(0x28a)]?_0x3398d9[_0x5d2e32(0x3e2)][_0x5d2e32(0x3ce)](_0x5d2e32(0x3db)):_0x3398d9[_0x5d2e32(0x3e2)][_0x5d2e32(0x29a)](_0x5d2e32(0x3db));})):document[_0x25f1e4(0x252)][_0x25f1e4(0x3e2)][_0x25f1e4(0x3ce)](_0x25f1e4(0x2ae));_0x3a6938[_0x25f1e4(0x1a9)](_0x25f1e4(0x17e),_0x32896c);!document[_0x25f1e4(0x252)][_0x25f1e4(0x3e2)][_0x25f1e4(0x37e)](_0x25f1e4(0x207))&&_0x2e0794();_0x4b205f[_0x25f1e4(0x457)](function(_0x5d93be){const _0x57b803=_0x25f1e4;var _0x38cde7=document[_0x57b803(0x3e1)]('#sceneList\x20.scene[data-id=\x22'+_0x5d93be[_0x57b803(0x229)]['id']+'\x22]');_0x38cde7[_0x57b803(0x1a9)](_0x57b803(0x17e),function(){const _0x12e0a9=_0x57b803;_0x17ddec(_0x5d93be),document[_0x12e0a9(0x252)]['classList'][_0x12e0a9(0x37e)](_0x12e0a9(0x207))&&_0x769aea();});});var _0x4dd56b=document[_0x25f1e4(0x3e1)](_0x25f1e4(0x4ff)),_0x2587f0=document[_0x25f1e4(0x3e1)](_0x25f1e4(0x2ec)),_0x7c4ebd=document['querySelector'](_0x25f1e4(0x319)),_0x281581=document[_0x25f1e4(0x3e1)](_0x25f1e4(0x4b9)),_0xb7f412=document['querySelector'](_0x25f1e4(0x40b)),_0x2a12e2=document[_0x25f1e4(0x3e1)](_0x25f1e4(0x1f9)),_0x2429b9=0.7,_0x429e65=0x3,_0x19c1db=_0x44fc96[_0x25f1e4(0x495)]();_0x19c1db['registerMethod'](_0x25f1e4(0x3e6),new _0x4c80ee[(_0x25f1e4(0x491))](_0x4dd56b,'y',-_0x2429b9,_0x429e65),!![]),_0x19c1db[_0x25f1e4(0x311)](_0x25f1e4(0x38d),new _0x4c80ee[(_0x25f1e4(0x491))](_0x2587f0,'y',_0x2429b9,_0x429e65),!![]),_0x19c1db['registerMethod']('leftElement',new _0x4c80ee[(_0x25f1e4(0x491))](_0x7c4ebd,'x',-_0x2429b9,_0x429e65),!![]),_0x19c1db[_0x25f1e4(0x311)](_0x25f1e4(0x4f6),new _0x4c80ee[(_0x25f1e4(0x491))](_0x281581,'x',_0x2429b9,_0x429e65),!![]),_0x19c1db[_0x25f1e4(0x311)](_0x25f1e4(0x289),new _0x4c80ee['ElementPressControlMethod'](_0xb7f412,_0x25f1e4(0x2f1),-_0x2429b9,_0x429e65),!![]),_0x19c1db['registerMethod'](_0x25f1e4(0x415),new _0x4c80ee['ElementPressControlMethod'](_0x2a12e2,'zoom',_0x2429b9,_0x429e65),!![]);function _0x175f21(_0x4b1563){const _0x1357d8=_0x25f1e4;return _0x4b1563[_0x1357d8(0x361)]('&',_0x1357d8(0x3c8))[_0x1357d8(0x361)]('<',_0x1357d8(0x2e8))['replace']('>',_0x1357d8(0x201));}function _0x17ddec(_0x56880c){const _0x21c6d8=_0x25f1e4;_0x4f416b(),_0x56880c[_0x21c6d8(0x3ef)][_0x21c6d8(0x374)](_0x56880c[_0x21c6d8(0x229)][_0x21c6d8(0x385)]),_0x56880c[_0x21c6d8(0x285)]['switchTo'](),_0x53dbd4(_0x56880c);if(_0x56880c[_0x21c6d8(0x229)]['id']==='0-entrancee')try{window[_0x21c6d8(0x34e)]&&window[_0x21c6d8(0x34e)][_0x21c6d8(0x29a)](),window[_0x21c6d8(0x34e)]=createSafeTest3D(_0x56880c[_0x21c6d8(0x285)]);}catch(_0x275b4d){console[_0x21c6d8(0x321)]('3D\x20features\x20not\x20available');}else window[_0x21c6d8(0x34e)]&&(window[_0x21c6d8(0x34e)][_0x21c6d8(0x29a)](),window[_0x21c6d8(0x34e)]=null);}window['switchScene']=function(_0x5e1ddb){const _0x1f528c=_0x25f1e4;typeof _0x5e1ddb===_0x1f528c(0x2ff)&&_0x5e1ddb>=0x0&&_0x5e1ddb<_0x4b205f['length']&&_0x17ddec(_0x4b205f[_0x5e1ddb]);};function _0x53dbd4(_0x5aa6be){const _0x3005ce=_0x25f1e4;_0x296f18[_0x3005ce(0x421)]=_0x175f21(_0x5aa6be[_0x3005ce(0x229)][_0x3005ce(0x403)]);}function _0x5762d5(_0x123e96){const _0x533890=_0x25f1e4;for(var _0x543d52=0x0;_0x543d52<_0x23b00a[_0x533890(0x4a6)];_0x543d52++){var _0x1b40ec=_0x23b00a[_0x543d52];_0x1b40ec[_0x533890(0x3f5)](_0x533890(0x2a4))===_0x123e96['data']['id']?_0x1b40ec['classList']['add'](_0x533890(0x33a)):_0x1b40ec[_0x533890(0x3e2)][_0x533890(0x29a)](_0x533890(0x33a));}}function _0x2e0794(){const _0xca3ffb=_0x25f1e4;_0xd5db24[_0xca3ffb(0x3e2)]['add'](_0xca3ffb(0x3db)),_0x3a6938[_0xca3ffb(0x3e2)][_0xca3ffb(0x3ce)]('enabled');}function _0x769aea(){const _0x376091=_0x25f1e4;_0xd5db24['classList'][_0x376091(0x29a)]('enabled'),_0x3a6938[_0x376091(0x3e2)][_0x376091(0x29a)](_0x376091(0x3db));}function _0x32896c(){const _0x41fd4a=_0x25f1e4;_0xd5db24[_0x41fd4a(0x3e2)]['toggle'](_0x41fd4a(0x3db)),_0x3a6938[_0x41fd4a(0x3e2)][_0x41fd4a(0x3e3)](_0x41fd4a(0x3db));}function _0x454305(){const _0x3e301c=_0x25f1e4;if(!_0xf6746b[_0x3e301c(0x3e2)][_0x3e301c(0x37e)](_0x3e301c(0x3db)))return;_0x44fc96[_0x3e301c(0x2a3)](_0x2a45df),_0x44fc96[_0x3e301c(0x45c)](0xbb8,_0x2a45df);}function _0x4f416b(){const _0x526312=_0x25f1e4;_0x44fc96[_0x526312(0x230)](),_0x44fc96[_0x526312(0x45c)](Infinity);}function _0x257517(){const _0x71bf8b=_0x25f1e4;_0xf6746b[_0x71bf8b(0x3e2)][_0x71bf8b(0x37e)]('enabled')?(_0xf6746b[_0x71bf8b(0x3e2)][_0x71bf8b(0x29a)]('enabled'),_0x4f416b()):(_0xf6746b[_0x71bf8b(0x3e2)]['add'](_0x71bf8b(0x3db)),_0x454305());}function _0x3c50a4(_0x474a98){const _0x8ab24f=_0x25f1e4;var _0x595469=document[_0x8ab24f(0x3d3)]('div');_0x595469[_0x8ab24f(0x3e2)][_0x8ab24f(0x3ce)](_0x8ab24f(0x338)),_0x595469[_0x8ab24f(0x3e2)][_0x8ab24f(0x3ce)](_0x8ab24f(0x3cb));var _0x442306=document[_0x8ab24f(0x3d3)](_0x8ab24f(0x4f4));_0x442306[_0x8ab24f(0x4c5)]=_0x8ab24f(0x22b),_0x442306[_0x8ab24f(0x3e2)][_0x8ab24f(0x3ce)]('link-hotspot-icon');var _0x5f2e29=[_0x8ab24f(0x416),_0x8ab24f(0x496),_0x8ab24f(0x352)];for(var _0x350139=0x0;_0x350139<_0x5f2e29[_0x8ab24f(0x4a6)];_0x350139++){var _0x14036f=_0x5f2e29[_0x350139];_0x442306[_0x8ab24f(0x359)][_0x14036f]=_0x8ab24f(0x48a)+_0x474a98[_0x8ab24f(0x1b5)]+_0x8ab24f(0x329);}_0x595469[_0x8ab24f(0x1a9)](_0x8ab24f(0x17e),function(){const _0x5d99e7=_0x8ab24f;_0x17ddec(_0x1183a3(_0x474a98[_0x5d99e7(0x304)]));}),_0x471869(_0x595469);var _0x48f834=document['createElement'](_0x8ab24f(0x2b4));return _0x48f834[_0x8ab24f(0x3e2)]['add']('hotspot-tooltip'),_0x48f834[_0x8ab24f(0x3e2)]['add']('link-hotspot-tooltip'),_0x48f834[_0x8ab24f(0x421)]=_0x5f0b44(_0x474a98['target'])[_0x8ab24f(0x403)],_0x595469[_0x8ab24f(0x30e)](_0x442306),_0x595469[_0x8ab24f(0x30e)](_0x48f834),_0x595469;}function _0x5d450f(_0x50b7a8){const _0x37d278=_0x25f1e4;var _0x4ce62b=document[_0x37d278(0x3d3)](_0x37d278(0x2b4));_0x4ce62b[_0x37d278(0x3e2)]['add'](_0x37d278(0x338)),_0x4ce62b['classList'][_0x37d278(0x3ce)](_0x37d278(0x460));var _0x3770eb=document[_0x37d278(0x3d3)](_0x37d278(0x2b4));_0x3770eb[_0x37d278(0x3e2)][_0x37d278(0x3ce)](_0x37d278(0x4df));var _0xf2869e=document[_0x37d278(0x3d3)](_0x37d278(0x2b4));_0xf2869e['classList'][_0x37d278(0x3ce)]('info-hotspot-icon-wrapper');var _0x3f6c23=document[_0x37d278(0x3d3)](_0x37d278(0x4f4));_0x3f6c23['src']=_0x37d278(0x4db),_0x3f6c23[_0x37d278(0x3e2)][_0x37d278(0x3ce)](_0x37d278(0x1fc)),_0xf2869e[_0x37d278(0x30e)](_0x3f6c23);var _0xa320ec=document[_0x37d278(0x3d3)](_0x37d278(0x2b4));_0xa320ec[_0x37d278(0x3e2)][_0x37d278(0x3ce)](_0x37d278(0x1ff));var _0x1f6467=document['createElement'](_0x37d278(0x2b4));_0x1f6467[_0x37d278(0x3e2)][_0x37d278(0x3ce)](_0x37d278(0x25f)),_0x1f6467[_0x37d278(0x421)]=_0x50b7a8[_0x37d278(0x3c3)],_0xa320ec[_0x37d278(0x30e)](_0x1f6467);var _0x1bd1c3=document['createElement'](_0x37d278(0x2b4));_0x1bd1c3[_0x37d278(0x3e2)][_0x37d278(0x3ce)](_0x37d278(0x1f2));var _0x4df9dc=document[_0x37d278(0x3d3)](_0x37d278(0x4f4));_0x4df9dc[_0x37d278(0x4c5)]=_0x37d278(0x32e),_0x4df9dc[_0x37d278(0x3e2)]['add'](_0x37d278(0x425)),_0x1bd1c3['appendChild'](_0x4df9dc),_0x3770eb[_0x37d278(0x30e)](_0xf2869e),_0x3770eb[_0x37d278(0x30e)](_0xa320ec),_0x3770eb[_0x37d278(0x30e)](_0x1bd1c3);var _0x36473d=document[_0x37d278(0x3d3)](_0x37d278(0x2b4));_0x36473d[_0x37d278(0x3e2)][_0x37d278(0x3ce)](_0x37d278(0x39a));var _0x1d8beb=_0x50b7a8['text']['match'](/(\d+)\s*amd/i);if(_0x1d8beb){var _0x2ee9e2=parseInt(_0x1d8beb[0x1]),_0x50cd5c=_0x50b7a8[_0x37d278(0x38a)][_0x37d278(0x2fd)]()[_0x37d278(0x255)]('kg')||_0x50b7a8[_0x37d278(0x38a)][_0x37d278(0x2fd)]()[_0x37d278(0x255)](_0x37d278(0x4bc));if(_0x50cd5c){_0x36473d[_0x37d278(0x421)]=_0x37d278(0x4e7)+_0x50b7a8['text']['replace'](/(\d+)\s*amd/i,'')+_0x37d278(0x3f3)+_0x2ee9e2+_0x37d278(0x16d);const _0x281def=_0x36473d[_0x37d278(0x3e1)]('.weight-amount'),_0x59f11f=_0x36473d[_0x37d278(0x3e1)](_0x37d278(0x4fa)),_0x48ab4c=_0x36473d[_0x37d278(0x3e1)]('.add-to-basket-btn');_0x281def[_0x37d278(0x1a9)](_0x37d278(0x186),function(){const _0x526fb8=_0x37d278,_0x1c0d12=parseFloat(this[_0x526fb8(0x405)]);_0x48ab4c['disabled']=!_0x1c0d12||_0x1c0d12<=0x0;if(_0x1c0d12&&_0x1c0d12>0x0){const _0x3be11d=_0x59f11f[_0x526fb8(0x405)],_0x3aa360=_0x3be11d==='g'?_0x1c0d12/0x3e8:_0x1c0d12,_0x3d10a5=Math[_0x526fb8(0x2f2)](_0x2ee9e2*_0x3aa360);_0x48ab4c[_0x526fb8(0x354)]=()=>window[_0x526fb8(0x1a8)]({'name':_0x50b7a8[_0x526fb8(0x3c3)],'price':_0x3d10a5,'weight':_0x3aa360,'unit':'kg','pricePerKg':_0x2ee9e2});}});}else _0x36473d[_0x37d278(0x421)]=_0x37d278(0x4e7)+_0x50b7a8[_0x37d278(0x38a)][_0x37d278(0x361)](/(\d+)\s*amd/i,'')+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-price\x22>'+_0x2ee9e2+_0x37d278(0x3f7)+_0x50b7a8[_0x37d278(0x3c3)]+_0x37d278(0x431)+_0x2ee9e2+_0x37d278(0x27d);const _0x7a8d34=_0x36473d[_0x37d278(0x3e1)](_0x37d278(0x2f7));_0x7a8d34&&_0x7a8d34['addEventListener'](_0x37d278(0x17e),function(){const _0x4e5368=_0x37d278;!holographicDisplay&&(holographicDisplay=new HolographicProductDisplay()),holographicDisplay[_0x4e5368(0x484)]({'name':_0x50b7a8[_0x4e5368(0x3c3)],'price':_0x2ee9e2,'description':_0x50b7a8[_0x4e5368(0x38a)][_0x4e5368(0x361)](/(\d+)\s*amd/i,'')});});}else _0x36473d[_0x37d278(0x421)]=_0x50b7a8['text'];_0x4ce62b['appendChild'](_0x3770eb),_0x4ce62b[_0x37d278(0x30e)](_0x36473d);var _0x5cf828=document['createElement'](_0x37d278(0x2b4));_0x5cf828[_0x37d278(0x421)]=_0x4ce62b[_0x37d278(0x421)],_0x5cf828[_0x37d278(0x3e2)][_0x37d278(0x3ce)](_0x37d278(0x493)),document['body'][_0x37d278(0x30e)](_0x5cf828);var _0x3f080e=function(){const _0x198303=_0x37d278;_0x4ce62b[_0x198303(0x3e2)][_0x198303(0x3e3)](_0x198303(0x1df)),_0x5cf828[_0x198303(0x3e2)][_0x198303(0x3e3)]('visible');};_0x3770eb['addEventListener'](_0x37d278(0x17e),_0x3f080e),_0x5cf828[_0x37d278(0x3e1)](_0x37d278(0x28d))[_0x37d278(0x1a9)](_0x37d278(0x17e),_0x3f080e);if(_0x1d8beb){const _0x26211f=_0x5cf828[_0x37d278(0x3e1)](_0x37d278(0x181));_0x26211f&&_0x26211f['addEventListener'](_0x37d278(0x17e),function(){const _0x31c3f3=_0x37d278;window[_0x31c3f3(0x1a8)]({'name':_0x50b7a8['title'],'price':_0x2ee9e2}),this[_0x31c3f3(0x421)]=_0x31c3f3(0x263),this[_0x31c3f3(0x359)]['background']=_0x31c3f3(0x344),setTimeout(()=>{const _0x401d01=_0x31c3f3;this[_0x401d01(0x421)]='<i\x20class=\x22fas\x20fa-cart-plus\x22></i>\x20Add\x20to\x20Cart',this[_0x401d01(0x359)]['background']='';},0x5dc);});}const _0x44fafb=document['createElement'](_0x37d278(0x45b));return _0x44fafb[_0x37d278(0x21a)]=_0x37d278(0x35d),_0x44fafb['innerHTML']=_0x37d278(0x2b5),_0x44fafb[_0x37d278(0x354)]=()=>{const _0x19a1a3=_0x37d278,_0x21b9cc={'name':_0x50b7a8[_0x19a1a3(0x3c3)],'price':_0x50b7a8['text'][_0x19a1a3(0x4d0)](/\d+/)?.[0x0]||'0','category':getProductCategory(_0x50b7a8[_0x19a1a3(0x3c3)])},_0x29c17d=futuristicEffects[_0x19a1a3(0x174)](_0x21b9cc);futuristicEffects[_0x19a1a3(0x1fb)](_0x50b7a8['id'],_0x29c17d),Swal[_0x19a1a3(0x203)]({'title':'3D\x20View\x20Activated','text':'Product\x20displayed\x20in\x20holographic\x20view','icon':_0x19a1a3(0x367),'timer':0x7d0,'showConfirmButton':![]});},_0x5cf828[_0x37d278(0x30e)](_0x44fafb),_0x4ce62b;}function _0x471869(_0x5344e5,_0x5397e){const _0x777af4=_0x25f1e4;var _0x5397e=[_0x777af4(0x189),_0x777af4(0x4ea),_0x777af4(0x3a5),_0x777af4(0x261),_0x777af4(0x348),_0x777af4(0x21f)];for(var _0x211a44=0x0;_0x211a44<_0x5397e[_0x777af4(0x4a6)];_0x211a44++){_0x5344e5[_0x777af4(0x1a9)](_0x5397e[_0x211a44],function(_0x4b82de){const _0x4c35df=_0x777af4;_0x4b82de[_0x4c35df(0x22d)]();});}}function _0x1183a3(_0x4d35bb){const _0x578fcb=_0x25f1e4;for(var _0x17e874=0x0;_0x17e874<_0x4b205f[_0x578fcb(0x4a6)];_0x17e874++){if(_0x4b205f[_0x17e874]['data']['id']===_0x4d35bb)return _0x4b205f[_0x17e874];}return null;}function _0x5f0b44(_0x3b4df6){const _0x433514=_0x25f1e4;for(var _0x52dd64=0x0;_0x52dd64<_0x3ce786[_0x433514(0x3f8)]['length'];_0x52dd64++){if(_0x3ce786[_0x433514(0x3f8)][_0x52dd64]['id']===_0x3b4df6)return _0x3ce786[_0x433514(0x3f8)][_0x52dd64];}return null;}function _0x3f8e04(_0x48b4a0){const _0x267664=_0x25f1e4;var _0xddff63=_0x301c83[_0x267664(0x3cc)](_0x3b139c=>_0x3b139c['name']===_0x48b4a0[_0x267664(0x403)]);_0xddff63?_0xddff63[_0x267664(0x246)]++:_0x301c83['push']({..._0x48b4a0,'quantity':0x1}),_0x9c1f90(),showToast(_0x48b4a0[_0x267664(0x403)]+_0x267664(0x38c),'success');}function _0x9c1f90(){const _0x59b2e5=_0x25f1e4;var _0xf65194=document['getElementById'](_0x59b2e5(0x27e)),_0x45ff42=document[_0x59b2e5(0x18f)](_0x59b2e5(0x180)),_0x23c1e6=document['getElementById']('cartCount');const _0x56f87f=_0x301c83[_0x59b2e5(0x305)]((_0x1f0df9,_0xb93ebc)=>_0x1f0df9+_0xb93ebc['quantity'],0x0);_0x23c1e6['textContent']=_0x56f87f+'\x20'+(_0x56f87f===0x1?_0x59b2e5(0x462):_0x59b2e5(0x3d1)),_0xf65194[_0x59b2e5(0x421)]=_0x301c83[_0x59b2e5(0x24c)]((_0x40d55b,_0x761dc3)=>{const _0x12ebc4=_0x59b2e5,_0x35e143=_0x761dc3%0x2===0x0?0x2:-0x2,_0x4532b0=_0x761dc3*0x5;return'\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22cart-item\x22\x20style=\x22transform:\x20rotateX('+_0x35e143+_0x12ebc4(0x2c1)+_0x4532b0+_0x12ebc4(0x3d5)+_0x40d55b[_0x12ebc4(0x403)]+_0x12ebc4(0x1ce)+_0x40d55b[_0x12ebc4(0x396)]+_0x12ebc4(0x288)+_0x40d55b[_0x12ebc4(0x246)]+_0x12ebc4(0x4dc)+_0x40d55b[_0x12ebc4(0x403)]+_0x12ebc4(0x1bd)+_0x40d55b[_0x12ebc4(0x403)]+_0x12ebc4(0x3f9);})[_0x59b2e5(0x23a)]('');var _0x26b665=_0x301c83[_0x59b2e5(0x305)]((_0x169c88,_0x222a98)=>_0x169c88+_0x222a98[_0x59b2e5(0x396)]*_0x222a98[_0x59b2e5(0x246)],0x0);_0x45ff42[_0x59b2e5(0x482)]=_0x59b2e5(0x35f)+_0x26b665+_0x59b2e5(0x236);const _0x17a580=document['getElementById']('checkoutBtn');_0x17a580&&(_0x17a580[_0x59b2e5(0x44e)]=_0x301c83[_0x59b2e5(0x4a6)]===0x0);}function _0x23db3f(_0x5dc1df){const _0x3391b2=_0x25f1e4,_0x1d6376=_0x301c83[_0x3391b2(0x3cc)](_0x48e20b=>_0x48e20b[_0x3391b2(0x403)]===_0x5dc1df);if(!_0x1d6376)return;const _0x49e08b=document[_0x3391b2(0x18f)](_0x3391b2(0x27e)),_0x4c09d3=_0x49e08b[_0x3391b2(0x4cf)](_0x3391b2(0x323));_0x4c09d3[_0x3391b2(0x457)](_0x229eb9=>{const _0x552da4=_0x3391b2;_0x229eb9[_0x552da4(0x3e1)](_0x552da4(0x4dd))[_0x552da4(0x482)]===_0x5dc1df&&_0x229eb9[_0x552da4(0x3e2)]['add'](_0x552da4(0x18e));}),setTimeout(()=>{const _0x420078=_0x3391b2;_0x301c83=_0x301c83[_0x420078(0x1e5)](_0x108b15=>_0x108b15[_0x420078(0x403)]!==_0x5dc1df),_0x9c1f90(),showToast(_0x5dc1df+'\x20removed\x20from\x20cart','info');},0x12c);}_0x17ddec(_0x4b205f[0x0]);}()),window[_0x54618a(0x294)]=[],window[_0x54618a(0x1a8)]=function(_0x446f9a){const _0x583517=_0x54618a,_0x36d643=window[_0x583517(0x294)]['find'](_0x2076b9=>_0x2076b9[_0x583517(0x403)]===_0x446f9a[_0x583517(0x403)]);_0x36d643?_0x36d643[_0x583517(0x246)]++:window[_0x583517(0x294)][_0x583517(0x408)]({..._0x446f9a,'quantity':0x1}),showToast(_0x446f9a[_0x583517(0x403)]+_0x583517(0x38c),'success'),updateCartDisplay();},window[_0x54618a(0x3ff)]=function(){const _0xf30a5e=_0x54618a,_0x53859a=document['getElementById'](_0xf30a5e(0x27e)),_0x1e52f9=document[_0xf30a5e(0x18f)](_0xf30a5e(0x180)),_0x4b29b5=document['getElementById']('cartCount');_0x53859a[_0xf30a5e(0x421)]=window[_0xf30a5e(0x294)]['map'](_0x3e3248=>_0xf30a5e(0x1db)+_0x3e3248[_0xf30a5e(0x403)]+_0xf30a5e(0x2a5)+_0x3e3248['price']+'\x20AMD\x20×\x20'+_0x3e3248[_0xf30a5e(0x246)]+_0xf30a5e(0x2c0)+_0x3e3248[_0xf30a5e(0x403)]+'\x27)\x22>×</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20')[_0xf30a5e(0x23a)]('');const _0xb30a47=window['cart'][_0xf30a5e(0x305)]((_0x5a43f7,_0x1add45)=>_0x5a43f7+_0x1add45[_0xf30a5e(0x396)]*_0x1add45[_0xf30a5e(0x246)],0x0);_0x1e52f9['innerHTML']=_0xf30a5e(0x1c1)+_0xb30a47+_0xf30a5e(0x1b2),_0x4b29b5[_0xf30a5e(0x482)]=window[_0xf30a5e(0x294)][_0xf30a5e(0x4a6)]+'\x20items';},window[_0x54618a(0x40c)]=function(_0x77f4a4){const _0x53f967=_0x54618a;window['cart']=window[_0x53f967(0x294)]['filter'](_0x25fdd2=>_0x25fdd2[_0x53f967(0x403)]!==_0x77f4a4),updateCartDisplay();},window[_0x54618a(0x28b)]=function(){const _0x56f69c=_0x54618a,_0x1a8d19=document[_0x56f69c(0x18f)]('shoppingCart');_0x1a8d19['style']['transform']=_0x56f69c(0x2c5),setTimeout(()=>{const _0x3efdfc=_0x56f69c;_0x1a8d19[_0x3efdfc(0x359)]['transform']='scale(1)';},0xc8);},window[_0x54618a(0x205)]=function(){const _0x4c8c10=_0x54618a,_0x21edc4=document[_0x4c8c10(0x18f)](_0x4c8c10(0x49e));_0x21edc4['classList'][_0x4c8c10(0x3ce)]('active');},window[_0x54618a(0x332)]=function(){const _0x4fd729=_0x54618a,_0x50a6e9=document[_0x4fd729(0x18f)]('checkoutModal');_0x50a6e9[_0x4fd729(0x3e2)]['remove']('active');},window[_0x54618a(0x423)]=function(){const _0x4a979e=_0x54618a;console[_0x4a979e(0x1a6)](_0x4a979e(0x1e8));const _0x522b05=document['getElementById'](_0x4a979e(0x3c4)),_0x1d75f1=document[_0x4a979e(0x18f)](_0x4a979e(0x39f)),_0x530823=document[_0x4a979e(0x18f)](_0x4a979e(0x357));console[_0x4a979e(0x321)]('Cart\x20Elements\x20(onload):',{'shoppingCart':_0x522b05,'minimizeBtn':_0x1d75f1,'maximizeBtn':_0x530823});if(_0x522b05&&_0x1d75f1&&_0x530823){console[_0x4a979e(0x321)]('Cart\x20elements\x20found.\x20Setting\x20up\x20listeners\x20(onload)...'),_0x1d75f1[_0x4a979e(0x1a9)](_0x4a979e(0x17e),_0x629690=>{const _0xa9b2e8=_0x4a979e;console[_0xa9b2e8(0x321)](_0xa9b2e8(0x223)),_0x629690[_0xa9b2e8(0x22d)](),_0x522b05[_0xa9b2e8(0x3e2)][_0xa9b2e8(0x3ce)](_0xa9b2e8(0x2b8));}),_0x530823['addEventListener'](_0x4a979e(0x17e),_0x6ce12e=>{const _0x15b9bd=_0x4a979e;console[_0x15b9bd(0x321)](_0x15b9bd(0x40a)),_0x6ce12e[_0x15b9bd(0x22d)](),_0x522b05[_0x15b9bd(0x3e2)][_0x15b9bd(0x29a)]('minimized');});const _0x1b9972=_0x522b05[_0x4a979e(0x3e1)]('.cart-header');console[_0x4a979e(0x321)]('Attempting\x20to\x20find\x20cart\x20header\x20element:',_0x1b9972),_0x1b9972?(console[_0x4a979e(0x321)](_0x4a979e(0x4aa)),_0x1b9972['addEventListener'](_0x4a979e(0x17e),_0x5beed2=>{const _0x271c4a=_0x4a979e;console[_0x271c4a(0x321)]('HEADER\x20CLICKED!\x20Target:',_0x5beed2[_0x271c4a(0x304)]);if(_0x5beed2[_0x271c4a(0x304)]['closest'](_0x271c4a(0x2f6))){console['log'](_0x271c4a(0x3fa));return;}_0x522b05['classList']['contains'](_0x271c4a(0x2b8))?(console[_0x271c4a(0x321)](_0x271c4a(0x499)),_0x522b05[_0x271c4a(0x3e2)][_0x271c4a(0x29a)](_0x271c4a(0x2b8))):console[_0x271c4a(0x321)](_0x271c4a(0x3a4));})):console[_0x4a979e(0x1a6)](_0x4a979e(0x171));}else console[_0x4a979e(0x1a6)](_0x4a979e(0x269));};let currentMap=null,selectedLocation=null,searchControl=null;function showMapModal(){const _0xf03a92=_0x54618a,_0x1edb6b=document[_0xf03a92(0x18f)]('mapModal'),_0x13bb76=document[_0xf03a92(0x18f)](_0xf03a92(0x24c));_0x1edb6b[_0xf03a92(0x3e2)]['add'](_0xf03a92(0x3c1)),setTimeout(()=>{!currentMap?initMap():currentMap['invalidateSize']();},0x64);}function initMap(){const _0x5f0bb1=_0x54618a;currentMap&&currentMap[_0x5f0bb1(0x29a)]();const _0x54fcb3=document['getElementById'](_0x5f0bb1(0x24c));_0x54fcb3[_0x5f0bb1(0x421)]='';try{currentMap=L[_0x5f0bb1(0x24c)](_0x5f0bb1(0x24c))[_0x5f0bb1(0x1e6)]([40.1772,44.5126],0xd),L[_0x5f0bb1(0x35b)](_0x5f0bb1(0x200),{'maxZoom':0x13})[_0x5f0bb1(0x39b)](currentMap),currentMap[_0x5f0bb1(0x199)]({'setView':!![],'maxZoom':0x10});function _0x2e80ac(_0x7a50ac){const _0x480df3=_0x5f0bb1,_0x160e11=_0x7a50ac['accuracy']/0x2;L['marker'](_0x7a50ac[_0x480df3(0x334)])[_0x480df3(0x39b)](currentMap)['bindPopup'](_0x480df3(0x43a)+_0x160e11+_0x480df3(0x434))['openPopup'](),L['circle'](_0x7a50ac['latlng'],_0x160e11)[_0x480df3(0x39b)](currentMap);}function _0x28d077(_0x366777){const _0x2d4462=_0x5f0bb1;console[_0x2d4462(0x1a6)](_0x2d4462(0x3cf),_0x366777[_0x2d4462(0x310)]);}currentMap['on'](_0x5f0bb1(0x21d),_0x2e80ac),currentMap['on'](_0x5f0bb1(0x486),_0x28d077);let _0x15547d;currentMap['on']('click',function(_0x1559ff){const _0x10d568=_0x5f0bb1,{lat:_0x2fb187,lng:_0x42eff1}=_0x1559ff[_0x10d568(0x334)];_0x15547d?_0x15547d['setLatLng'](_0x1559ff['latlng']):_0x15547d=L[_0x10d568(0x1eb)]([_0x2fb187,_0x42eff1])[_0x10d568(0x39b)](currentMap),fetch(_0x10d568(0x3ee)+_0x2fb187+'&lon='+_0x42eff1)['then'](_0xc9dd9a=>_0xc9dd9a[_0x10d568(0x32a)]())[_0x10d568(0x333)](_0x58f5f8=>{const _0x232ff7=_0x10d568,_0x3e9ddb=_0x58f5f8[_0x232ff7(0x1d0)],_0x443d51=document[_0x232ff7(0x18f)](_0x232ff7(0x3b0));_0x443d51&&(_0x443d51[_0x232ff7(0x405)]=_0x3e9ddb),selectedLocation={'lat':_0x2fb187,'lng':_0x42eff1,'address':_0x3e9ddb};})[_0x10d568(0x2fe)](_0x1198d4=>console[_0x10d568(0x1a6)](_0x10d568(0x2d3),_0x1198d4));});}catch(_0x49b9ab){console[_0x5f0bb1(0x1a6)](_0x5f0bb1(0x1a2),_0x49b9ab),handleMapError();}}function hideMapModal(){const _0x49d90a=_0x54618a,_0x20eb73=document['getElementById'](_0x49d90a(0x428));_0x20eb73[_0x49d90a(0x3e2)][_0x49d90a(0x29a)](_0x49d90a(0x3c1)),currentMap&&(currentMap['remove'](),currentMap=null);}function handleMapError(){const _0x10f7bf=_0x54618a,_0x10d2ca=document[_0x10f7bf(0x18f)](_0x10f7bf(0x24c));_0x10d2ca[_0x10f7bf(0x421)]=_0x10f7bf(0x417);}function retryMapLoad(){const _0x575076=_0x54618a,_0x423e06=document[_0x575076(0x18f)](_0x575076(0x24c));_0x423e06[_0x575076(0x421)]='',currentMap=null,showMapModal();}document['addEventListener'](_0x54618a(0x48d),function(){const _0x242426=_0x54618a;console[_0x242426(0x321)](_0x242426(0x2bb));const _0x4027d8=document[_0x242426(0x3e1)](_0x242426(0x404));_0x4027d8&&(_0x4027d8[_0x242426(0x1a9)](_0x242426(0x17e),hideMapModal),console['log'](_0x242426(0x2dc)));const _0x163281=document[_0x242426(0x3e1)]('#mapModal\x20.confirm-location-btn');_0x163281&&(_0x163281[_0x242426(0x1a9)](_0x242426(0x17e),function(){const _0x4f8e13=_0x242426;console[_0x4f8e13(0x321)](_0x4f8e13(0x46d));if(selectedLocation&&selectedLocation[_0x4f8e13(0x1a5)]){const _0x130b22=document[_0x4f8e13(0x18f)](_0x4f8e13(0x3b0));_0x130b22?_0x130b22[_0x4f8e13(0x405)]=selectedLocation[_0x4f8e13(0x1a5)]:console[_0x4f8e13(0x1a6)]('[DEBUG]\x20selectedAddress\x20input\x20not\x20found\x20when\x20confirming.'),hideMapModal();}else console[_0x4f8e13(0x2b6)](_0x4f8e13(0x27c)),typeof showToast===_0x4f8e13(0x47f)?showToast(_0x4f8e13(0x443),_0x4f8e13(0x297)):alert(_0x4f8e13(0x3df));}),console[_0x242426(0x321)](_0x242426(0x1c5)));console[_0x242426(0x321)](_0x242426(0x41b));const _0x16e5a4=document[_0x242426(0x18f)](_0x242426(0x49e));_0x16e5a4?(_0x16e5a4[_0x242426(0x1a9)](_0x242426(0x17e),function(_0x5ee39c){const _0x4e59ba=_0x242426;if(_0x5ee39c['target']['matches']('.pick-location-btn')||_0x5ee39c[_0x4e59ba(0x304)][_0x4e59ba(0x45e)]('.pick-location-btn'))console[_0x4e59ba(0x321)](_0x4e59ba(0x3b9),_0x5ee39c[_0x4e59ba(0x304)]),_0x5ee39c[_0x4e59ba(0x1dd)](),showMapModal();else _0x5ee39c[_0x4e59ba(0x304)]['matches'](_0x4e59ba(0x447))&&(console[_0x4e59ba(0x321)]('[DEBUG]\x20***\x20Delegated\x20Click:\x20Selected\x20Address\x20Input\x20Clicked!\x20***',_0x5ee39c[_0x4e59ba(0x304)]),showMapModal());}),console[_0x242426(0x321)]('[DEBUG]\x20Delegated\x20click\x20listener\x20added\x20to\x20#checkoutModal.')):console[_0x242426(0x1a6)](_0x242426(0x3dd));const _0x213949=document[_0x242426(0x18f)](_0x242426(0x21c));if(_0x213949){console[_0x242426(0x321)]('Order\x20Form\x20found,\x20setting\x20up\x20submit\x20listener...');const _0x6e31d7=_0x213949[_0x242426(0x47a)](!![]);_0x213949[_0x242426(0x2ad)]['replaceChild'](_0x6e31d7,_0x213949),_0x6e31d7[_0x242426(0x1a9)]('submit',function(_0x4a3903){const _0x1f2056=_0x242426;_0x4a3903[_0x1f2056(0x1dd)](),console[_0x1f2056(0x321)](_0x1f2056(0x368));const _0x219466=document[_0x1f2056(0x18f)]('fullName')?.[_0x1f2056(0x405)][_0x1f2056(0x355)]();console['log'](_0x1f2056(0x29b),_0x219466);if(!_0x219466){alert(_0x1f2056(0x31b));return;}function _0x400bfe(){const _0x54bfec=_0x1f2056,_0x4c452a=navigator[_0x54bfec(0x2f3)],_0x45cc2f={'device':_0x54bfec(0x1c4),'os':_0x54bfec(0x1c4),'browser':'unknown','userAgent':_0x4c452a,'screenSize':window[_0x54bfec(0x318)][_0x54bfec(0x2bd)]+'x'+window[_0x54bfec(0x318)]['height']};if(/iPad|Tablet|PlayBook/i[_0x54bfec(0x2e3)](_0x4c452a))_0x45cc2f['device']=_0x54bfec(0x456);else/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle/i['test'](_0x4c452a)?_0x45cc2f[_0x54bfec(0x209)]=_0x54bfec(0x207):_0x45cc2f['device']='desktop';if(/Windows/i[_0x54bfec(0x2e3)](_0x4c452a))_0x45cc2f['os']='Windows';else{if(/iPhone|iPad|iPod/[_0x54bfec(0x2e3)](_0x4c452a))_0x45cc2f['os']='iOS';else{if(/Android/['test'](_0x4c452a))_0x45cc2f['os']=_0x54bfec(0x2e5);else{if(/Mac/i['test'](_0x4c452a))_0x45cc2f['os']=_0x54bfec(0x25a);else{if(/Linux/i[_0x54bfec(0x2e3)](_0x4c452a))_0x45cc2f['os']='Linux';}}}}if(/Chrome/i['test'](_0x4c452a))_0x45cc2f['browser']=_0x54bfec(0x1d4);else{if(/Firefox/i[_0x54bfec(0x2e3)](_0x4c452a))_0x45cc2f[_0x54bfec(0x371)]=_0x54bfec(0x3a0);else{if(/Safari/i[_0x54bfec(0x2e3)](_0x4c452a))_0x45cc2f[_0x54bfec(0x371)]=_0x54bfec(0x442);else{if(/Edge/i['test'](_0x4c452a))_0x45cc2f[_0x54bfec(0x371)]='Edge';}}}return _0x45cc2f;}const _0x2309c5=_0x400bfe(),_0x493a44={'orderNumber':generateOrderNumber(),'customerName':_0x219466,'phone':document[_0x1f2056(0x18f)]('phone')?.[_0x1f2056(0x405)][_0x1f2056(0x355)]()||'','email':document['getElementById'](_0x1f2056(0x3e0))?.['value']['trim']()||'','address':document['getElementById'](_0x1f2056(0x3b0))?.['value'][_0x1f2056(0x355)]()||'','paymentMethod':document[_0x1f2056(0x3e1)](_0x1f2056(0x47d))?.[_0x1f2056(0x405)]||'','items':window[_0x1f2056(0x294)],'total':window[_0x1f2056(0x294)][_0x1f2056(0x305)]((_0x1fae88,_0x410b1b)=>_0x1fae88+_0x410b1b['price']*_0x410b1b['quantity'],0x0),'deviceInfo':_0x2309c5};console[_0x1f2056(0x321)]('Order\x20data:',_0x493a44),fetch(_0x1f2056(0x257),{'method':_0x1f2056(0x3d9),'headers':{'Content-Type':'application/json','Accept':'application/json'},'body':JSON['stringify'](_0x493a44)})['then'](_0x22e79e=>{const _0x426d8c=_0x1f2056;console[_0x426d8c(0x321)](_0x426d8c(0x27a),_0x22e79e);if(!_0x22e79e['ok'])return _0x22e79e[_0x426d8c(0x38a)]()[_0x426d8c(0x333)](_0x1c03fc=>{throw new Error('Server\x20error:\x20'+_0x1c03fc);});return _0x22e79e['json']();})['then'](_0x2d9d7e=>{const _0x7ab0af=_0x1f2056;console['log'](_0x7ab0af(0x187),_0x2d9d7e),hideCheckout(),Swal['fire']({'title':_0x7ab0af(0x398),'text':'Thank\x20you\x20for\x20your\x20order!','icon':'success','confirmButtonText':_0x7ab0af(0x429)})[_0x7ab0af(0x333)](_0x57070e=>{const _0x1ee392=_0x7ab0af;_0x57070e['isConfirmed']&&(window[_0x1ee392(0x294)]=[],updateCartDisplay(),window[_0x1ee392(0x390)][_0x1ee392(0x2cb)]());});})['catch'](_0x3388e0=>{const _0x295d18=_0x1f2056;console['error']('Error:',_0x3388e0),Swal[_0x295d18(0x203)]({'title':_0x295d18(0x250),'text':_0x3388e0[_0x295d18(0x310)]||'There\x20was\x20an\x20error\x20submitting\x20your\x20order.\x20Please\x20try\x20again.','icon':_0x295d18(0x1a6)});});});}else console[_0x242426(0x1a6)](_0x242426(0x32c));typeof DeviceManager!==_0x242426(0x4e2)&&!window[_0x242426(0x3de)]&&(window[_0x242426(0x3de)]=new DeviceManager(),console[_0x242426(0x321)]('DeviceManager\x20initialized.')),typeof MobileInterface!=='undefined'&&/Mobi|Android/i[_0x242426(0x2e3)](navigator['userAgent'])&&!document[_0x242426(0x3e1)]('.mobile-interface')&&(new MobileInterface(),console[_0x242426(0x321)](_0x242426(0x20d))),document[_0x242426(0x4cf)](_0x242426(0x3b3))[_0x242426(0x457)](_0x39182d=>{const _0x1d72a3=_0x242426;!_0x39182d['dataset'][_0x1d72a3(0x4c1)]&&(_0x39182d[_0x1d72a3(0x1a9)](_0x1d72a3(0x17e),function(){const _0x5ecf29=_0x1d72a3,_0x5649c7=this[_0x5ecf29(0x1aa)];_0x5649c7&&_0x5649c7['classList']['contains'](_0x5ecf29(0x39a))&&_0x5649c7[_0x5ecf29(0x3e2)][_0x5ecf29(0x3e3)](_0x5ecf29(0x1df));}),_0x39182d[_0x1d72a3(0x4da)]['listenerAdded']='true');}),console[_0x242426(0x321)]('Hotspot\x20header\x20listeners\x20checked/added.'),console[_0x242426(0x321)](_0x242426(0x4bd));});const additionalStyles=document[_0x54618a(0x3d3)]('style');additionalStyles[_0x54618a(0x482)]=_0x54618a(0x4eb),document[_0x54618a(0x1f1)][_0x54618a(0x30e)](additionalStyles);class DeviceManager{constructor(){const _0x2db3e2=_0x54618a;this['device']=this['detectDevice'](),this[_0x2db3e2(0x424)]=this[_0x2db3e2(0x3d4)](),this['setupEventListeners'](),this[_0x2db3e2(0x44b)]();}[_0x54618a(0x3e9)](){const _0x33b987=_0x54618a,_0x4e9dbb=navigator[_0x33b987(0x2f3)],_0x5c342b=window[_0x33b987(0x1c0)];if(/iPad|Tablet|PlayBook/i[_0x33b987(0x2e3)](_0x4e9dbb)||_0x5c342b>=0x300&&_0x5c342b<=0x400)return _0x33b987(0x456);else return/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated/i[_0x33b987(0x2e3)](_0x4e9dbb)||_0x5c342b<0x300?_0x33b987(0x207):'desktop';}[_0x54618a(0x3d4)](){const _0x53760f=_0x54618a;return window[_0x53760f(0x1c0)]>window[_0x53760f(0x379)]?_0x53760f(0x2d7):_0x53760f(0x420);}['setupEventListeners'](){const _0x14cd16=_0x54618a;window[_0x14cd16(0x1a9)](_0x14cd16(0x291),()=>{const _0x5285c0=_0x14cd16,_0x2ebde5=this[_0x5285c0(0x3d4)]();_0x2ebde5!==this[_0x5285c0(0x424)]&&(this[_0x5285c0(0x424)]=_0x2ebde5,this[_0x5285c0(0x1b4)]());}),window['DeviceOrientationEvent']&&window[_0x14cd16(0x1a9)](_0x14cd16(0x402),this[_0x14cd16(0x24f)][_0x14cd16(0x375)](this)),this[_0x14cd16(0x209)]!==_0x14cd16(0x26c)&&this[_0x14cd16(0x4d6)]();}[_0x54618a(0x44b)](){const _0x37997e=_0x54618a;document[_0x37997e(0x252)][_0x37997e(0x3e2)][_0x37997e(0x3ce)](_0x37997e(0x463)+this[_0x37997e(0x209)]),document['body']['classList'][_0x37997e(0x3ce)]('orientation-'+this[_0x37997e(0x424)]),this[_0x37997e(0x1b4)](),this[_0x37997e(0x45d)]();}[_0x54618a(0x1b4)](){const _0x3acb7e=_0x54618a,_0x5f546f=document['querySelector'](_0x3acb7e(0x36d));if(!_0x5f546f)return;switch(this[_0x3acb7e(0x209)]){case _0x3acb7e(0x207):this['setupMobileInterface'](_0x5f546f);break;case'tablet':this[_0x3acb7e(0x35e)](_0x5f546f);break;case _0x3acb7e(0x26c):this[_0x3acb7e(0x3a3)](_0x5f546f);break;}}['setupNavigationControls'](){const _0x24d8bb=_0x54618a,_0x27453f=document[_0x24d8bb(0x3d3)](_0x24d8bb(0x2b4));_0x27453f[_0x24d8bb(0x21a)]=_0x24d8bb(0x3b7)+this[_0x24d8bb(0x209)],this[_0x24d8bb(0x209)]!==_0x24d8bb(0x26c)&&(_0x27453f[_0x24d8bb(0x421)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22nav-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22nav-btn\x20zoom-in\x22><i\x20class=\x22fas\x20fa-plus\x22></i></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22nav-btn\x20zoom-out\x22><i\x20class=\x22fas\x20fa-minus\x22></i></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22nav-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22nav-btn\x20fullscreen\x22><i\x20class=\x22fas\x20fa-expand\x22></i></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',document['body']['appendChild'](_0x27453f),this['setupTouchControls']());}[_0x54618a(0x4d6)](){const _0x2d6e9b=_0x54618a;let _0x1e232d=0x0,_0x2ceccd=0x0,_0x483495=0x0;document[_0x2d6e9b(0x1a9)]('touchstart',_0x59bfd2=>{const _0x506f9c=_0x2d6e9b;_0x1e232d=_0x59bfd2[_0x506f9c(0x296)][0x0][_0x506f9c(0x3b2)],_0x2ceccd=_0x59bfd2[_0x506f9c(0x296)][0x0][_0x506f9c(0x48f)],_0x483495=Date[_0x506f9c(0x16a)]();}),document['addEventListener'](_0x2d6e9b(0x4ea),_0x55a1d8=>{const _0x111227=_0x2d6e9b;if(Date['now']()-_0x483495>0x64){const _0x499963=_0x55a1d8['touches'][0x0][_0x111227(0x3b2)]-_0x1e232d,_0x558a40=_0x55a1d8[_0x111227(0x296)][0x0][_0x111227(0x48f)]-_0x2ceccd;this[_0x111227(0x1a0)](_0x499963,_0x558a40),_0x1e232d=_0x55a1d8[_0x111227(0x296)][0x0][_0x111227(0x3b2)],_0x2ceccd=_0x55a1d8['touches'][0x0][_0x111227(0x48f)],_0x483495=Date[_0x111227(0x16a)]();}});}[_0x54618a(0x24f)](_0x3bf517){const _0x39971b=_0x54618a;if(this[_0x39971b(0x209)]!==_0x39971b(0x26c)){const _0x605b29=document['querySelector'](_0x39971b(0x36d));if(_0x605b29&&_0x3bf517[_0x39971b(0x38f)]&&_0x3bf517['gamma']){const _0x4c8758=_0x3bf517[_0x39971b(0x217)]*0.5,_0x25109d=_0x3bf517['beta']*0.5;_0x605b29[_0x39971b(0x359)][_0x39971b(0x352)]=_0x39971b(0x3fd)+_0x25109d+'deg)\x20rotateY('+_0x4c8758+_0x39971b(0x235);}}}['handleTouchMove'](_0x4b22bc,_0x8eee54){const _0xc281d7=_0x54618a,_0x2b7ed3=document['querySelector'](_0xc281d7(0x36d));if(_0x2b7ed3){const _0x49db46=0.15,_0x20e699=_0x4b22bc*_0x49db46,_0xb4bf39=_0x8eee54*_0x49db46;if(window[_0xc281d7(0x4de)]){const _0x8b5471=window[_0xc281d7(0x4de)][_0xc281d7(0x184)];_0x8b5471&&(_0x8b5471[_0xc281d7(0x335)](_0x8b5471[_0xc281d7(0x430)]()-_0x20e699),_0x8b5471[_0xc281d7(0x4f1)](_0x8b5471['getPitch']()+_0xb4bf39));}}}}document['addEventListener'](_0x54618a(0x48d),()=>{const _0x3f9b61=_0x54618a;window[_0x3f9b61(0x3de)]=new DeviceManager();});class MobileInterface{constructor(){this['init']();}[_0x54618a(0x306)](){const _0x55b1be=_0x54618a;this[_0x55b1be(0x4a9)](),this[_0x55b1be(0x48c)](),this['setupGestures']();}[_0x54618a(0x4a9)](){const _0x1f9872=_0x54618a,_0x7e4429=_0x1f9872(0x448);document['body'][_0x1f9872(0x3e8)](_0x1f9872(0x2bc),_0x7e4429);}[_0x54618a(0x43c)](){const _0x6abf06=_0x54618a,_0x227bdf=document[_0x6abf06(0x3e1)](_0x6abf06(0x36d));let _0x3094db=0x0,_0xa04b04=0x0;_0x227bdf['addEventListener'](_0x6abf06(0x189),_0x5ab287=>{const _0x50aff3=_0x6abf06;_0x3094db=_0x5ab287[_0x50aff3(0x296)][0x0]['clientX'],_0xa04b04=_0x5ab287[_0x50aff3(0x296)][0x0][_0x50aff3(0x48f)];}),_0x227bdf[_0x6abf06(0x1a9)](_0x6abf06(0x4ea),_0x2bfbf2=>{const _0x46d1a3=_0x6abf06,_0x2f5d00=_0x2bfbf2[_0x46d1a3(0x296)][0x0][_0x46d1a3(0x3b2)],_0x332046=_0x2bfbf2[_0x46d1a3(0x296)][0x0]['clientY'],_0x4a6a52=_0x3094db-_0x2f5d00,_0x449283=_0xa04b04-_0x332046;if(window[_0x46d1a3(0x4de)]&&window[_0x46d1a3(0x4de)]['viewer']){const _0x388c6a=window['pannellum']['viewer'];_0x388c6a['setYaw'](_0x388c6a['getYaw']()+_0x4a6a52*0.1),_0x388c6a[_0x46d1a3(0x4f1)](_0x388c6a[_0x46d1a3(0x4fe)]()-_0x449283*0.1);}_0x3094db=_0x2f5d00,_0xa04b04=_0x332046;});}}document[_0x54618a(0x1a9)](_0x54618a(0x48d),()=>{const _0x5240c1=_0x54618a;/Mobi|Android/i[_0x5240c1(0x2e3)](navigator[_0x5240c1(0x2f3)])&&new MobileInterface();});class ProductPricing{constructor(){const _0xcf9a82=_0x54618a;this[_0xcf9a82(0x19b)]={'g':0.001,'kg':0x1,'lb':0.453592};}['calculatePrice'](_0x4e3a2e,_0x3c5b02,_0xb98889){const _0x2049a5=_0x54618a,_0x472000=_0x3c5b02*this[_0x2049a5(0x19b)][_0xb98889];return Math[_0x2049a5(0x2f2)](_0x4e3a2e*_0x472000);}}function createProductHotspot(_0x568dd4){const _0x3a09c6=_0x54618a,_0x70b1bb=new ProductPricing(),_0x5ce46c=_0x3a09c6(0x3d2)+_0x568dd4[_0x3a09c6(0x3c3)]+_0x3a09c6(0x2cd)+(_0x568dd4[_0x3a09c6(0x1f8)]||_0x3a09c6(0x33d))+_0x3a09c6(0x4f5)+_0x568dd4['price']+'\x20AMD\x20per\x20kg</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22weight-selector\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22number\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22weight-input\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min=\x220.1\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20step=\x220.1\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20placeholder=\x22Enter\x20weight\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aria-label=\x22Product\x20weight\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22unit-select\x22\x20aria-label=\x22Weight\x20unit\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22g\x22>g</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22kg\x22>kg</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22calculated-price\x22>Total:\x20<span>0</span>\x20AMD</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22add-to-cart-btn\x22\x20disabled>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-cart-plus\x22></i>\x20Add\x20to\x20Cart\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20',_0x11e979=document['createElement'](_0x3a09c6(0x2b4));_0x11e979[_0x3a09c6(0x21a)]='product-hotspot',_0x11e979[_0x3a09c6(0x421)]=_0x5ce46c,_0x11e979[_0x3a09c6(0x4da)][_0x3a09c6(0x3bf)]=_0x568dd4[_0x3a09c6(0x3c3)],_0x11e979[_0x3a09c6(0x4da)][_0x3a09c6(0x4d3)]=_0x568dd4[_0x3a09c6(0x396)];const _0x56dbcd=_0x11e979[_0x3a09c6(0x3e1)]('.weight-input'),_0x4e9dbf=_0x11e979[_0x3a09c6(0x3e1)]('.unit-select'),_0xeb3797=_0x11e979[_0x3a09c6(0x3e1)]('.calculated-price\x20span'),_0x18391e=_0x11e979[_0x3a09c6(0x3e1)](_0x3a09c6(0x22a));function _0x2cb54c(){const _0x2c90a4=_0x3a09c6,_0x5984e1=parseFloat(_0x56dbcd[_0x2c90a4(0x405)]);if(isNaN(_0x5984e1)||_0x5984e1<=0x0){_0xeb3797['textContent']='0',_0x18391e['disabled']=!![];return;}const _0x227d1e=_0x4e9dbf['value'],_0x28c93f=_0x70b1bb[_0x2c90a4(0x221)](_0x568dd4[_0x2c90a4(0x396)],_0x5984e1,_0x227d1e);_0xeb3797[_0x2c90a4(0x482)]=_0x28c93f[_0x2c90a4(0x46f)](0x2),_0x18391e['disabled']=![];}return _0x56dbcd[_0x3a09c6(0x1a9)](_0x3a09c6(0x186),_0x2cb54c),_0x4e9dbf[_0x3a09c6(0x1a9)](_0x3a09c6(0x432),_0x2cb54c),_0x18391e['addEventListener']('click',()=>{const _0x25008d=_0x3a09c6,_0x2aaa6f=parseFloat(_0x56dbcd[_0x25008d(0x405)]),_0x54abe7=_0x4e9dbf[_0x25008d(0x405)],_0x17bd70=_0x70b1bb[_0x25008d(0x221)](_0x568dd4['price'],_0x2aaa6f,_0x54abe7),_0x5b9f9a={'name':_0x568dd4[_0x25008d(0x3c3)],'price':_0x17bd70,'weight':_0x2aaa6f,'unit':_0x54abe7};addToCart(_0x5b9f9a),_0x18391e[_0x25008d(0x421)]=_0x25008d(0x263),_0x18391e['classList'][_0x25008d(0x3ce)](_0x25008d(0x367)),setTimeout(()=>{const _0x5ace03=_0x25008d;_0x18391e[_0x5ace03(0x421)]='<i\x20class=\x22fas\x20fa-cart-plus\x22></i>\x20Add\x20to\x20Cart',_0x18391e[_0x5ace03(0x3e2)][_0x5ace03(0x29a)](_0x5ace03(0x367));},0x5dc);}),_0x11e979[_0x3a09c6(0x1a9)](_0x3a09c6(0x20c),()=>{const _0x1ef0fd=_0x3a09c6;_0x11e979[_0x1ef0fd(0x3e2)][_0x1ef0fd(0x3ce)](_0x1ef0fd(0x23b));}),_0x11e979[_0x3a09c6(0x1a9)](_0x3a09c6(0x4ae),()=>{const _0x5d30c6=_0x3a09c6;_0x11e979[_0x5d30c6(0x3e2)][_0x5d30c6(0x29a)]('hover');}),_0x11e979;}const soundEffects={'addToCart':new Audio(_0x54618a(0x275)),'success':new Audio(_0x54618a(0x31f)),'popup':new Audio('https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3')};function addToCart(_0x3cad33){const _0x2afb40=_0x54618a;soundEffects[_0x2afb40(0x1a8)][_0x2afb40(0x301)](),cart[_0x2afb40(0x408)](_0x3cad33),updateCartCount(),createFloatingItem(_0x3cad33),showToast(_0x2afb40(0x356)+_0x3cad33[_0x2afb40(0x403)]+_0x2afb40(0x479));}function createFloatingItem(_0x41c446){const _0x3b7d6f=_0x54618a,_0x2a3ec4=document['createElement'](_0x3b7d6f(0x2b4));_0x2a3ec4['className']=_0x3b7d6f(0x409);const _0x436e10=event[_0x3b7d6f(0x304)],_0x4ad71c=_0x436e10['getBoundingClientRect'](),_0x2d28fd=document[_0x3b7d6f(0x3e1)](_0x3b7d6f(0x218)),_0x4e8713=_0x2d28fd[_0x3b7d6f(0x3b4)]();_0x2a3ec4['style'][_0x3b7d6f(0x43e)]=_0x3b7d6f(0x3ba)+_0x4ad71c[_0x3b7d6f(0x4b0)]+_0x3b7d6f(0x4d4)+_0x4ad71c[_0x3b7d6f(0x20f)]+'px;\x0a\x20\x20\x20\x20',_0x2a3ec4[_0x3b7d6f(0x421)]=_0x3b7d6f(0x18c)+(_0x41c446[_0x3b7d6f(0x1ad)]||_0x3b7d6f(0x243))+_0x3b7d6f(0x2e6)+_0x41c446[_0x3b7d6f(0x403)]+_0x3b7d6f(0x353),document[_0x3b7d6f(0x252)][_0x3b7d6f(0x30e)](_0x2a3ec4),requestAnimationFrame(()=>{const _0x39d1b1=_0x3b7d6f;_0x2a3ec4[_0x39d1b1(0x359)][_0x39d1b1(0x352)]=_0x39d1b1(0x26a)+(_0x4e8713[_0x39d1b1(0x4b0)]-_0x4ad71c['left'])+_0x39d1b1(0x4f0)+(_0x4e8713[_0x39d1b1(0x20f)]-_0x4ad71c[_0x39d1b1(0x20f)])+_0x39d1b1(0x2a7),_0x2a3ec4[_0x39d1b1(0x359)][_0x39d1b1(0x1cc)]='0';}),setTimeout(()=>{const _0xea3503=_0x3b7d6f;_0x2a3ec4[_0xea3503(0x29a)](),_0x2d28fd['classList']['add'](_0xea3503(0x225)),setTimeout(()=>_0x2d28fd[_0xea3503(0x3e2)][_0xea3503(0x29a)](_0xea3503(0x225)),0x12c);},0x1f4);}function showToast(_0x206c08,_0x16e259=_0x54618a(0x367)){const _0x1a624c=_0x54618a,_0x294d98=document['createElement'](_0x1a624c(0x2b4));_0x294d98['className']=_0x1a624c(0x194)+_0x16e259,_0x294d98[_0x1a624c(0x421)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22toast-content\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20'+(_0x16e259===_0x1a624c(0x367)?_0x1a624c(0x4c4):_0x1a624c(0x488))+_0x1a624c(0x468)+_0x206c08+_0x1a624c(0x44a),document['body'][_0x1a624c(0x30e)](_0x294d98),requestAnimationFrame(()=>{const _0xdd84dd=_0x1a624c;_0x294d98[_0xdd84dd(0x3e2)][_0xdd84dd(0x3ce)](_0xdd84dd(0x3ea));}),setTimeout(()=>{const _0x144652=_0x1a624c;_0x294d98[_0x144652(0x3e2)][_0x144652(0x29a)](_0x144652(0x3ea)),setTimeout(()=>_0x294d98[_0x144652(0x29a)](),0x12c);},0xbb8);}function updateCartCount(){const _0x298e31=_0x54618a,_0x28a9ef=document[_0x298e31(0x3e1)]('.cart-count');_0x28a9ef['textContent']=cart[_0x298e31(0x4a6)],_0x28a9ef[_0x298e31(0x3e2)][_0x298e31(0x3ce)](_0x298e31(0x498)),setTimeout(()=>_0x28a9ef[_0x298e31(0x3e2)]['remove'](_0x298e31(0x498)),0x12c);}function openModal(){const _0x434d2e=_0x54618a;document[_0x434d2e(0x18f)](_0x434d2e(0x40f))[_0x434d2e(0x359)][_0x434d2e(0x39c)]=_0x434d2e(0x307);}function closeModal(){const _0x2f389a=_0x54618a;document[_0x2f389a(0x18f)]('orderModal')[_0x2f389a(0x359)][_0x2f389a(0x39c)]='none';}function submitOrder(){const _0x5ee7fb=_0x54618a,_0x309721={'name':document[_0x5ee7fb(0x18f)](_0x5ee7fb(0x20a))[_0x5ee7fb(0x405)],'phone':document['getElementById'](_0x5ee7fb(0x34d))[_0x5ee7fb(0x405)],'email':document['getElementById']('email')[_0x5ee7fb(0x405)],'address':document['getElementById'](_0x5ee7fb(0x1d8))['value'],'paymentMethod':document['querySelector'](_0x5ee7fb(0x47d))[_0x5ee7fb(0x405)],'items':window['cart']};fetch(_0x5ee7fb(0x271),{'method':_0x5ee7fb(0x3d9),'headers':{'Content-Type':_0x5ee7fb(0x2f4),'Accept':_0x5ee7fb(0x2f4)},'body':JSON[_0x5ee7fb(0x4f8)](_0x309721)})[_0x5ee7fb(0x333)](_0x1f2fd8=>{const _0x528be0=_0x5ee7fb;if(!_0x1f2fd8['ok'])throw new Error(_0x528be0(0x3a7));return _0x1f2fd8[_0x528be0(0x32a)]();})[_0x5ee7fb(0x333)](_0x310ecc=>{const _0x28e864=_0x5ee7fb;console[_0x28e864(0x321)](_0x28e864(0x187),_0x310ecc),alert(_0x28e864(0x320));})[_0x5ee7fb(0x2fe)](_0x478cf3=>{const _0x236086=_0x5ee7fb;console[_0x236086(0x1a6)](_0x236086(0x1fa),_0x478cf3),alert(_0x236086(0x1bf));});}window[_0x54618a(0x354)]=function(_0x50e302){const _0x4c798b=_0x54618a,_0x42456d=document[_0x4c798b(0x18f)](_0x4c798b(0x40f));_0x50e302[_0x4c798b(0x304)]==_0x42456d&&closeModal();},window[_0x54618a(0x4ed)]=function(){const _0x1c4c38=_0x54618a,_0x5bcca4=new Date()[_0x1c4c38(0x3ae)](),_0x5ac3a4=Math[_0x1c4c38(0x397)](Math[_0x1c4c38(0x22c)]()*0x3e8);return'ORD-'+_0x5bcca4+'-'+_0x5ac3a4;};const checkoutForm=document['querySelector'](_0x54618a(0x2d1));checkoutForm&&checkoutForm[_0x54618a(0x1a9)]('submit',async function(_0x101f0c){const _0x1b048d=_0x54618a;_0x101f0c[_0x1b048d(0x1dd)](),console[_0x1b048d(0x321)](_0x1b048d(0x368));const _0x3a29c1={'orderNumber':generateOrderNumber(),'customerName':document[_0x1b048d(0x18f)](_0x1b048d(0x20a))?.[_0x1b048d(0x405)]||'','phone':document[_0x1b048d(0x18f)](_0x1b048d(0x312))?.[_0x1b048d(0x405)]||'','email':document['getElementById'](_0x1b048d(0x3e0))?.['value']||'','address':document[_0x1b048d(0x18f)](_0x1b048d(0x3b0))?.[_0x1b048d(0x405)]||'','paymentMethod':document['querySelector'](_0x1b048d(0x47d))?.['value']||'','items':window[_0x1b048d(0x294)],'total':window['cart'][_0x1b048d(0x305)]((_0x1dba69,_0x5b363f)=>_0x1dba69+_0x5b363f[_0x1b048d(0x396)]*_0x5b363f[_0x1b048d(0x246)],0x0)};console[_0x1b048d(0x321)](_0x1b048d(0x446),_0x3a29c1);try{const _0x44fdae=await fetch('http://localhost:3000/api/orders',{'method':_0x1b048d(0x3d9),'headers':{'Content-Type':_0x1b048d(0x2f4),'Accept':_0x1b048d(0x2f4)},'body':JSON['stringify'](_0x3a29c1)});console[_0x1b048d(0x321)](_0x1b048d(0x42e),_0x44fdae);if(!_0x44fdae['ok'])throw new Error(_0x1b048d(0x3a7));const _0x2e4ee2=await _0x44fdae[_0x1b048d(0x32a)]();console[_0x1b048d(0x321)]('Success:',_0x2e4ee2),window[_0x1b048d(0x294)]=[],updateCartDisplay(),hideCheckout(),alert('Order\x20placed\x20successfully!');}catch(_0x50a687){console[_0x1b048d(0x1a6)](_0x1b048d(0x1fa),_0x50a687),alert(_0x1b048d(0x458)+_0x50a687['message']);}});document[_0x54618a(0x1a9)](_0x54618a(0x48d),function(){const _0x25d418=_0x54618a;console[_0x25d418(0x321)](_0x25d418(0x342));const _0x57d740=document[_0x25d418(0x18f)](_0x25d418(0x21c));if(_0x57d740){console[_0x25d418(0x321)](_0x25d418(0x4a0));function _0x525892(){const _0x5ed50b=_0x25d418,_0xf17877=navigator[_0x5ed50b(0x2f3)],_0x5852b8={'device':_0x5ed50b(0x1c4),'os':'unknown','browser':_0x5ed50b(0x1c4),'userAgent':_0xf17877,'screenSize':window[_0x5ed50b(0x318)][_0x5ed50b(0x2bd)]+'x'+window[_0x5ed50b(0x318)][_0x5ed50b(0x4c9)]};if(/iPad|Tablet|PlayBook/i['test'](_0xf17877))_0x5852b8[_0x5ed50b(0x209)]=_0x5ed50b(0x456);else/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle/i['test'](_0xf17877)?_0x5852b8['device']=_0x5ed50b(0x207):_0x5852b8[_0x5ed50b(0x209)]='desktop';if(/Windows/i[_0x5ed50b(0x2e3)](_0xf17877))_0x5852b8['os']='Windows';else{if(/iPhone|iPad|iPod/[_0x5ed50b(0x2e3)](_0xf17877))_0x5852b8['os']=_0x5ed50b(0x2da);else{if(/Android/[_0x5ed50b(0x2e3)](_0xf17877))_0x5852b8['os']=_0x5ed50b(0x2e5);else{if(/Mac/i[_0x5ed50b(0x2e3)](_0xf17877))_0x5852b8['os']=_0x5ed50b(0x25a);else{if(/Linux/i[_0x5ed50b(0x2e3)](_0xf17877))_0x5852b8['os']='Linux';}}}}if(/Chrome/i[_0x5ed50b(0x2e3)](_0xf17877))_0x5852b8[_0x5ed50b(0x371)]=_0x5ed50b(0x1d4);else{if(/Firefox/i[_0x5ed50b(0x2e3)](_0xf17877))_0x5852b8[_0x5ed50b(0x371)]=_0x5ed50b(0x3a0);else{if(/Safari/i[_0x5ed50b(0x2e3)](_0xf17877))_0x5852b8[_0x5ed50b(0x371)]='Safari';else{if(/Edge/i['test'](_0xf17877))_0x5852b8[_0x5ed50b(0x371)]=_0x5ed50b(0x2eb);}}}return _0x5852b8;}_0x57d740[_0x25d418(0x1a9)]('submit',function(_0x120f82){const _0x261c08=_0x25d418;_0x120f82[_0x261c08(0x1dd)]();const _0x2052e0=_0x525892(),_0x50fd8d={'orderNumber':window['generateOrderNumber'](),'customerName':document['getElementById'](_0x261c08(0x20a))?.[_0x261c08(0x405)]||'','phone':document[_0x261c08(0x18f)](_0x261c08(0x312))?.[_0x261c08(0x405)]||'','email':document['getElementById']('email')?.[_0x261c08(0x405)]||'','address':document[_0x261c08(0x18f)](_0x261c08(0x3b0))?.[_0x261c08(0x405)]||'','paymentMethod':document[_0x261c08(0x3e1)](_0x261c08(0x47d))?.[_0x261c08(0x405)]||'','items':window['cart'],'total':window[_0x261c08(0x294)][_0x261c08(0x305)]((_0x1ce842,_0x261ed1)=>_0x1ce842+_0x261ed1[_0x261c08(0x396)]*_0x261ed1[_0x261c08(0x246)],0x0),'deviceInfo':_0x2052e0};});}}),document[_0x54618a(0x4cf)]('.info-hotspot-header')[_0x54618a(0x457)](_0x4535ef=>{const _0x4e6eff=_0x54618a;_0x4535ef[_0x4e6eff(0x1a9)](_0x4e6eff(0x17e),function(){const _0x51c334=_0x4e6eff,_0x12039f=this[_0x51c334(0x1aa)];_0x12039f[_0x51c334(0x359)][_0x51c334(0x39c)]==='block'?_0x12039f[_0x51c334(0x359)][_0x51c334(0x39c)]=_0x51c334(0x410):_0x12039f[_0x51c334(0x359)][_0x51c334(0x39c)]=_0x51c334(0x307);});});class VoiceCommandSystem{constructor(){const _0x12c39a=_0x54618a;this[_0x12c39a(0x23d)]=null,this['isListening']=![],this[_0x12c39a(0x247)]={'navigation':{'go\x20to\x20entrance':()=>this[_0x12c39a(0x4e9)](_0x12c39a(0x2d9)),'go\x20to\x20dairy':()=>this[_0x12c39a(0x4e9)](_0x12c39a(0x177)),'go\x20to\x20cheese':()=>this[_0x12c39a(0x4e9)](_0x12c39a(0x1a1)),'go\x20to\x20vegetables':()=>this[_0x12c39a(0x4e9)](_0x12c39a(0x228)),'go\x20to\x20juice':()=>this[_0x12c39a(0x4e9)](_0x12c39a(0x4ee)),'go\x20to\x20butcher':()=>this['navigateToScene']('5-boucherie'),'show\x20me':()=>this[_0x12c39a(0x240)](),'what\x20can\x20i\x20buy':()=>this[_0x12c39a(0x4be)](),'suggest\x20products':()=>this[_0x12c39a(0x19c)](),'where\x20am\x20i':()=>this['showCurrentLocation'](),'take\x20me\x20back':()=>this[_0x12c39a(0x4e9)]('0-entrancee'),'go\x20to\x20checkout':()=>document['getElementById'](_0x12c39a(0x262))[_0x12c39a(0x17e)]()},'view':{'look\x20up':()=>document['getElementById'](_0x12c39a(0x1c8))[_0x12c39a(0x17e)](),'look\x20down':()=>document[_0x12c39a(0x18f)](_0x12c39a(0x414))[_0x12c39a(0x17e)](),'look\x20left':()=>document['getElementById'](_0x12c39a(0x4bf))[_0x12c39a(0x17e)](),'look\x20right':()=>document['getElementById']('viewRight')[_0x12c39a(0x17e)](),'zoom\x20in':()=>document['getElementById'](_0x12c39a(0x450))['click'](),'zoom\x20out':()=>document[_0x12c39a(0x18f)]('viewOut')[_0x12c39a(0x17e)](),'look\x20around':()=>this[_0x12c39a(0x4b4)](),'reset\x20view':()=>this['resetView'](),'pan\x20left':()=>document[_0x12c39a(0x18f)](_0x12c39a(0x4bf))[_0x12c39a(0x17e)](),'pan\x20right':()=>document['getElementById'](_0x12c39a(0x4ce))[_0x12c39a(0x17e)]()},'cart':{'open\x20cart':()=>this[_0x12c39a(0x2e1)](!![]),'close\x20cart':()=>this['toggleCart'](![]),'checkout':()=>document['getElementById'](_0x12c39a(0x262))[_0x12c39a(0x17e)](),'what\x27s\x20in\x20my\x20cart':()=>this[_0x12c39a(0x28f)](),'remove\x20item':()=>this['handleRemoveItem'](),'clear\x20cart':()=>this['clearCart'](),'show\x20total':()=>this[_0x12c39a(0x2c8)]()},'help':{'what\x20can\x20i\x20say':()=>this[_0x12c39a(0x43b)](),'help':()=>this[_0x12c39a(0x477)](),'stop\x20listening':()=>this[_0x12c39a(0x4e0)]()}},this[_0x12c39a(0x47e)]={'vegetables':{'potato':{'scene':_0x12c39a(0x228),'hotspot':'potato','category':_0x12c39a(0x2f0),'description':_0x12c39a(0x500),'aliases':[_0x12c39a(0x345),_0x12c39a(0x433)]},'tomato':{'scene':'3-vegii','hotspot':'tomato','category':'vegetables','description':_0x12c39a(0x4fd),'aliases':[_0x12c39a(0x175)]},'lettuce':{'scene':'3-vegii','hotspot':_0x12c39a(0x281),'category':_0x12c39a(0x2f0),'description':_0x12c39a(0x1ac),'aliases':[_0x12c39a(0x2e0)]},'carrot':{'scene':_0x12c39a(0x228),'hotspot':_0x12c39a(0x27f),'category':_0x12c39a(0x2f0),'description':'Orange\x20carrots','aliases':[_0x12c39a(0x4e6)]},'onion':{'scene':_0x12c39a(0x228),'hotspot':_0x12c39a(0x454),'category':_0x12c39a(0x2f0),'description':'Fresh\x20onions','aliases':[_0x12c39a(0x35c)]}},'dairy':{'cheese':{'scene':_0x12c39a(0x1a1),'hotspot':_0x12c39a(0x20b),'category':_0x12c39a(0x315),'description':_0x12c39a(0x253),'aliases':[_0x12c39a(0x2bf)]},'milk':{'scene':_0x12c39a(0x177),'hotspot':_0x12c39a(0x4d1),'category':_0x12c39a(0x315),'description':'Fresh\x20milk','aliases':['dairy\x20milk']},'yogurt':{'scene':_0x12c39a(0x177),'hotspot':_0x12c39a(0x461),'category':_0x12c39a(0x315),'description':'Plain\x20yogurt','aliases':[_0x12c39a(0x464),_0x12c39a(0x20e)]}},'beverages':{'juice':{'scene':'4-jus','hotspot':'juice','category':_0x12c39a(0x336),'description':_0x12c39a(0x234),'aliases':[_0x12c39a(0x286),'fruit\x20juice']},'water':{'scene':_0x12c39a(0x4ee),'hotspot':_0x12c39a(0x3ca),'category':_0x12c39a(0x336),'description':_0x12c39a(0x273),'aliases':[_0x12c39a(0x4ef),'drinking\x20water']},'soda':{'scene':'4-jus','hotspot':_0x12c39a(0x3e7),'category':'beverages','description':_0x12c39a(0x264),'aliases':[_0x12c39a(0x459),_0x12c39a(0x4cb),'fizzy\x20drink']}},'meat':{'beef':{'scene':_0x12c39a(0x29f),'hotspot':_0x12c39a(0x1e7),'category':_0x12c39a(0x1ae),'description':_0x12c39a(0x322),'aliases':[_0x12c39a(0x324),_0x12c39a(0x42c)]},'chicken':{'scene':_0x12c39a(0x29f),'hotspot':_0x12c39a(0x30b),'category':_0x12c39a(0x1ae),'description':'Fresh\x20chicken','aliases':[_0x12c39a(0x245),'whole\x20chicken']},'pork':{'scene':_0x12c39a(0x29f),'hotspot':_0x12c39a(0x242),'category':_0x12c39a(0x1ae),'description':_0x12c39a(0x190),'aliases':[_0x12c39a(0x470),_0x12c39a(0x49b)]}}},this[_0x12c39a(0x41f)](),this[_0x12c39a(0x196)](),this[_0x12c39a(0x33f)](),this[_0x12c39a(0x42a)]=null,this['commandHistory']=[],this[_0x12c39a(0x328)]=![],this[_0x12c39a(0x4bb)]=['en-US',_0x12c39a(0x388),_0x12c39a(0x3e5),'es-ES'],this['currentLanguage']=_0x12c39a(0x2d0);}['setupRecognition'](){const _0x5c5cf8=_0x54618a;try{const _0xd57107=window[_0x5c5cf8(0x1ea)]||window[_0x5c5cf8(0x25d)];if(!_0xd57107){console[_0x5c5cf8(0x1a6)]('Speech\x20recognition\x20not\x20supported');return;}this['recognition']=new _0xd57107(),this[_0x5c5cf8(0x23d)]['continuous']=![],this[_0x5c5cf8(0x23d)][_0x5c5cf8(0x17c)]=![],this[_0x5c5cf8(0x23d)][_0x5c5cf8(0x316)]=_0x5c5cf8(0x2d0),this[_0x5c5cf8(0x23d)][_0x5c5cf8(0x489)]=()=>{const _0x53b4ca=_0x5c5cf8;console[_0x53b4ca(0x321)](_0x53b4ca(0x1c3)),this[_0x53b4ca(0x1d7)]=!![],this[_0x53b4ca(0x1d5)](!![]),this['showVoiceFeedback']();},this[_0x5c5cf8(0x23d)][_0x5c5cf8(0x441)]=_0x695110=>{const _0x47d021=_0x5c5cf8,_0x5150d3=_0x695110['results'][0x0],_0x56eba4=_0x5150d3[0x0][_0x47d021(0x173)][_0x47d021(0x2fd)]()[_0x47d021(0x355)](),_0x3f5784=_0x5150d3[0x0][_0x47d021(0x259)];console[_0x47d021(0x321)](_0x47d021(0x244)+_0x56eba4+'.\x20Confidence:\x20'+_0x3f5784),this[_0x47d021(0x494)](_0x47d021(0x244)+_0x56eba4,_0x3f5784),this[_0x47d021(0x465)](_0x56eba4,_0x3f5784);},this[_0x5c5cf8(0x23d)][_0x5c5cf8(0x3f6)]=_0x1016e2=>{const _0x3be562=_0x5c5cf8;console[_0x3be562(0x1a6)]('Speech\x20recognition\x20error:',_0x1016e2[_0x3be562(0x1a6)]),this['updateVoiceFeedback']('Error:\x20'+_0x1016e2['error'],0x0),this['isListening']=![],this[_0x3be562(0x1d5)](![]);},this[_0x5c5cf8(0x23d)][_0x5c5cf8(0x1ca)]=()=>{const _0x5d771d=_0x5c5cf8;console[_0x5d771d(0x321)](_0x5d771d(0x37a)),this[_0x5d771d(0x1d7)]=![],this[_0x5d771d(0x1d5)](![]),this['hideVoiceFeedback']();};}catch(_0x2e07eb){console[_0x5c5cf8(0x1a6)](_0x5c5cf8(0x394),_0x2e07eb),this[_0x5c5cf8(0x494)]('Error\x20setting\x20up\x20voice\x20recognition',0x0);}}[_0x54618a(0x4a3)](_0x8f9b98,_0x2a5583){const _0x581889=_0x54618a,_0x214d1f=this[_0x581889(0x267)](_0x8f9b98,_0x2a5583),_0x48f49f=this[_0x581889(0x2b1)](_0x8f9b98,_0x2a5583),_0x47e553=this['longestCommonSubsequence'](_0x8f9b98,_0x2a5583);return _0x214d1f*0.4+_0x48f49f*0.4+_0x47e553*0.2;}[_0x54618a(0x267)](_0x18cd45,_0x18d2e2){const _0x1d8ad0=_0x54618a,_0x248035=Array(_0x18d2e2['length']+0x1)[_0x1d8ad0(0x34f)](null)['map'](()=>Array(_0x18cd45[_0x1d8ad0(0x4a6)]+0x1)[_0x1d8ad0(0x34f)](null));for(let _0x46ea0e=0x0;_0x46ea0e<=_0x18cd45[_0x1d8ad0(0x4a6)];_0x46ea0e++)_0x248035[0x0][_0x46ea0e]=_0x46ea0e;for(let _0x3a656d=0x0;_0x3a656d<=_0x18d2e2['length'];_0x3a656d++)_0x248035[_0x3a656d][0x0]=_0x3a656d;for(let _0x1b3d4c=0x1;_0x1b3d4c<=_0x18d2e2[_0x1d8ad0(0x4a6)];_0x1b3d4c++){for(let _0x39b6bc=0x1;_0x39b6bc<=_0x18cd45[_0x1d8ad0(0x4a6)];_0x39b6bc++){const _0x3570da=_0x18cd45[_0x39b6bc-0x1]===_0x18d2e2[_0x1b3d4c-0x1]?0x0:0x1;_0x248035[_0x1b3d4c][_0x39b6bc]=Math[_0x1d8ad0(0x2cf)](_0x248035[_0x1b3d4c][_0x39b6bc-0x1]+0x1,_0x248035[_0x1b3d4c-0x1][_0x39b6bc]+0x1,_0x248035[_0x1b3d4c-0x1][_0x39b6bc-0x1]+_0x3570da);}}const _0x2b3706=Math['max'](_0x18cd45[_0x1d8ad0(0x4a6)],_0x18d2e2[_0x1d8ad0(0x4a6)]);return 0x1-_0x248035[_0x18d2e2[_0x1d8ad0(0x4a6)]][_0x18cd45['length']]/_0x2b3706;}[_0x54618a(0x2b1)](_0x4ca439,_0x43d3f3){const _0x4e5075=_0x54618a,_0x83bd84=this['matchingCharacters'](_0x4ca439,_0x43d3f3);if(_0x83bd84===0x0)return 0x0;const _0x2b6fcd=this[_0x4e5075(0x1f7)](_0x4ca439,_0x43d3f3),_0xf365fc=this[_0x4e5075(0x2a0)](_0x4ca439,_0x43d3f3),_0x49eb97=(_0x83bd84/_0x4ca439[_0x4e5075(0x4a6)]+_0x83bd84/_0x43d3f3[_0x4e5075(0x4a6)]+(_0x83bd84-_0x2b6fcd)/_0x83bd84)/0x3;return _0x49eb97+_0xf365fc*0.1*(0x1-_0x49eb97);}[_0x54618a(0x185)](_0x1915c9,_0x4c9064){const _0x4ef3f1=_0x54618a,_0x428415=Array(_0x4c9064['length']+0x1)['fill'](null)[_0x4ef3f1(0x24c)](()=>Array(_0x1915c9[_0x4ef3f1(0x4a6)]+0x1)[_0x4ef3f1(0x34f)](0x0));for(let _0x489d41=0x1;_0x489d41<=_0x4c9064[_0x4ef3f1(0x4a6)];_0x489d41++){for(let _0x3747f8=0x1;_0x3747f8<=_0x1915c9[_0x4ef3f1(0x4a6)];_0x3747f8++){_0x4c9064[_0x489d41-0x1]===_0x1915c9[_0x3747f8-0x1]?_0x428415[_0x489d41][_0x3747f8]=_0x428415[_0x489d41-0x1][_0x3747f8-0x1]+0x1:_0x428415[_0x489d41][_0x3747f8]=Math[_0x4ef3f1(0x39d)](_0x428415[_0x489d41-0x1][_0x3747f8],_0x428415[_0x489d41][_0x3747f8-0x1]);}}return _0x428415[_0x4c9064[_0x4ef3f1(0x4a6)]][_0x1915c9[_0x4ef3f1(0x4a6)]]/Math[_0x4ef3f1(0x39d)](_0x1915c9['length'],_0x4c9064[_0x4ef3f1(0x4a6)]);}[_0x54618a(0x393)](_0x4dbf7b,_0x15ffce){const _0x217d61=_0x54618a,_0x447e91=Math['floor'](Math[_0x217d61(0x39d)](_0x4dbf7b['length'],_0x15ffce[_0x217d61(0x4a6)])/0x2)-0x1;let _0x10545c=0x0;for(let _0x884666=0x0;_0x884666<_0x4dbf7b['length'];_0x884666++){const _0x32c6c7=Math[_0x217d61(0x39d)](0x0,_0x884666-_0x447e91),_0x54bc92=Math[_0x217d61(0x2cf)](_0x15ffce[_0x217d61(0x4a6)],_0x884666+_0x447e91+0x1);for(let _0x47ba5a=_0x32c6c7;_0x47ba5a<_0x54bc92;_0x47ba5a++){if(_0x4dbf7b[_0x884666]===_0x15ffce[_0x47ba5a]){_0x10545c++;break;}}}return _0x10545c;}['transpositions'](_0x36b65b,_0xf006d9){const _0x3f1753=_0x54618a,_0x2dc263=Math[_0x3f1753(0x397)](Math[_0x3f1753(0x39d)](_0x36b65b[_0x3f1753(0x4a6)],_0xf006d9['length'])/0x2)-0x1;let _0x1ec17f=0x0;for(let _0x498a49=0x0;_0x498a49<_0x36b65b['length'];_0x498a49++){const _0x3c911b=Math[_0x3f1753(0x39d)](0x0,_0x498a49-_0x2dc263),_0x53549b=Math['min'](_0xf006d9['length'],_0x498a49+_0x2dc263+0x1);for(let _0x218b9f=_0x3c911b;_0x218b9f<_0x53549b;_0x218b9f++){if(_0x36b65b[_0x498a49]===_0xf006d9[_0x218b9f]){if(_0x498a49!==_0x218b9f)_0x1ec17f++;break;}}}return _0x1ec17f/0x2;}[_0x54618a(0x2a0)](_0x14dc18,_0x59104f){let _0x4ffae2=0x0;const _0x124c45=0x4;while(_0x4ffae2<_0x124c45&&_0x14dc18[_0x4ffae2]===_0x59104f[_0x4ffae2]){_0x4ffae2++;}return _0x4ffae2;}[_0x54618a(0x19a)](_0x4dc661){const _0x33e553=_0x54618a,_0x3afa45=_0x4dc661[_0x33e553(0x2fd)]();let _0x457c35=null,_0xa108ce=0x0;return Object[_0x33e553(0x370)](this[_0x33e553(0x47e)])[_0x33e553(0x457)](_0x218730=>{const _0x1e7fe4=_0x33e553;Object[_0x1e7fe4(0x360)](_0x218730)[_0x1e7fe4(0x457)](([_0x5d7584,_0x1ffd8f])=>{const _0xcea910=_0x1e7fe4,_0x5b3c3c=this['calculateSimilarity'](_0x3afa45,_0x5d7584[_0xcea910(0x2fd)]());_0x5b3c3c>_0xa108ce&&_0x5b3c3c>0.6&&(_0xa108ce=_0x5b3c3c,_0x457c35=_0x5d7584);_0x3afa45[_0xcea910(0x255)](_0x5d7584[_0xcea910(0x2fd)]())&&(_0x457c35=_0x5d7584,_0xa108ce=0x1);const _0x3c8a1f=this[_0xcea910(0x2f8)](_0x5d7584);_0x3c8a1f[_0xcea910(0x457)](_0x5cb64d=>{const _0x514756=_0xcea910;_0x3afa45[_0x514756(0x255)](_0x5cb64d)&&(_0x457c35=_0x5d7584,_0xa108ce=0x1);});});}),_0x457c35;}[_0x54618a(0x2f8)](_0x44704e){const _0x279d44=_0x54618a,_0x5544d8={'potato':[_0x279d44(0x345),_0x279d44(0x433),'taters'],'tomato':[_0x279d44(0x175)],'lettuce':[_0x279d44(0x2e0),_0x279d44(0x2aa)],'carrot':[_0x279d44(0x4e6)],'onion':[_0x279d44(0x35c)],'cheese':[_0x279d44(0x2bf),_0x279d44(0x315)],'milk':[_0x279d44(0x4ec),'cow\x20milk'],'yogurt':[_0x279d44(0x464),_0x279d44(0x20e),_0x279d44(0x461)],'juice':[_0x279d44(0x286),'fruit\x20juice',_0x279d44(0x376)],'water':[_0x279d44(0x4ef),_0x279d44(0x2b9),_0x279d44(0x362)],'soda':['soft\x20drink',_0x279d44(0x4cb),_0x279d44(0x302),'carbonated\x20drink'],'beef':['steak',_0x279d44(0x42c),_0x279d44(0x1ae)],'chicken':[_0x279d44(0x245),_0x279d44(0x215),_0x279d44(0x1ae)],'pork':[_0x279d44(0x470),'pork\x20loin',_0x279d44(0x1ae)]};return _0x5544d8[_0x44704e[_0x279d44(0x2fd)]()]||[];}['showAvailableCommands'](){const _0x480498=_0x54618a,_0x5147ed=Object[_0x480498(0x34b)](this['commands']);let _0x2406f8=_0x480498(0x1c2);_0x5147ed[_0x480498(0x457)](_0x30fa0e=>{_0x2406f8+='\x0a'+_0x30fa0e['toUpperCase']()+':\x0a',Object['keys'](this['commands'][_0x30fa0e])['forEach'](_0x43a199=>{_0x2406f8+='-\x20'+_0x43a199+'\x0a';});}),this[_0x480498(0x309)](_0x2406f8,_0x480498(0x3f1));}[_0x54618a(0x477)](){const _0x1a029c=_0x54618a,_0x338296=_0x1a029c(0x4b7);this[_0x1a029c(0x309)](_0x338296,'info');}[_0x54618a(0x1da)](){const _0x4d24de=_0x54618a;try{const _0x190ded=APP_DATA['scenes'][_0x190ded];_0x190ded?this[_0x4d24de(0x494)](_0x4d24de(0x401)+_0x190ded[_0x4d24de(0x403)]+_0x4d24de(0x46e),0x1):this['updateVoiceFeedback'](_0x4d24de(0x4c6),0.3);}catch(_0xe0de90){console[_0x4d24de(0x1a6)](_0x4d24de(0x466),_0xe0de90),this[_0x4d24de(0x494)](_0x4d24de(0x1af),0.3);}}[_0x54618a(0x1cb)](){const _0x17ba15=_0x54618a,_0xbf53ea=window[_0x17ba15(0x4ab)]['scenes'][window[_0x17ba15(0x4cc)]]['initialViewParameters'];window[_0x17ba15(0x184)][_0x17ba15(0x444)](_0xbf53ea);}['clearCart'](){const _0x590011=_0x54618a,_0x430375=document[_0x590011(0x18f)]('cartItems');_0x430375&&(_0x430375[_0x590011(0x421)]='',this[_0x590011(0x3ff)](),this[_0x590011(0x309)]('Cart\x20cleared',_0x590011(0x367)));}['showCartTotal'](){const _0x571e82=_0x54618a,_0x1de04f=document[_0x571e82(0x3e1)](_0x571e82(0x49f));_0x1de04f&&this['showToast'](_0x571e82(0x4e1)+_0x1de04f[_0x571e82(0x482)],_0x571e82(0x3f1));}[_0x54618a(0x4e0)](){const _0x388008=_0x54618a;if(!this[_0x388008(0x23d)]){this[_0x388008(0x309)]('Voice\x20commands\x20not\x20supported\x20in\x20this\x20browser',_0x388008(0x1a6));return;}this['isListening']?this['recognition'][_0x388008(0x3ec)]():this[_0x388008(0x23d)][_0x388008(0x4c3)]();}['processCommand'](_0x1fcfec,_0x2c9eee=0x0){const _0x3c2c1f=_0x54618a;_0x1fcfec=_0x1fcfec['toLowerCase']()[_0x3c2c1f(0x355)](),console[_0x3c2c1f(0x321)](_0x3c2c1f(0x501),_0x1fcfec);if(_0x1fcfec[_0x3c2c1f(0x455)](_0x3c2c1f(0x31e))){const _0x523347=_0x1fcfec[_0x3c2c1f(0x361)](_0x3c2c1f(0x31e),'')[_0x3c2c1f(0x355)]();console[_0x3c2c1f(0x321)](_0x3c2c1f(0x4c0),_0x523347);const _0x395301={'entrance':_0x3c2c1f(0x2d9),'dairy':_0x3c2c1f(0x177),'cheese':_0x3c2c1f(0x1a1),'vegetables':_0x3c2c1f(0x228),'juice':_0x3c2c1f(0x4ee),'butcher':_0x3c2c1f(0x29f)},_0x5a114b=_0x395301[_0x523347];if(_0x5a114b){const _0x1522cb=scenes[_0x3c2c1f(0x3cc)](_0x22cdc7=>_0x22cdc7['data']['id']===_0x5a114b);_0x1522cb?(console[_0x3c2c1f(0x321)](_0x3c2c1f(0x251),_0x1522cb),switchScene(_0x1522cb),this['updateVoiceFeedback'](_0x3c2c1f(0x192)+_0x523347,0x1)):this[_0x3c2c1f(0x494)](_0x3c2c1f(0x4d2)+_0x523347+_0x3c2c1f(0x40d),0.3);}else this['updateVoiceFeedback'](_0x3c2c1f(0x313)+_0x523347,0.3);return;}}['getCommandVariations'](_0x265c37){const _0xea735=_0x54618a,_0x4984ca={'go\x20to':[_0xea735(0x3c7),'navigate\x20to',_0xea735(0x37f),_0xea735(0x1f0)],'look\x20up':[_0xea735(0x44d),_0xea735(0x40e),'up'],'look\x20down':['look\x20below',_0xea735(0x1d9),_0xea735(0x30f)],'look\x20left':['look\x20to\x20the\x20left',_0xea735(0x4b0)],'look\x20right':[_0xea735(0x178),_0xea735(0x3b1)],'zoom\x20in':[_0xea735(0x34a),_0xea735(0x1f5),_0xea735(0x224)],'zoom\x20out':[_0xea735(0x1ba),_0xea735(0x3b5),_0xea735(0x4d7)],'open\x20cart':[_0xea735(0x2a9),'display\x20cart','view\x20cart'],'close\x20cart':[_0xea735(0x337),'minimize\x20cart'],'what\x27s\x20in\x20my\x20cart':[_0xea735(0x38b),_0xea735(0x219),'cart\x20items'],'remove\x20item':[_0xea735(0x3c6),'take\x20out',_0xea735(0x1c9)],'checkout':[_0xea735(0x331),_0xea735(0x1cd),_0xea735(0x220)]};return _0x4984ca[_0x265c37]||[];}[_0x54618a(0x293)](_0x34000f){const _0x256f70=_0x54618a,_0x33ed10=[_0x256f70(0x37f),_0x256f70(0x28e),'tell\x20me\x20about',_0x256f70(0x1ee),_0x256f70(0x485),_0x256f70(0x1ed),_0x256f70(0x2d4)];return _0x33ed10[_0x256f70(0x384)](_0x56f137=>_0x34000f[_0x256f70(0x255)](_0x56f137));}[_0x54618a(0x317)](_0x256758){const _0x39063e=_0x54618a;if(_0x256758['includes'](_0x39063e(0x37f))){const _0xe8a9d5=this[_0x39063e(0x19a)](_0x256758);if(_0xe8a9d5)return this['navigateToProduct'](_0xe8a9d5),!![];}if(_0x256758[_0x39063e(0x255)](_0x39063e(0x28e))||_0x256758[_0x39063e(0x255)](_0x39063e(0x439))){const _0x42c621=this[_0x39063e(0x19a)](_0x256758);if(_0x42c621)return this[_0x39063e(0x1dc)](_0x42c621),!![];}if(_0x256758[_0x39063e(0x255)](_0x39063e(0x1ee))){const _0x2cb81d=this['findProductInTranscript'](_0x256758);if(_0x2cb81d)return this[_0x39063e(0x4b6)](_0x2cb81d),!![];}return![];}['navigateToScene'](_0x4b3d96){const _0x3e1377=_0x54618a;try{const _0x18582d=APP_DATA['scenes'][_0x3e1377(0x3cc)](_0x27e713=>_0x27e713['id']===_0x4b3d96);return _0x18582d?(switchScene(_0x18582d),this[_0x3e1377(0x494)](_0x3e1377(0x192)+_0x18582d[_0x3e1377(0x403)],0x1),!![]):(this[_0x3e1377(0x494)](_0x3e1377(0x2a1)+_0x4b3d96+'\x20not\x20found',0.3),![]);}catch(_0x3ac4eb){return console['error'](_0x3e1377(0x4ca),_0x3ac4eb),this[_0x3e1377(0x494)](_0x3e1377(0x3ad),0.3),![];}}[_0x54618a(0x1d2)](_0x3d390b){const _0x143489=_0x54618a;try{let _0x5cf3f7=null;Object[_0x143489(0x370)](this['hotspotMapping'])[_0x143489(0x457)](_0x58a36c=>{_0x58a36c[_0x3d390b]&&(_0x5cf3f7=_0x58a36c[_0x3d390b]);});if(_0x5cf3f7){const _0x5aeb5f=this[_0x143489(0x4e9)](_0x5cf3f7[_0x143489(0x285)]);_0x5aeb5f&&setTimeout(()=>{const _0x1e0652=_0x143489,_0xec89e5=document[_0x1e0652(0x3e1)](_0x1e0652(0x473)+_0x5cf3f7[_0x1e0652(0x338)]+'\x22]');_0xec89e5?(_0xec89e5[_0x1e0652(0x17e)](),this[_0x1e0652(0x494)](_0x1e0652(0x3b6)+_0x3d390b,0x1)):this[_0x1e0652(0x494)]('Could\x20not\x20find\x20'+_0x3d390b+'\x20in\x20this\x20section',0.3);},0x3e8);}else this[_0x143489(0x494)](_0x143489(0x438)+_0x3d390b+_0x143489(0x265),0.3);}catch(_0x123fd1){console[_0x143489(0x1a6)](_0x143489(0x4af),_0x123fd1),this['updateVoiceFeedback'](_0x143489(0x3ad),0.3);}}[_0x54618a(0x1dc)](_0x329f58){const _0x3188f2=_0x54618a;try{let _0x368598=null;Object[_0x3188f2(0x370)](this['hotspotMapping'])[_0x3188f2(0x457)](_0x447b7d=>{_0x447b7d[_0x329f58]&&(_0x368598=_0x447b7d[_0x329f58]);}),_0x368598?(this[_0x3188f2(0x494)](_0x329f58+':\x20'+_0x368598[_0x3188f2(0x1f8)]+_0x3188f2(0x3a8)+_0x368598[_0x3188f2(0x2cc)]+_0x3188f2(0x206),0x1),this[_0x3188f2(0x1d2)](_0x329f58)):this[_0x3188f2(0x494)](_0x3188f2(0x17b)+_0x329f58,0.3);}catch(_0x496b3d){console[_0x3188f2(0x1a6)](_0x3188f2(0x19e),_0x496b3d),this[_0x3188f2(0x494)](_0x3188f2(0x26f),0.3);}}['showProductLocation'](_0xbddd1d){const _0x33a147=_0x54618a;let _0xdae67f=null;Object[_0x33a147(0x370)](this[_0x33a147(0x47e)])['forEach'](_0x3869f2=>{_0x3869f2[_0xbddd1d]&&(_0xdae67f=_0x3869f2[_0xbddd1d]);}),_0xdae67f?(this[_0x33a147(0x309)](_0x33a147(0x49d)+_0xbddd1d+_0x33a147(0x249)+_0xdae67f['category']+_0x33a147(0x284),_0x33a147(0x3f1)),this['navigateToProduct'](_0xbddd1d)):this[_0x33a147(0x309)](_0x33a147(0x481)+_0xbddd1d+_0x33a147(0x391),_0x33a147(0x1a6));}[_0x54618a(0x2b2)](_0x500b4b){const _0x261266=_0x54618a,_0x53e494=[],_0x57b2ee=_0x500b4b['toLowerCase']();Object[_0x261266(0x370)](this[_0x261266(0x247)])[_0x261266(0x457)](_0x5504c8=>{const _0xc7f354=_0x261266;Object[_0xc7f354(0x34b)](_0x5504c8)[_0xc7f354(0x457)](_0x5c1efc=>{const _0x476b04=_0xc7f354,_0x4689f1=this[_0x476b04(0x4a3)](_0x57b2ee,_0x5c1efc[_0x476b04(0x2fd)]());_0x4689f1>0.5&&_0x53e494[_0x476b04(0x408)](_0x5c1efc);});}),Object['values'](this['hotspotMapping'])[_0x261266(0x457)](_0x111aac=>{const _0x3cb1e5=_0x261266;Object[_0x3cb1e5(0x34b)](_0x111aac)[_0x3cb1e5(0x457)](_0x11762b=>{const _0xc43ecb=_0x3cb1e5,_0x4fe673=this[_0xc43ecb(0x4a3)](_0x57b2ee,_0x11762b[_0xc43ecb(0x2fd)]());_0x4fe673>0.5&&_0x53e494['push'](_0xc43ecb(0x299)+_0x11762b);});}),_0x53e494[_0x261266(0x4a6)]>0x0?this[_0x261266(0x309)]('Did\x20you\x20mean:\x20'+_0x53e494['slice'](0x0,0x3)[_0x261266(0x23a)](',\x20')+'?',_0x261266(0x3f1)):this[_0x261266(0x309)](_0x261266(0x4cd),_0x261266(0x297));}[_0x54618a(0x240)](){const _0x360e36=_0x54618a,_0x4b2a2a=window['APP_DATA'][_0x360e36(0x3f8)][window[_0x360e36(0x4cc)]]['id'];let _0x16f6e2=[];Object['values'](this['hotspotMapping'])[_0x360e36(0x457)](_0x3e7aa3=>{const _0x8c5260=_0x360e36;Object['entries'](_0x3e7aa3)[_0x8c5260(0x457)](([_0x59af44,_0x4b8e04])=>{const _0x577425=_0x8c5260;_0x4b8e04[_0x577425(0x285)]===_0x4b2a2a&&_0x16f6e2[_0x577425(0x408)](_0x59af44);});}),_0x16f6e2[_0x360e36(0x4a6)]>0x0?this['showToast'](_0x360e36(0x41e)+_0x16f6e2[_0x360e36(0x23a)](',\x20'),'info'):this[_0x360e36(0x309)](_0x360e36(0x4e5),'warning');}[_0x54618a(0x4be)](){const _0x3ed5dd=_0x54618a;let _0x754280=[];Object[_0x3ed5dd(0x370)](this['hotspotMapping'])[_0x3ed5dd(0x457)](_0x29dd62=>{const _0x3d4cc9=_0x3ed5dd;Object[_0x3d4cc9(0x360)](_0x29dd62)['forEach'](([_0x2130a0,_0x2dca47])=>{const _0x3dc4d8=_0x3d4cc9;_0x754280['push'](_0x2130a0+'\x20('+_0x2dca47[_0x3dc4d8(0x2cc)]+')');});}),this['showToast']('Available\x20products:\x20'+_0x754280['join'](',\x20'),_0x3ed5dd(0x3f1));}[_0x54618a(0x19c)](){const _0x32b18c=_0x54618a,_0x1f7cd7=window['APP_DATA']['scenes'][window[_0x32b18c(0x4cc)]]['id'];let _0x47af9d=[];Object[_0x32b18c(0x370)](this[_0x32b18c(0x47e)])['forEach'](_0x2f5520=>{const _0x3dd906=_0x32b18c;Object[_0x3dd906(0x360)](_0x2f5520)[_0x3dd906(0x457)](([_0x266c72,_0x1c3912])=>{const _0x219672=_0x3dd906;_0x1c3912[_0x219672(0x285)]===_0x1f7cd7&&_0x47af9d[_0x219672(0x408)](_0x266c72);});}),_0x47af9d['length']>0x0?this[_0x32b18c(0x309)]('You\x20might\x20be\x20interested\x20in:\x20'+_0x47af9d[_0x32b18c(0x23a)](',\x20'),_0x32b18c(0x3f1)):this['showToast'](_0x32b18c(0x4f9),_0x32b18c(0x297));}[_0x54618a(0x4b4)](){const _0x34c70d=_0x54618a,_0xf7b803=[_0x34c70d(0x4bf),_0x34c70d(0x4ce),_0x34c70d(0x1c8),_0x34c70d(0x414)];let _0x3e14d8=0x0;const _0x47cba6=setInterval(()=>{const _0x234f70=_0x34c70d;_0x3e14d8<_0xf7b803[_0x234f70(0x4a6)]?(document['getElementById'](_0xf7b803[_0x3e14d8])[_0x234f70(0x17e)](),_0x3e14d8++):clearInterval(_0x47cba6);},0x3e8);}['showCartContents'](){const _0x3350a7=_0x54618a,_0x26f74b=document['getElementById']('cartItems');if(_0x26f74b&&_0x26f74b[_0x3350a7(0x480)][_0x3350a7(0x4a6)]>0x0){const _0x713cc5=Array[_0x3350a7(0x33b)](_0x26f74b['children'])['map'](_0x2e207a=>_0x2e207a[_0x3350a7(0x3e1)](_0x3350a7(0x4dd))[_0x3350a7(0x482)]);this[_0x3350a7(0x309)](_0x3350a7(0x179)+_0x713cc5['join'](',\x20'),_0x3350a7(0x3f1));}else this[_0x3350a7(0x309)](_0x3350a7(0x30d),'info');}[_0x54618a(0x31d)](){const _0x44c947=_0x54618a,_0x1776ba=document['getElementById']('cartItems');_0x1776ba&&_0x1776ba[_0x44c947(0x480)][_0x44c947(0x4a6)]>0x0?(this[_0x44c947(0x309)](_0x44c947(0x487),_0x44c947(0x3f1)),this[_0x44c947(0x328)]=!![]):this[_0x44c947(0x309)](_0x44c947(0x30d),_0x44c947(0x3f1));}[_0x54618a(0x2e1)](_0x261735){const _0x5b5720=_0x54618a,_0xd660f=document['getElementById']('shoppingCart');_0xd660f&&(_0x261735?_0xd660f[_0x5b5720(0x3e2)][_0x5b5720(0x29a)]('minimized'):_0xd660f[_0x5b5720(0x3e2)][_0x5b5720(0x3ce)](_0x5b5720(0x2b8)));}['showToast'](_0x223a1e,_0x27245=_0x54618a(0x3f1)){const _0x40edcd=_0x54618a;if(typeof window[_0x40edcd(0x309)]===_0x40edcd(0x47f))window[_0x40edcd(0x309)](_0x223a1e,_0x27245);else{const _0x3b4749=document[_0x40edcd(0x3d3)](_0x40edcd(0x2b4));_0x3b4749[_0x40edcd(0x21a)]='voice-toast\x20'+_0x27245,_0x3b4749['textContent']=_0x223a1e,document['body'][_0x40edcd(0x30e)](_0x3b4749),Object[_0x40edcd(0x19d)](_0x3b4749['style'],{'position':'fixed','top':_0x40edcd(0x2fb),'right':'20px','padding':_0x40edcd(0x4c7),'background':_0x27245===_0x40edcd(0x1a6)?_0x40edcd(0x399):_0x27245===_0x40edcd(0x367)?_0x40edcd(0x344):_0x27245===_0x40edcd(0x297)?_0x40edcd(0x18a):_0x40edcd(0x3ab),'color':_0x40edcd(0x3bd),'borderRadius':'4px','zIndex':_0x40edcd(0x298),'boxShadow':'0\x202px\x2010px\x20rgba(0,0,0,0.2)','opacity':'0','transition':_0x40edcd(0x2c7)}),setTimeout(()=>{const _0x45fea7=_0x40edcd;_0x3b4749[_0x45fea7(0x359)][_0x45fea7(0x1cc)]='1';},0xa),setTimeout(()=>{const _0x10f921=_0x40edcd;_0x3b4749['style'][_0x10f921(0x1cc)]='0',setTimeout(()=>_0x3b4749[_0x10f921(0x29a)](),0x12c);},0xbb8);}}['createVoiceCommandButton'](){const _0x31fa6a=_0x54618a,_0x409d71=document[_0x31fa6a(0x3d3)](_0x31fa6a(0x45b));_0x409d71['id']=_0x31fa6a(0x16b),_0x409d71[_0x31fa6a(0x21a)]=_0x31fa6a(0x254),_0x409d71[_0x31fa6a(0x23c)](_0x31fa6a(0x4ac),_0x31fa6a(0x471)),_0x409d71[_0x31fa6a(0x421)]=_0x31fa6a(0x350),Object[_0x31fa6a(0x19d)](_0x409d71[_0x31fa6a(0x359)],{'position':_0x31fa6a(0x36f),'bottom':_0x31fa6a(0x237),'right':'20px','width':_0x31fa6a(0x4e3),'height':_0x31fa6a(0x4e3),'borderRadius':'50%','background':_0x31fa6a(0x25b),'color':_0x31fa6a(0x3bd),'border':_0x31fa6a(0x410),'boxShadow':_0x31fa6a(0x1a3),'cursor':_0x31fa6a(0x2d5),'zIndex':_0x31fa6a(0x30a),'display':_0x31fa6a(0x4e8),'alignItems':_0x31fa6a(0x45a),'justifyContent':_0x31fa6a(0x45a),'fontSize':_0x31fa6a(0x2fb),'transition':_0x31fa6a(0x1ec)}),_0x409d71[_0x31fa6a(0x1a9)](_0x31fa6a(0x17e),()=>this['toggleListening']()),_0x409d71[_0x31fa6a(0x1a9)](_0x31fa6a(0x326),()=>{const _0x37e49d=_0x31fa6a;_0x409d71[_0x37e49d(0x359)][_0x37e49d(0x352)]=_0x37e49d(0x2c6);}),_0x409d71['addEventListener'](_0x31fa6a(0x208),()=>{const _0xc3b98=_0x31fa6a;_0x409d71[_0xc3b98(0x359)][_0xc3b98(0x352)]=_0xc3b98(0x3dc);}),document[_0x31fa6a(0x252)]?document[_0x31fa6a(0x252)][_0x31fa6a(0x30e)](_0x409d71):window[_0x31fa6a(0x1a9)](_0x31fa6a(0x48d),()=>{const _0x1505df=_0x31fa6a;document[_0x1505df(0x252)][_0x1505df(0x30e)](_0x409d71);});}[_0x54618a(0x1d5)](_0x5084d3){const _0x4308fb=_0x54618a,_0x44e3b4=document[_0x4308fb(0x18f)](_0x4308fb(0x16b));_0x44e3b4&&(_0x5084d3?(_0x44e3b4[_0x4308fb(0x359)]['background']=_0x4308fb(0x176),_0x44e3b4['style'][_0x4308fb(0x3be)]='pulse\x201.5s\x20infinite',_0x44e3b4['querySelector']('i')[_0x4308fb(0x21a)]='fas\x20fa-microphone-alt'):(_0x44e3b4[_0x4308fb(0x359)][_0x4308fb(0x346)]=_0x4308fb(0x25b),_0x44e3b4[_0x4308fb(0x359)][_0x4308fb(0x3be)]='',_0x44e3b4['querySelector']('i')['className']='fas\x20fa-microphone'));}[_0x54618a(0x33f)](){const _0x5803eb=_0x54618a;this['voiceFeedbackPopup']=document[_0x5803eb(0x3d3)](_0x5803eb(0x2b4)),this[_0x5803eb(0x49a)][_0x5803eb(0x21a)]=_0x5803eb(0x2ab),this[_0x5803eb(0x49a)][_0x5803eb(0x359)]['cssText']=_0x5803eb(0x314);const _0x9490ea=document[_0x5803eb(0x3d3)](_0x5803eb(0x2b4));_0x9490ea[_0x5803eb(0x21a)]=_0x5803eb(0x46c),_0x9490ea['innerHTML']='🎤',_0x9490ea[_0x5803eb(0x359)]['cssText']=_0x5803eb(0x347);const _0x499ed0=document[_0x5803eb(0x3d3)](_0x5803eb(0x2b4));_0x499ed0[_0x5803eb(0x21a)]=_0x5803eb(0x4e4),_0x499ed0[_0x5803eb(0x359)][_0x5803eb(0x43e)]='\x0a\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20min-height:\x2024px;\x0a\x20\x20\x20\x20';const _0x3d1f2f=document[_0x5803eb(0x3d3)]('div');_0x3d1f2f[_0x5803eb(0x21a)]=_0x5803eb(0x26b),_0x3d1f2f[_0x5803eb(0x359)][_0x5803eb(0x43e)]='\x0a\x20\x20\x20\x20\x20\x20height:\x204px;\x0a\x20\x20\x20\x20\x20\x20background:\x20rgba(255,\x20255,\x20255,\x200.2);\x0a\x20\x20\x20\x20\x20\x20border-radius:\x202px;\x0a\x20\x20\x20\x20\x20\x20margin-top:\x205px;\x0a\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20';const _0x1274af=document[_0x5803eb(0x3d3)](_0x5803eb(0x2b4));_0x1274af[_0x5803eb(0x21a)]=_0x5803eb(0x395),_0x1274af['style'][_0x5803eb(0x43e)]=_0x5803eb(0x2df),_0x3d1f2f['appendChild'](_0x1274af),this[_0x5803eb(0x49a)][_0x5803eb(0x30e)](_0x9490ea),this[_0x5803eb(0x49a)][_0x5803eb(0x30e)](_0x499ed0),this[_0x5803eb(0x49a)]['appendChild'](_0x3d1f2f);const _0x288e60=document[_0x5803eb(0x3d3)](_0x5803eb(0x359));_0x288e60[_0x5803eb(0x482)]=_0x5803eb(0x42d),document[_0x5803eb(0x1f1)][_0x5803eb(0x30e)](_0x288e60),document[_0x5803eb(0x252)][_0x5803eb(0x30e)](this[_0x5803eb(0x49a)]);}[_0x54618a(0x494)](_0x3e966d,_0x3067c3){const _0x1cb6ca=_0x54618a,_0x1112c3=this[_0x1cb6ca(0x49a)][_0x1cb6ca(0x3e1)](_0x1cb6ca(0x303)),_0x2b0eb8=this[_0x1cb6ca(0x49a)][_0x1cb6ca(0x3e1)](_0x1cb6ca(0x341));_0x1112c3['textContent']=_0x3e966d||_0x1cb6ca(0x1d1),_0x2b0eb8[_0x1cb6ca(0x359)][_0x1cb6ca(0x2bd)]=_0x3067c3*0x64+'%';if(_0x3067c3>0.8)_0x2b0eb8[_0x1cb6ca(0x359)][_0x1cb6ca(0x346)]='#4CAF50';else _0x3067c3>0.6?_0x2b0eb8[_0x1cb6ca(0x359)][_0x1cb6ca(0x346)]=_0x1cb6ca(0x422):_0x2b0eb8['style']['background']=_0x1cb6ca(0x191);}['showVoiceFeedback'](){const _0x26c2da=_0x54618a;this[_0x26c2da(0x49a)]['style']['display']='block',this['voiceFeedbackPopup'][_0x26c2da(0x3e2)]['add'](_0x26c2da(0x364));}[_0x54618a(0x47c)](){const _0x28cb54=_0x54618a;this[_0x28cb54(0x49a)]['classList'][_0x28cb54(0x29a)](_0x28cb54(0x364)),setTimeout(()=>{const _0x24edd4=_0x28cb54;this[_0x24edd4(0x49a)][_0x24edd4(0x359)][_0x24edd4(0x39c)]='none';},0x12c);}}window['addEventListener']('load',function(){const _0x5fe5a=_0x54618a,_0x345eaf=document[_0x5fe5a(0x3d3)](_0x5fe5a(0x359));_0x345eaf[_0x5fe5a(0x482)]=_0x5fe5a(0x270),document[_0x5fe5a(0x1f1)][_0x5fe5a(0x30e)](_0x345eaf),window[_0x5fe5a(0x4a8)]=new VoiceCommandSystem();});class PerformanceOptimizer{constructor(_0x14256e,_0x5bdb5c){const _0x2c6454=_0x54618a;this[_0x2c6454(0x184)]=_0x14256e,this['scenes']=_0x5bdb5c,this['loadedScenes']=new Set(),this['currentSceneId']=null,this[_0x2c6454(0x1e0)]=[],this[_0x2c6454(0x3a6)]=[],this['isLoading']=![],this['init']();}[_0x54618a(0x306)](){const _0x127495=_0x54618a;document[_0x127495(0x1a9)](_0x127495(0x490),_0x29c6f7=>{const _0x2a7d61=_0x127495;_0x29c6f7[_0x2a7d61(0x2fa)]&&_0x29c6f7[_0x2a7d61(0x2fa)][_0x2a7d61(0x24d)]&&this[_0x2a7d61(0x4a2)](_0x29c6f7['detail'][_0x2a7d61(0x24d)]);});if(window['currentScene']!==undefined){const _0x36bc77=window[_0x127495(0x4ab)][_0x127495(0x3f8)][window['currentScene']]['id'];this[_0x127495(0x1b0)]['add'](_0x36bc77),this[_0x127495(0x497)]=_0x36bc77,this[_0x127495(0x392)](_0x36bc77);}this['startBackgroundLoading']();}['onSceneChange'](_0x5ed3a0){const _0x434ef9=_0x54618a;this['currentSceneId']=_0x5ed3a0,this['loadedScenes'][_0x434ef9(0x3ce)](_0x5ed3a0),this[_0x434ef9(0x392)](_0x5ed3a0);}[_0x54618a(0x392)](_0x507180){const _0x4bfe12=_0x54618a,_0x240e00=window[_0x4bfe12(0x4ab)][_0x4bfe12(0x3f8)][_0x4bfe12(0x3cc)](_0x22a878=>_0x22a878['id']===_0x507180);if(!_0x240e00||!_0x240e00[_0x4bfe12(0x1e1)])return;const _0x36b9c3=_0x240e00[_0x4bfe12(0x1e1)][_0x4bfe12(0x24c)](_0x4dcc22=>_0x4dcc22[_0x4bfe12(0x304)]);_0x36b9c3[_0x4bfe12(0x457)](_0x5adbad=>{const _0x55ac64=_0x4bfe12;!this[_0x55ac64(0x1b0)][_0x55ac64(0x226)](_0x5adbad)&&(this[_0x55ac64(0x3a6)]=this[_0x55ac64(0x3a6)][_0x55ac64(0x1e5)](_0x586d08=>_0x586d08!==_0x5adbad),!this[_0x55ac64(0x1e0)][_0x55ac64(0x255)](_0x5adbad)&&this[_0x55ac64(0x1e0)][_0x55ac64(0x408)](_0x5adbad));}),!this[_0x4bfe12(0x4d8)]&&this[_0x4bfe12(0x21e)]();}[_0x54618a(0x23e)](){const _0x2dcd84=_0x54618a;window['APP_DATA'][_0x2dcd84(0x3f8)][_0x2dcd84(0x457)](_0x3bb1ce=>{const _0x466a99=_0x2dcd84;!this['loadedScenes'][_0x466a99(0x226)](_0x3bb1ce['id'])&&!this[_0x466a99(0x1e0)][_0x466a99(0x255)](_0x3bb1ce['id'])&&!this['backgroundLoadQueue'][_0x466a99(0x255)](_0x3bb1ce['id'])&&this[_0x466a99(0x3a6)][_0x466a99(0x408)](_0x3bb1ce['id']);}),!this['isLoading']&&this['backgroundLoadQueue'][_0x2dcd84(0x4a6)]>0x0&&this[_0x2dcd84(0x21e)]();}[_0x54618a(0x21e)](){const _0x49b1ee=_0x54618a;if(this[_0x49b1ee(0x4d8)]||this[_0x49b1ee(0x1e0)][_0x49b1ee(0x4a6)]===0x0&&this[_0x49b1ee(0x3a6)][_0x49b1ee(0x4a6)]===0x0)return;this['isLoading']=!![];let _0x9e3484;if(this[_0x49b1ee(0x1e0)][_0x49b1ee(0x4a6)]>0x0)_0x9e3484=this[_0x49b1ee(0x1e0)][_0x49b1ee(0x4b1)]();else{if(this[_0x49b1ee(0x3a6)][_0x49b1ee(0x4a6)]>0x0)_0x9e3484=this[_0x49b1ee(0x3a6)][_0x49b1ee(0x4b1)]();else{this[_0x49b1ee(0x4d8)]=![];return;}}const _0x3a45f8=window[_0x49b1ee(0x4ab)]['scenes'][_0x49b1ee(0x18d)](_0x2a084b=>_0x2a084b['id']===_0x9e3484);if(_0x3a45f8===-0x1){console['error']('Scene\x20'+_0x9e3484+_0x49b1ee(0x265)),this[_0x49b1ee(0x4d8)]=![],this['processLoadQueue']();return;}console[_0x49b1ee(0x321)]('Preloading\x20scene:\x20'+_0x9e3484),setTimeout(()=>{const _0x1e2840=_0x49b1ee;this[_0x1e2840(0x1b0)][_0x1e2840(0x3ce)](_0x9e3484),console[_0x1e2840(0x321)](_0x1e2840(0x2a1)+_0x9e3484+_0x1e2840(0x16e)),this[_0x1e2840(0x4d8)]=![],this['processLoadQueue']();},0x1f4);}}document['addEventListener'](_0x54618a(0x48d),function(){const _0x1b8ebd=setInterval(()=>{const _0xe13e04=_0x3b99;window[_0xe13e04(0x184)]&&window[_0xe13e04(0x3f8)]&&(clearInterval(_0x1b8ebd),window[_0xe13e04(0x42f)]=new PerformanceOptimizer(window[_0xe13e04(0x184)],window[_0xe13e04(0x3f8)]),console[_0xe13e04(0x321)]('Performance\x20optimizer\x20initialized'));},0x64);});class AmbientExperience{constructor(){const _0x412599=_0x54618a;this['enabled']=![],this[_0x412599(0x35a)]=null,this[_0x412599(0x413)]={},this[_0x412599(0x172)]=null,this['currentScene']=null,this[_0x412599(0x258)](),this[_0x412599(0x2fc)](),this[_0x412599(0x272)]();}['createAmbientButton'](){const _0x47a358=_0x54618a,_0xdcb23=document[_0x47a358(0x3d3)](_0x47a358(0x45b));_0xdcb23['id']='ambientModeBtn',_0xdcb23['className']=_0x47a358(0x3f2),_0xdcb23['setAttribute'](_0x47a358(0x4ac),_0x47a358(0x278)),_0xdcb23['innerHTML']=_0x47a358(0x2ed),Object[_0x47a358(0x19d)](_0xdcb23[_0x47a358(0x359)],{'position':_0x47a358(0x36f),'bottom':_0x47a358(0x237),'left':_0x47a358(0x2fb),'width':_0x47a358(0x4e3),'height':_0x47a358(0x4e3),'borderRadius':_0x47a358(0x193),'background':_0x47a358(0x4b3),'color':_0x47a358(0x3bd),'border':_0x47a358(0x410),'boxShadow':_0x47a358(0x1a3),'cursor':'pointer','zIndex':_0x47a358(0x30a),'display':'flex','alignItems':'center','justifyContent':_0x47a358(0x45a),'fontSize':_0x47a358(0x2fb),'transition':_0x47a358(0x1ec)}),_0xdcb23[_0x47a358(0x1a9)]('click',()=>this['toggleAmbientMode']()),_0xdcb23[_0x47a358(0x1a9)](_0x47a358(0x326),()=>{const _0x3bce17=_0x47a358;_0xdcb23[_0x3bce17(0x359)][_0x3bce17(0x352)]='scale(1.1)';}),_0xdcb23[_0x47a358(0x1a9)](_0x47a358(0x208),()=>{const _0x432ee3=_0x47a358;_0xdcb23[_0x432ee3(0x359)][_0x432ee3(0x352)]=_0x432ee3(0x3dc);}),document['body']?document[_0x47a358(0x252)][_0x47a358(0x30e)](_0xdcb23):window['addEventListener'](_0x47a358(0x48d),()=>{const _0x5c9216=_0x47a358;document[_0x5c9216(0x252)][_0x5c9216(0x30e)](_0xdcb23);});}[_0x54618a(0x2fc)](){const _0x364dcf=_0x54618a,_0x4b77ee=document[_0x364dcf(0x3d3)](_0x364dcf(0x2b4));_0x4b77ee['id']=_0x364dcf(0x369),Object[_0x364dcf(0x19d)](_0x4b77ee[_0x364dcf(0x359)],{'position':_0x364dcf(0x36f),'top':0x0,'left':0x0,'width':_0x364dcf(0x2be),'height':_0x364dcf(0x2be),'pointerEvents':'none','zIndex':0x3e7,'opacity':0x0,'transition':'opacity\x201.5s\x20ease','background':_0x364dcf(0x42b),'mixBlendMode':'overlay'}),document[_0x364dcf(0x252)][_0x364dcf(0x30e)](_0x4b77ee),this[_0x364dcf(0x172)]=_0x4b77ee;}[_0x54618a(0x272)](){const _0x513b18=_0x54618a;document[_0x513b18(0x1a9)](_0x513b18(0x490),_0x311c66=>{const _0x26a40f=_0x513b18;_0x311c66[_0x26a40f(0x2fa)]&&_0x311c66[_0x26a40f(0x2fa)]['sceneId']&&this['enabled']&&this[_0x26a40f(0x4a1)](_0x311c66[_0x26a40f(0x2fa)][_0x26a40f(0x24d)]);}),document['addEventListener']('click',_0x20518a=>{const _0x7f90f0=_0x513b18;if(!this['enabled'])return;const _0x29f7b7=_0x20518a[_0x7f90f0(0x304)];_0x29f7b7['closest'](_0x7f90f0(0x382))&&this[_0x7f90f0(0x4f7)](_0x7f90f0(0x2d6)),_0x29f7b7[_0x7f90f0(0x45e)](_0x7f90f0(0x181))&&this['playSound'](_0x7f90f0(0x1a8));});}[_0x54618a(0x3fe)](){const _0x54e546=_0x54618a;this[_0x54e546(0x3db)]=!this[_0x54e546(0x3db)];const _0x48c607=document[_0x54e546(0x18f)](_0x54e546(0x1e3));_0x48c607&&(this['enabled']?(_0x48c607['style']['background']='linear-gradient(to\x20right,\x20#00ccff,\x20#0099ff)',_0x48c607[_0x54e546(0x3e1)]('i')[_0x54e546(0x21a)]=_0x54e546(0x23f),this[_0x54e546(0x48e)]()):(_0x48c607[_0x54e546(0x359)][_0x54e546(0x346)]=_0x54e546(0x4b3),_0x48c607[_0x54e546(0x3e1)]('i')['className']=_0x54e546(0x2d2),this[_0x54e546(0x287)]())),this[_0x54e546(0x309)](_0x54e546(0x343)+(this['enabled']?_0x54e546(0x3db):'disabled'),this[_0x54e546(0x3db)]?_0x54e546(0x367):_0x54e546(0x3f1));}['startAmbient'](){const _0x12546c=_0x54618a;this[_0x12546c(0x279)]();this['overlayElement']&&(this['overlayElement'][_0x12546c(0x359)][_0x12546c(0x1cc)]='1');if(window[_0x12546c(0x4cc)]!==undefined){const _0x55a51f=window[_0x12546c(0x4ab)][_0x12546c(0x3f8)][window[_0x12546c(0x4cc)]]['id'];this[_0x12546c(0x4a1)](_0x55a51f);}}[_0x54618a(0x287)](){const _0x2a15a6=_0x54618a;this[_0x2a15a6(0x35a)]&&this[_0x2a15a6(0x35a)][_0x2a15a6(0x1b1)](),this['overlayElement']&&(this[_0x2a15a6(0x172)][_0x2a15a6(0x359)][_0x2a15a6(0x1cc)]='0');}[_0x54618a(0x279)](){const _0x5dc057=_0x54618a;!this['ambientSounds']&&(this[_0x5dc057(0x35a)]=new Audio(),this['ambientSounds']['src']='https://freesound.org/data/previews/443/443027_738377-lq.mp3',this[_0x5dc057(0x35a)][_0x5dc057(0x274)]=!![],this[_0x5dc057(0x35a)][_0x5dc057(0x2d8)]=0.4),!this[_0x5dc057(0x413)]['productInteraction']&&(this[_0x5dc057(0x413)]['productInteraction']=new Audio(),this[_0x5dc057(0x413)]['productInteraction'][_0x5dc057(0x4c5)]=_0x5dc057(0x2a8),this[_0x5dc057(0x413)][_0x5dc057(0x2d6)]['volume']=0.3),!this['soundEffects'][_0x5dc057(0x1a8)]&&(this['soundEffects'][_0x5dc057(0x1a8)]=new Audio(),this[_0x5dc057(0x413)][_0x5dc057(0x1a8)][_0x5dc057(0x4c5)]='https://freesound.org/data/previews/513/513865_1578652-lq.mp3',this[_0x5dc057(0x413)][_0x5dc057(0x1a8)][_0x5dc057(0x2d8)]=0.5),this[_0x5dc057(0x35a)][_0x5dc057(0x301)]()[_0x5dc057(0x2fe)](_0x33d89d=>{const _0x2b2c21=_0x5dc057;console['warn'](_0x2b2c21(0x2c3),_0x33d89d),this[_0x2b2c21(0x309)](_0x2b2c21(0x37d),'info');const _0x301f1f=()=>{const _0x378504=_0x2b2c21;this[_0x378504(0x35a)][_0x378504(0x301)]()['catch'](_0x4e7b86=>console[_0x378504(0x1a6)]('Failed\x20to\x20play\x20after\x20click:',_0x4e7b86)),document[_0x378504(0x280)](_0x378504(0x17e),_0x301f1f);};document['addEventListener'](_0x2b2c21(0x17e),_0x301f1f);});}[_0x54618a(0x4f7)](_0x42f996){const _0x1d0090=_0x54618a;if(this['soundEffects'][_0x42f996]){const _0x2b4b13=this['soundEffects'][_0x42f996][_0x1d0090(0x47a)]();_0x2b4b13['play']()[_0x1d0090(0x2fe)](_0x454422=>console[_0x1d0090(0x2b6)](_0x1d0090(0x25c),_0x454422)),_0x2b4b13[_0x1d0090(0x17f)]=()=>_0x2b4b13[_0x1d0090(0x29a)]();}}[_0x54618a(0x4a1)](_0x2ae72c){const _0x155003=_0x54618a;this[_0x155003(0x4cc)]=_0x2ae72c;if(this[_0x155003(0x172)]){let _0x50c5b1;switch(_0x2ae72c){case _0x155003(0x2d9):_0x50c5b1='radial-gradient(circle\x20at\x2050%\x2050%,\x20rgba(255,255,255,0.15)\x200%,\x20rgba(0,20,40,0.4)\x20100%)';break;case'1-laiterie':_0x50c5b1=_0x155003(0x22e);break;case _0x155003(0x1a1):_0x50c5b1=_0x155003(0x469);break;case'3-vegii':_0x50c5b1=_0x155003(0x308);break;case _0x155003(0x4ee):_0x50c5b1=_0x155003(0x478);break;case'5-boucherie':_0x50c5b1=_0x155003(0x1bc);break;default:_0x50c5b1=_0x155003(0x42b);}this['overlayElement'][_0x155003(0x359)][_0x155003(0x346)]=_0x50c5b1;}}[_0x54618a(0x309)](_0x4b4c30,_0x28cd01=_0x54618a(0x3f1)){const _0x1d66cb=_0x54618a;if(typeof window[_0x1d66cb(0x309)]===_0x1d66cb(0x47f))window[_0x1d66cb(0x309)](_0x4b4c30,_0x28cd01);else{const _0x22bc08=document[_0x1d66cb(0x3d3)]('div');_0x22bc08['className']=_0x1d66cb(0x34c)+_0x28cd01,_0x22bc08[_0x1d66cb(0x482)]=_0x4b4c30,document[_0x1d66cb(0x252)]['appendChild'](_0x22bc08),Object['assign'](_0x22bc08[_0x1d66cb(0x359)],{'position':'fixed','top':_0x1d66cb(0x2fb),'right':_0x1d66cb(0x2fb),'padding':'10px\x2020px','background':_0x28cd01===_0x1d66cb(0x1a6)?_0x1d66cb(0x399):_0x28cd01==='success'?_0x1d66cb(0x344):_0x28cd01==='warning'?_0x1d66cb(0x18a):_0x1d66cb(0x3ab),'color':'white','borderRadius':'4px','zIndex':_0x1d66cb(0x298),'boxShadow':'0\x202px\x2010px\x20rgba(0,0,0,0.2)','opacity':'0','transition':_0x1d66cb(0x2c7)}),setTimeout(()=>{const _0x59538c=_0x1d66cb;_0x22bc08[_0x59538c(0x359)][_0x59538c(0x1cc)]='1';},0xa),setTimeout(()=>{const _0x51503a=_0x1d66cb;_0x22bc08[_0x51503a(0x359)][_0x51503a(0x1cc)]='0',setTimeout(()=>_0x22bc08[_0x51503a(0x29a)](),0x12c);},0xbb8);}}}window['addEventListener']('load',function(){const _0xb474c4=_0x54618a;window[_0xb474c4(0x2e4)]=new AmbientExperience();});class HolographicProductDisplay{constructor(){const _0x359d11=_0x54618a;this[_0x359d11(0x48b)]={},this[_0x359d11(0x2c9)]=null,this[_0x359d11(0x36c)]=![],this[_0x359d11(0x306)]();}[_0x54618a(0x306)](){const _0x41f196=_0x54618a,_0xa89cfd=document[_0x41f196(0x3d3)](_0x41f196(0x295));_0xa89cfd[_0x41f196(0x4c5)]='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js',_0xa89cfd[_0x41f196(0x423)]=()=>{const _0x2b12b4=_0x41f196;this['isInitialized']=!![],console[_0x2b12b4(0x321)](_0x2b12b4(0x3a1));},document[_0x41f196(0x1f1)]['appendChild'](_0xa89cfd);const _0x3757b7=document[_0x41f196(0x3d3)](_0x41f196(0x359));_0x3757b7[_0x41f196(0x482)]=_0x41f196(0x41a),document[_0x41f196(0x1f1)][_0x41f196(0x30e)](_0x3757b7),this[_0x41f196(0x472)]=document['createElement'](_0x41f196(0x2b4)),this[_0x41f196(0x472)][_0x41f196(0x21a)]=_0x41f196(0x1bb),document[_0x41f196(0x252)][_0x41f196(0x30e)](this[_0x41f196(0x472)]);const _0xf90069=document[_0x41f196(0x3d3)]('button');_0xf90069[_0x41f196(0x21a)]=_0x41f196(0x363),_0xf90069[_0x41f196(0x421)]='×',_0xf90069[_0x41f196(0x354)]=()=>this[_0x41f196(0x233)](),this[_0x41f196(0x472)][_0x41f196(0x30e)](_0xf90069),this['canvas']=document['createElement']('canvas'),this['canvas'][_0x41f196(0x21a)]=_0x41f196(0x426),this[_0x41f196(0x472)][_0x41f196(0x30e)](this[_0x41f196(0x4f2)]);const _0x54fda6=document[_0x41f196(0x3d3)]('div');_0x54fda6[_0x41f196(0x21a)]=_0x41f196(0x27b);const _0x120cc6=document[_0x41f196(0x3d3)](_0x41f196(0x45b));_0x120cc6[_0x41f196(0x21a)]='hologram-btn',_0x120cc6['innerHTML']='<i\x20class=\x22fas\x20fa-sync-alt\x22></i>\x20Rotate',_0x120cc6['onclick']=()=>this[_0x41f196(0x3d7)]();const _0xa7ca91=document[_0x41f196(0x3d3)](_0x41f196(0x45b));_0xa7ca91[_0x41f196(0x21a)]=_0x41f196(0x24b),_0xa7ca91[_0x41f196(0x421)]=_0x41f196(0x170),_0xa7ca91['onclick']=()=>this[_0x41f196(0x1a8)](),_0x54fda6[_0x41f196(0x30e)](_0x120cc6),_0x54fda6[_0x41f196(0x30e)](_0xa7ca91),this[_0x41f196(0x472)][_0x41f196(0x30e)](_0x54fda6),this[_0x41f196(0x290)]=document[_0x41f196(0x3d3)](_0x41f196(0x2b4)),this[_0x41f196(0x290)][_0x41f196(0x21a)]=_0x41f196(0x43f),this['container'][_0x41f196(0x30e)](this[_0x41f196(0x290)]),this[_0x41f196(0x210)]();}[_0x54618a(0x210)](){const _0x8a9371=_0x54618a;if(!this[_0x8a9371(0x36c)])return;this[_0x8a9371(0x285)]=new THREE[(_0x8a9371(0x366))](),this[_0x8a9371(0x285)][_0x8a9371(0x346)]=new THREE['Color'](0x0),this[_0x8a9371(0x389)]=new THREE['PerspectiveCamera'](0x4b,window[_0x8a9371(0x1c0)]/window[_0x8a9371(0x379)],0.1,0x3e8),this['camera'][_0x8a9371(0x467)]['z']=0x5,this[_0x8a9371(0x2e2)]=new THREE[(_0x8a9371(0x26d))]({'canvas':this[_0x8a9371(0x4f2)],'alpha':!![],'antialias':!![]}),this[_0x8a9371(0x2e2)][_0x8a9371(0x18b)](this['canvas'][_0x8a9371(0x2af)],this[_0x8a9371(0x4f2)][_0x8a9371(0x44c)]),this['renderer']['setPixelRatio'](window[_0x8a9371(0x1a4)]);const _0x957c87=new THREE[(_0x8a9371(0x1c7))](0xffffff,0.5);this[_0x8a9371(0x285)][_0x8a9371(0x3ce)](_0x957c87);const _0x359665=new THREE[(_0x8a9371(0x3af))](0xffffff,0x1);_0x359665[_0x8a9371(0x467)]['set'](0x1,0x1,0x1),this[_0x8a9371(0x285)][_0x8a9371(0x3ce)](_0x359665);const _0x43b9b6=new THREE[(_0x8a9371(0x3da))](0xffff,0x1,0x64);_0x43b9b6[_0x8a9371(0x467)][_0x8a9371(0x2c2)](0x0,0x0,0x5),this[_0x8a9371(0x285)][_0x8a9371(0x3ce)](_0x43b9b6),this[_0x8a9371(0x1e2)]=!![],this[_0x8a9371(0x36a)]=new THREE[(_0x8a9371(0x3d0))](),window[_0x8a9371(0x1a9)]('resize',()=>{const _0x29dad2=_0x8a9371;this[_0x29dad2(0x389)][_0x29dad2(0x411)]=this[_0x29dad2(0x4f2)][_0x29dad2(0x2af)]/this[_0x29dad2(0x4f2)]['clientHeight'],this[_0x29dad2(0x389)][_0x29dad2(0x4c2)](),this[_0x29dad2(0x2e2)]['setSize'](this[_0x29dad2(0x4f2)][_0x29dad2(0x2af)],this[_0x29dad2(0x4f2)][_0x29dad2(0x44c)]);}),this[_0x8a9371(0x2ca)]();}[_0x54618a(0x2ca)](){const _0x10f2e0=_0x54618a;if(!this[_0x10f2e0(0x36c)]||!this[_0x10f2e0(0x2c9)])return;requestAnimationFrame(()=>this['animate']());const _0x1a9275=this[_0x10f2e0(0x36a)]['getDelta']();this['isRotating']&&this[_0x10f2e0(0x2c9)][_0x10f2e0(0x204)]&&(this[_0x10f2e0(0x2c9)]['mesh'][_0x10f2e0(0x1b5)]['y']+=_0x1a9275*0.5),this[_0x10f2e0(0x2e2)][_0x10f2e0(0x4fb)](this[_0x10f2e0(0x285)],this[_0x10f2e0(0x389)]);}['toggleRotation'](){const _0x30c996=_0x54618a;this[_0x30c996(0x1e2)]=!this[_0x30c996(0x1e2)];}['showHologram'](_0xaffd6e){const _0x47009d=_0x54618a;if(!this[_0x47009d(0x36c)]){console[_0x47009d(0x1a6)](_0x47009d(0x277));return;}this[_0x47009d(0x475)]=_0xaffd6e,this[_0x47009d(0x290)][_0x47009d(0x421)]=_0x47009d(0x1e4)+_0xaffd6e[_0x47009d(0x403)]+_0x47009d(0x2ce)+_0xaffd6e['price']+_0x47009d(0x4c8)+(_0xaffd6e['description']||_0x47009d(0x339))+_0x47009d(0x283),this[_0x47009d(0x472)][_0x47009d(0x359)][_0x47009d(0x39c)]=_0x47009d(0x4e8),!this[_0x47009d(0x48b)][_0xaffd6e['name']]&&this[_0x47009d(0x365)](_0xaffd6e),this['activeHologram']=this['products'][_0xaffd6e[_0x47009d(0x403)]],!this[_0x47009d(0x285)][_0x47009d(0x3d6)](this[_0x47009d(0x2c9)]['mesh']['id'])&&this[_0x47009d(0x285)][_0x47009d(0x3ce)](this[_0x47009d(0x2c9)][_0x47009d(0x204)]),this[_0x47009d(0x389)][_0x47009d(0x467)]['z']=this[_0x47009d(0x2c9)]['cameraDistance']||0x5;}[_0x54618a(0x233)](){const _0x390ff1=_0x54618a;this['container']['style']['display']=_0x390ff1(0x410),this[_0x390ff1(0x2c9)]=null;}[_0x54618a(0x365)](_0x5cd865){const _0x113981=_0x54618a;let _0x26360e,_0x535650;const _0x1ec1f3=this[_0x113981(0x1b7)](_0x5cd865[_0x113981(0x403)]);switch(_0x1ec1f3){case _0x113981(0x33c):_0x26360e=new THREE['CylinderGeometry'](0.5,0.5,0x2,0x20),_0x535650=new THREE[(_0x113981(0x3a9))]({'color':0xa8ff,'transparent':!![],'opacity':0.8,'shininess':0x64});break;case _0x113981(0x182):_0x26360e=new THREE[(_0x113981(0x32d))](0x1,0x1,0x1),_0x535650=new THREE['MeshPhongMaterial']({'color':0xff9f43,'transparent':!![],'opacity':0.8,'shininess':0x64});break;case _0x113981(0x2ee):_0x26360e=new THREE['SphereGeometry'](0.7,0x20,0x20),_0x535650=new THREE[(_0x113981(0x3a9))]({'color':0x4cd137,'transparent':!![],'opacity':0.8,'shininess':0x64});break;case'meat':_0x26360e=new THREE[(_0x113981(0x32d))](1.5,0.5,0x1),_0x535650=new THREE[(_0x113981(0x3a9))]({'color':0xe84118,'transparent':!![],'opacity':0.8,'shininess':0x64});break;default:_0x26360e=new THREE[(_0x113981(0x32d))](0x1,0x1,0x1),_0x535650=new THREE[(_0x113981(0x3a9))]({'color':0x9c88ff,'transparent':!![],'opacity':0.8,'shininess':0x64});}const _0x58bcae=new THREE[(_0x113981(0x216))](_0x26360e,_0x535650);_0x58bcae[_0x113981(0x467)]['y']=0x0;const _0x36311e=new THREE[(_0x113981(0x16f))](_0x26360e),_0x1495f9=new THREE['LineSegments'](_0x36311e,new THREE[(_0x113981(0x3fc))]({'color':0xffff}));_0x58bcae[_0x113981(0x3ce)](_0x1495f9),this[_0x113981(0x48b)][_0x5cd865[_0x113981(0x403)]]={'mesh':_0x58bcae,'cameraDistance':0x5};}[_0x54618a(0x1b7)](_0x270f75){const _0x283fe6=_0x54618a,_0x801bd5=_0x270f75[_0x283fe6(0x2fd)]();if(_0x801bd5['includes']('bottle')||_0x801bd5[_0x283fe6(0x255)](_0x283fe6(0x300))||_0x801bd5[_0x283fe6(0x255)]('water'))return _0x283fe6(0x33c);else{if(_0x801bd5[_0x283fe6(0x255)](_0x283fe6(0x182))||_0x801bd5['includes'](_0x283fe6(0x3fb))||_0x801bd5[_0x283fe6(0x255)](_0x283fe6(0x449)))return _0x283fe6(0x182);else{if(_0x801bd5[_0x283fe6(0x255)](_0x283fe6(0x3eb))||_0x801bd5[_0x283fe6(0x255)](_0x283fe6(0x30c))||_0x801bd5[_0x283fe6(0x255)]('tomato'))return _0x283fe6(0x2ee);else{if(_0x801bd5[_0x283fe6(0x255)](_0x283fe6(0x1ae))||_0x801bd5['includes']('beef')||_0x801bd5['includes'](_0x283fe6(0x30b)))return _0x283fe6(0x1ae);}}}return'default';}[_0x54618a(0x1a8)](){const _0x2db401=_0x54618a;this[_0x2db401(0x475)]&&(window[_0x2db401(0x1a8)](this[_0x2db401(0x475)]),this[_0x2db401(0x233)]());}}let holographicDisplay;const hologramButtonStyle=document[_0x54618a(0x3d3)]('style');hologramButtonStyle[_0x54618a(0x482)]=_0x54618a(0x31a),document['head'][_0x54618a(0x30e)](hologramButtonStyle);function _0x45c1(){const _0x37ce79=['MeshPhongMaterial','matches','#2196F3','mouse','Navigation\x20error','getTime','DirectionalLight','selectedAddress','right','clientX','.info-hotspot-header','getBoundingClientRect','get\x20away','Showing\x20','navigation-controls\x20device-','playsInline','[DEBUG]\x20***\x20Delegated\x20Click:\x20Pick\x20Location\x20Button\x20Clicked!\x20***','\x0a\x20\x20\x20\x20\x20\x20\x20\x20left:\x20','try-on-buttons','shadowMap','white','animation','productName','#fullscreenToggle','active','PerspectiveCamera','title','shoppingCart','no-touch','delete\x20item','take\x20me\x20to','&amp;','skincare','water','link-hotspot','find','updateHolographicEffect','add','Geolocation\x20error:','Clock','items','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22product-title\x22>','createElement','getOrientation','px);\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item-details\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item-name\x22>','getObjectById','toggleRotation','3238059wRjDhk','POST','PointLight','enabled','scale(1)','[DEBUG]\x20Checkout\x20Modal\x20element\x20(#checkoutModal)\x20NOT\x20FOUND\x20for\x20event\x20delegation!','deviceManager','Please\x20select\x20a\x20location\x20first','email','querySelector','classList','toggle','touch','fr-FR','upElement','soda','insertAdjacentHTML','detectDevice','show','egg','stop','traditional','https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=','view','createOptimizedHotspot','info','ambient-mode-btn','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-price\x22>','settings','getAttribute','onerror','\x20AMD</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-actions\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22add-to-basket-btn\x22\x20onclick=\x22window.addToCart({name:\x20\x27','scenes','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-times\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20','Header\x20click\x20ignored\x20(control\x20button\x20was\x20target).','cereal','LineBasicMaterial','rotateX(','toggleAmbientMode','updateCartDisplay','3971ICnpLs','You\x20are\x20in\x20the\x20','deviceorientation','name','#mapModal\x20.close-map','value','.try-on-btn','/{z}/{f}/{y}/{x}.jpg','push','floating-item','Maximize\x20button\x20JS\x20listener\x20fired!','#viewIn','removeFromCart','\x20scene','look\x20upwards','orderModal','none','aspect','<button\x20class=\x22try-on-btn\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-camera\x22></i>\x20Try\x20On\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>','soundEffects','viewDown','outElement','-ms-transform','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22map-error\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Sorry,\x20there\x20was\x20an\x20error\x20loading\x20the\x20map.\x20Please\x20try\x20again.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20onclick=\x22retryMapLoad()\x22\x20class=\x22retry-btn\x22>Retry</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20','haircare','\x0a\x20\x20\x20\x20\x20\x20\x20\x20varying\x20vec2\x20vUv;\x0a\x20\x20\x20\x20\x20\x20\x20\x20void\x20main()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20vUv\x20=\x20uv;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gl_Position\x20=\x20projectionMatrix\x20*\x20modelViewMatrix\x20*\x20vec4(position,\x201.0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20','\x0a\x20\x20\x20\x20\x20\x20.hologram-container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20fixed;\x0a\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.7);\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-canvas\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x2080%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2060%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x2020px\x20rgba(0,\x20255,\x20255,\x200.5);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-controls\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20#00a8ff,\x20#0097e6);\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.05);\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x2015px\x20rgba(0,\x20168,\x20255,\x200.7);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-close\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20top:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20right:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(255,\x20255,\x20255,\x200.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-close:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(255,\x20255,\x20255,\x200.4);\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.1);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-info\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x2080%;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20text-shadow:\x200\x200\x2010px\x20rgba(0,\x20255,\x20255,\x200.7);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-price\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2018px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.hologram-description\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.8;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20','[DEBUG]\x20Setting\x20up\x20DELEGATED\x20listeners\x20for\x20map\x20triggers\x20inside\x20#checkoutModal...','24GDCnVT','lookAt','In\x20this\x20section,\x20you\x20can\x20find:\x20','setupRecognition','portrait','innerHTML','#FFC107','onload','orientation','info-hotspot-close-icon','hologram-canvas','...','mapModal','Done','lastCommand','radial-gradient(circle\x20at\x2050%\x2050%,\x20rgba(255,255,255,0.1)\x200%,\x20rgba(0,0,30,0.4)\x20100%)','ground\x20beef','\x0a\x20\x20\x20\x20\x20\x20@keyframes\x20pulse\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x20transform:\x20scale(1);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x20transform:\x20scale(1.2);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x20transform:\x20scale(1);\x20}\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20.voice-feedback-popup\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20backdrop-filter:\x20blur(5px);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20.voice-feedback-popup.showing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20slideUp\x200.3s\x20ease;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20@keyframes\x20slideUp\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20from\x20{\x20transform:\x20translate(-50%,\x2020px);\x20opacity:\x200;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20to\x20{\x20transform:\x20translate(-50%,\x200);\x20opacity:\x201;\x20}\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20','Response:','performanceOptimizer','getYaw','\x27,\x20price:\x20','change','spuds','\x20meters\x20from\x20this\x20point','rgba(255,\x20192,\x20203,\x200.3)','fillStyle','Marzipano','Product\x20','tell\x20me\x20about','You\x20are\x20within\x20','showAvailableCommands','setupGestures','onWindowResize','cssText','hologram-info','\x20AMD</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-actions\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22add-to-basket-btn\x22\x20onclick=\x22window.addToCart({name:\x20\x27','onresult','Safari','Please\x20select\x20a\x20location\x20on\x20the\x20map\x20first.','lookTo','776BdXEUq','Sending\x20order:','#selectedAddress','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22mobile-interface\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22top-controls\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22menu-btn\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-bars\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22location-indicator\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-map-marker-alt\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>Current\x20Location</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22cart-btn\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-shopping-cart\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22cart-count\x22>0</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22navigation-controls\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22nav-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22nav-btn\x20zoom-in\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-plus\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22nav-btn\x20zoom-out\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-minus\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22nav-btn\x20fullscreen\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-expand\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','can','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20','initializeInterface','clientHeight','look\x20above','disabled','eyeshadow','viewIn','.voice-feedback-popup','Virtual\x20try-on\x20not\x20initialized','\x20virtually\x20using\x20your\x20camera.','onion','startsWith','tablet','forEach','Failed\x20to\x20submit\x20order:\x20','soft\x20drink','center','button','setIdleMovement','setupNavigationControls','closest','threejs-container','info-hotspot','yogurt','item','device-','yoghurt','processCommand','Error\x20showing\x20current\x20location:','position','\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>','radial-gradient(circle\x20at\x2050%\x2050%,\x20rgba(255,250,220,0.15)\x200%,\x20rgba(40,30,0,0.4)\x20100%)','createProductPreview','try-on-description','mic-icon','[DEBUG]\x20Confirm\x20Location\x20button\x20clicked.','\x20section','toFixed','pork\x20chops','Voice\x20Commands','container','[data-hotspot=\x22','try-on-canvas','currentProduct','(max-width:\x20500px),\x20(max-height:\x20500px)','showHelp','radial-gradient(circle\x20at\x2050%\x2050%,\x20rgba(255,220,220,0.15)\x200%,\x20rgba(40,10,10,0.4)\x20100%)','\x20to\x20cart!','cloneNode','time','hideVoiceFeedback','input[name=\x22paymentMethod\x22]:checked','hotspotMapping','function','children','Sorry,\x20I\x20couldn\x27t\x20find\x20','textContent','makeup','showHologram','how\x20much','locationerror','Which\x20item\x20would\x20you\x20like\x20to\x20remove?','fa-info-circle','onstart','rotate(','products','addBottomNav','DOMContentLoaded','startAmbient','clientY','sceneChange','ElementPressControlMethod','Raycaster','info-hotspot-modal','updateVoiceFeedback','controls','-webkit-transform','currentSceneId','bounce','>>>\x20Header\x20clicked\x20while\x20minimized,\x20expanding.','voiceFeedbackPopup','pork\x20loin','autorotate','You\x20can\x20find\x20','checkoutModal','.cart-total','Form\x20found','updateAmbientForScene','onSceneChange','calculateSimilarity','userData','lipstick','length','shampoo','voiceCommandSystem','addMobileControls','Cart\x20header\x20FOUND.\x20Adding\x20header\x20toggle\x20listener\x20(onload)...','APP_DATA','aria-label','voice-feedback','mouseleave','Error\x20navigating\x20to\x20product:','left','shift','fullscreen-enabled','linear-gradient(to\x20right,\x20#ffcc00,\x20#ff9900)','lookAround','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','showProductLocation','\x0a\x20\x20\x20\x20\x20\x20You\x20can\x20use\x20voice\x20commands\x20to:\x0a\x20\x20\x20\x20\x20\x201.\x20Navigate:\x20\x22go\x20to\x20vegetables\x22,\x20\x22go\x20to\x20dairy\x22,\x20etc.\x0a\x20\x20\x20\x20\x20\x202.\x20View:\x20\x22look\x20around\x22,\x20\x22zoom\x20in\x22,\x20\x22reset\x20view\x22\x0a\x20\x20\x20\x20\x20\x203.\x20Cart:\x20\x22open\x20cart\x22,\x20\x22what\x27s\x20in\x20my\x20cart\x22,\x20\x22checkout\x22\x0a\x20\x20\x20\x20\x20\x204.\x20Products:\x20\x22show\x20me\x20potatoes\x22,\x20\x22what\x20is\x20cheese\x22,\x20\x22where\x20can\x20I\x20find\x20milk\x22\x0a\x20\x20\x20\x20\x20\x205.\x20Help:\x20\x22what\x20can\x20I\x20say\x22,\x20\x22stop\x20listening\x22\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20Try\x20saying\x20\x22show\x20me\x22\x20followed\x20by\x20a\x20product\x20name\x20to\x20see\x20it\x20in\x203D!\x0a\x20\x20\x20\x20','lineTo','#viewRight','14771210QkcceB','supportedLanguages','gramm','DOMContentLoaded\x20END\x20-\x20map\x20modal\x20+\x20order\x20form\x20setup','showAvailableProducts','viewLeft','Navigating\x20to:','listenerAdded','updateProjectionMatrix','start','fa-check-circle','src','Current\x20location\x20unknown','10px\x2020px','\x20AMD</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22hologram-description\x22>','height','Error\x20navigating\x20to\x20scene:','pop','currentScene','Command\x20not\x20recognized.\x20Try\x20saying\x20\x22show\x20me\x22\x20followed\x20by\x20a\x20product\x20name,\x20or\x20use\x20navigation\x20commands\x20like\x20\x22look\x20around\x22\x20or\x20\x22go\x20to\x20vegetables\x22.','viewRight','querySelectorAll','match','milk','Could\x20not\x20find\x20','productPrice','px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20top:\x20','type','setupTouchControls','further','isLoading','applyHaircareEffect','dataset','img/info.png','</div>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22remove-item-btn\x22\x20onclick=\x22removeFromCart(\x27','.item-name','pannellum','info-hotspot-header','toggleListening','Your\x20total\x20is\x20','undefined','50px','voice-text','No\x20products\x20found\x20in\x20this\x20section','carrots','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-description\x22>','flex','navigateToScene','touchmove','\x0a\x20\x20\x20\x20.ymaps-2-1-79-suggest-item\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x208px\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.ymaps-2-1-79-suggest-item:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f5f5f5;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.ymaps-2-1-79-suggest-item-selected\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#e3f2fd\x20!important;\x0a\x20\x20\x20\x20}\x0a','dairy\x20milk','generateOrderNumber','4-jus','mineral\x20water','px,\x20','setPitch','canvas','zIndex','img','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22price-per-unit\x22>','rightElement','playSound','stringify','No\x20products\x20available\x20in\x20this\x20section','.weight-unit','render','hide','Ripe\x20tomatoes','getPitch','#viewUp','Fresh\x20potatoes','Processing\x20command:','now','voiceCommandBtn','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-description\x22>','\x20AMD\x20per\x20kg</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22weight-input\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22number\x22\x20min=\x220.1\x22\x20step=\x220.1\x22\x20class=\x22weight-amount\x22\x20placeholder=\x22Enter\x20weight\x20in\x20kg\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22weight-unit\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22kg\x22>kg</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22g\x22>g</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-actions\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22add-to-basket-btn\x22\x20disabled>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-cart-plus\x22></i>\x20Add\x20to\x20Cart\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22view-hologram-btn\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-cube\x22></i>\x20View\x20in\x203D\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x20preloaded\x20successfully','EdgesGeometry','<i\x20class=\x22fas\x20fa-cart-plus\x22></i>\x20Add\x20to\x20Cart','Cart\x20header\x20element\x20NOT\x20FOUND\x20for\x20toggle\x20listener\x20(onload).','overlayElement','transcript','createHolographicProduct','tomatoes','linear-gradient(to\x20right,\x20#ff4a4a,\x20#ff45a7)','1-laiterie','look\x20to\x20the\x20right','Your\x20cart\x20contains:\x20','videoElement','Sorry,\x20I\x20couldn\x27t\x20find\x20information\x20about\x20','interimResults','mediaDevices','click','onended','cartTotal','.add-to-basket-btn','box','hair','viewer','longestCommonSubsequence','input','Success:','material','touchstart','#ff9800','setSize','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22floating-item-content\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','findIndex','removing','getElementById','Fresh\x20pork','#F44336','Navigating\x20to\x20','50%','toast\x20toast-','146ihznCC','createVoiceCommandButton','default','try-on-video','locate','findProductInTranscript','weightUnits','suggestProducts','assign','Error\x20showing\x20product\x20info:','serum','handleTouchMove','2-fromage','Error\x20during\x20map\x20initialization:','0\x204px\x2010px\x20rgba(0,0,0,0.3)','devicePixelRatio','address','error','lotion','addToCart','addEventListener','nextElementSibling','880551CYQvBx','Fresh\x20lettuce','image','meat','Error\x20showing\x20location','loadedScenes','pause','\x20AMD</span>','startCanvasRendering','adjustInterface','rotation','absolute','getProductType','Color','conditioner','zoom\x20away','hologram-container','radial-gradient(circle\x20at\x2050%\x2050%,\x20rgba(255,220,220,0.15)\x200%,\x20rgba(40,0,0,0.4)\x20100%)','\x27)\x22\x20aria-label=\x22Remove\x20','AdditiveBlending','Failed\x20to\x20place\x20order.\x20Please\x20try\x20again.','innerWidth','Total:\x20<span>','Available\x20commands:\x0a','Voice\x20recognition\x20started','unknown','[DEBUG]\x20Confirm\x20location\x20button\x20listener\x20added.','ImageUrlSource','AmbientLight','viewUp','remove\x20from\x20cart','onend','resetView','opacity','pay','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item-price\x22>','fromString','display_name','Listening...','navigateToProduct','Voice\x20recognition\x20error.\x20Please\x20try\x20again.','Chrome','updateVoiceButton','try-on-content','isListening','deliveryAddress','look\x20downwards','showCurrentLocation','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22cart-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item-details\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item-name\x22>','showProductInfo','preventDefault','Error\x20accessing\x20camera:','visible','priorityLoadQueue','linkHotspots','isRotating','ambientModeBtn','\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22hologram-title\x22>','filter','setView','beef','*****\x20WINDOW\x20ONLOAD\x20STARTING\x20-\x20Setting\x20up\x20cart\x20controls\x20*****','CubeGeometry','SpeechRecognition','marker','all\x200.3s','what\x20are','where\x20can\x20i\x20find','initCamera','where\x20is','head','info-hotspot-close-wrapper','MeshBasicMaterial','pitch','get\x20closer','ellipse','transpositions','description','#viewOut','Error:','addEffect','info-hotspot-icon','closePath','.try-on-description','info-hotspot-title-wrapper','https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png','&gt;','330055ORLTMB','fire','mesh','showCheckout','\x20section.','mobile','mouseout','device','fullName','cheese','mouseenter','MobileInterface\x20initialized.','yoghourt','top','initThreeJS','ShaderMaterial','msie','perfume','isPersonalCareProduct','whole\x20chicken','Mesh','gamma','.cart-btn','what\x20do\x20I\x20have','className','fullscreenButton','orderForm','locationfound','processLoadQueue','mousewheel','complete\x20purchase','calculatePrice','copy','Minimize\x20button\x20JS\x20listener\x20fired!','closer','cart-bump','has','beginPath','3-vegii','data','.add-to-cart-btn','img/link.png','random','stopPropagation','radial-gradient(circle\x20at\x2050%\x2050%,\x20rgba(220,255,255,0.15)\x200%,\x20rgba(0,30,50,0.4)\x20100%)','putImageData','stopMovement','.voice-command-btn','mouseViewMode','hideHologram','Fresh\x20fruit\x20juices','deg)','\x20AMD','140px','videoHeight','castShadow','join','hover','setAttribute','recognition','startBackgroundLoading','fas\x20fa-lightbulb\x20fa-solid','handleShowMeCommand','Virtual\x20Try-On','pork','default-product.png','Recognized:\x20','poultry','quantity','commands','Try\x20on\x20','\x20in\x20the\x20','yaw','hologram-btn','map','sceneId','quadraticCurveTo','handleDeviceOrientation','Error','Found\x20scene:','body','Various\x20cheeses','voice-command-btn','includes','results','http://localhost:3000/api/orders','createAmbientButton','confidence','MacOS','linear-gradient(to\x20right,\x20#4a6bff,\x20#45a7ff)','Could\x20not\x20play\x20sound\x20effect:','webkitSpeechRecognition','try-on-btn\x20primary','info-hotspot-title','RectilinearView','touchcancel','checkoutBtn','<i\x20class=\x22fas\x20fa-check\x22></i>\x20Added!','Carbonated\x20drinks','\x20not\x20found','73596ZgXvFQ','levenshteinDistance','showFeedback','Could\x20not\x20find\x20shopping\x20cart\x20or\x20control\x20buttons\x20(onload).','translate(','confidence-indicator','desktop','WebGLRenderer','\x20AMD\x20per\x20kg</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22weight-input\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22number\x22\x20min=\x220.1\x22\x20step=\x220.1\x22\x20class=\x22weight-amount\x22\x20placeholder=\x22Enter\x20weight\x20in\x20kg\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22weight-unit\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22kg\x22>kg</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22g\x22>g</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-actions\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22add-to-basket-btn\x22\x20disabled>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-cart-plus\x22></i>\x20Add\x20to\x20Cart\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22view-hologram-btn\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-cube\x22></i>\x20View\x20in\x203D\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Error\x20showing\x20product\x20information','\x0a\x20\x20\x20\x20@keyframes\x20pulse\x20{\x0a\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x200\x20rgba(255,\x2074,\x2074,\x200.7);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x2070%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x2010px\x20rgba(255,\x2074,\x2074,\x200);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x200\x20rgba(255,\x2074,\x2074,\x200);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20','https://e3a4-83-139-26-190.ngrok-free.app/api/orders','setupSceneListeners','Mineral\x20water','loop','https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3','4lZRqgv','Three.js\x20not\x20loaded\x20yet','Ambient\x20Mode','initializeAudio','Server\x20response:','hologram-controls','[DEBUG]\x20Confirm\x20clicked\x20but\x20no\x20location\x20selected.','})\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-cart-plus\x22></i>\x20Add\x20to\x20Cart\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22view-hologram-btn\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-cube\x22></i>\x20View\x20in\x203D\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','cartItems','carrot','removeEventListener','lettuce','getElapsedTime','</div>\x0a\x20\x20\x20\x20','\x20section.\x20Let\x20me\x20take\x20you\x20there.','scene','juices','stopAmbient','\x20AMD\x20x\x20','inElement','isFullscreen','showCartNotification','continuous','.info-hotspot-close-wrapper','what\x20is','showCartContents','infoSection','resize','video','isContextualCommand','cart','script','touches','warning','10000','show\x20me\x20','remove','Customer\x20Name:','statusElement','Recognized:','#pano','5-boucherie','prefixLength','Scene\x20','optimizedHotspots','startMovement','data-id','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item-price\x22>','infoHotspots','px)\x20scale(0.1)','https://freesound.org/data/previews/561/561657_1168184-lq.mp3','show\x20cart','leafy\x20greens','voice-feedback-popup','\x0a\x20\x20\x20\x20\x20\x20.try-on-container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20fixed;\x0a\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x2090%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2080%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-video-container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#000;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-video\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20object-fit:\x20cover;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-canvas\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-controls\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20space-between;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#333;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-description\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#666;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-options\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20wrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-option\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#f5f5f5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-option:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#e0e0e0;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-option.active\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#4CAF50;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-buttons\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-btn.primary\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#4CAF50;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-btn.secondary\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#f44336;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.05);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-close\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20top:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20right:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.5);\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20height:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2018px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x2010;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-close:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.7);\x0a\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20.try-on-status\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20left:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.7);\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x205px\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20','parentNode','fullscreen-disabled','clientWidth','addListener','jaroWinklerDistance','suggestSimilarCommands','2787AKIwiP','div','<i\x20class=\x22fas\x20fa-cube\x22></i>\x20View\x20in\x203D','warn','high-performance','minimized','drinking\x20water','Voice\x20recognition\x20error:','DOMContentLoaded\x20START\x20-\x20Setting\x20up\x20map\x20modal\x20+\x20order\x20form\x20listeners','beforeend','width','100%','cheeses','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22remove-item-btn\x22\x20onclick=\x22removeFromCart(\x27','deg)\x20translateZ(','set','Could\x20not\x20autoplay\x20ambient\x20sounds:','mask','scale(1.05)','scale(1.1)','opacity\x200.3s','showCartTotal','activeHologram','animate','reload','category','</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22product-description\x22>','</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22hologram-price\x22>','min','en-US','.checkout-form','fas\x20fa-lightbulb','Error\x20fetching\x20address:','what\x20do\x20you\x20have','pointer','productInteraction','landscape','volume','0-entrancee','iOS','createHotspot','[DEBUG]\x20Close\x20map\x20button\x20listener\x20added.','Error\x20starting\x20voice\x20recognition:','try-on-controls','\x0a\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20background:\x20#4CAF50;\x0a\x20\x20\x20\x20\x20\x20width:\x200%;\x0a\x20\x20\x20\x20\x20\x20transition:\x20width\x200.3s\x20ease;\x0a\x20\x20\x20\x20','salad','toggleCart','renderer','test','ambientExperience','Android','\x22\x20alt=\x22','getImageData','&lt;','#sceneListToggle','.weight-amount','Edge','#viewDown','<i\x20class=\x22fas\x20fa-lightbulb\x22></i>','sphere','#sceneList','vegetables','zoom','round','userAgent','application/json','PlaneGeometry','.cart-control-btn','.view-hologram-btn','getProductVariations','try-on-close','detail','20px','createAmbientOverlay','toLowerCase','catch','number','juice','play','fizzy\x20drink','.voice-text','target','reduce','init','block','radial-gradient(circle\x20at\x2050%\x2050%,\x20rgba(220,255,220,0.15)\x200%,\x20rgba(0,40,0,0.4)\x20100%)','showToast','1000','chicken','fruit','Your\x20cart\x20is\x20empty','appendChild','down','message','registerMethod','phone','Unknown\x20location:\x20','\x0a\x20\x20\x20\x20\x20\x20position:\x20fixed;\x0a\x20\x20\x20\x20\x20\x20bottom:\x20200px;\x0a\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.8);\x0a\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20padding:\x2015px\x2025px;\x0a\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20z-index:\x201000;\x0a\x20\x20\x20\x20\x20\x20min-width:\x20300px;\x0a\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x2020px\x20rgba(0,\x200,\x200,\x200.3);\x0a\x20\x20\x20\x20','dairy','lang','handleContextualCommand','screen','#viewLeft','\x0a\x20\x20.product-actions\x20{\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20margin-top:\x2010px;\x0a\x20\x20}\x0a\x20\x20\x0a\x20\x20.view-hologram-btn\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20#00a8ff,\x20#0097e6);\x0a\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20padding:\x208px\x2012px;\x0a\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20gap:\x205px;\x0a\x20\x20}\x0a\x20\x20\x0a\x20\x20.view-hologram-btn:hover\x20{\x0a\x20\x20\x20\x20transform:\x20scale(1.05);\x0a\x20\x20\x20\x20box-shadow:\x200\x200\x2010px\x20rgba(0,\x20168,\x20255,\x200.7);\x0a\x20\x20}\x0a','Customer\x20name\x20is\x20required.','Camera\x20ready','handleRemoveItem','go\x20to','https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3','Order\x20placed\x20successfully!','log','Fresh\x20beef','.cart-item','steak','autoplay','mouseover','listening','expectingItemRemoval','rad)','json','canvasElement','Order\x20form\x20not\x20found','BoxGeometry','img/close.png','uniforms','cream','proceed\x20to\x20checkout','hideCheckout','then','latlng','setYaw','beverages','hide\x20cart','hotspot','Explore\x20this\x20product\x20in\x203D','current','from','bottle','Fresh\x20and\x20high-quality\x20product.','<i\x20class=\x22fas\x20fa-times\x22></i>\x20Close','createVoiceFeedbackPopup','startListening','.confidence-bar','Document\x20loaded','Ambient\x20mode\x20','#4CAF50','potatoes','background','\x0a\x20\x20\x20\x20\x20\x20font-size:\x2024px;\x0a\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20animation:\x20pulse\x201.5s\x20infinite;\x0a\x20\x20\x20\x20','wheel','try-on-video-container','zoom\x20closer','keys','ambient-toast\x20','phoneNumber','currentTest3D','fill','<i\x20class=\x22fas\x20fa-microphone\x22></i>','srcObject','transform','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>+1</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20','onclick','trim','Added\x20','maximizeCartBtn','try-on-status','style','ambientSounds','tileLayer','onions','view-3d-btn','setupTabletInterface','Total:\x20','entries','replace','bottled\x20water','hologram-close','showing','createProductModel','Scene','success','Form\x20submitted','ambientOverlay','clock','optimizeHotspots','isInitialized','.pnlm-container','coordinatesToVector3','fixed','values','browser','getUserMedia','#sceneList\x20.scene','setParameters','bind','drink','tooltip-fallback','try-on-container','innerHeight','Voice\x20recognition\x20ended','Vector2','61155qxvPgB','Click\x20anywhere\x20to\x20enable\x20ambient\x20sounds','contains','show\x20me','isActive','Initializing\x20camera...','.info-hotspot','applySkincareEffect','some','initialViewParameters','applyMakeupEffect','applyTryOnEffect','en-GB','camera','text','show\x20cart\x20contents','\x20added\x20to\x20cart!','downElement','tiles','beta','location','\x20in\x20our\x20store','preloadAdjacentScenes','matchingCharacters','Error\x20setting\x20up\x20speech\x20recognition:','confidence-bar','price','floor','Order\x20Submitted\x20Successfully!','#f44336','info-hotspot-text','addTo','display','max','faceSize','minimizeCartBtn','Firefox','Three.js\x20loaded\x20successfully','Trying\x20to\x20navigate\x20to:','setupDesktopInterface','>>>\x20Header\x20clicked\x20while\x20expanded,\x20ignoring\x20(use\x20minimize\x20button).','touchend','backgroundLoadQueue','Network\x20response\x20was\x20not\x20ok','.\x20Located\x20in\x20the\x20'];_0x45c1=function(){return _0x37ce79;};return _0x45c1();}class VirtualTryOn{constructor(){const _0x2faac8=_0x54618a;this[_0x2faac8(0x36c)]=![],this[_0x2faac8(0x17a)]=null,this[_0x2faac8(0x32b)]=null,this[_0x2faac8(0x380)]=![],this[_0x2faac8(0x475)]=null,this[_0x2faac8(0x306)]();}[_0x54618a(0x306)](){const _0x34756d=_0x54618a,_0x388350=document[_0x34756d(0x3d3)]('style');_0x388350[_0x34756d(0x482)]=_0x34756d(0x2ac),document[_0x34756d(0x1f1)][_0x34756d(0x30e)](_0x388350),this['container']=document['createElement'](_0x34756d(0x2b4)),this[_0x34756d(0x472)][_0x34756d(0x21a)]=_0x34756d(0x378),document[_0x34756d(0x252)][_0x34756d(0x30e)](this['container']);const _0x3bde25=document[_0x34756d(0x3d3)](_0x34756d(0x2b4));_0x3bde25[_0x34756d(0x21a)]=_0x34756d(0x1d6),this[_0x34756d(0x472)][_0x34756d(0x30e)](_0x3bde25);const _0x1f5e74=document[_0x34756d(0x3d3)](_0x34756d(0x2b4));_0x1f5e74[_0x34756d(0x21a)]=_0x34756d(0x349),_0x3bde25[_0x34756d(0x30e)](_0x1f5e74),this[_0x34756d(0x17a)]=document['createElement'](_0x34756d(0x292)),this[_0x34756d(0x17a)][_0x34756d(0x21a)]=_0x34756d(0x198),this[_0x34756d(0x17a)][_0x34756d(0x325)]=!![],this[_0x34756d(0x17a)][_0x34756d(0x3b8)]=!![],_0x1f5e74['appendChild'](this[_0x34756d(0x17a)]),this['canvasElement']=document[_0x34756d(0x3d3)]('canvas'),this[_0x34756d(0x32b)][_0x34756d(0x21a)]=_0x34756d(0x474),_0x1f5e74[_0x34756d(0x30e)](this[_0x34756d(0x32b)]),this[_0x34756d(0x29c)]=document['createElement'](_0x34756d(0x2b4)),this[_0x34756d(0x29c)][_0x34756d(0x21a)]=_0x34756d(0x358),this['statusElement']['textContent']=_0x34756d(0x381),_0x1f5e74[_0x34756d(0x30e)](this[_0x34756d(0x29c)]);const _0x210f29=document['createElement'](_0x34756d(0x2b4));_0x210f29['className']=_0x34756d(0x2de),_0x3bde25[_0x34756d(0x30e)](_0x210f29);const _0x3f2339=document[_0x34756d(0x3d3)](_0x34756d(0x2b4));_0x3f2339['className']='try-on-title',_0x3f2339[_0x34756d(0x482)]=_0x34756d(0x241),_0x210f29[_0x34756d(0x30e)](_0x3f2339);const _0x3fb952=document[_0x34756d(0x3d3)](_0x34756d(0x2b4));_0x3fb952[_0x34756d(0x21a)]=_0x34756d(0x46b),_0x3fb952['textContent']='Try\x20on\x20this\x20product\x20virtually\x20using\x20your\x20camera.',_0x210f29[_0x34756d(0x30e)](_0x3fb952);const _0x2a3346=document[_0x34756d(0x3d3)](_0x34756d(0x2b4));_0x2a3346[_0x34756d(0x21a)]='try-on-options',_0x210f29[_0x34756d(0x30e)](_0x2a3346);const _0x3e94b9=document[_0x34756d(0x3d3)](_0x34756d(0x2b4));_0x3e94b9[_0x34756d(0x21a)]=_0x34756d(0x3bb),_0x210f29[_0x34756d(0x30e)](_0x3e94b9);const _0x4fd3fd=document['createElement'](_0x34756d(0x45b));_0x4fd3fd['className']=_0x34756d(0x25e),_0x4fd3fd[_0x34756d(0x421)]=_0x34756d(0x170),_0x4fd3fd[_0x34756d(0x354)]=()=>this['addToCart'](),_0x3e94b9['appendChild'](_0x4fd3fd);const _0x37cd56=document[_0x34756d(0x3d3)](_0x34756d(0x45b));_0x37cd56['className']='try-on-btn\x20secondary',_0x37cd56[_0x34756d(0x421)]=_0x34756d(0x33e),_0x37cd56[_0x34756d(0x354)]=()=>this[_0x34756d(0x4fc)](),_0x3e94b9[_0x34756d(0x30e)](_0x37cd56);const _0x3de772=document[_0x34756d(0x3d3)](_0x34756d(0x45b));_0x3de772['className']=_0x34756d(0x2f9),_0x3de772[_0x34756d(0x421)]='×',_0x3de772[_0x34756d(0x354)]=()=>this[_0x34756d(0x4fc)](),this[_0x34756d(0x472)]['appendChild'](_0x3de772),this[_0x34756d(0x1ef)]();}async[_0x54618a(0x1ef)](){const _0x551521=_0x54618a;try{const _0x427da2=await navigator[_0x551521(0x17d)][_0x551521(0x372)]({'video':{'facingMode':'user','width':{'ideal':0x500},'height':{'ideal':0x2d0}}});this[_0x551521(0x17a)][_0x551521(0x351)]=_0x427da2,this[_0x551521(0x36c)]=!![],this[_0x551521(0x29c)][_0x551521(0x482)]=_0x551521(0x31c),this['startCanvasRendering']();}catch(_0x37b1c3){console[_0x551521(0x1a6)](_0x551521(0x1de),_0x37b1c3),this[_0x551521(0x29c)][_0x551521(0x482)]='Camera\x20access\x20denied';}}[_0x54618a(0x1b3)](){const _0x4a4c97=_0x54618a;if(!this['isInitialized']||!this[_0x4a4c97(0x380)])return;const _0x38c07a=this['canvasElement'],_0xab1e7d=this[_0x4a4c97(0x17a)],_0x362e33=_0x38c07a['getContext']('2d');_0x38c07a['width']=_0xab1e7d['videoWidth'],_0x38c07a[_0x4a4c97(0x4c9)]=_0xab1e7d[_0x4a4c97(0x238)],_0x362e33['drawImage'](_0xab1e7d,0x0,0x0,_0x38c07a[_0x4a4c97(0x2bd)],_0x38c07a[_0x4a4c97(0x4c9)]),this['currentProduct']&&this[_0x4a4c97(0x387)](_0x362e33,_0x38c07a[_0x4a4c97(0x2bd)],_0x38c07a[_0x4a4c97(0x4c9)]),requestAnimationFrame(()=>this[_0x4a4c97(0x1b3)]());}[_0x54618a(0x387)](_0x45e16b,_0x440426,_0x50b6b5){const _0x402a17=_0x54618a;if(!this[_0x402a17(0x475)])return;const _0x200d26=this[_0x402a17(0x1b7)](this[_0x402a17(0x475)]['name']);switch(_0x200d26){case _0x402a17(0x483):this[_0x402a17(0x386)](_0x45e16b,_0x440426,_0x50b6b5);break;case _0x402a17(0x3c9):this[_0x402a17(0x383)](_0x45e16b,_0x440426,_0x50b6b5);break;case _0x402a17(0x418):this[_0x402a17(0x4d9)](_0x45e16b,_0x440426,_0x50b6b5);break;default:_0x45e16b[_0x402a17(0x436)]=_0x402a17(0x435),_0x45e16b['fillRect'](0x0,0x0,_0x440426,_0x50b6b5);}}[_0x54618a(0x386)](_0x4cfb90,_0x11f29e,_0x28aa9a){const _0x26335e=_0x54618a;_0x4cfb90[_0x26335e(0x436)]='rgba(255,\x200,\x200,\x200.5)',_0x4cfb90[_0x26335e(0x227)](),_0x4cfb90[_0x26335e(0x1f6)](_0x11f29e/0x2,_0x28aa9a/0x2+0x32,0x1e,0xf,0x0,0x0,Math['PI']*0x2),_0x4cfb90['fill'](),_0x4cfb90[_0x26335e(0x436)]='rgba(0,\x200,\x20255,\x200.3)',_0x4cfb90[_0x26335e(0x227)](),_0x4cfb90[_0x26335e(0x1f6)](_0x11f29e/0x2-0x1e,_0x28aa9a/0x2-0x14,0x14,0xa,0x0,0x0,Math['PI']*0x2),_0x4cfb90['fill'](),_0x4cfb90[_0x26335e(0x227)](),_0x4cfb90[_0x26335e(0x1f6)](_0x11f29e/0x2+0x1e,_0x28aa9a/0x2-0x14,0x14,0xa,0x0,0x0,Math['PI']*0x2),_0x4cfb90['fill']();}[_0x54618a(0x383)](_0x262eed,_0x3dc10e,_0x122280){const _0x546aa7=_0x54618a,_0x49a3eb=_0x262eed[_0x546aa7(0x2e7)](0x0,0x0,_0x3dc10e,_0x122280),_0xb7c5c5=_0x49a3eb[_0x546aa7(0x229)];for(let _0x20d675=0x0;_0x20d675<_0xb7c5c5[_0x546aa7(0x4a6)];_0x20d675+=0x4){const _0x85525c=_0xb7c5c5[_0x20d675],_0x4afe9e=_0xb7c5c5[_0x20d675+0x1],_0x2b9e96=_0xb7c5c5[_0x20d675+0x2];_0xb7c5c5[_0x20d675]=Math[_0x546aa7(0x2cf)](0xff,_0x85525c+0xa),_0xb7c5c5[_0x20d675+0x1]=Math[_0x546aa7(0x2cf)](0xff,_0x4afe9e+0xa),_0xb7c5c5[_0x20d675+0x2]=Math[_0x546aa7(0x2cf)](0xff,_0x2b9e96+0xa);}_0x262eed[_0x546aa7(0x22f)](_0x49a3eb,0x0,0x0);}[_0x54618a(0x4d9)](_0x4daa73,_0x4b418f,_0x222b47){const _0x5bd50a=_0x54618a;_0x4daa73[_0x5bd50a(0x436)]='rgba(255,\x20255,\x20255,\x200.2)',_0x4daa73[_0x5bd50a(0x227)](),_0x4daa73['moveTo'](0x0,_0x222b47*0.2),_0x4daa73['quadraticCurveTo'](_0x4b418f*0.5,_0x222b47*0.1,_0x4b418f,_0x222b47*0.2),_0x4daa73[_0x5bd50a(0x4b8)](_0x4b418f,_0x222b47*0.3),_0x4daa73[_0x5bd50a(0x24e)](_0x4b418f*0.5,_0x222b47*0.4,0x0,_0x222b47*0.3),_0x4daa73[_0x5bd50a(0x1fd)](),_0x4daa73['fill']();}[_0x54618a(0x1b7)](_0x34dbb8){const _0x42bf1f=_0x54618a,_0x57f9e3=_0x34dbb8[_0x42bf1f(0x2fd)]();if(_0x57f9e3[_0x42bf1f(0x255)](_0x42bf1f(0x483))||_0x57f9e3[_0x42bf1f(0x255)](_0x42bf1f(0x4a5))||_0x57f9e3[_0x42bf1f(0x255)](_0x42bf1f(0x44f)))return _0x42bf1f(0x483);else{if(_0x57f9e3[_0x42bf1f(0x255)](_0x42bf1f(0x330))||_0x57f9e3[_0x42bf1f(0x255)](_0x42bf1f(0x1a7))||_0x57f9e3['includes'](_0x42bf1f(0x19f)))return'skincare';else{if(_0x57f9e3[_0x42bf1f(0x255)](_0x42bf1f(0x4a7))||_0x57f9e3[_0x42bf1f(0x255)](_0x42bf1f(0x1b9))||_0x57f9e3[_0x42bf1f(0x255)](_0x42bf1f(0x183)))return _0x42bf1f(0x418);}}return _0x42bf1f(0x197);}[_0x54618a(0x3ea)](_0x469001){const _0x2ba0f2=_0x54618a;if(!this[_0x2ba0f2(0x36c)]){console['error'](_0x2ba0f2(0x452));return;}this[_0x2ba0f2(0x475)]=_0x469001,this['isActive']=!![],this['container'][_0x2ba0f2(0x359)][_0x2ba0f2(0x39c)]=_0x2ba0f2(0x4e8);const _0x531079=this[_0x2ba0f2(0x472)][_0x2ba0f2(0x3e1)]('.try-on-title'),_0x4831c4=this['container'][_0x2ba0f2(0x3e1)](_0x2ba0f2(0x1fe));_0x531079[_0x2ba0f2(0x482)]=_0x469001[_0x2ba0f2(0x403)],_0x4831c4[_0x2ba0f2(0x482)]=_0x2ba0f2(0x248)+_0x469001[_0x2ba0f2(0x403)]+_0x2ba0f2(0x453),this[_0x2ba0f2(0x1b3)]();}[_0x54618a(0x4fc)](){const _0x29204a=_0x54618a;this[_0x29204a(0x380)]=![],this['container']['style'][_0x29204a(0x39c)]=_0x29204a(0x410);}[_0x54618a(0x1a8)](){const _0x53706a=_0x54618a;this[_0x53706a(0x475)]&&(window[_0x53706a(0x1a8)](this[_0x53706a(0x475)]),this[_0x53706a(0x4fc)]());}}let virtualTryOn;function createInfoHotspotElement(_0x4fea87){const _0xe0e766=_0x54618a;var _0x5964c1=_0x4fea87[_0xe0e766(0x38a)][_0xe0e766(0x4d0)](/(\d+)\s*amd/i);if(_0x5964c1){var _0x5ba8be=parseInt(_0x5964c1[0x1]),_0xd3f915=_0x4fea87[_0xe0e766(0x38a)][_0xe0e766(0x2fd)]()[_0xe0e766(0x255)]('kg')||_0x4fea87['text'][_0xe0e766(0x2fd)]()[_0xe0e766(0x255)](_0xe0e766(0x4bc));const _0x13c953=this[_0xe0e766(0x214)](_0x4fea87[_0xe0e766(0x3c3)]);if(_0xd3f915){text[_0xe0e766(0x421)]=_0xe0e766(0x16c)+_0x4fea87['text'][_0xe0e766(0x361)](/(\d+)\s*amd/i,'')+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-price\x22>'+_0x5ba8be+_0xe0e766(0x26e)+(_0x13c953?'<button\x20class=\x22try-on-btn\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-camera\x22></i>\x20Try\x20On\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>':'')+_0xe0e766(0x4b5);const _0x4ace8f=text[_0xe0e766(0x3e1)](_0xe0e766(0x2ea)),_0x42214b=text['querySelector'](_0xe0e766(0x4fa)),_0x58ebbe=text['querySelector'](_0xe0e766(0x181));_0x4ace8f[_0xe0e766(0x1a9)](_0xe0e766(0x186),function(){const _0x5ebbd6=_0xe0e766,_0x13a3ae=parseFloat(this[_0x5ebbd6(0x405)]);_0x58ebbe[_0x5ebbd6(0x44e)]=!_0x13a3ae||_0x13a3ae<=0x0;if(_0x13a3ae&&_0x13a3ae>0x0){const _0x4f74f9=_0x42214b[_0x5ebbd6(0x405)],_0x24173f=_0x4f74f9==='g'?_0x13a3ae/0x3e8:_0x13a3ae,_0x103462=Math[_0x5ebbd6(0x2f2)](_0x5ba8be*_0x24173f);_0x58ebbe['onclick']=()=>window[_0x5ebbd6(0x1a8)]({'name':_0x4fea87['title'],'price':_0x103462,'weight':_0x24173f,'unit':'kg','pricePerKg':_0x5ba8be});}});}else text[_0xe0e766(0x421)]=_0xe0e766(0x16c)+_0x4fea87[_0xe0e766(0x38a)][_0xe0e766(0x361)](/(\d+)\s*amd/i,'')+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22product-price\x22>'+_0x5ba8be+_0xe0e766(0x440)+_0x4fea87[_0xe0e766(0x3c3)]+'\x27,\x20price:\x20'+_0x5ba8be+'})\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-cart-plus\x22></i>\x20Add\x20to\x20Cart\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22view-hologram-btn\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-cube\x22></i>\x20View\x20in\x203D\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x13c953?_0xe0e766(0x412):'')+_0xe0e766(0x4b5);const _0x261ded=text[_0xe0e766(0x3e1)](_0xe0e766(0x2f7));_0x261ded&&_0x261ded['addEventListener'](_0xe0e766(0x17e),function(){const _0x108bbe=_0xe0e766;!holographicDisplay&&(holographicDisplay=new HolographicProductDisplay()),holographicDisplay['showHologram']({'name':_0x4fea87['title'],'price':_0x5ba8be,'description':_0x4fea87[_0x108bbe(0x38a)][_0x108bbe(0x361)](/(\d+)\s*amd/i,'')});});const _0x2144fb=text[_0xe0e766(0x3e1)](_0xe0e766(0x406));_0x2144fb&&_0x2144fb[_0xe0e766(0x1a9)]('click',function(){const _0x8415c8=_0xe0e766;!virtualTryOn&&(virtualTryOn=new VirtualTryOn()),virtualTryOn[_0x8415c8(0x3ea)]({'name':_0x4fea87[_0x8415c8(0x3c3)],'price':_0x5ba8be,'description':_0x4fea87[_0x8415c8(0x38a)][_0x8415c8(0x361)](/(\d+)\s*amd/i,'')});});}else text[_0xe0e766(0x421)]=_0x4fea87[_0xe0e766(0x38a)];}function _0x3b99(_0x1d43b9,_0x1ea377){const _0x45c1d4=_0x45c1();return _0x3b99=function(_0x3b9975,_0x15b47b){_0x3b9975=_0x3b9975-0x16a;let _0x35e83a=_0x45c1d4[_0x3b9975];return _0x35e83a;},_0x3b99(_0x1d43b9,_0x1ea377);}function isPersonalCareProduct(_0x2ac412){const _0x18154d=_0x54618a,_0x4e4185=_0x2ac412[_0x18154d(0x2fd)]();return _0x4e4185[_0x18154d(0x255)]('cream')||_0x4e4185[_0x18154d(0x255)](_0x18154d(0x1a7))||_0x4e4185[_0x18154d(0x255)](_0x18154d(0x4a7))||_0x4e4185['includes'](_0x18154d(0x1b9))||_0x4e4185['includes']('makeup')||_0x4e4185[_0x18154d(0x255)](_0x18154d(0x4a5))||_0x4e4185[_0x18154d(0x255)](_0x18154d(0x44f))||_0x4e4185[_0x18154d(0x255)](_0x18154d(0x19f))||_0x4e4185['includes'](_0x18154d(0x2c4))||_0x4e4185[_0x18154d(0x255)](_0x18154d(0x213));}const tryOnButtonStyle=document['createElement'](_0x54618a(0x359));tryOnButtonStyle[_0x54618a(0x482)]='\x0a\x20\x20.try-on-btn\x20{\x0a\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20#9c88ff,\x20#8c7ae6);\x0a\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20padding:\x208px\x2012px;\x0a\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20gap:\x205px;\x0a\x20\x20}\x0a\x20\x20\x0a\x20\x20.try-on-btn:hover\x20{\x0a\x20\x20\x20\x20transform:\x20scale(1.05);\x0a\x20\x20\x20\x20box-shadow:\x200\x200\x2010px\x20rgba(156,\x20136,\x20255,\x200.7);\x0a\x20\x20}\x0a',document[_0x54618a(0x1f1)][_0x54618a(0x30e)](tryOnButtonStyle);class ThreeJSOptimizer{constructor(){const _0x545e2c=_0x54618a;this[_0x545e2c(0x285)]=null,this['camera']=null,this['renderer']=null,this['raycaster']=new THREE[(_0x545e2c(0x492))](),this[_0x545e2c(0x3ac)]=new THREE[(_0x545e2c(0x37b))](),this[_0x545e2c(0x36a)]=new THREE[(_0x545e2c(0x3d0))](),this[_0x545e2c(0x2a2)]=new Map(),this[_0x545e2c(0x36c)]=![];}[_0x54618a(0x306)](){const _0x27a162=_0x54618a;if(this['isInitialized'])return;this[_0x27a162(0x285)]=new THREE[(_0x27a162(0x366))](),this[_0x27a162(0x285)][_0x27a162(0x346)]=new THREE[(_0x27a162(0x1b8))](0x0),this[_0x27a162(0x389)]=new THREE[(_0x27a162(0x3c2))](0x4b,window['innerWidth']/window[_0x27a162(0x379)],0.1,0x3e8),this[_0x27a162(0x389)]['position']['z']=0x5,this[_0x27a162(0x2e2)]=new THREE[(_0x27a162(0x26d))]({'antialias':!![],'powerPreference':_0x27a162(0x2b7),'stencil':![],'depth':!![]}),this['renderer']['setPixelRatio'](window[_0x27a162(0x1a4)]),this[_0x27a162(0x2e2)]['setSize'](window[_0x27a162(0x1c0)],window[_0x27a162(0x379)]),this[_0x27a162(0x2e2)][_0x27a162(0x3bc)][_0x27a162(0x3db)]=!![],this[_0x27a162(0x2e2)][_0x27a162(0x3bc)][_0x27a162(0x4d5)]=THREE['PCFSoftShadowMap'];const _0x4fe8b2=document[_0x27a162(0x3d3)]('div');_0x4fe8b2['id']=_0x27a162(0x45f),_0x4fe8b2[_0x27a162(0x359)]['position']=_0x27a162(0x1b6),_0x4fe8b2[_0x27a162(0x359)][_0x27a162(0x20f)]='0',_0x4fe8b2[_0x27a162(0x359)][_0x27a162(0x4b0)]='0',_0x4fe8b2['style']['width']=_0x27a162(0x2be),_0x4fe8b2[_0x27a162(0x359)][_0x27a162(0x4c9)]='100%',_0x4fe8b2[_0x27a162(0x359)]['pointerEvents']=_0x27a162(0x410),_0x4fe8b2['style'][_0x27a162(0x4f3)]='1',_0x4fe8b2['appendChild'](this[_0x27a162(0x2e2)]['domElement']),document[_0x27a162(0x252)][_0x27a162(0x30e)](_0x4fe8b2);const _0x4b21ce=new THREE[(_0x27a162(0x1c7))](0xffffff,0.5);this[_0x27a162(0x285)]['add'](_0x4b21ce);const _0x546a9c=new THREE['DirectionalLight'](0xffffff,0.8);_0x546a9c[_0x27a162(0x467)][_0x27a162(0x2c2)](0x5,0x5,0x5),_0x546a9c[_0x27a162(0x239)]=!![],this['scene'][_0x27a162(0x3ce)](_0x546a9c),this['animate'](),window['addEventListener'](_0x27a162(0x291),()=>this['onWindowResize'](),![]),this[_0x27a162(0x36c)]=!![];}[_0x54618a(0x36b)](_0x1c5141){const _0x3cab4f=_0x54618a;_0x1c5141[_0x3cab4f(0x457)](_0x2f8b8f=>{const _0x1a472c=_0x3cab4f;_0x2f8b8f[_0x1a472c(0x4d5)]===_0x1a472c(0x3f1)&&this[_0x1a472c(0x3f0)](_0x2f8b8f);});}['createOptimizedHotspot'](_0x19d1e4){const _0x7b8ecc=_0x54618a,_0x1b170c=new THREE[(_0x7b8ecc(0x2f5))](0x1,0x1),_0x47c961=new THREE[(_0x7b8ecc(0x1f3))]({'color':0xffffff,'transparent':!![],'opacity':0.5,'side':THREE['DoubleSide']}),_0x2538f2=new THREE[(_0x7b8ecc(0x216))](_0x1b170c,_0x47c961);_0x2538f2[_0x7b8ecc(0x467)][_0x7b8ecc(0x2c2)](_0x19d1e4[_0x7b8ecc(0x467)]['x'],_0x19d1e4[_0x7b8ecc(0x467)]['y'],_0x19d1e4[_0x7b8ecc(0x467)]['z']),_0x2538f2[_0x7b8ecc(0x4a4)][_0x7b8ecc(0x338)]=_0x19d1e4,this[_0x7b8ecc(0x285)][_0x7b8ecc(0x3ce)](_0x2538f2),this[_0x7b8ecc(0x2a2)][_0x7b8ecc(0x2c2)](_0x19d1e4['id'],_0x2538f2);}['updateHotspotPositions'](_0x599245){const _0x33fa47=_0x54618a;this[_0x33fa47(0x2a2)][_0x33fa47(0x457)]((_0x33339c,_0x567d3a)=>{const _0x435e93=_0x33fa47,_0x395c7=_0x33339c[_0x435e93(0x4a4)][_0x435e93(0x338)],_0x553267=_0x599245[_0x435e93(0x3ef)][_0x435e93(0x36e)](_0x395c7[_0x435e93(0x467)]);_0x33339c['position'][_0x435e93(0x222)](_0x553267),_0x33339c[_0x435e93(0x41d)](this[_0x435e93(0x389)][_0x435e93(0x467)]);});}[_0x54618a(0x2ca)](){const _0x3913ee=_0x54618a;requestAnimationFrame(()=>this[_0x3913ee(0x2ca)]()),this[_0x3913ee(0x285)]&&this[_0x3913ee(0x389)]&&this[_0x3913ee(0x2e2)]&&this[_0x3913ee(0x2e2)][_0x3913ee(0x4fb)](this['scene'],this[_0x3913ee(0x389)]);}[_0x54618a(0x43d)](){const _0x3116cf=_0x54618a;this[_0x3116cf(0x389)]&&this['renderer']&&(this['camera'][_0x3116cf(0x411)]=window['innerWidth']/window[_0x3116cf(0x379)],this[_0x3116cf(0x389)]['updateProjectionMatrix'](),this[_0x3116cf(0x2e2)][_0x3116cf(0x18b)](window[_0x3116cf(0x1c0)],window[_0x3116cf(0x379)]));}[_0x54618a(0x46a)](_0x4c8d51){const _0x2f51c7=_0x54618a,_0x5b39c8=new THREE[(_0x2f51c7(0x32d))](0x1,0x1,0x1),_0x4534e0=new THREE[(_0x2f51c7(0x3a9))]({'color':0xffffff,'transparent':!![],'opacity':0.8}),_0x35926a=new THREE['Mesh'](_0x5b39c8,_0x4534e0);return _0x35926a[_0x2f51c7(0x467)][_0x2f51c7(0x2c2)](0x0,0x0,-0x2),this[_0x2f51c7(0x285)][_0x2f51c7(0x3ce)](_0x35926a),_0x35926a;}['createHolographicEffect'](_0x15a48c){const _0xe63813=_0x54618a,_0x3c8604=new THREE[(_0xe63813(0x211))]({'uniforms':{'time':{'value':0x0},'color':{'value':new THREE[(_0xe63813(0x1b8))](0xffff)}},'vertexShader':_0xe63813(0x419),'fragmentShader':'\x0a\x20\x20\x20\x20\x20\x20\x20\x20uniform\x20float\x20time;\x0a\x20\x20\x20\x20\x20\x20\x20\x20uniform\x20vec3\x20color;\x0a\x20\x20\x20\x20\x20\x20\x20\x20varying\x20vec2\x20vUv;\x0a\x20\x20\x20\x20\x20\x20\x20\x20void\x20main()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20float\x20glow\x20=\x20sin(time\x20*\x202.0)\x20*\x200.5\x20+\x200.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gl_FragColor\x20=\x20vec4(color,\x20glow\x20*\x200.5);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20','transparent':!![],'blending':THREE[_0xe63813(0x1be)]}),_0x58cc15=new THREE[(_0xe63813(0x216))](new THREE['PlaneGeometry'](1.2,1.2),_0x3c8604);return _0x58cc15[_0xe63813(0x467)][_0xe63813(0x222)](_0x15a48c[_0xe63813(0x467)]),_0x58cc15[_0xe63813(0x467)]['z']-=0.1,this[_0xe63813(0x285)]['add'](_0x58cc15),_0x58cc15;}[_0x54618a(0x3cd)](_0x389cb3){const _0x279f9c=_0x54618a;_0x389cb3[_0x279f9c(0x188)][_0x279f9c(0x32f)]&&(_0x389cb3[_0x279f9c(0x188)][_0x279f9c(0x32f)][_0x279f9c(0x47b)]['value']=this[_0x279f9c(0x36a)][_0x279f9c(0x282)]());}}const threeJSOptimizer=new ThreeJSOptimizer();threeJSOptimizer['init']();class VoiceCommands{constructor(){const _0x3fa9e5=_0x54618a;this[_0x3fa9e5(0x23d)]=new(window[(_0x3fa9e5(0x1ea))]||window['webkitSpeechRecognition'])(),this[_0x3fa9e5(0x23d)][_0x3fa9e5(0x28c)]=![],this[_0x3fa9e5(0x23d)][_0x3fa9e5(0x17c)]=![],this[_0x3fa9e5(0x23d)][_0x3fa9e5(0x316)]='en-US',this[_0x3fa9e5(0x23d)][_0x3fa9e5(0x489)]=()=>{const _0x2a953b=_0x3fa9e5;console[_0x2a953b(0x321)]('Voice\x20recognition\x20started'),document[_0x2a953b(0x3e1)](_0x2a953b(0x231))[_0x2a953b(0x3e2)][_0x2a953b(0x3ce)](_0x2a953b(0x327));},this['recognition'][_0x3fa9e5(0x1ca)]=()=>{const _0x383f54=_0x3fa9e5;console[_0x383f54(0x321)](_0x383f54(0x37a)),document[_0x383f54(0x3e1)](_0x383f54(0x231))[_0x383f54(0x3e2)][_0x383f54(0x29a)](_0x383f54(0x327));},this['recognition'][_0x3fa9e5(0x441)]=_0x34a176=>{const _0x573bc5=_0x3fa9e5,_0x3e7119=_0x34a176[_0x573bc5(0x256)][0x0][0x0][_0x573bc5(0x173)],_0x10a67a=_0x34a176[_0x573bc5(0x256)][0x0][0x0][_0x573bc5(0x259)];console[_0x573bc5(0x321)](_0x573bc5(0x29d),_0x3e7119,'Confidence:',_0x10a67a),this['processCommand'](_0x3e7119,_0x10a67a);};}['processCommand'](_0x38cbef){const _0x16c40e=_0x54618a,_0xec320e=_0x38cbef[_0x16c40e(0x2fd)]()[_0x16c40e(0x355)]();console[_0x16c40e(0x321)](_0x16c40e(0x501),_0xec320e);const _0x53d63e={'entrance':_0x16c40e(0x2d9),'dairy':_0x16c40e(0x177),'cheese':'2-fromage','vegetables':_0x16c40e(0x228),'juice':_0x16c40e(0x4ee),'butcher':'5-boucherie'};if(_0xec320e['includes'](_0x16c40e(0x31e))){const _0x482a56=_0xec320e[_0x16c40e(0x361)](_0x16c40e(0x31e),'')[_0x16c40e(0x355)]();console[_0x16c40e(0x321)](_0x16c40e(0x3a2),_0x482a56);const _0x31421f=_0x53d63e[_0x482a56];if(_0x31421f){const _0x55958f=scenes[_0x16c40e(0x3cc)](_0x4d92fd=>_0x4d92fd[_0x16c40e(0x229)]['id']===_0x31421f);_0x55958f?(console[_0x16c40e(0x321)](_0x16c40e(0x251),_0x55958f),switchScene(_0x55958f),this['showFeedback'](_0x16c40e(0x192)+_0x482a56)):this['showFeedback'](_0x16c40e(0x4d2)+_0x482a56+_0x16c40e(0x40d));}else this[_0x16c40e(0x268)](_0x16c40e(0x313)+_0x482a56);}}['showFeedback'](_0x31cb10){const _0x45a6ca=_0x54618a,_0x14038d=document[_0x45a6ca(0x3e1)](_0x45a6ca(0x451));_0x14038d[_0x45a6ca(0x482)]=_0x31cb10,_0x14038d[_0x45a6ca(0x3e2)][_0x45a6ca(0x3ce)](_0x45a6ca(0x364)),setTimeout(()=>{const _0x380bbf=_0x45a6ca;_0x14038d[_0x380bbf(0x3e2)][_0x380bbf(0x29a)](_0x380bbf(0x364));},0x7d0);}[_0x54618a(0x340)](){const _0x19b73b=_0x54618a;try{this[_0x19b73b(0x23d)][_0x19b73b(0x4c3)]();}catch(_0x547c91){console[_0x19b73b(0x1a6)](_0x19b73b(0x2dd),_0x547c91);}}}const voiceCommands=new VoiceCommands();document[_0x54618a(0x3e1)](_0x54618a(0x231))[_0x54618a(0x1a9)]('click',()=>{const _0xc5edc4=_0x54618a;voiceCommands[_0xc5edc4(0x340)]();});function handleVoiceCommand(_0x2f1c79){const _0x1d3c14=_0x54618a;_0x2f1c79=_0x2f1c79[_0x1d3c14(0x2fd)]()[_0x1d3c14(0x361)](/\./g,'')['trim']();const _0x22d559={'entrance':_0x1d3c14(0x2d9),'dairy':_0x1d3c14(0x177),'cheese':'2-fromage','vegetables':_0x1d3c14(0x228),'vegetable':_0x1d3c14(0x228),'juice':_0x1d3c14(0x4ee),'butcher':_0x1d3c14(0x29f)};if(_0x2f1c79[_0x1d3c14(0x255)]('go\x20to')){const _0x3e463f=_0x2f1c79[_0x1d3c14(0x361)](_0x1d3c14(0x31e),'')[_0x1d3c14(0x355)]();if(_0x22d559[_0x3e463f])return switchScene(findSceneById(_0x22d559[_0x3e463f])),!![];}if(_0x22d559[_0x2f1c79])return switchScene(findSceneById(_0x22d559[_0x2f1c79])),!![];return![];}if('webkitSpeechRecognition'in window){const recognition=new webkitSpeechRecognition();recognition[_0x54618a(0x28c)]=![],recognition['interimResults']=![],recognition[_0x54618a(0x441)]=function(_0xeb7680){const _0x34cf16=_0x54618a,_0x358f76=_0xeb7680[_0x34cf16(0x256)][0x0][0x0][_0x34cf16(0x173)];console['log']('Recognized:',_0x358f76),handleVoiceCommand(_0x358f76);},document[_0x54618a(0x3e1)](_0x54618a(0x231))[_0x54618a(0x1a9)](_0x54618a(0x17e),function(){const _0x57401e=_0x54618a;recognition[_0x57401e(0x4c3)]();});}const feedbackEl=document[_0x54618a(0x3d3)](_0x54618a(0x2b4));feedbackEl['className']=_0x54618a(0x4ad),document[_0x54618a(0x252)][_0x54618a(0x30e)](feedbackEl);function showFeedback(_0x5f556a,_0x5e4b72=0x7d0){const _0xcbcd79=_0x54618a;feedbackEl[_0xcbcd79(0x482)]=_0x5f556a,feedbackEl[_0xcbcd79(0x3e2)][_0xcbcd79(0x3ce)]('show'),setTimeout(()=>feedbackEl[_0xcbcd79(0x3e2)][_0xcbcd79(0x29a)]('show'),_0x5e4b72);}function processVoiceCommand(_0x38b54e){const _0x131eb1=_0x54618a;console['log']('Processing\x20command:',_0x38b54e);const _0x1a0b2d=_0x38b54e[_0x131eb1(0x2fd)]()['trim']();showFeedback(_0x131eb1(0x244)+_0x38b54e);if(_0x1a0b2d[_0x131eb1(0x255)](_0x131eb1(0x31e))){const _0x3a5b1d=_0x1a0b2d[_0x131eb1(0x361)](_0x131eb1(0x31e),'')['trim'](),_0xceeb39={'entrance':_0x131eb1(0x2d9),'dairy':_0x131eb1(0x177),'cheese':'2-fromage','vegetables':'3-vegii','juice':_0x131eb1(0x4ee),'butcher':_0x131eb1(0x29f)};if(_0xceeb39[_0x3a5b1d]){const _0x462095=scenes[_0x131eb1(0x3cc)](_0x1c67f5=>_0x1c67f5[_0x131eb1(0x229)]['id']===_0xceeb39[_0x3a5b1d]);if(_0x462095)return showFeedback('Navigating\x20to\x20'+_0x3a5b1d+_0x131eb1(0x427)),viewer['switchScene'](_0x462095),!![];}return showFeedback(_0x131eb1(0x4d2)+_0x3a5b1d+'\x20scene'),![];}return![];}if('webkitSpeechRecognition'in window){const recognition=new webkitSpeechRecognition();recognition[_0x54618a(0x28c)]=![],recognition[_0x54618a(0x17c)]=![],recognition[_0x54618a(0x441)]=_0x410a3a=>{const _0x264a57=_0x54618a,_0x1c9a94=_0x410a3a[_0x264a57(0x256)][0x0][0x0][_0x264a57(0x173)];processVoiceCommand(_0x1c9a94);},recognition[_0x54618a(0x1ca)]=()=>{const _0x2488e1=_0x54618a;console['log'](_0x2488e1(0x37a)),recognition['start']();},recognition[_0x54618a(0x3f6)]=_0x2b0d86=>{const _0x147efb=_0x54618a;console[_0x147efb(0x1a6)](_0x147efb(0x2ba),_0x2b0d86[_0x147efb(0x1a6)]),showFeedback(_0x147efb(0x1d3));},recognition[_0x54618a(0x4c3)](),console[_0x54618a(0x321)](_0x54618a(0x1c3));}
+/*
+ * Copyright 2025 Ayyou CO. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+'use strict';
+
+(function() {
+  var Marzipano = window.Marzipano;
+  var bowser = window.bowser;
+  var screenfull = window.screenfull;
+  var data = window.APP_DATA;
+
+  // Add at top with other variables
+  var cart = [];
+
+  // Grab elements from DOM.
+  var panoElement = document.querySelector('#pano');
+  var sceneNameElement = document.querySelector('#titleBar .sceneName');
+  var sceneListElement = document.querySelector('#sceneList');
+  var sceneElements = document.querySelectorAll('#sceneList .scene');
+  var sceneListToggleElement = document.querySelector('#sceneListToggle');
+  var autorotateToggleElement = document.querySelector('#autorotateToggle');
+  var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+
+  // Detect desktop or mobile mode.
+  if (window.matchMedia) {
+    var setMode = function() {
+      if (mql.matches) {
+        document.body.classList.remove('desktop');
+        document.body.classList.add('mobile');
+      } else {
+        document.body.classList.remove('mobile');
+        document.body.classList.add('desktop');
+      }
+    };
+    var mql = matchMedia("(max-width: 500px), (max-height: 500px)");
+    setMode();
+    mql.addListener(setMode);
+  } else {
+    document.body.classList.add('desktop');
+  }
+
+  // Detect whether we are on a touch device.
+  document.body.classList.add('no-touch');
+  window.addEventListener('touchstart', function() {
+    document.body.classList.remove('no-touch');
+    document.body.classList.add('touch');
+  });
+
+  // Use tooltip fallback mode on IE < 11.
+  if (bowser.msie && parseFloat(bowser.version) < 11) {
+    document.body.classList.add('tooltip-fallback');
+  }
+
+  // Viewer options.
+  var viewerOpts = {
+    controls: {
+      mouseViewMode: data.settings.mouseViewMode
+    }
+  };
+
+  // Initialize viewer.
+  var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
+
+  // Create scenes.
+  var scenes = data.scenes.map(function(data) {
+    var urlPrefix = "tiles";
+    var source = Marzipano.ImageUrlSource.fromString(
+      urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
+      { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
+    var geometry = new Marzipano.CubeGeometry(data.levels);
+
+    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
+
+    var scene = viewer.createScene({
+      source: source,
+      geometry: geometry,
+      view: view,
+      pinFirstLevel: true
+    });
+
+    // Create link hotspots.
+    data.linkHotspots.forEach(function(hotspot) {
+      var element = createLinkHotspotElement(hotspot);
+      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+    });
+
+    // Create info hotspots.
+    data.infoHotspots.forEach(function(hotspot) {
+      var element = createInfoHotspotElement(hotspot);
+      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+    });
+
+    return {
+      data: data,
+      scene: scene,
+      view: view
+    };
+  });
+
+  // Set up autorotate, if enabled.
+  var autorotate = Marzipano.autorotate({
+    yawSpeed: 0.03,
+    targetPitch: 0,
+    targetFov: Math.PI/2
+  });
+  if (data.settings.autorotateEnabled) {
+    autorotateToggleElement.classList.add('enabled');
+  }
+
+  // Set handler for autorotate toggle.
+  autorotateToggleElement.addEventListener('click', toggleAutorotate);
+
+  // Set up fullscreen mode, if supported.
+  if (screenfull.enabled && data.settings.fullscreenButton) {
+    document.body.classList.add('fullscreen-enabled');
+    fullscreenToggleElement.addEventListener('click', function() {
+      screenfull.toggle();
+    });
+    screenfull.on('change', function() {
+      if (screenfull.isFullscreen) {
+        fullscreenToggleElement.classList.add('enabled');
+      } else {
+        fullscreenToggleElement.classList.remove('enabled');
+      }
+    });
+  } else {
+    document.body.classList.add('fullscreen-disabled');
+  }
+
+  // Set handler for scene list toggle.
+  sceneListToggleElement.addEventListener('click', toggleSceneList);
+
+  // Start with the scene list open on desktop.
+  if (!document.body.classList.contains('mobile')) {
+    showSceneList();
+  }
+
+  // Set handler for scene switch.
+  scenes.forEach(function(scene) {
+    var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
+    el.addEventListener('click', function() {
+      switchScene(scene);
+      // On mobile, hide scene list after selecting a scene.
+      if (document.body.classList.contains('mobile')) {
+        hideSceneList();
+      }
+    });
+  });
+
+  // DOM elements for view controls.
+  var viewUpElement = document.querySelector('#viewUp');
+  var viewDownElement = document.querySelector('#viewDown');
+  var viewLeftElement = document.querySelector('#viewLeft');
+  var viewRightElement = document.querySelector('#viewRight');
+  var viewInElement = document.querySelector('#viewIn');
+  var viewOutElement = document.querySelector('#viewOut');
+
+  // Dynamic parameters for controls.
+  var velocity = 0.7;
+  var friction = 3;
+
+  // Associate view controls with elements.
+  var controls = viewer.controls();
+  controls.registerMethod('upElement',    new Marzipano.ElementPressControlMethod(viewUpElement,     'y', -velocity, friction), true);
+  controls.registerMethod('downElement',  new Marzipano.ElementPressControlMethod(viewDownElement,   'y',  velocity, friction), true);
+  controls.registerMethod('leftElement',  new Marzipano.ElementPressControlMethod(viewLeftElement,   'x', -velocity, friction), true);
+  controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement,  'x',  velocity, friction), true);
+  controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(viewInElement,  'zoom', -velocity, friction), true);
+  controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom',  velocity, friction), true);
+
+  function sanitize(s) {
+    return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
+  }
+
+  function switchScene(scene) {
+    stopAutorotate();
+    scene.view.setParameters(scene.data.initialViewParameters);
+    scene.scene.switchTo();
+    updateSceneName(scene);
+
+    // Only add 3D element to entrance scene
+    if (scene.data.id === '0-entrancee') {
+        try {
+            // Remove existing 3D test if any
+            if (window.currentTest3D) {
+                window.currentTest3D.remove();
+            }
+            // Create new 3D test
+            window.currentTest3D = createSafeTest3D(scene.scene);
+        } catch (error) {
+            console.log('3D features not available');
+        }
+    } else {
+        // Remove 3D test when leaving entrance
+        if (window.currentTest3D) {
+            window.currentTest3D.remove();
+            window.currentTest3D = null;
+        }
+    }
+}
+
+  // Make switchScene available globally
+  window.switchScene = function(sceneIndex) {
+    if (typeof sceneIndex === 'number' && sceneIndex >= 0 && sceneIndex < scenes.length) {
+      switchScene(scenes[sceneIndex]);
+    }
+  };
+
+  function updateSceneName(scene) {
+    sceneNameElement.innerHTML = sanitize(scene.data.name);
+  }
+
+  function updateSceneList(scene) {
+    for (var i = 0; i < sceneElements.length; i++) {
+      var el = sceneElements[i];
+      if (el.getAttribute('data-id') === scene.data.id) {
+        el.classList.add('current');
+      } else {
+        el.classList.remove('current');
+      }
+    }
+  }
+
+  function showSceneList() {
+    sceneListElement.classList.add('enabled');
+    sceneListToggleElement.classList.add('enabled');
+  }
+
+  function hideSceneList() {
+    sceneListElement.classList.remove('enabled');
+    sceneListToggleElement.classList.remove('enabled');
+  }
+
+  function toggleSceneList() {
+    sceneListElement.classList.toggle('enabled');
+    sceneListToggleElement.classList.toggle('enabled');
+  }
+
+  function startAutorotate() {
+    if (!autorotateToggleElement.classList.contains('enabled')) {
+      return;
+    }
+    viewer.startMovement(autorotate);
+    viewer.setIdleMovement(3000, autorotate);
+  }
+
+  function stopAutorotate() {
+    viewer.stopMovement();
+    viewer.setIdleMovement(Infinity);
+  }
+
+  function toggleAutorotate() {
+    if (autorotateToggleElement.classList.contains('enabled')) {
+      autorotateToggleElement.classList.remove('enabled');
+      stopAutorotate();
+    } else {
+      autorotateToggleElement.classList.add('enabled');
+      startAutorotate();
+    }
+  }
+
+  function createLinkHotspotElement(hotspot) {
+
+    // Create wrapper element to hold icon and tooltip.
+    var wrapper = document.createElement('div');
+    wrapper.classList.add('hotspot');
+    wrapper.classList.add('link-hotspot');
+
+    // Create image element.
+    var icon = document.createElement('img');
+    icon.src = 'img/link.png';
+    icon.classList.add('link-hotspot-icon');
+
+    // Set rotation transform.
+    var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
+    for (var i = 0; i < transformProperties.length; i++) {
+      var property = transformProperties[i];
+      icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
+    }
+
+    // Add click event handler.
+    wrapper.addEventListener('click', function() {
+      switchScene(findSceneById(hotspot.target));
+    });
+
+    // Prevent touch and scroll events from reaching the parent element.
+    // This prevents the view control logic from interfering with the hotspot.
+    stopTouchAndScrollEventPropagation(wrapper);
+
+    // Create tooltip element.
+    var tooltip = document.createElement('div');
+    tooltip.classList.add('hotspot-tooltip');
+    tooltip.classList.add('link-hotspot-tooltip');
+    tooltip.innerHTML = findSceneDataById(hotspot.target).name;
+
+    wrapper.appendChild(icon);
+    wrapper.appendChild(tooltip);
+
+    return wrapper;
+  }
+
+  function createInfoHotspotElement(hotspot) {
+    // Create wrapper element to hold icon and tooltip.
+    var wrapper = document.createElement('div');
+    wrapper.classList.add('hotspot');
+    wrapper.classList.add('info-hotspot');
+
+    // Create hotspot/tooltip header.
+    var header = document.createElement('div');
+    header.classList.add('info-hotspot-header');
+
+    // Create image element.
+    var iconWrapper = document.createElement('div');
+    iconWrapper.classList.add('info-hotspot-icon-wrapper');
+    var icon = document.createElement('img');
+    icon.src = 'img/info.png';
+    icon.classList.add('info-hotspot-icon');
+    iconWrapper.appendChild(icon);
+
+    // Create title element.
+    var titleWrapper = document.createElement('div');
+    titleWrapper.classList.add('info-hotspot-title-wrapper');
+    var title = document.createElement('div');
+    title.classList.add('info-hotspot-title');
+    title.innerHTML = hotspot.title;
+    titleWrapper.appendChild(title);
+
+    // Create close element.
+    var closeWrapper = document.createElement('div');
+    closeWrapper.classList.add('info-hotspot-close-wrapper');
+    var closeIcon = document.createElement('img');
+    closeIcon.src = 'img/close.png';
+    closeIcon.classList.add('info-hotspot-close-icon');
+    closeWrapper.appendChild(closeIcon);
+
+    // Construct header element.
+    header.appendChild(iconWrapper);
+    header.appendChild(titleWrapper);
+    header.appendChild(closeWrapper);
+
+    // Create text element.
+    var text = document.createElement('div');
+    text.classList.add('info-hotspot-text');
+
+    // Check if this is a product hotspot by looking for price in AMD
+    var priceMatch = hotspot.text.match(/(\d+)\s*amd/i);
+    if (priceMatch) {
+        var price = parseInt(priceMatch[1]);
+        // Check if product is sold by weight
+        var isByWeight = hotspot.text.toLowerCase().includes('kg') || 
+                        hotspot.text.toLowerCase().includes('gramm');
+        
+        if (isByWeight) {
+            text.innerHTML = `
+                <div class="product-info">
+                    <div class="product-description">${hotspot.text.replace(/(\d+)\s*amd/i, '')}</div>
+                    <div class="product-price">${price} AMD per kg</div>
+                    <div class="weight-input">
+                        <input type="number" min="0.1" step="0.1" class="weight-amount" placeholder="Enter weight in kg">
+                        <select class="weight-unit">
+                            <option value="kg">kg</option>
+                            <option value="g">g</option>
+                        </select>
+                    </div>
+                    <div class="product-actions">
+                    <button class="add-to-basket-btn" disabled>
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                        <button class="view-hologram-btn">
+                            <i class="fas fa-cube"></i> View in 3D
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            // Add weight input handler
+            const weightInput = text.querySelector('.weight-amount');
+            const weightUnit = text.querySelector('.weight-unit');
+            const addButton = text.querySelector('.add-to-basket-btn');
+
+            weightInput.addEventListener('input', function() {
+                const weight = parseFloat(this.value);
+                addButton.disabled = !weight || weight <= 0;
+                if (weight && weight > 0) {
+                    const unit = weightUnit.value;
+                    const finalWeight = unit === 'g' ? weight / 1000 : weight;
+                    const totalPrice = Math.round(price * finalWeight);
+                    addButton.onclick = () => window.addToCart({
+                        name: hotspot.title,
+                        price: totalPrice,
+                        weight: finalWeight,
+                        unit: 'kg',
+                        pricePerKg: price
+                    });
+                }
+            });
+        } else {
+            // Regular product without weight
+            text.innerHTML = `
+                <div class="product-info">
+                    <div class="product-description">${hotspot.text.replace(/(\d+)\s*amd/i, '')}</div>
+                    <div class="product-price">${price} AMD</div>
+                    <div class="product-actions">
+                    <button class="add-to-basket-btn" onclick="window.addToCart({name: '${hotspot.title}', price: ${price}})">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                        <button class="view-hologram-btn">
+                            <i class="fas fa-cube"></i> View in 3D
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Add holographic view button handler
+        const viewHologramBtn = text.querySelector('.view-hologram-btn');
+        if (viewHologramBtn) {
+            viewHologramBtn.addEventListener('click', function() {
+                // Initialize holographic display if not already done
+                if (!holographicDisplay) {
+                    holographicDisplay = new HolographicProductDisplay();
+                }
+                
+                // Show hologram
+                holographicDisplay.showHologram({
+                    name: hotspot.title,
+                    price: price,
+                    description: hotspot.text.replace(/(\d+)\s*amd/i, '')
+                });
+            });
+        }
+    } else {
+        // This is a regular info hotspot - just show the text
+        text.innerHTML = hotspot.text;
+    }
+
+    // Place header and text into wrapper element.
+    wrapper.appendChild(header);
+    wrapper.appendChild(text);
+
+    // Create a modal for the hotspot content to appear on mobile mode.
+    var modal = document.createElement('div');
+    modal.innerHTML = wrapper.innerHTML;
+    modal.classList.add('info-hotspot-modal');
+    document.body.appendChild(modal);
+
+    var toggle = function() {
+        wrapper.classList.toggle('visible');
+        modal.classList.toggle('visible');
+    };
+
+    // Show content when hotspot is clicked.
+    header.addEventListener('click', toggle);
+
+    // Hide content when close icon is clicked.
+    modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
+
+    // If this is a product hotspot, add click handler for Add to Cart button
+    if (priceMatch) {
+        const addToCartBtn = modal.querySelector('.add-to-basket-btn');
+        if (addToCartBtn) {
+            addToCartBtn.addEventListener('click', function() {
+                window.addToCart({
+                    name: hotspot.title,
+                    price: price
+                });
+                
+                // Show success feedback
+                this.innerHTML = '<i class="fas fa-check"></i> Added!';
+                this.style.background = '#4CAF50';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
+                    this.style.background = '';
+                }, 1500);
+            });
+        }
+    }
+
+    // Add 3D view button
+    const view3dButton = document.createElement('button');
+    view3dButton.className = 'view-3d-btn';
+    view3dButton.innerHTML = '<i class="fas fa-cube"></i> View in 3D';
+    view3dButton.onclick = () => {
+      const product = {
+        name: hotspot.title,
+        price: hotspot.text.match(/\d+/)?.[0] || '0',
+        category: getProductCategory(hotspot.title)
+      };
+      
+      // Create holographic product display
+      const effect = futuristicEffects.createHolographicProduct(product);
+      futuristicEffects.addEffect(hotspot.id, effect);
+      
+      // Show success message
+      Swal.fire({
+        title: '3D View Activated',
+        text: 'Product displayed in holographic view',
+        icon: 'success',
+        timer: 2000,
+        showConfirmButton: false
+      });
+    };
+    modal.appendChild(view3dButton);
+
+    return wrapper;
+  }
+
+  // Prevent touch and scroll events from reaching the parent element.
+  function stopTouchAndScrollEventPropagation(element, eventList) {
+    var eventList = [ 'touchstart', 'touchmove', 'touchend', 'touchcancel',
+                      'wheel', 'mousewheel' ];
+    for (var i = 0; i < eventList.length; i++) {
+      element.addEventListener(eventList[i], function(event) {
+        event.stopPropagation();
+      });
+    }
+  }
+
+  function findSceneById(id) {
+    for (var i = 0; i < scenes.length; i++) {
+      if (scenes[i].data.id === id) {
+        return scenes[i];
+      }
+    }
+    return null;
+  }
+
+  function findSceneDataById(id) {
+    for (var i = 0; i < data.scenes.length; i++) {
+      if (data.scenes[i].id === id) {
+        return data.scenes[i];
+      }
+    }
+    return null;
+  }
+
+  // Add cart functions
+  function addToBasket(product) {
+    var existingProduct = cart.find(item => item.name === product.name);
+    if (existingProduct) {
+      existingProduct.quantity++;
+    } else {
+      cart.push({...product, quantity: 1});
+    }
+    updateCartDisplay();
+    
+    // Show success toast
+    showToast(`${product.name} added to cart!`, 'success');
+  }
+
+  function updateCartDisplay() {
+    var cartItems = document.getElementById('cartItems');
+    var cartTotal = document.getElementById('cartTotal');
+    var cartCount = document.getElementById('cartCount');
+    
+    // Update cart count
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    cartCount.textContent = `${totalItems} ${totalItems === 1 ? 'item' : 'items'}`;
+    
+    // Update cart items with 3D effects
+    cartItems.innerHTML = cart.map((item, index) => {
+      // Calculate 3D transform based on position
+      const rotation = index % 2 === 0 ? 2 : -2;
+      const translateZ = index * 5;
+      
+      return `
+        <div class="cart-item" style="transform: rotateX(${rotation}deg) translateZ(${translateZ}px);">
+          <div class="item-details">
+            <div class="item-name">${item.name}</div>
+            <div class="item-price">${item.price} AMD x ${item.quantity}</div>
+      </div>
+          <button class="remove-item-btn" onclick="removeFromCart('${item.name}')" aria-label="Remove ${item.name}">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      `;
+    }).join('');
+    
+    // Update total
+    var total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    cartTotal.textContent = `Total: ${total} AMD`;
+
+    // Enable/disable checkout button
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    if (checkoutBtn) {
+      checkoutBtn.disabled = cart.length === 0;
+    }
+  }
+
+  function removeFromCart(productName) {
+    // Find the item to remove
+    const itemToRemove = cart.find(item => item.name === productName);
+    if (!itemToRemove) return;
+    
+    // Add removing class for animation
+    const cartItems = document.getElementById('cartItems');
+    const itemElements = cartItems.querySelectorAll('.cart-item');
+    itemElements.forEach(el => {
+      if (el.querySelector('.item-name').textContent === productName) {
+        el.classList.add('removing');
+      }
+    });
+    
+    // Remove after animation completes
+    setTimeout(() => {
+    cart = cart.filter(item => item.name !== productName);
+    updateCartDisplay();
+      
+      // Show removal toast
+      showToast(`${productName} removed from cart`, 'info');
+    }, 300);
+  }
+
+  // Display the initial scene.
+  switchScene(scenes[0]);
+
+})();
+
+// Add these functions outside the main (function() { ... })() scope
+// Make them globally available
+window.cart = [];
+
+window.addToCart = function(product) {
+    const existingItem = window.cart.find(item => item.name === product.name);
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        window.cart.push({...product, quantity: 1});
+    }
+    
+    // Show success toast
+    showToast(`${product.name} added to cart!`, 'success');
+    
+    // Update cart display
+    updateCartDisplay();
+};
+
+window.updateCartDisplay = function() {
+    const cartItems = document.getElementById('cartItems');
+    const cartTotal = document.getElementById('cartTotal');
+    const cartCount = document.getElementById('cartCount');
+    
+    cartItems.innerHTML = window.cart.map(item => `
+        <div class="cart-item">
+            <div class="item-details">
+                <div class="item-name">${item.name}</div>
+                <div class="item-price">${item.price} AMD × ${item.quantity}</div>
+            </div>
+            <button class="remove-item-btn" onclick="removeFromCart('${item.name}')">×</button>
+        </div>
+    `).join('');
+    
+    const total = window.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    cartTotal.innerHTML = `Total: <span>${total} AMD</span>`;
+    cartCount.textContent = `${window.cart.length} items`;
+}
+
+window.removeFromCart = function(productName) {
+    window.cart = window.cart.filter(item => item.name !== productName);
+    updateCartDisplay();
+}
+
+window.showCartNotification = function() {
+    const cart = document.getElementById('shoppingCart');
+    cart.style.transform = 'scale(1.05)';
+    setTimeout(() => {
+        cart.style.transform = 'scale(1)';
+    }, 200);
+}
+
+// Add these new functions
+window.showCheckout = function() {
+    const modal = document.getElementById('checkoutModal');
+    modal.classList.add('active');
+}
+
+window.hideCheckout = function() {
+    const modal = document.getElementById('checkoutModal');
+    modal.classList.remove('active');
+}
+
+// Move cart logic to window.onload
+window.onload = function() {
+    console.error("***** WINDOW ONLOAD STARTING - Setting up cart controls *****"); 
+    
+    // Shopping Cart Minimize/Maximize Logic
+    const shoppingCart = document.getElementById('shoppingCart');
+    const minimizeBtn = document.getElementById('minimizeCartBtn');
+    const maximizeBtn = document.getElementById('maximizeCartBtn');
+    
+    console.log('Cart Elements (onload):', { shoppingCart, minimizeBtn, maximizeBtn });
+
+    if (shoppingCart && minimizeBtn && maximizeBtn) {
+        console.log('Cart elements found. Setting up listeners (onload)...');
+
+        minimizeBtn.addEventListener('click', (event) => {
+            console.log('Minimize button JS listener fired!');
+            event.stopPropagation(); // Prevent header click from firing
+            shoppingCart.classList.add('minimized');
+        });
+
+        maximizeBtn.addEventListener('click', (event) => {
+            console.log('Maximize button JS listener fired!'); 
+            event.stopPropagation(); // Prevent header click from firing
+            shoppingCart.classList.remove('minimized');
+        });
+        
+        // Allow clicking the header to EXPAND the cart if it's minimized
+        const cartHeader = shoppingCart.querySelector('.cart-header');
+        console.log('Attempting to find cart header element:', cartHeader); 
+        
+        if(cartHeader) {
+            console.log('Cart header FOUND. Adding header toggle listener (onload)...');
+            cartHeader.addEventListener('click', (event) => {
+                console.log('HEADER CLICKED! Target:', event.target);
+                // Only proceed if the click was directly on the header, not a button
+                if (event.target.closest('.cart-control-btn')) {
+                     console.log('Header click ignored (control button was target).');
+                     return; 
+                }
+                // Only expand if currently minimized
+                if (shoppingCart.classList.contains('minimized')) {
+                    console.log('>>> Header clicked while minimized, expanding.');
+                    shoppingCart.classList.remove('minimized');
+    } else {
+                    console.log('>>> Header clicked while expanded, ignoring (use minimize button).');
+                }
+        });
+    } else {
+             console.error('Cart header element NOT FOUND for toggle listener (onload).');
+        }
+    } else {
+        console.error('Could not find shopping cart or control buttons (onload).'); 
+    }
+    
+}; // End of window.onload
+
+let currentMap = null;
+let selectedLocation = null;
+let searchControl = null;
+
+function showMapModal() {
+    const mapModal = document.getElementById('mapModal');
+    const mapContainer = document.getElementById('map');
+    
+    // Show the modal first
+    mapModal.classList.add('active');
+    
+    // Wait for the modal to be visible before initializing the map
+    setTimeout(() => {
+        if (!currentMap) {
+            initMap();
+        } else {
+            currentMap.invalidateSize();
+        }
+    }, 100);
+}
+
+function initMap() {
+    if (currentMap) {
+        currentMap.remove();
+    }
+    
+    const mapContainer = document.getElementById('map');
+    mapContainer.innerHTML = ''; // Clear any existing content
+    
+    try {
+        currentMap = L.map('map').setView([40.1772, 44.5126], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+        }).addTo(currentMap);
+        
+        // Locate and add a marker for the current location
+        currentMap.locate({ setView: true, maxZoom: 16 });
+        
+        function onLocationFound(e) {
+            const radius = e.accuracy / 2;
+            L.marker(e.latlng).addTo(currentMap)
+                .bindPopup("You are within " + radius + " meters from this point").openPopup();
+            L.circle(e.latlng, radius).addTo(currentMap);
+        }
+        
+        function onLocationError(e) {
+            console.error("Geolocation error:", e.message);
+        }
+        
+        currentMap.on('locationfound', onLocationFound);
+        currentMap.on('locationerror', onLocationError);
+        
+        // Allow user to place a pin manually
+        let marker;
+        currentMap.on('click', function(e) {
+        const { lat, lng } = e.latlng;
+        if (marker) {
+            marker.setLatLng(e.latlng);
+        } else {
+                marker = L.marker([lat, lng]).addTo(currentMap);
+        }
+
+        // Fetch address using Nominatim
+        fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`)
+            .then(response => response.json())
+            .then(data => {
+                const address = data.display_name;
+                    const addressInput = document.getElementById('selectedAddress');
+                    if(addressInput) {
+                        addressInput.value = address;
+                    }
+                    selectedLocation = { lat, lng, address };
+            })
+            .catch(error => console.error('Error fetching address:', error));
+    });
+    } catch (error) {
+        console.error("Error during map initialization:", error);
+        handleMapError();
+    }
+}
+
+function hideMapModal() {
+    const mapModal = document.getElementById('mapModal');
+    mapModal.classList.remove('active');
+    
+    // Clean up the map when hiding the modal
+    if (currentMap) {
+        currentMap.remove();
+        currentMap = null;
+    }
+}
+
+function handleMapError() {
+    const mapContainer = document.getElementById('map');
+    mapContainer.innerHTML = `
+        <div class="map-error">
+            <p>Sorry, there was an error loading the map. Please try again.</p>
+            <button onclick="retryMapLoad()" class="retry-btn">Retry</button>
+        </div>
+    `;
+}
+
+function retryMapLoad() {
+    const mapContainer = document.getElementById('map');
+    mapContainer.innerHTML = '';
+    currentMap = null;
+    showMapModal();
+}
+
+// Add event listeners when document loads
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOMContentLoaded START - Setting up map modal + order form listeners');
+    
+    // --- Map Modal Listeners (Keep close and confirm) --- 
+    const closeMapBtn = document.querySelector('#mapModal .close-map');
+    if (closeMapBtn) {
+        closeMapBtn.addEventListener('click', hideMapModal);
+        console.log('[DEBUG] Close map button listener added.');
+    }
+    const confirmLocationBtn = document.querySelector('#mapModal .confirm-location-btn');
+    if (confirmLocationBtn) {
+        confirmLocationBtn.addEventListener('click', function() {
+             console.log('[DEBUG] Confirm Location button clicked.');
+            if (selectedLocation && selectedLocation.address) {
+                const addressInput = document.getElementById('selectedAddress');
+                if(addressInput) {
+                    addressInput.value = selectedLocation.address;
+                } else {
+                    console.error("[DEBUG] selectedAddress input not found when confirming.");
+                }
+            hideMapModal();
+            } else {
+                 console.warn('[DEBUG] Confirm clicked but no location selected.');
+                 // Use a less intrusive notification if available (like showToast)
+                 if(typeof showToast === 'function') {
+                     showToast('Please select a location on the map first.', 'warning');
+        } else {
+            alert('Please select a location first');
+                 }
+            }
+        });
+        console.log('[DEBUG] Confirm location button listener added.');
+    }
+
+    // --- EVENT DELEGATION for Map Modal Triggers (Replaces direct listeners below) --- 
+    console.log("[DEBUG] Setting up DELEGATED listeners for map triggers inside #checkoutModal...");
+    const checkoutModalElement = document.getElementById('checkoutModal');
+    if (checkoutModalElement) {
+        checkoutModalElement.addEventListener('click', function(event) {
+            // Check if the click target is the button OR inside the button
+            if (event.target.matches('.pick-location-btn') || event.target.closest('.pick-location-btn')) {
+                console.log("[DEBUG] *** Delegated Click: Pick Location Button Clicked! ***", event.target);
+                event.preventDefault(); 
+                showMapModal();
+            }
+            // Check if the click target is the address input
+            else if (event.target.matches('#selectedAddress')) {
+                 console.log("[DEBUG] *** Delegated Click: Selected Address Input Clicked! ***", event.target);
+                 showMapModal();
+            }
+        });
+         console.log('[DEBUG] Delegated click listener added to #checkoutModal.');
+    } else {
+         console.error("[DEBUG] Checkout Modal element (#checkoutModal) NOT FOUND for event delegation!");
+    }
+    
+    // --- Order Form Logic (Keep as is) --- 
+    const orderForm = document.getElementById('orderForm');
+     if (orderForm) {
+         console.log('Order Form found, setting up submit listener...');
+        // Keep the existing cloneNode logic for now if it was working
+        const newOrderForm = orderForm.cloneNode(true);
+        orderForm.parentNode.replaceChild(newOrderForm, orderForm);
+        
+        // Add new event listener for form submission
+        newOrderForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log('Form submitted');
+            
+            const customerName = document.getElementById('fullName')?.value.trim();
+            console.log('Customer Name:', customerName);
+
+            if (!customerName) {
+                alert('Customer name is required.');
+                return;
+            }
+            
+            // Add device detection function here
+            function detectDevice() {
+                const ua = navigator.userAgent;
+                const platform = {
+                    device: 'unknown',
+                    os: 'unknown',
+                    browser: 'unknown',
+                    userAgent: ua,
+                    screenSize: `${window.screen.width}x${window.screen.height}`
+                };
+
+                if (/iPad|Tablet|PlayBook/i.test(ua)) {
+                    platform.device = 'tablet';
+                } else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle/i.test(ua)) {
+                    platform.device = 'mobile';
+                } else {
+                    platform.device = 'desktop';
+                }
+
+                if (/Windows/i.test(ua)) platform.os = 'Windows';
+                else if (/iPhone|iPad|iPod/.test(ua)) platform.os = 'iOS';
+                else if (/Android/.test(ua)) platform.os = 'Android';
+                else if (/Mac/i.test(ua)) platform.os = 'MacOS';
+                else if (/Linux/i.test(ua)) platform.os = 'Linux';
+
+                if (/Chrome/i.test(ua)) platform.browser = 'Chrome';
+                else if (/Firefox/i.test(ua)) platform.browser = 'Firefox';
+                else if (/Safari/i.test(ua)) platform.browser = 'Safari';
+                else if (/Edge/i.test(ua)) platform.browser = 'Edge';
+
+                return platform;
+            }
+            const deviceInfo = detectDevice();
+
+            const formData = {
+                orderNumber: generateOrderNumber(),
+                customerName: customerName,
+                phone: document.getElementById('phone')?.value.trim() || '',
+                email: document.getElementById('email')?.value.trim() || '',
+                address: document.getElementById('selectedAddress')?.value.trim() || '',
+                paymentMethod: document.querySelector('input[name="paymentMethod"]:checked')?.value || '',
+                items: window.cart,
+                total: window.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0),
+                deviceInfo: deviceInfo // Include device info
+            };
+
+            console.log('Order data:', formData);
+
+            // Submit to server
+            fetch('https://app-files.onrender.com/api/orders', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                console.log('Server response:', response);
+                if (!response.ok) {
+                    return response.text().then(text => {
+                        throw new Error(`Server error: ${text}`);
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Success:', data);
+                hideCheckout();
+                
+                Swal.fire({
+                    title: 'Order Submitted Successfully!',
+                    text: 'Thank you for your order!',
+                    icon: 'success',
+                    confirmButtonText: 'Done'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.cart = [];
+                        updateCartDisplay();
+                        window.location.reload();
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                Swal.fire({
+                    title: 'Error',
+                    text: error.message || 'There was an error submitting your order. Please try again.',
+                    icon: 'error'
+                });
+            });
+        });
+    } else {
+        console.error('Order form not found');
+    }
+
+    // --- LEAVE Device Manager & Mobile Interface Initialization AS IS --- 
+    if (typeof DeviceManager !== 'undefined' && !window.deviceManager) {
+       window.deviceManager = new DeviceManager();
+       console.log('DeviceManager initialized.');
+    }
+    if (typeof MobileInterface !== 'undefined' && /Mobi|Android/i.test(navigator.userAgent) && !document.querySelector('.mobile-interface')) {
+        new MobileInterface();
+        console.log('MobileInterface initialized.');
+    }
+    
+    // --- LEAVE Hotspot Header Listeners AS IS --- 
+    document.querySelectorAll('.info-hotspot-header').forEach(header => {
+        if (!header.dataset.listenerAdded) {
+             header.addEventListener('click', function() {
+                 const hotspotText = this.nextElementSibling;
+                 if (hotspotText && hotspotText.classList.contains('info-hotspot-text')) {
+                     hotspotText.classList.toggle('visible'); // Toggle visibility class
+                 }
+             });
+             header.dataset.listenerAdded = 'true'; // Mark as added
+        }
+    });
+    console.log('Hotspot header listeners checked/added.');
+    
+    console.log('DOMContentLoaded END - map modal + order form setup');
+}); // END OF THE FIRST DOMContentLoaded BLOCK
+
+// Add these styles to make the suggestions look better
+const additionalStyles = document.createElement('style');
+additionalStyles.textContent = `
+    .ymaps-2-1-79-suggest-item {
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+    .ymaps-2-1-79-suggest-item:hover {
+        background-color: #f5f5f5;
+    }
+    .ymaps-2-1-79-suggest-item-selected {
+        background-color: #e3f2fd !important;
+    }
+`;
+document.head.appendChild(additionalStyles);
+
+// Device and viewport detection class
+class DeviceManager {
+    constructor() {
+        this.device = this.detectDevice();
+        this.orientation = this.getOrientation();
+        this.setupEventListeners();
+        this.initializeInterface();
+    }
+
+    detectDevice() {
+        const ua = navigator.userAgent;
+        const width = window.innerWidth;
+        
+        if (/iPad|Tablet|PlayBook/i.test(ua) || (width >= 768 && width <= 1024)) {
+            return 'tablet';
+        } else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated/i.test(ua) || width < 768) {
+            return 'mobile';
+        } else {
+            return 'desktop';
+        }
+    }
+
+    getOrientation() {
+        return window.innerWidth > window.innerHeight ? 'landscape' : 'portrait';
+    }
+
+    setupEventListeners() {
+        // Handle orientation changes
+        window.addEventListener('resize', () => {
+            const newOrientation = this.getOrientation();
+            if (newOrientation !== this.orientation) {
+                this.orientation = newOrientation;
+                this.adjustInterface();
+            }
+        });
+
+        // Handle device motion if available
+        if (window.DeviceOrientationEvent) {
+            window.addEventListener('deviceorientation', this.handleDeviceOrientation.bind(this));
+        }
+
+        // Handle touch events
+        if (this.device !== 'desktop') {
+            this.setupTouchControls();
+        }
+    }
+
+    initializeInterface() {
+        document.body.classList.add(`device-${this.device}`);
+        document.body.classList.add(`orientation-${this.orientation}`);
+        
+        this.adjustInterface();
+        this.setupNavigationControls();
+    }
+
+    adjustInterface() {
+        const viewer = document.querySelector('.pnlm-container');
+        if (!viewer) return;
+
+        switch (this.device) {
+            case 'mobile':
+                this.setupMobileInterface(viewer);
+                break;
+            case 'tablet':
+                this.setupTabletInterface(viewer);
+                break;
+            case 'desktop':
+                this.setupDesktopInterface(viewer);
+                break;
+        }
+    }
+
+    setupNavigationControls() {
+        const controls = document.createElement('div');
+        controls.className = `navigation-controls device-${this.device}`;
+        
+        if (this.device !== 'desktop') {
+            controls.innerHTML = `
+                <div class="nav-group">
+                    <button class="nav-btn zoom-in"><i class="fas fa-plus"></i></button>
+                    <button class="nav-btn zoom-out"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="nav-group">
+                    <button class="nav-btn fullscreen"><i class="fas fa-expand"></i></button>
+                </div>
+            `;
+            document.body.appendChild(controls);
+            
+            // Add touch gesture handling
+            this.setupTouchControls();
+        }
+    }
+
+    setupTouchControls() {
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let lastTouchTime = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+            lastTouchTime = Date.now();
+        });
+
+        document.addEventListener('touchmove', (e) => {
+            if (Date.now() - lastTouchTime > 100) { // Throttle updates
+                const deltaX = e.touches[0].clientX - touchStartX;
+                const deltaY = e.touches[0].clientY - touchStartY;
+                this.handleTouchMove(deltaX, deltaY);
+                
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                lastTouchTime = Date.now();
+            }
+        });
+    }
+
+    handleDeviceOrientation(event) {
+        if (this.device !== 'desktop') {
+            // Implement smooth device orientation controls
+            const viewer = document.querySelector('.pnlm-container');
+            if (viewer && event.beta && event.gamma) {
+                // Adjust view based on device orientation
+                const x = event.gamma * 0.5; // Reduce sensitivity
+                const y = event.beta * 0.5;
+                viewer.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+            }
+        }
+    }
+
+    handleTouchMove(deltaX, deltaY) {
+        // Implement smooth touch movement
+        const viewer = document.querySelector('.pnlm-container');
+        if (viewer) {
+            const sensitivity = 0.15;
+            const yaw = deltaX * sensitivity;
+            const pitch = deltaY * sensitivity;
+            
+            // Update panorama view
+            if (window.pannellum) {
+                const viewer = window.pannellum.viewer;
+                if (viewer) {
+                    viewer.setYaw(viewer.getYaw() - yaw);
+                    viewer.setPitch(viewer.getPitch() + pitch);
+                }
+            }
+        }
+    }
+}
+
+// Initialize device manager when document is ready
+document.addEventListener('DOMContentLoaded', () => {
+    window.deviceManager = new DeviceManager();
+});
+
+class MobileInterface {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        this.addMobileControls();
+        this.addBottomNav();
+        this.setupGestures();
+    }
+
+    addMobileControls() {
+        const controls = `
+            <div class="mobile-interface">
+                <div class="top-controls">
+                    <button class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="location-indicator">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Current Location</span>
+                    </div>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+                
+                <div class="navigation-controls">
+                    <div class="nav-group">
+                        <button class="nav-btn zoom-in">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <button class="nav-btn zoom-out">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                    <button class="nav-btn fullscreen">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+
+                
+            </div>
+        `;
+
+        document.body.insertAdjacentHTML('beforeend', controls);
+    }
+
+    setupGestures() {
+        const viewer = document.querySelector('.pnlm-container');
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        viewer.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+        });
+
+        viewer.addEventListener('touchmove', (e) => {
+            const touchEndX = e.touches[0].clientX;
+            const touchEndY = e.touches[0].clientY;
+            
+            const deltaX = touchStartX - touchEndX;
+            const deltaY = touchStartY - touchEndY;
+
+            // Smooth panorama movement
+            if (window.pannellum && window.pannellum.viewer) {
+                const viewer = window.pannellum.viewer;
+                viewer.setYaw(viewer.getYaw() + deltaX * 0.1);
+                viewer.setPitch(viewer.getPitch() - deltaY * 0.1);
+            }
+
+            touchStartX = touchEndX;
+            touchStartY = touchEndY;
+        });
+    }
+}
+
+// Initialize when document is ready
+document.addEventListener('DOMContentLoaded', () => {
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        new MobileInterface();
+    }
+});
+
+// Add this to your existing code
+class ProductPricing {
+    constructor() {
+        this.weightUnits = {
+            g: 0.001,  // convert to kg
+            kg: 1,
+            lb: 0.453592 // convert to kg
+        };
+    }
+
+    calculatePrice(basePrice, weight, unit) {
+        // Convert weight to kg for calculation
+        const weightInKg = weight * this.weightUnits[unit];
+        // Base price is per kg
+        return Math.round(basePrice * weightInKg);
+    }
+}
+
+// Update the product hotspot creation
+function createProductHotspot(hotspot) {
+    const pricing = new ProductPricing();
+    
+    const productInfo = `
+        <div class="product-info">
+            <h3 class="product-title">${hotspot.title}</h3>
+            <p class="product-description">${hotspot.description || 'Fresh and high-quality product.'}</p>
+            <p class="price-per-unit">${hotspot.price} AMD per kg</p>
+            <div class="weight-selector">
+                <input type="number" 
+                    class="weight-input" 
+                    min="0.1" 
+                    step="0.1" 
+                    placeholder="Enter weight"
+                    aria-label="Product weight">
+                <select class="unit-select" aria-label="Weight unit">
+                    <option value="g">g</option>
+                    <option value="kg">kg</option>
+                </select>
+            </div>
+            <div class="calculated-price">Total: <span>0</span> AMD</div>
+            <button class="add-to-cart-btn" disabled>
+                <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+        </div>
+    `;
+
+    const element = document.createElement('div');
+    element.className = 'product-hotspot';
+    element.innerHTML = productInfo;
+    
+    // Add data attributes for product info
+    element.dataset.productName = hotspot.title;
+    element.dataset.productPrice = hotspot.price;
+
+    // Add event listeners for weight calculation
+    const weightInput = element.querySelector('.weight-input');
+    const unitSelect = element.querySelector('.unit-select');
+    const priceDisplay = element.querySelector('.calculated-price span');
+    const addButton = element.querySelector('.add-to-cart-btn');
+
+    function updatePrice() {
+        const weight = parseFloat(weightInput.value);
+        if (isNaN(weight) || weight <= 0) {
+            priceDisplay.textContent = '0';
+            addButton.disabled = true;
+            return;
+        }
+        
+        const unit = unitSelect.value;
+        const price = pricing.calculatePrice(hotspot.price, weight, unit);
+        priceDisplay.textContent = price.toFixed(2);
+        addButton.disabled = false;
+    }
+
+    // Add event listeners
+    weightInput.addEventListener('input', updatePrice);
+    unitSelect.addEventListener('change', updatePrice);
+
+    // Add to cart button click handler
+    addButton.addEventListener('click', () => {
+        const weight = parseFloat(weightInput.value);
+        const unit = unitSelect.value;
+        const price = pricing.calculatePrice(hotspot.price, weight, unit);
+        
+        const product = {
+            name: hotspot.title,
+            price: price,
+            weight: weight,
+            unit: unit
+        };
+        
+        // Add to cart with animation
+        addToCart(product);
+        
+        // Show success animation
+        addButton.innerHTML = '<i class="fas fa-check"></i> Added!';
+        addButton.classList.add('success');
+        
+        // Reset button after animation
+        setTimeout(() => {
+            addButton.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
+            addButton.classList.remove('success');
+        }, 1500);
+    });
+    
+    // Add hover effect
+    element.addEventListener('mouseenter', () => {
+        element.classList.add('hover');
+    });
+    
+    element.addEventListener('mouseleave', () => {
+        element.classList.remove('hover');
+    });
+
+    return element;
+}
+
+// Add these sound effects
+const soundEffects = {
+    addToCart: new Audio('https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3'),
+    success: new Audio('https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3'),
+    popup: new Audio('https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3')
+};
+
+// Enhanced add to cart function
+function addToCart(item) {
+    // Play add to cart sound
+    soundEffects.addToCart.play();
+    
+    // Add item to cart
+    cart.push(item);
+    updateCartCount();
+    
+    // Create floating animation
+    createFloatingItem(item);
+    
+    // Show toast notification
+    showToast(`Added ${item.name} to cart!`);
+}
+
+// Floating animation when adding to cart
+function createFloatingItem(item) {
+    const floatingItem = document.createElement('div');
+    floatingItem.className = 'floating-item';
+    
+    // Get position of clicked button
+    const button = event.target;
+    const rect = button.getBoundingClientRect();
+    
+    // Get position of cart icon
+    const cart = document.querySelector('.cart-btn');
+    const cartRect = cart.getBoundingClientRect();
+    
+    floatingItem.style.cssText = `
+        left: ${rect.left}px;
+        top: ${rect.top}px;
+    `;
+    
+    floatingItem.innerHTML = `
+        <div class="floating-item-content">
+            <img src="${item.image || 'default-product.png'}" alt="${item.name}">
+            <span>+1</span>
+        </div>
+    `;
+    
+    document.body.appendChild(floatingItem);
+    
+    // Animate to cart
+    requestAnimationFrame(() => {
+        floatingItem.style.transform = `translate(${cartRect.left - rect.left}px, ${cartRect.top - rect.top}px) scale(0.1)`;
+        floatingItem.style.opacity = '0';
+    });
+    
+    // Remove after animation
+    setTimeout(() => {
+        floatingItem.remove();
+        // Animate cart icon
+        cart.classList.add('cart-bump');
+        setTimeout(() => cart.classList.remove('cart-bump'), 300);
+    }, 500);
+}
+
+// Toast notification system
+function showToast(message, type = 'success') {
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${type}`;
+    toast.innerHTML = `
+        <div class="toast-content">
+            <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-info-circle'}"></i>
+            <span>${message}</span>
+        </div>
+    `;
+    
+    document.body.appendChild(toast);
+    
+    // Animate in
+    requestAnimationFrame(() => {
+        toast.classList.add('show');
+    });
+    
+    // Remove after delay
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
+// Cart bounce animation
+function updateCartCount() {
+    const cartCount = document.querySelector('.cart-count');
+    cartCount.textContent = cart.length;
+    cartCount.classList.add('bounce');
+    setTimeout(() => cartCount.classList.remove('bounce'), 300);
+}
+
+// Function to open the modal
+function openModal() {
+    document.getElementById("orderModal").style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("orderModal").style.display = "none";
+}
+
+// Example function to submit the order
+function submitOrder() {
+    const orderData = {
+        name: document.getElementById('fullName').value,
+        phone: document.getElementById('phoneNumber').value,
+        email: document.getElementById('email').value,
+        address: document.getElementById('deliveryAddress').value,
+        paymentMethod: document.querySelector('input[name="paymentMethod"]:checked').value,
+        items: window.cart // Include cart items if applicable
+    };
+
+    fetch('https://e3a4-83-139-26-190.ngrok-free.app/api/orders', { // Use the Ngrok URL
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(orderData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Success:', data);
+        alert('Order placed successfully!');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Failed to place order. Please try again.');
+    });
+}
+
+// Close the modal when the user clicks anywhere outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById("orderModal");
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+// Define generateOrderNumber in the global scope
+window.generateOrderNumber = function() {
+    const timestamp = new Date().getTime();
+    const random = Math.floor(Math.random() * 1000);
+    return `ORD-${timestamp}-${random}`;
+};
+
+// Find the form submit event listener and update it:
+const checkoutForm = document.querySelector('.checkout-form');
+if (checkoutForm) {
+    checkoutForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    console.log('Form submitted');
+
+    const formData = {
+        orderNumber: generateOrderNumber(),
+            customerName: document.getElementById('fullName')?.value || '',
+            phone: document.getElementById('phone')?.value || '',
+            email: document.getElementById('email')?.value || '',
+            address: document.getElementById('selectedAddress')?.value || '',
+            paymentMethod: document.querySelector('input[name="paymentMethod"]:checked')?.value || '',
+        items: window.cart,
+        total: window.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0)
+    };
+
+    console.log('Sending order:', formData);
+
+    try {
+        const response = await fetch('https://app-files.onrender.com/api/orders', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        console.log('Response:', response);
+        
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const result = await response.json();
+        console.log('Success:', result);
+        
+        // Clear cart and show success
+        window.cart = [];
+        updateCartDisplay();
+        hideCheckout();
+        alert('Order placed successfully!');
+        
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Failed to submit order: ' + error.message);
+    }
+});
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Document loaded');
+    
+    const orderForm = document.getElementById('orderForm');
+    if (orderForm) {
+        console.log('Form found');
+        
+        // Add device detection function here
+        function detectDevice() {
+            const ua = navigator.userAgent;
+            const platform = {
+                device: 'unknown',
+                os: 'unknown',
+                browser: 'unknown',
+                userAgent: ua,
+                screenSize: `${window.screen.width}x${window.screen.height}`
+            };
+
+            if (/iPad|Tablet|PlayBook/i.test(ua)) {
+                platform.device = 'tablet';
+            } else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle/i.test(ua)) {
+                platform.device = 'mobile';
+            } else {
+                platform.device = 'desktop';
+            }
+
+            if (/Windows/i.test(ua)) platform.os = 'Windows';
+            else if (/iPhone|iPad|iPod/.test(ua)) platform.os = 'iOS';
+            else if (/Android/.test(ua)) platform.os = 'Android';
+            else if (/Mac/i.test(ua)) platform.os = 'MacOS';
+            else if (/Linux/i.test(ua)) platform.os = 'Linux';
+
+            if (/Chrome/i.test(ua)) platform.browser = 'Chrome';
+            else if (/Firefox/i.test(ua)) platform.browser = 'Firefox';
+            else if (/Safari/i.test(ua)) platform.browser = 'Safari';
+            else if (/Edge/i.test(ua)) platform.browser = 'Edge';
+
+            return platform;
+        }
+
+        // Update form submission with device info
+        orderForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const deviceInfo = detectDevice();
+            
+            const orderData = {
+                orderNumber: window.generateOrderNumber(),
+                customerName: document.getElementById('fullName')?.value || '',
+                phone: document.getElementById('phone')?.value || '',
+                email: document.getElementById('email')?.value || '',
+                address: document.getElementById('selectedAddress')?.value || '',
+                paymentMethod: document.querySelector('input[name="paymentMethod"]:checked')?.value || '',
+                items: window.cart,
+                total: window.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0),
+                deviceInfo: deviceInfo
+            };
+
+            // ...existing fetch code...
+        });
+    }
+});
+
+document.querySelectorAll('.info-hotspot-header').forEach(header => {
+    header.addEventListener('click', function() {
+        const hotspotText = this.nextElementSibling;
+        if (hotspotText.style.display === 'block') {
+            hotspotText.style.display = 'none';
+        } else {
+            hotspotText.style.display = 'block';
+        }
+    });
+});
+
+// Mini-map functionality has been removed
+
+// Add Voice Command System
+class VoiceCommandSystem {
+  constructor() {
+    this.recognition = null;
+    this.isListening = false;
+    this.commands = {
+      navigation: {
+        'go to entrance': () => this.navigateToScene('0-entrancee'),
+        'go to dairy': () => this.navigateToScene('1-laiterie'),
+        'go to cheese': () => this.navigateToScene('2-fromage'),
+        'go to vegetables': () => this.navigateToScene('3-vegii'),
+        'go to juice': () => this.navigateToScene('4-jus'),
+        'go to butcher': () => this.navigateToScene('5-boucherie'),
+        'show me': () => this.handleShowMeCommand(),
+        'what can i buy': () => this.showAvailableProducts(),
+        'suggest products': () => this.suggestProducts(),
+        'where am i': () => this.showCurrentLocation(),
+        'take me back': () => this.navigateToScene('0-entrancee'),
+        'go to checkout': () => document.getElementById('checkoutBtn').click(),
+      },
+      view: {
+        'look up': () => document.getElementById('viewUp').click(),
+        'look down': () => document.getElementById('viewDown').click(),
+        'look left': () => document.getElementById('viewLeft').click(),
+        'look right': () => document.getElementById('viewRight').click(),
+        'zoom in': () => document.getElementById('viewIn').click(),
+        'zoom out': () => document.getElementById('viewOut').click(),
+        'look around': () => this.lookAround(),
+        'reset view': () => this.resetView(),
+        'pan left': () => document.getElementById('viewLeft').click(),
+        'pan right': () => document.getElementById('viewRight').click(),
+      },
+      cart: {
+        'open cart': () => this.toggleCart(true),
+        'close cart': () => this.toggleCart(false),
+        'checkout': () => document.getElementById('checkoutBtn').click(),
+        'what\'s in my cart': () => this.showCartContents(),
+        'remove item': () => this.handleRemoveItem(),
+        'clear cart': () => this.clearCart(),
+        'show total': () => this.showCartTotal(),
+      },
+      help: {
+        'what can i say': () => this.showAvailableCommands(),
+        'help': () => this.showHelp(),
+        'stop listening': () => this.toggleListening(),
+      }
+    };
+    
+    // Enhanced hotspot mapping with categories and descriptions
+    this.hotspotMapping = {
+      'vegetables': {
+        'potato': { scene: '3-vegii', hotspot: 'potato', category: 'vegetables', description: 'Fresh potatoes', aliases: ['potatoes', 'spuds'] },
+        'tomato': { scene: '3-vegii', hotspot: 'tomato', category: 'vegetables', description: 'Ripe tomatoes', aliases: ['tomatoes'] },
+        'lettuce': { scene: '3-vegii', hotspot: 'lettuce', category: 'vegetables', description: 'Fresh lettuce', aliases: ['salad'] },
+        'carrot': { scene: '3-vegii', hotspot: 'carrot', category: 'vegetables', description: 'Orange carrots', aliases: ['carrots'] },
+        'onion': { scene: '3-vegii', hotspot: 'onion', category: 'vegetables', description: 'Fresh onions', aliases: ['onions'] },
+      },
+      'dairy': {
+        'cheese': { scene: '2-fromage', hotspot: 'cheese', category: 'dairy', description: 'Various cheeses', aliases: ['cheeses'] },
+        'milk': { scene: '1-laiterie', hotspot: 'milk', category: 'dairy', description: 'Fresh milk', aliases: ['dairy milk'] },
+        'yogurt': { scene: '1-laiterie', hotspot: 'yogurt', category: 'dairy', description: 'Plain yogurt', aliases: ['yoghurt', 'yoghourt'] },
+      },
+      'beverages': {
+        'juice': { scene: '4-jus', hotspot: 'juice', category: 'beverages', description: 'Fresh fruit juices', aliases: ['juices', 'fruit juice'] },
+        'water': { scene: '4-jus', hotspot: 'water', category: 'beverages', description: 'Mineral water', aliases: ['mineral water', 'drinking water'] },
+        'soda': { scene: '4-jus', hotspot: 'soda', category: 'beverages', description: 'Carbonated drinks', aliases: ['soft drink', 'pop', 'fizzy drink'] },
+      },
+      'meat': {
+        'beef': { scene: '5-boucherie', hotspot: 'beef', category: 'meat', description: 'Fresh beef', aliases: ['steak', 'ground beef'] },
+        'chicken': { scene: '5-boucherie', hotspot: 'chicken', category: 'meat', description: 'Fresh chicken', aliases: ['poultry', 'whole chicken'] },
+        'pork': { scene: '5-boucherie', hotspot: 'pork', category: 'meat', description: 'Fresh pork', aliases: ['pork chops', 'pork loin'] },
+      }
+    };
+    
+    this.setupRecognition();
+    this.createVoiceCommandButton();
+    this.createVoiceFeedbackPopup(); // Add this line
+    this.lastCommand = null;
+    this.commandHistory = [];
+    this.expectingItemRemoval = false;
+    this.supportedLanguages = ['en-US', 'en-GB', 'fr-FR', 'es-ES'];
+    this.currentLanguage = 'en-US';
+  }
+  
+  setupRecognition() {
+    try {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SpeechRecognition) {
+        console.error('Speech recognition not supported');
+        return;
+      }
+
+      this.recognition = new SpeechRecognition();
+      this.recognition.continuous = false;
+      this.recognition.interimResults = false;
+      this.recognition.lang = 'en-US';
+
+      this.recognition.onstart = () => {
+        console.log('Voice recognition started');
+        this.isListening = true;
+        this.updateVoiceButton(true);
+        this.showVoiceFeedback();
+      };
+
+      this.recognition.onresult = (event) => {
+        const result = event.results[0];
+        const transcript = result[0].transcript.toLowerCase().trim();
+        const confidence = result[0].confidence;
+        
+        console.log(`Recognized: ${transcript}. Confidence: ${confidence}`);
+        
+        this.updateVoiceFeedback(`Recognized: ${transcript}`, confidence);
+        
+        // Process the command with the actual confidence value
+        this.processCommand(transcript, confidence);
+      };
+
+      this.recognition.onerror = (event) => {
+        console.error('Speech recognition error:', event.error);
+        this.updateVoiceFeedback(`Error: ${event.error}`, 0);
+        this.isListening = false;
+        this.updateVoiceButton(false);
+      };
+
+      this.recognition.onend = () => {
+        console.log('Voice recognition ended');
+        this.isListening = false;
+        this.updateVoiceButton(false);
+        this.hideVoiceFeedback();
+      };
+
+    } catch (error) {
+      console.error('Error setting up speech recognition:', error);
+      this.updateVoiceFeedback('Error setting up voice recognition', 0);
+    }
+  }
+  
+  calculateSimilarity(str1, str2) {
+    // Enhanced similarity calculation using multiple methods
+    const levenshteinDistance = this.levenshteinDistance(str1, str2);
+    const jaroWinklerDistance = this.jaroWinklerDistance(str1, str2);
+    const longestCommonSubsequence = this.longestCommonSubsequence(str1, str2);
+    
+    // Weighted combination of different similarity measures
+    return (levenshteinDistance * 0.4 + jaroWinklerDistance * 0.4 + longestCommonSubsequence * 0.2);
+  }
+  
+  levenshteinDistance(str1, str2) {
+    const track = Array(str2.length + 1).fill(null).map(() =>
+      Array(str1.length + 1).fill(null));
+    
+    for (let i = 0; i <= str1.length; i++) track[0][i] = i;
+    for (let j = 0; j <= str2.length; j++) track[j][0] = j;
+    
+    for (let j = 1; j <= str2.length; j++) {
+      for (let i = 1; i <= str1.length; i++) {
+        const indicator = str1[i - 1] === str2[j - 1] ? 0 : 1;
+        track[j][i] = Math.min(
+          track[j][i - 1] + 1,
+          track[j - 1][i] + 1,
+          track[j - 1][i - 1] + indicator
+        );
+      }
+    }
+    
+    const maxLength = Math.max(str1.length, str2.length);
+    return 1 - (track[str2.length][str1.length] / maxLength);
+  }
+  
+  jaroWinklerDistance(str1, str2) {
+    // Implementation of Jaro-Winkler distance algorithm
+    const m = this.matchingCharacters(str1, str2);
+    if (m === 0) return 0;
+    
+    const t = this.transpositions(str1, str2);
+    const l = this.prefixLength(str1, str2);
+    
+    const jaro = (m / str1.length + m / str2.length + (m - t) / m) / 3;
+    return jaro + (l * 0.1 * (1 - jaro));
+  }
+  
+  longestCommonSubsequence(str1, str2) {
+    const matrix = Array(str2.length + 1).fill(null).map(() =>
+      Array(str1.length + 1).fill(0));
+    
+    for (let i = 1; i <= str2.length; i++) {
+      for (let j = 1; j <= str1.length; j++) {
+        if (str2[i - 1] === str1[j - 1]) {
+          matrix[i][j] = matrix[i - 1][j - 1] + 1;
+        } else {
+          matrix[i][j] = Math.max(matrix[i - 1][j], matrix[i][j - 1]);
+        }
+      }
+    }
+    
+    return matrix[str2.length][str1.length] / Math.max(str1.length, str2.length);
+  }
+  
+  matchingCharacters(str1, str2) {
+    const maxDistance = Math.floor(Math.max(str1.length, str2.length) / 2) - 1;
+    let matches = 0;
+    
+    for (let i = 0; i < str1.length; i++) {
+      const start = Math.max(0, i - maxDistance);
+      const end = Math.min(str2.length, i + maxDistance + 1);
+      
+      for (let j = start; j < end; j++) {
+        if (str1[i] === str2[j]) {
+          matches++;
+          break;
+        }
+      }
+    }
+    
+    return matches;
+  }
+  
+  transpositions(str1, str2) {
+    const maxDistance = Math.floor(Math.max(str1.length, str2.length) / 2) - 1;
+    let transpositions = 0;
+    
+    for (let i = 0; i < str1.length; i++) {
+      const start = Math.max(0, i - maxDistance);
+      const end = Math.min(str2.length, i + maxDistance + 1);
+      
+      for (let j = start; j < end; j++) {
+        if (str1[i] === str2[j]) {
+          if (i !== j) transpositions++;
+          break;
+        }
+      }
+    }
+    
+    return transpositions / 2;
+  }
+  
+  prefixLength(str1, str2) {
+    let prefix = 0;
+    const maxPrefix = 4;
+    
+    while (prefix < maxPrefix && str1[prefix] === str2[prefix]) {
+      prefix++;
+    }
+    
+    return prefix;
+  }
+  
+  findProductInTranscript(transcript) {
+    const lowerTranscript = transcript.toLowerCase();
+    let bestMatch = null;
+    let highestSimilarity = 0;
+    
+    // Search through all categories
+    Object.values(this.hotspotMapping).forEach(category => {
+      Object.entries(category).forEach(([product, data]) => {
+        // Check main product name
+        const similarity = this.calculateSimilarity(lowerTranscript, product.toLowerCase());
+        if (similarity > highestSimilarity && similarity > 0.6) {
+          highestSimilarity = similarity;
+          bestMatch = product;
+        }
+        
+        // Check if transcript contains product name
+        if (lowerTranscript.includes(product.toLowerCase())) {
+          bestMatch = product;
+          highestSimilarity = 1;
+        }
+        
+        // Check for common variations
+        const variations = this.getProductVariations(product);
+        variations.forEach(variation => {
+          if (lowerTranscript.includes(variation)) {
+            bestMatch = product;
+            highestSimilarity = 1;
+          }
+        });
+      });
+    });
+    
+    return bestMatch;
+  }
+
+  getProductVariations(product) {
+    const variations = {
+      'potato': ['potatoes', 'spuds', 'taters'],
+      'tomato': ['tomatoes'],
+      'lettuce': ['salad', 'leafy greens'],
+      'carrot': ['carrots'],
+      'onion': ['onions'],
+      'cheese': ['cheeses', 'dairy'],
+      'milk': ['dairy milk', 'cow milk'],
+      'yogurt': ['yoghurt', 'yoghourt', 'yogurt'],
+      'juice': ['juices', 'fruit juice', 'drink'],
+      'water': ['mineral water', 'drinking water', 'bottled water'],
+      'soda': ['soft drink', 'pop', 'fizzy drink', 'carbonated drink'],
+      'beef': ['steak', 'ground beef', 'meat'],
+      'chicken': ['poultry', 'whole chicken', 'meat'],
+      'pork': ['pork chops', 'pork loin', 'meat']
+    };
+    
+    return variations[product.toLowerCase()] || [];
+  }
+  
+  showAvailableCommands() {
+    const commandCategories = Object.keys(this.commands);
+    let message = 'Available commands:\n';
+    
+    commandCategories.forEach(category => {
+      message += `\n${category.toUpperCase()}:\n`;
+      Object.keys(this.commands[category]).forEach(command => {
+        message += `- ${command}\n`;
+      });
+    });
+    
+    this.showToast(message, 'info');
+  }
+  
+  showHelp() {
+    const helpMessage = `
+      You can use voice commands to:
+      1. Navigate: "go to vegetables", "go to dairy", etc.
+      2. View: "look around", "zoom in", "reset view"
+      3. Cart: "open cart", "what's in my cart", "checkout"
+      4. Products: "show me potatoes", "what is cheese", "where can I find milk"
+      5. Help: "what can I say", "stop listening"
+      
+      Try saying "show me" followed by a product name to see it in 3D!
+    `;
+    
+    this.showToast(helpMessage, 'info');
+  }
+  
+  showCurrentLocation() {
+    try {
+      const currentScene = APP_DATA.scenes[currentScene];
+      if (currentScene) {
+        this.updateVoiceFeedback(`You are in the ${currentScene.name} section`, 1);
+      } else {
+        this.updateVoiceFeedback('Current location unknown', 0.3);
+      }
+    } catch (error) {
+      console.error('Error showing current location:', error);
+      this.updateVoiceFeedback('Error showing location', 0.3);
+    }
+  }
+  
+  resetView() {
+    // Reset the view to the default position
+    const defaultView = window.APP_DATA.scenes[window.currentScene].initialViewParameters;
+    window.viewer.lookTo(defaultView);
+  }
+  
+  clearCart() {
+    const cart = document.getElementById('cartItems');
+    if (cart) {
+      cart.innerHTML = '';
+      this.updateCartDisplay();
+      this.showToast('Cart cleared', 'success');
+    }
+  }
+  
+  showCartTotal() {
+    const totalElement = document.querySelector('.cart-total');
+    if (totalElement) {
+      this.showToast(`Your total is ${totalElement.textContent}`, 'info');
+    }
+  }
+  
+  toggleListening() {
+    if (!this.recognition) {
+      this.showToast('Voice commands not supported in this browser', 'error');
+      return;
+    }
+    
+    if (this.isListening) {
+      this.recognition.stop();
+    } else {
+      this.recognition.start();
+    }
+  }
+  
+  processCommand(transcript, confidence = 0) {
+    // Normalize the transcript
+    transcript = transcript.toLowerCase().trim();
+    console.log('Processing command:', transcript);
+    
+    // Handle navigation commands first
+    if (transcript.startsWith('go to')) {
+        const location = transcript.replace('go to', '').trim();
+        console.log('Navigating to:', location);
+        
+        // Map voice commands to scene IDs
+        const sceneMap = {
+            'entrance': '0-entrancee',
+            'dairy': '1-laiterie',
+            'cheese': '2-fromage',
+            'vegetables': '3-vegii',
+            'juice': '4-jus',
+            'butcher': '5-boucherie'
+        };
+        
+        const sceneId = sceneMap[location];
+        if (sceneId) {
+            // Find the scene in scenes array
+            const targetScene = scenes.find(s => s.data.id === sceneId);
+            if (targetScene) {
+                console.log('Found scene:', targetScene);
+                switchScene(targetScene);
+                this.updateVoiceFeedback(`Navigating to ${location}`, 1);
+            } else {
+                this.updateVoiceFeedback(`Could not find ${location} scene`, 0.3);
+            }
+        } else {
+            this.updateVoiceFeedback(`Unknown location: ${location}`, 0.3);
+        }
+        return;
+    }
+    
+    // Handle other commands...
+    // ... existing code ...
+  }
+
+  getCommandVariations(command) {
+    const variations = {
+      'go to': ['take me to', 'navigate to', 'show me', 'where is'],
+      'look up': ['look above', 'look upwards', 'up'],
+      'look down': ['look below', 'look downwards', 'down'],
+      'look left': ['look to the left', 'left'],
+      'look right': ['look to the right', 'right'],
+      'zoom in': ['zoom closer', 'get closer', 'closer'],
+      'zoom out': ['zoom away', 'get away', 'further'],
+      'open cart': ['show cart', 'display cart', 'view cart'],
+      'close cart': ['hide cart', 'minimize cart'],
+      'what\'s in my cart': ['show cart contents', 'what do I have', 'cart items'],
+      'remove item': ['delete item', 'take out', 'remove from cart'],
+      'checkout': ['proceed to checkout', 'pay', 'complete purchase']
+    };
+    
+    return variations[command] || [];
+  }
+
+  isContextualCommand(transcript) {
+    const contextualPhrases = [
+      'show me', 'what is', 'tell me about', 'where can i find',
+      'how much', 'what are', 'what do you have'
+    ];
+    return contextualPhrases.some(phrase => transcript.includes(phrase));
+  }
+
+  handleContextualCommand(transcript) {
+    // Handle "show me" commands
+    if (transcript.includes('show me')) {
+      const product = this.findProductInTranscript(transcript);
+      if (product) {
+        this.navigateToProduct(product);
+        return true;
+      }
+    }
+    
+    // Handle "what is" or "tell me about" commands
+    if (transcript.includes('what is') || transcript.includes('tell me about')) {
+      const product = this.findProductInTranscript(transcript);
+      if (product) {
+        this.showProductInfo(product);
+        return true;
+      }
+    }
+    
+    // Handle "where can i find" commands
+    if (transcript.includes('where can i find')) {
+      const product = this.findProductInTranscript(transcript);
+      if (product) {
+        this.showProductLocation(product);
+        return true;
+      }
+    }
+    
+    return false;
+  }
+
+  navigateToScene(sceneId) {
+    try {
+      // Use the global APP_DATA to find the scene
+      const sceneData = APP_DATA.scenes.find(scene => scene.id === sceneId);
+      if (sceneData) {
+        // Use the global switchScene function
+        switchScene(sceneData);
+        this.updateVoiceFeedback(`Navigating to ${sceneData.name}`, 1);
+        return true;
+      } else {
+        this.updateVoiceFeedback(`Scene ${sceneId} not found`, 0.3);
+        return false;
+      }
+    } catch (error) {
+      console.error('Error navigating to scene:', error);
+      this.updateVoiceFeedback('Navigation error', 0.3);
+      return false;
+    }
+  }
+
+  navigateToProduct(productName) {
+    try {
+      // Find the product in our mapping
+      let productInfo = null;
+      Object.values(this.hotspotMapping).forEach(category => {
+        if (category[productName]) {
+          productInfo = category[productName];
+        }
+      });
+
+      if (productInfo) {
+        // Navigate to the scene
+        const success = this.navigateToScene(productInfo.scene);
+        if (success) {
+          // Wait for scene to load, then show the product
+          setTimeout(() => {
+            const hotspot = document.querySelector(`[data-hotspot="${productInfo.hotspot}"]`);
+            if (hotspot) {
+              hotspot.click();
+              this.updateVoiceFeedback(`Showing ${productName}`, 1);
+            } else {
+              this.updateVoiceFeedback(`Could not find ${productName} in this section`, 0.3);
+            }
+          }, 1000);
+        }
+      } else {
+        this.updateVoiceFeedback(`Product ${productName} not found`, 0.3);
+      }
+    } catch (error) {
+      console.error('Error navigating to product:', error);
+      this.updateVoiceFeedback('Navigation error', 0.3);
+    }
+  }
+
+  showProductInfo(product) {
+    try {
+      let productInfo = null;
+      Object.values(this.hotspotMapping).forEach(category => {
+        if (category[product]) {
+          productInfo = category[product];
+        }
+      });
+      
+      if (productInfo) {
+        this.updateVoiceFeedback(`${product}: ${productInfo.description}. Located in the ${productInfo.category} section.`, 1);
+        this.navigateToProduct(product);
+      } else {
+        this.updateVoiceFeedback(`Sorry, I couldn't find information about ${product}`, 0.3);
+      }
+    } catch (error) {
+      console.error('Error showing product info:', error);
+      this.updateVoiceFeedback('Error showing product information', 0.3);
+    }
+  }
+
+  showProductLocation(product) {
+    let productInfo = null;
+    
+    // Find product info in mapping
+    Object.values(this.hotspotMapping).forEach(category => {
+      if (category[product]) {
+        productInfo = category[product];
+      }
+    });
+    
+    if (productInfo) {
+      this.showToast(`You can find ${product} in the ${productInfo.category} section. Let me take you there.`, 'info');
+      this.navigateToProduct(product);
+    } else {
+      this.showToast(`Sorry, I couldn't find ${product} in our store`, 'error');
+    }
+  }
+
+  suggestSimilarCommands(transcript) {
+    const suggestions = [];
+    const lowerTranscript = transcript.toLowerCase();
+    
+    // Check all commands for similarity
+    Object.values(this.commands).forEach(category => {
+      Object.keys(category).forEach(command => {
+        const similarity = this.calculateSimilarity(lowerTranscript, command.toLowerCase());
+        if (similarity > 0.5) {
+          suggestions.push(command);
+        }
+      });
+    });
+    
+    // Check products for similarity
+    Object.values(this.hotspotMapping).forEach(category => {
+      Object.keys(category).forEach(product => {
+        const similarity = this.calculateSimilarity(lowerTranscript, product.toLowerCase());
+        if (similarity > 0.5) {
+          suggestions.push(`show me ${product}`);
+        }
+      });
+    });
+    
+    if (suggestions.length > 0) {
+      this.showToast(`Did you mean: ${suggestions.slice(0, 3).join(', ')}?`, 'info');
+    } else {
+      this.showToast(`Command not recognized. Try saying "show me" followed by a product name, or use navigation commands like "look around" or "go to vegetables".`, 'warning');
+    }
+  }
+
+  handleShowMeCommand() {
+    const currentScene = window.APP_DATA.scenes[window.currentScene].id;
+    let availableProducts = [];
+    
+    // Find products in current scene
+    Object.values(this.hotspotMapping).forEach(category => {
+      Object.entries(category).forEach(([product, data]) => {
+        if (data.scene === currentScene) {
+          availableProducts.push(product);
+        }
+      });
+    });
+    
+    if (availableProducts.length > 0) {
+      this.showToast(`In this section, you can find: ${availableProducts.join(', ')}`, 'info');
+    } else {
+      this.showToast('No products found in this section', 'warning');
+    }
+  }
+
+  showAvailableProducts() {
+    let allProducts = [];
+    
+    // Collect all products
+    Object.values(this.hotspotMapping).forEach(category => {
+      Object.entries(category).forEach(([product, data]) => {
+        allProducts.push(`${product} (${data.category})`);
+      });
+    });
+    
+    this.showToast(`Available products: ${allProducts.join(', ')}`, 'info');
+  }
+
+  suggestProducts() {
+    // Get current scene
+    const currentScene = window.APP_DATA.scenes[window.currentScene].id;
+    let suggestions = [];
+    
+    // Find products in current scene
+    Object.values(this.hotspotMapping).forEach(category => {
+      Object.entries(category).forEach(([product, data]) => {
+        if (data.scene === currentScene) {
+          suggestions.push(product);
+        }
+      });
+    });
+    
+    if (suggestions.length > 0) {
+      this.showToast(`You might be interested in: ${suggestions.join(', ')}`, 'info');
+    } else {
+      this.showToast('No products available in this section', 'warning');
+    }
+  }
+
+  lookAround() {
+    // Simulate looking around by triggering view controls in sequence
+    const controls = ['viewLeft', 'viewRight', 'viewUp', 'viewDown'];
+    let index = 0;
+    
+    const lookInterval = setInterval(() => {
+      if (index < controls.length) {
+        document.getElementById(controls[index]).click();
+        index++;
+      } else {
+        clearInterval(lookInterval);
+      }
+    }, 1000);
+  }
+
+  showCartContents() {
+    const cart = document.getElementById('cartItems');
+    if (cart && cart.children.length > 0) {
+      const items = Array.from(cart.children).map(item => 
+        item.querySelector('.item-name').textContent
+      );
+      this.showToast(`Your cart contains: ${items.join(', ')}`, 'info');
+    } else {
+      this.showToast('Your cart is empty', 'info');
+    }
+  }
+
+  handleRemoveItem() {
+    const cart = document.getElementById('cartItems');
+    if (cart && cart.children.length > 0) {
+      this.showToast('Which item would you like to remove?', 'info');
+      // The next voice command will be treated as the item to remove
+      this.expectingItemRemoval = true;
+    } else {
+      this.showToast('Your cart is empty', 'info');
+    }
+  }
+
+  toggleCart(open) {
+    const cart = document.getElementById('shoppingCart');
+    if (cart) {
+      if (open) {
+        cart.classList.remove('minimized');
+      } else {
+        cart.classList.add('minimized');
+      }
+    }
+  }
+
+  showToast(message, type = 'info') {
+    // Check if we can use the existing showToast function
+    if (typeof window.showToast === 'function') {
+      window.showToast(message, type);
+    } else {
+      // Create a simple toast if the main one doesn't exist
+      const toast = document.createElement('div');
+      toast.className = `voice-toast ${type}`;
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      
+      // Style for the toast
+      Object.assign(toast.style, {
+        position: 'fixed',
+        top: '20px',
+        right: '20px',
+        padding: '10px 20px',
+        background: type === 'error' ? '#f44336' : 
+                   type === 'success' ? '#4CAF50' : 
+                   type === 'warning' ? '#ff9800' : '#2196F3',
+        color: 'white',
+        borderRadius: '4px',
+        zIndex: '10000',
+        boxShadow: '0 2px 10px rgba(0,0,0,0.2)',
+        opacity: '0',
+        transition: 'opacity 0.3s'
+      });
+      
+      // Show and hide with animation
+      setTimeout(() => { toast.style.opacity = '1'; }, 10);
+      setTimeout(() => { 
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+  }
+
+  createVoiceCommandButton() {
+    const button = document.createElement('button');
+    button.id = 'voiceCommandBtn';
+    button.className = 'voice-command-btn';
+    button.setAttribute('aria-label', 'Voice Commands');
+    button.innerHTML = '<i class="fas fa-microphone"></i>';
+    
+    // Style the button
+    Object.assign(button.style, {
+      position: 'fixed',
+      bottom: '140px',
+      right: '20px',
+      width: '50px',
+      height: '50px',
+      borderRadius: '50%',
+      background: 'linear-gradient(to right, #4a6bff, #45a7ff)',
+      color: 'white',
+      border: 'none',
+      boxShadow: '0 4px 10px rgba(0,0,0,0.3)',
+      cursor: 'pointer',
+      zIndex: '1000',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontSize: '20px',
+      transition: 'all 0.3s'
+    });
+    
+    // Add click event
+    button.addEventListener('click', () => this.toggleListening());
+    
+    // Add hover effect
+    button.addEventListener('mouseover', () => {
+      button.style.transform = 'scale(1.1)';
+    });
+    
+    button.addEventListener('mouseout', () => {
+      button.style.transform = 'scale(1)';
+    });
+    
+    // Add to body when DOM is fully loaded
+    if (document.body) {
+      document.body.appendChild(button);
+    } else {
+      window.addEventListener('DOMContentLoaded', () => {
+        document.body.appendChild(button);
+      });
+    }
+  }
+  
+  updateVoiceButton(isListening) {
+    const button = document.getElementById('voiceCommandBtn');
+    if (button) {
+      if (isListening) {
+        button.style.background = 'linear-gradient(to right, #ff4a4a, #ff45a7)';
+        button.style.animation = 'pulse 1.5s infinite';
+        button.querySelector('i').className = 'fas fa-microphone-alt';
+      } else {
+        button.style.background = 'linear-gradient(to right, #4a6bff, #45a7ff)';
+        button.style.animation = '';
+        button.querySelector('i').className = 'fas fa-microphone';
+      }
+    }
+  }
+
+  createVoiceFeedbackPopup() {
+    // Create popup container
+    this.voiceFeedbackPopup = document.createElement('div');
+    this.voiceFeedbackPopup.className = 'voice-feedback-popup';
+    this.voiceFeedbackPopup.style.cssText = `
+      position: fixed;
+      bottom: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      display: none;
+      z-index: 1000;
+      min-width: 300px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    `;
+
+    // Create microphone icon
+    const micIcon = document.createElement('div');
+    micIcon.className = 'mic-icon';
+    micIcon.innerHTML = '🎤';
+    micIcon.style.cssText = `
+      font-size: 24px;
+      margin-bottom: 10px;
+      animation: pulse 1.5s infinite;
+    `;
+
+    // Create text container
+    const textContainer = document.createElement('div');
+    textContainer.className = 'voice-text';
+    textContainer.style.cssText = `
+      margin-bottom: 10px;
+      min-height: 24px;
+    `;
+
+    // Create confidence indicator
+    const confidenceIndicator = document.createElement('div');
+    confidenceIndicator.className = 'confidence-indicator';
+    confidenceIndicator.style.cssText = `
+      height: 4px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
+      margin-top: 5px;
+      overflow: hidden;
+    `;
+
+    const confidenceBar = document.createElement('div');
+    confidenceBar.className = 'confidence-bar';
+    confidenceBar.style.cssText = `
+      height: 100%;
+      background: #4CAF50;
+      width: 0%;
+      transition: width 0.3s ease;
+    `;
+
+    confidenceIndicator.appendChild(confidenceBar);
+
+    // Add elements to popup
+    this.voiceFeedbackPopup.appendChild(micIcon);
+    this.voiceFeedbackPopup.appendChild(textContainer);
+    this.voiceFeedbackPopup.appendChild(confidenceIndicator);
+
+    // Add styles
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      
+      .voice-feedback-popup {
+        backdrop-filter: blur(5px);
+      }
+      
+      .voice-feedback-popup.showing {
+        animation: slideUp 0.3s ease;
+      }
+      
+      @keyframes slideUp {
+        from { transform: translate(-50%, 20px); opacity: 0; }
+        to { transform: translate(-50%, 0); opacity: 1; }
+      }
+    `;
+    document.head.appendChild(style);
+
+    document.body.appendChild(this.voiceFeedbackPopup);
+  }
+
+  updateVoiceFeedback(text, confidence) {
+    const textContainer = this.voiceFeedbackPopup.querySelector('.voice-text');
+    const confidenceBar = this.voiceFeedbackPopup.querySelector('.confidence-bar');
+    
+    textContainer.textContent = text || 'Listening...';
+    confidenceBar.style.width = `${confidence * 100}%`;
+    
+    // Update confidence bar color based on confidence level
+    if (confidence > 0.8) {
+      confidenceBar.style.background = '#4CAF50'; // Green
+    } else if (confidence > 0.6) {
+      confidenceBar.style.background = '#FFC107'; // Yellow
+    } else {
+      confidenceBar.style.background = '#F44336'; // Red
+    }
+  }
+
+  showVoiceFeedback() {
+    this.voiceFeedbackPopup.style.display = 'block';
+    this.voiceFeedbackPopup.classList.add('showing');
+  }
+
+  hideVoiceFeedback() {
+    this.voiceFeedbackPopup.classList.remove('showing');
+    setTimeout(() => {
+      this.voiceFeedbackPopup.style.display = 'none';
+    }, 300);
+  }
+}
+
+// Initialize voice commands when the page is loaded
+window.addEventListener('load', function() {
+  // Create a CSS rule for the pulse animation for the voice button
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 74, 74, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(255, 74, 74, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 74, 74, 0);
+      }
+    }
+  `;
+  document.head.appendChild(style);
+  
+  // Initialize the voice command system
+  window.voiceCommandSystem = new VoiceCommandSystem();
+});
+
+// Performance Optimizer - Implement lazy loading for scenes
+class PerformanceOptimizer {
+  constructor(viewer, scenes) {
+    this.viewer = viewer;
+    this.scenes = scenes;
+    this.loadedScenes = new Set();
+    this.currentSceneId = null;
+    this.priorityLoadQueue = [];
+    this.backgroundLoadQueue = [];
+    this.isLoading = false;
+    
+    this.init();
+  }
+  
+  init() {
+    // Monitor scene changes
+    document.addEventListener('sceneChange', (event) => {
+      if (event.detail && event.detail.sceneId) {
+        this.onSceneChange(event.detail.sceneId);
+      }
+    });
+    
+    // Initial scene is already loaded, mark it as such
+    if (window.currentScene !== undefined) {
+      const currentSceneId = window.APP_DATA.scenes[window.currentScene].id;
+      this.loadedScenes.add(currentSceneId);
+      this.currentSceneId = currentSceneId;
+      
+      // Preload adjacent scenes
+      this.preloadAdjacentScenes(currentSceneId);
+    }
+    
+    // Start background loading process
+    this.startBackgroundLoading();
+  }
+  
+  
+  onSceneChange(sceneId) {
+    // Update current scene
+    this.currentSceneId = sceneId;
+    this.loadedScenes.add(sceneId);
+    
+    // Prioritize loading adjacent scenes
+    this.preloadAdjacentScenes(sceneId);
+  }
+  
+  preloadAdjacentScenes(sceneId) {
+    // Find the scene data
+    const sceneData = window.APP_DATA.scenes.find(scene => scene.id === sceneId);
+    if (!sceneData || !sceneData.linkHotspots) return;
+    
+    // Get all target scenes
+    const adjacentSceneIds = sceneData.linkHotspots.map(hotspot => hotspot.target);
+    
+    // Add to priority queue if not already loaded
+    adjacentSceneIds.forEach(id => {
+      if (!this.loadedScenes.has(id)) {
+        // Remove from background queue if it's there
+        this.backgroundLoadQueue = this.backgroundLoadQueue.filter(queueId => queueId !== id);
+        
+        // Add to priority queue if not already there
+        if (!this.priorityLoadQueue.includes(id)) {
+          this.priorityLoadQueue.push(id);
+        }
+      }
+    });
+    
+    // Start loading if not already in progress
+    if (!this.isLoading) {
+      this.processLoadQueue();
+    }
+  }
+  
+  startBackgroundLoading() {
+    // Add all unloaded scenes to background queue
+    window.APP_DATA.scenes.forEach(scene => {
+      if (!this.loadedScenes.has(scene.id) && 
+          !this.priorityLoadQueue.includes(scene.id) &&
+          !this.backgroundLoadQueue.includes(scene.id)) {
+        this.backgroundLoadQueue.push(scene.id);
+      }
+    });
+    
+    // Start loading if not already in progress
+    if (!this.isLoading && this.backgroundLoadQueue.length > 0) {
+      this.processLoadQueue();
+    }
+  }
+  
+  processLoadQueue() {
+    // If we're already loading or there's nothing to load, exit
+    if (this.isLoading || (this.priorityLoadQueue.length === 0 && this.backgroundLoadQueue.length === 0)) {
+      return;
+    }
+    
+    this.isLoading = true;
+    
+    // Prefer priority queue
+    let nextSceneId;
+    if (this.priorityLoadQueue.length > 0) {
+      nextSceneId = this.priorityLoadQueue.shift();
+    } else if (this.backgroundLoadQueue.length > 0) {
+      nextSceneId = this.backgroundLoadQueue.shift();
+    } else {
+      this.isLoading = false;
+      return;
+    }
+    
+    // Find the scene index
+    const sceneIndex = window.APP_DATA.scenes.findIndex(scene => scene.id === nextSceneId);
+    if (sceneIndex === -1) {
+      console.error(`Scene ${nextSceneId} not found`);
+      this.isLoading = false;
+      this.processLoadQueue(); // Try the next one
+      return;
+    }
+    
+    // Load the scene in the background
+    console.log(`Preloading scene: ${nextSceneId}`);
+    
+    // Simulate the scene loading process
+    // In a real implementation, this would use the viewer's API to load scene data
+    setTimeout(() => {
+      // Mark as loaded
+      this.loadedScenes.add(nextSceneId);
+      console.log(`Scene ${nextSceneId} preloaded successfully`);
+      
+      // Continue with the next scene in queue
+      this.isLoading = false;
+      this.processLoadQueue();
+    }, 500); // Simulated loading time
+  }
+}
+
+// Initialize the performance optimizer when scenes are ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Wait for the viewer and scenes to be initialized
+  const checkInterval = setInterval(() => {
+    if (window.viewer && window.scenes) {
+      clearInterval(checkInterval);
+      window.performanceOptimizer = new PerformanceOptimizer(window.viewer, window.scenes);
+      console.log('Performance optimizer initialized');
+    }
+  }, 100);
+});
+
+// Immersive Ambient Experience
+class AmbientExperience {
+  constructor() {
+    this.enabled = false;
+    this.ambientSounds = null;
+    this.soundEffects = {};
+    this.overlayElement = null;
+    this.currentScene = null;
+    
+    this.createAmbientButton();
+    this.createAmbientOverlay();
+    this.setupSceneListeners();
+  }
+  
+  createAmbientButton() {
+    const button = document.createElement('button');
+    button.id = 'ambientModeBtn';
+    button.className = 'ambient-mode-btn';
+    button.setAttribute('aria-label', 'Ambient Mode');
+    button.innerHTML = '<i class="fas fa-lightbulb"></i>';
+    
+    // Style the button
+    Object.assign(button.style, {
+      position: 'fixed',
+      bottom: '140px',
+      left: '20px',
+      width: '50px',
+      height: '50px',
+      borderRadius: '50%',
+      background: 'linear-gradient(to right, #ffcc00, #ff9900)',
+      color: 'white',
+      border: 'none',
+      boxShadow: '0 4px 10px rgba(0,0,0,0.3)',
+      cursor: 'pointer',
+      zIndex: '1000',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontSize: '20px',
+      transition: 'all 0.3s'
+    });
+    
+    // Add click event
+    button.addEventListener('click', () => this.toggleAmbientMode());
+    
+    // Add hover effect
+    button.addEventListener('mouseover', () => {
+      button.style.transform = 'scale(1.1)';
+    });
+    
+    button.addEventListener('mouseout', () => {
+      button.style.transform = 'scale(1)';
+    });
+    
+    // Add to body when DOM is fully loaded
+    if (document.body) {
+      document.body.appendChild(button);
+    } else {
+      window.addEventListener('DOMContentLoaded', () => {
+        document.body.appendChild(button);
+      });
+    }
+  }
+  
+  createAmbientOverlay() {
+    // Create overlay div for lighting effects
+    const overlay = document.createElement('div');
+    overlay.id = 'ambientOverlay';
+    
+    // Style overlay
+    Object.assign(overlay.style, {
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'none',
+      zIndex: 999,
+      opacity: 0,
+      transition: 'opacity 1.5s ease',
+      background: 'radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, rgba(0,0,30,0.4) 100%)',
+      mixBlendMode: 'overlay'
+    });
+    
+    document.body.appendChild(overlay);
+    this.overlayElement = overlay;
+  }
+  
+  setupSceneListeners() {
+    // Listen for scene changes to update ambient effects
+    document.addEventListener('sceneChange', (event) => {
+      if (event.detail && event.detail.sceneId && this.enabled) {
+        this.updateAmbientForScene(event.detail.sceneId);
+      }
+    });
+    
+    // Also listen for product interactions to play sounds
+    document.addEventListener('click', (event) => {
+      if (!this.enabled) return;
+      
+      const target = event.target;
+      
+      // Check if clicked on a product hotspot
+      if (target.closest('.info-hotspot')) {
+        this.playSound('productInteraction');
+      }
+      
+      // Check if clicked add to cart
+      if (target.closest('.add-to-basket-btn')) {
+        this.playSound('addToCart');
+      }
+    });
+  }
+  
+  toggleAmbientMode() {
+    this.enabled = !this.enabled;
+    
+    const button = document.getElementById('ambientModeBtn');
+    if (button) {
+      if (this.enabled) {
+        button.style.background = 'linear-gradient(to right, #00ccff, #0099ff)';
+        button.querySelector('i').className = 'fas fa-lightbulb fa-solid';
+        this.startAmbient();
+      } else {
+        button.style.background = 'linear-gradient(to right, #ffcc00, #ff9900)';
+        button.querySelector('i').className = 'fas fa-lightbulb';
+        this.stopAmbient();
+      }
+    }
+    
+    // Show message
+    this.showToast(`Ambient mode ${this.enabled ? 'enabled' : 'disabled'}`, 
+                  this.enabled ? 'success' : 'info');
+  }
+  
+  startAmbient() {
+    // Start ambient sounds
+    this.initializeAudio();
+    
+    // Show ambient overlay
+    if (this.overlayElement) {
+      this.overlayElement.style.opacity = '1';
+    }
+    
+    // Get current scene ID
+    if (window.currentScene !== undefined) {
+      const currentSceneId = window.APP_DATA.scenes[window.currentScene].id;
+      this.updateAmbientForScene(currentSceneId);
+    }
+  }
+  
+  stopAmbient() {
+    // Stop all sounds
+    if (this.ambientSounds) {
+      this.ambientSounds.pause();
+    }
+    
+    // Hide ambient overlay
+    if (this.overlayElement) {
+      this.overlayElement.style.opacity = '0';
+    }
+  }
+  
+  initializeAudio() {
+    // Create ambient background sound
+    if (!this.ambientSounds) {
+      this.ambientSounds = new Audio();
+      this.ambientSounds.src = 'https://freesound.org/data/previews/443/443027_738377-lq.mp3'; // Supermarket ambience
+      this.ambientSounds.loop = true;
+      this.ambientSounds.volume = 0.4;
+    }
+    
+    // Create sound effects
+    if (!this.soundEffects.productInteraction) {
+      this.soundEffects.productInteraction = new Audio();
+      this.soundEffects.productInteraction.src = 'https://freesound.org/data/previews/561/561657_1168184-lq.mp3'; // Click sound
+      this.soundEffects.productInteraction.volume = 0.3;
+    }
+    
+    if (!this.soundEffects.addToCart) {
+      this.soundEffects.addToCart = new Audio();
+      this.soundEffects.addToCart.src = 'https://freesound.org/data/previews/513/513865_1578652-lq.mp3'; // Cash register sound
+      this.soundEffects.addToCart.volume = 0.5;
+    }
+    
+    // Start playing ambient sound
+    this.ambientSounds.play().catch(e => {
+      console.warn('Could not autoplay ambient sounds:', e);
+      this.showToast('Click anywhere to enable ambient sounds', 'info');
+      
+      // Add a one-time click handler to start audio
+      const clickHandler = () => {
+        this.ambientSounds.play().catch(e => console.error('Failed to play after click:', e));
+        document.removeEventListener('click', clickHandler);
+      };
+      
+      document.addEventListener('click', clickHandler);
+    });
+  }
+  
+  playSound(soundType) {
+    if (this.soundEffects[soundType]) {
+      // Clone the audio to allow overlapping sounds
+      const sound = this.soundEffects[soundType].cloneNode();
+      sound.play().catch(e => console.warn('Could not play sound effect:', e));
+      
+      // Remove after playing to clean up memory
+      sound.onended = () => sound.remove();
+    }
+  }
+  
+  updateAmbientForScene(sceneId) {
+    this.currentScene = sceneId;
+    
+    // Update overlay effect based on scene
+    if (this.overlayElement) {
+      // Different color overlay for different sections
+      let overlayBg;
+      
+      switch(sceneId) {
+        case '0-entrancee':
+          overlayBg = 'radial-gradient(circle at 50% 50%, rgba(255,255,255,0.15) 0%, rgba(0,20,40,0.4) 100%)';
+          break;
+        case '1-laiterie':
+          overlayBg = 'radial-gradient(circle at 50% 50%, rgba(220,255,255,0.15) 0%, rgba(0,30,50,0.4) 100%)';
+          break;
+        case '2-fromage':
+          overlayBg = 'radial-gradient(circle at 50% 50%, rgba(255,250,220,0.15) 0%, rgba(40,30,0,0.4) 100%)';
+          break;
+        case '3-vegii':
+          overlayBg = 'radial-gradient(circle at 50% 50%, rgba(220,255,220,0.15) 0%, rgba(0,40,0,0.4) 100%)';
+          break;
+        case '4-jus':
+          overlayBg = 'radial-gradient(circle at 50% 50%, rgba(255,220,220,0.15) 0%, rgba(40,10,10,0.4) 100%)';
+          break;
+        case '5-boucherie':
+          overlayBg = 'radial-gradient(circle at 50% 50%, rgba(255,220,220,0.15) 0%, rgba(40,0,0,0.4) 100%)';
+          break;
+        default:
+          overlayBg = 'radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, rgba(0,0,30,0.4) 100%)';
+      }
+      
+      this.overlayElement.style.background = overlayBg;
+    }
+  }
+  
+  showToast(message, type = 'info') {
+    // Check if we can use the existing showToast function
+    if (typeof window.showToast === 'function') {
+      window.showToast(message, type);
+    } else {
+      // Create a simple toast if the main one doesn't exist
+      const toast = document.createElement('div');
+      toast.className = `ambient-toast ${type}`;
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      
+      // Style for the toast
+      Object.assign(toast.style, {
+        position: 'fixed',
+        top: '20px',
+        right: '20px',
+        padding: '10px 20px',
+        background: type === 'error' ? '#f44336' : 
+                   type === 'success' ? '#4CAF50' : 
+                   type === 'warning' ? '#ff9800' : '#2196F3',
+        color: 'white',
+        borderRadius: '4px',
+        zIndex: '10000',
+        boxShadow: '0 2px 10px rgba(0,0,0,0.2)',
+        opacity: '0',
+        transition: 'opacity 0.3s'
+      });
+      
+      // Show and hide with animation
+      setTimeout(() => { toast.style.opacity = '1'; }, 10);
+      setTimeout(() => { 
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+  }
+}
+
+// Initialize ambient experience when the page is loaded
+window.addEventListener('load', function() {
+  window.ambientExperience = new AmbientExperience();
+});
+
+// Add HolographicProductDisplay class after the existing classes
+class HolographicProductDisplay {
+  constructor() {
+    this.products = {};
+    this.activeHologram = null;
+    this.isInitialized = false;
+    this.init();
+  }
+
+  init() {
+    // Load Three.js dynamically
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+    script.onload = () => {
+      this.isInitialized = true;
+      console.log('Three.js loaded successfully');
+    };
+    document.head.appendChild(script);
+
+    // Add styles for holographic displays
+    const style = document.createElement('style');
+    style.textContent = `
+      .hologram-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .hologram-canvas {
+        width: 80%;
+        height: 60%;
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      }
+
+      .hologram-controls {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+      }
+
+      .hologram-btn {
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #00a8ff, #0097e6);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      .hologram-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 168, 255, 0.7);
+      }
+
+      .hologram-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+      }
+
+      .hologram-close:hover {
+        background: rgba(255, 255, 255, 0.4);
+        transform: scale(1.1);
+      }
+
+      .hologram-info {
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 80%;
+      }
+
+      .hologram-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+      }
+
+      .hologram-price {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .hologram-description {
+        font-size: 16px;
+        opacity: 0.8;
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Create container for holograms
+    this.container = document.createElement('div');
+    this.container.className = 'hologram-container';
+    document.body.appendChild(this.container);
+
+    // Add close button
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'hologram-close';
+    closeBtn.innerHTML = '×';
+    closeBtn.onclick = () => this.hideHologram();
+    this.container.appendChild(closeBtn);
+
+    // Create canvas for 3D rendering
+    this.canvas = document.createElement('canvas');
+    this.canvas.className = 'hologram-canvas';
+    this.container.appendChild(this.canvas);
+
+    // Create controls
+    const controls = document.createElement('div');
+    controls.className = 'hologram-controls';
+    
+    const rotateBtn = document.createElement('button');
+    rotateBtn.className = 'hologram-btn';
+    rotateBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Rotate';
+    rotateBtn.onclick = () => this.toggleRotation();
+    
+    const addToCartBtn = document.createElement('button');
+    addToCartBtn.className = 'hologram-btn';
+    addToCartBtn.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
+    addToCartBtn.onclick = () => this.addToCart();
+    
+    controls.appendChild(rotateBtn);
+    controls.appendChild(addToCartBtn);
+    this.container.appendChild(controls);
+
+    // Create info section
+    this.infoSection = document.createElement('div');
+    this.infoSection.className = 'hologram-info';
+    this.container.appendChild(this.infoSection);
+
+    // Initialize Three.js scene
+    this.initThreeJS();
+  }
+
+  initThreeJS() {
+    if (!this.isInitialized) return;
+
+    // Create scene
+    this.scene = new THREE.Scene();
+    this.scene.background = new THREE.Color(0x000000);
+
+    // Create camera
+    this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    this.camera.position.z = 5;
+
+    // Create renderer
+    this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas, alpha: true, antialias: true });
+    this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight);
+    this.renderer.setPixelRatio(window.devicePixelRatio);
+
+    // Add lights
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    this.scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight.position.set(1, 1, 1);
+    this.scene.add(directionalLight);
+
+    // Add holographic effect
+    const holographicLight = new THREE.PointLight(0x00ffff, 1, 100);
+    holographicLight.position.set(0, 0, 5);
+    this.scene.add(holographicLight);
+
+    // Animation variables
+    this.isRotating = true;
+    this.clock = new THREE.Clock();
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      this.camera.aspect = this.canvas.clientWidth / this.canvas.clientHeight;
+      this.camera.updateProjectionMatrix();
+      this.renderer.setSize(this.canvas.clientWidth, this.canvas.clientHeight);
+    });
+
+    // Start animation loop
+    this.animate();
+  }
+
+  animate() {
+    if (!this.isInitialized || !this.activeHologram) return;
+
+    requestAnimationFrame(() => this.animate());
+
+    const delta = this.clock.getDelta();
+
+    if (this.isRotating && this.activeHologram.mesh) {
+      this.activeHologram.mesh.rotation.y += delta * 0.5;
+    }
+
+    this.renderer.render(this.scene, this.camera);
+  }
+
+  toggleRotation() {
+    this.isRotating = !this.isRotating;
+  }
+
+  showHologram(product) {
+    if (!this.isInitialized) {
+      console.error('Three.js not loaded yet');
+      return;
+    }
+
+    // Store current product
+    this.currentProduct = product;
+
+    // Update info section
+    this.infoSection.innerHTML = `
+      <div class="hologram-title">${product.name}</div>
+      <div class="hologram-price">${product.price} AMD</div>
+      <div class="hologram-description">${product.description || 'Explore this product in 3D'}</div>
+    `;
+
+    // Show container
+    this.container.style.display = 'flex';
+
+    // Create or get 3D model for this product
+    if (!this.products[product.name]) {
+      this.createProductModel(product);
+    }
+
+    // Set active hologram
+    this.activeHologram = this.products[product.name];
+
+    // Add to scene if not already there
+    if (!this.scene.getObjectById(this.activeHologram.mesh.id)) {
+      this.scene.add(this.activeHologram.mesh);
+    }
+
+    // Position camera
+    this.camera.position.z = this.activeHologram.cameraDistance || 5;
+  }
+
+  hideHologram() {
+    this.container.style.display = 'none';
+    this.activeHologram = null;
+  }
+
+  createProductModel(product) {
+    // Create a basic 3D model based on product type
+    let geometry;
+    let material;
+
+    // Determine product type from name
+    const productType = this.getProductType(product.name);
+
+    switch (productType) {
+      case 'bottle':
+        geometry = new THREE.CylinderGeometry(0.5, 0.5, 2, 32);
+        material = new THREE.MeshPhongMaterial({ 
+          color: 0x00a8ff,
+          transparent: true,
+          opacity: 0.8,
+          shininess: 100
+        });
+        break;
+      case 'box':
+        geometry = new THREE.BoxGeometry(1, 1, 1);
+        material = new THREE.MeshPhongMaterial({ 
+          color: 0xff9f43,
+          transparent: true,
+          opacity: 0.8,
+          shininess: 100
+        });
+        break;
+      case 'sphere':
+        geometry = new THREE.SphereGeometry(0.7, 32, 32);
+        material = new THREE.MeshPhongMaterial({ 
+          color: 0x4cd137,
+          transparent: true,
+          opacity: 0.8,
+          shininess: 100
+        });
+        break;
+      case 'meat':
+        geometry = new THREE.BoxGeometry(1.5, 0.5, 1);
+        material = new THREE.MeshPhongMaterial({ 
+          color: 0xe84118,
+          transparent: true,
+          opacity: 0.8,
+          shininess: 100
+        });
+        break;
+      default:
+        geometry = new THREE.BoxGeometry(1, 1, 1);
+        material = new THREE.MeshPhongMaterial({ 
+          color: 0x9c88ff,
+          transparent: true,
+          opacity: 0.8,
+          shininess: 100
+        });
+    }
+
+    // Create mesh
+    const mesh = new THREE.Mesh(geometry, material);
+    mesh.position.y = 0;
+
+    // Add holographic effect
+    const edges = new THREE.EdgesGeometry(geometry);
+    const line = new THREE.LineSegments(
+      edges,
+      new THREE.LineBasicMaterial({ color: 0x00ffff })
+    );
+    mesh.add(line);
+
+    // Store product model
+    this.products[product.name] = {
+      mesh: mesh,
+      cameraDistance: 5
+    };
+  }
+
+  getProductType(productName) {
+    const name = productName.toLowerCase();
+    
+    if (name.includes('bottle') || name.includes('juice') || name.includes('water')) {
+      return 'bottle';
+    } else if (name.includes('box') || name.includes('cereal') || name.includes('can')) {
+      return 'box';
+    } else if (name.includes('egg') || name.includes('fruit') || name.includes('tomato')) {
+      return 'sphere';
+    } else if (name.includes('meat') || name.includes('beef') || name.includes('chicken')) {
+      return 'meat';
+    }
+    
+    return 'default';
+  }
+
+  addToCart() {
+    if (this.currentProduct) {
+      window.addToCart(this.currentProduct);
+      this.hideHologram();
+    }
+  }
+}
+
+// Initialize holographic display
+let holographicDisplay;
+
+// Add styles for the holographic view button
+const hologramButtonStyle = document.createElement('style');
+hologramButtonStyle.textContent = `
+  .product-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .view-hologram-btn {
+    background: linear-gradient(135deg, #00a8ff, #0097e6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .view-hologram-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 168, 255, 0.7);
+  }
+`;
+document.head.appendChild(hologramButtonStyle);
+
+// Add VirtualTryOn class after the HolographicProductDisplay class
+class VirtualTryOn {
+  constructor() {
+    this.isInitialized = false;
+    this.videoElement = null;
+    this.canvasElement = null;
+    this.isActive = false;
+    this.currentProduct = null;
+    this.init();
+  }
+
+  init() {
+    // Add styles for virtual try-on
+    const style = document.createElement('style');
+    style.textContent = `
+      .try-on-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .try-on-content {
+        display: flex;
+        width: 90%;
+        height: 80%;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .try-on-video-container {
+        flex: 1;
+        position: relative;
+        background: #000;
+      }
+
+      .try-on-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .try-on-canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .try-on-controls {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .try-on-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .try-on-description {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .try-on-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .try-on-option {
+        padding: 10px 15px;
+        background: #f5f5f5;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .try-on-option:hover {
+        background: #e0e0e0;
+      }
+
+      .try-on-option.active {
+        background: #4CAF50;
+        color: white;
+      }
+
+      .try-on-buttons {
+        display: flex;
+        gap: 10px;
+      }
+
+      .try-on-btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      .try-on-btn.primary {
+        background: #4CAF50;
+        color: white;
+      }
+
+      .try-on-btn.secondary {
+        background: #f44336;
+        color: white;
+      }
+
+      .try-on-btn:hover {
+        transform: scale(1.05);
+      }
+
+      .try-on-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+      }
+
+      .try-on-close:hover {
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      .try-on-status {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Create container
+    this.container = document.createElement('div');
+    this.container.className = 'try-on-container';
+    document.body.appendChild(this.container);
+
+    // Create content
+    const content = document.createElement('div');
+    content.className = 'try-on-content';
+    this.container.appendChild(content);
+
+    // Create video container
+    const videoContainer = document.createElement('div');
+    videoContainer.className = 'try-on-video-container';
+    content.appendChild(videoContainer);
+
+    // Create video element
+    this.videoElement = document.createElement('video');
+    this.videoElement.className = 'try-on-video';
+    this.videoElement.autoplay = true;
+    this.videoElement.playsInline = true;
+    videoContainer.appendChild(this.videoElement);
+
+    // Create canvas element
+    this.canvasElement = document.createElement('canvas');
+    this.canvasElement.className = 'try-on-canvas';
+    videoContainer.appendChild(this.canvasElement);
+
+    // Create status element
+    this.statusElement = document.createElement('div');
+    this.statusElement.className = 'try-on-status';
+    this.statusElement.textContent = 'Initializing camera...';
+    videoContainer.appendChild(this.statusElement);
+
+    // Create controls
+    const controls = document.createElement('div');
+    controls.className = 'try-on-controls';
+    content.appendChild(controls);
+
+    // Create title
+    const title = document.createElement('div');
+    title.className = 'try-on-title';
+    title.textContent = 'Virtual Try-On';
+    controls.appendChild(title);
+
+    // Create description
+    const description = document.createElement('div');
+    description.className = 'try-on-description';
+    description.textContent = 'Try on this product virtually using your camera.';
+    controls.appendChild(description);
+
+    // Create options
+    const options = document.createElement('div');
+    options.className = 'try-on-options';
+    controls.appendChild(options);
+
+    // Create buttons
+    const buttons = document.createElement('div');
+    buttons.className = 'try-on-buttons';
+    controls.appendChild(buttons);
+
+    // Create add to cart button
+    const addToCartBtn = document.createElement('button');
+    addToCartBtn.className = 'try-on-btn primary';
+    addToCartBtn.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
+    addToCartBtn.onclick = () => this.addToCart();
+    buttons.appendChild(addToCartBtn);
+
+    // Create close button
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'try-on-btn secondary';
+    closeBtn.innerHTML = '<i class="fas fa-times"></i> Close';
+    closeBtn.onclick = () => this.hide();
+    buttons.appendChild(closeBtn);
+
+    // Create close button for container
+    const containerCloseBtn = document.createElement('button');
+    containerCloseBtn.className = 'try-on-close';
+    containerCloseBtn.innerHTML = '×';
+    containerCloseBtn.onclick = () => this.hide();
+    this.container.appendChild(containerCloseBtn);
+
+    // Initialize camera
+    this.initCamera();
+  }
+
+  async initCamera() {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ 
+        video: { 
+          facingMode: 'user',
+          width: { ideal: 1280 },
+          height: { ideal: 720 }
+        } 
+      });
+      
+      this.videoElement.srcObject = stream;
+      this.isInitialized = true;
+      this.statusElement.textContent = 'Camera ready';
+      
+      // Start canvas rendering
+      this.startCanvasRendering();
+    } catch (error) {
+      console.error('Error accessing camera:', error);
+      this.statusElement.textContent = 'Camera access denied';
+    }
+  }
+
+  startCanvasRendering() {
+    if (!this.isInitialized || !this.isActive) return;
+    
+    const canvas = this.canvasElement;
+    const video = this.videoElement;
+    const ctx = canvas.getContext('2d');
+    
+    // Set canvas size to match video
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    
+    // Draw video frame
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    
+    // Apply virtual try-on effects based on product type
+    if (this.currentProduct) {
+      this.applyTryOnEffect(ctx, canvas.width, canvas.height);
+    }
+    
+    // Continue rendering
+    requestAnimationFrame(() => this.startCanvasRendering());
+  }
+
+  applyTryOnEffect(ctx, width, height) {
+    if (!this.currentProduct) return;
+    
+    const productType = this.getProductType(this.currentProduct.name);
+    
+    switch (productType) {
+      case 'makeup':
+        this.applyMakeupEffect(ctx, width, height);
+        break;
+      case 'skincare':
+        this.applySkincareEffect(ctx, width, height);
+        break;
+      case 'haircare':
+        this.applyHaircareEffect(ctx, width, height);
+        break;
+      default:
+        // Default effect - just add a colored overlay
+        ctx.fillStyle = 'rgba(255, 192, 203, 0.3)';
+        ctx.fillRect(0, 0, width, height);
+    }
+  }
+
+  applyMakeupEffect(ctx, width, height) {
+    // Simple lipstick effect
+    ctx.fillStyle = 'rgba(255, 0, 0, 0.5)';
+    ctx.beginPath();
+    ctx.ellipse(width/2, height/2 + 50, 30, 15, 0, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Simple eyeshadow effect
+    ctx.fillStyle = 'rgba(0, 0, 255, 0.3)';
+    ctx.beginPath();
+    ctx.ellipse(width/2 - 30, height/2 - 20, 20, 10, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(width/2 + 30, height/2 - 20, 20, 10, 0, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  applySkincareEffect(ctx, width, height) {
+    // Simple skin smoothing effect
+    const imageData = ctx.getImageData(0, 0, width, height);
+    const data = imageData.data;
+    
+    for (let i = 0; i < data.length; i += 4) {
+      // Simple smoothing algorithm
+      const r = data[i];
+      const g = data[i + 1];
+      const b = data[i + 2];
+      
+      // Increase brightness slightly
+      data[i] = Math.min(255, r + 10);
+      data[i + 1] = Math.min(255, g + 10);
+      data[i + 2] = Math.min(255, b + 10);
+    }
+    
+    ctx.putImageData(imageData, 0, 0);
+  }
+
+  applyHaircareEffect(ctx, width, height) {
+    // Simple hair shine effect
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+    ctx.beginPath();
+    ctx.moveTo(0, height * 0.2);
+    ctx.quadraticCurveTo(width * 0.5, height * 0.1, width, height * 0.2);
+    ctx.lineTo(width, height * 0.3);
+    ctx.quadraticCurveTo(width * 0.5, height * 0.4, 0, height * 0.3);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  getProductType(productName) {
+    const name = productName.toLowerCase();
+    
+    if (name.includes('makeup') || name.includes('lipstick') || name.includes('eyeshadow')) {
+      return 'makeup';
+    } else if (name.includes('cream') || name.includes('lotion') || name.includes('serum')) {
+      return 'skincare';
+    } else if (name.includes('shampoo') || name.includes('conditioner') || name.includes('hair')) {
+      return 'haircare';
+    }
+    
+    return 'default';
+  }
+
+  show(product) {
+    if (!this.isInitialized) {
+      console.error('Virtual try-on not initialized');
+      return;
+    }
+    
+    this.currentProduct = product;
+    this.isActive = true;
+    this.container.style.display = 'flex';
+    
+    // Update title and description
+    const title = this.container.querySelector('.try-on-title');
+    const description = this.container.querySelector('.try-on-description');
+    
+    title.textContent = product.name;
+    description.textContent = `Try on ${product.name} virtually using your camera.`;
+    
+    // Start canvas rendering
+    this.startCanvasRendering();
+  }
+
+  hide() {
+    this.isActive = false;
+    this.container.style.display = 'none';
+  }
+
+  addToCart() {
+    if (this.currentProduct) {
+      window.addToCart(this.currentProduct);
+      this.hide();
+    }
+  }
+}
+
+// Initialize virtual try-on
+let virtualTryOn;
+
+// Modify the createInfoHotspotElement function to add virtual try-on button for personal care products
+function createInfoHotspotElement(hotspot) {
+  // ... existing code ...
+
+  // Check if this is a product hotspot by looking for price in AMD
+  var priceMatch = hotspot.text.match(/(\d+)\s*amd/i);
+  if (priceMatch) {
+      var price = parseInt(priceMatch[1]);
+      // Check if product is sold by weight
+      var isByWeight = hotspot.text.toLowerCase().includes('kg') || 
+                      hotspot.text.toLowerCase().includes('gramm');
+      
+      // Check if this is a personal care product
+      const isPersonalCare = this.isPersonalCareProduct(hotspot.title);
+      
+      if (isByWeight) {
+          text.innerHTML = `
+              <div class="product-info">
+                  <div class="product-description">${hotspot.text.replace(/(\d+)\s*amd/i, '')}</div>
+                  <div class="product-price">${price} AMD per kg</div>
+                  <div class="weight-input">
+                      <input type="number" min="0.1" step="0.1" class="weight-amount" placeholder="Enter weight in kg">
+                      <select class="weight-unit">
+                          <option value="kg">kg</option>
+                          <option value="g">g</option>
+                      </select>
+                  </div>
+                  <div class="product-actions">
+                      <button class="add-to-basket-btn" disabled>
+                          <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <button class="view-hologram-btn">
+                          <i class="fas fa-cube"></i> View in 3D
+                      </button>
+                      ${isPersonalCare ? `<button class="try-on-btn">
+                          <i class="fas fa-camera"></i> Try On
+                      </button>` : ''}
+                  </div>
+              </div>
+          `;
+
+          // Add weight input handler
+          const weightInput = text.querySelector('.weight-amount');
+          const weightUnit = text.querySelector('.weight-unit');
+          const addButton = text.querySelector('.add-to-basket-btn');
+
+          weightInput.addEventListener('input', function() {
+              const weight = parseFloat(this.value);
+              addButton.disabled = !weight || weight <= 0;
+              if (weight && weight > 0) {
+                  const unit = weightUnit.value;
+                  const finalWeight = unit === 'g' ? weight / 1000 : weight;
+                  const totalPrice = Math.round(price * finalWeight);
+                  addButton.onclick = () => window.addToCart({
+                      name: hotspot.title,
+                      price: totalPrice,
+                      weight: finalWeight,
+                      unit: 'kg',
+                      pricePerKg: price
+                  });
+              }
+          });
+      } else {
+          // Regular product without weight
+          text.innerHTML = `
+              <div class="product-info">
+                  <div class="product-description">${hotspot.text.replace(/(\d+)\s*amd/i, '')}</div>
+                  <div class="product-price">${price} AMD</div>
+                  <div class="product-actions">
+                      <button class="add-to-basket-btn" onclick="window.addToCart({name: '${hotspot.title}', price: ${price}})">
+                          <i class="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                      <button class="view-hologram-btn">
+                          <i class="fas fa-cube"></i> View in 3D
+                      </button>
+                      ${isPersonalCare ? `<button class="try-on-btn">
+                          <i class="fas fa-camera"></i> Try On
+                      </button>` : ''}
+                  </div>
+              </div>
+          `;
+      }
+
+      // Add holographic view button handler
+      const viewHologramBtn = text.querySelector('.view-hologram-btn');
+      if (viewHologramBtn) {
+          viewHologramBtn.addEventListener('click', function() {
+              // Initialize holographic display if not already done
+              if (!holographicDisplay) {
+                  holographicDisplay = new HolographicProductDisplay();
+              }
+              
+              // Show hologram
+              holographicDisplay.showHologram({
+                  name: hotspot.title,
+                  price: price,
+                  description: hotspot.text.replace(/(\d+)\s*amd/i, '')
+              });
+          });
+      }
+
+      // Add virtual try-on button handler
+      const tryOnBtn = text.querySelector('.try-on-btn');
+      if (tryOnBtn) {
+          tryOnBtn.addEventListener('click', function() {
+              // Initialize virtual try-on if not already done
+              if (!virtualTryOn) {
+                  virtualTryOn = new VirtualTryOn();
+              }
+              
+              // Show virtual try-on
+              virtualTryOn.show({
+                  name: hotspot.title,
+                  price: price,
+                  description: hotspot.text.replace(/(\d+)\s*amd/i, '')
+              });
+          });
+      }
+  } else {
+      // This is a regular info hotspot - just show the text
+      text.innerHTML = hotspot.text;
+  }
+
+  // ... rest of existing code ...
+}
+
+// Add function to check if a product is a personal care product
+function isPersonalCareProduct(productName) {
+  const name = productName.toLowerCase();
+  
+  return (
+    name.includes('cream') || 
+    name.includes('lotion') || 
+    name.includes('shampoo') || 
+    name.includes('conditioner') || 
+    name.includes('makeup') || 
+    name.includes('lipstick') || 
+    name.includes('eyeshadow') || 
+    name.includes('serum') || 
+    name.includes('mask') || 
+    name.includes('perfume')
+  );
+}
+
+// Add styles for the try-on button
+const tryOnButtonStyle = document.createElement('style');
+tryOnButtonStyle.textContent = `
+  .try-on-btn {
+    background: linear-gradient(135deg, #9c88ff, #8c7ae6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .try-on-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(156, 136, 255, 0.7);
+  }
+`;
+document.head.appendChild(tryOnButtonStyle);
+
+class ThreeJSOptimizer {
+  constructor() {
+    this.scene = null;
+    this.camera = null;
+    this.renderer = null;
+    this.raycaster = new THREE.Raycaster();
+    this.mouse = new THREE.Vector2();
+    this.clock = new THREE.Clock();
+    this.optimizedHotspots = new Map();
+    this.isInitialized = false;
+  }
+
+  init() {
+    if (this.isInitialized) return;
+    
+    // Initialize Three.js scene
+    this.scene = new THREE.Scene();
+    this.scene.background = new THREE.Color(0x000000);
+    
+    // Setup camera
+    this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    this.camera.position.z = 5;
+    
+    // Setup renderer with optimizations
+    this.renderer = new THREE.WebGLRenderer({ 
+      antialias: true,
+      powerPreference: "high-performance",
+      stencil: false,
+      depth: true
+    });
+    this.renderer.setPixelRatio(window.devicePixelRatio);
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.shadowMap.enabled = true;
+    this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    
+    // Add renderer to document
+    const container = document.createElement('div');
+    container.id = 'threejs-container';
+    container.style.position = 'absolute';
+    container.style.top = '0';
+    container.style.left = '0';
+    container.style.width = '100%';
+    container.style.height = '100%';
+    container.style.pointerEvents = 'none';
+    container.style.zIndex = '1';
+    container.appendChild(this.renderer.domElement);
+    document.body.appendChild(container);
+    
+    // Add lights
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    this.scene.add(ambientLight);
+    
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    directionalLight.position.set(5, 5, 5);
+    directionalLight.castShadow = true;
+    this.scene.add(directionalLight);
+    
+    // Start animation loop
+    this.animate();
+    
+    // Handle window resize
+    window.addEventListener('resize', () => this.onWindowResize(), false);
+    
+    this.isInitialized = true;
+  }
+
+  optimizeHotspots(hotspots) {
+    hotspots.forEach(hotspot => {
+      if (hotspot.type === 'info') {
+        this.createOptimizedHotspot(hotspot);
+      }
+    });
+  }
+
+  createOptimizedHotspot(hotspot) {
+    // Create a 3D plane for the hotspot
+    const geometry = new THREE.PlaneGeometry(1, 1);
+    const material = new THREE.MeshBasicMaterial({
+      color: 0xffffff,
+      transparent: true,
+      opacity: 0.5,
+      side: THREE.DoubleSide
+    });
+    
+    const mesh = new THREE.Mesh(geometry, material);
+    mesh.position.set(hotspot.position.x, hotspot.position.y, hotspot.position.z);
+    mesh.userData.hotspot = hotspot;
+    
+    this.scene.add(mesh);
+    this.optimizedHotspots.set(hotspot.id, mesh);
+  }
+
+  updateHotspotPositions(viewer) {
+    this.optimizedHotspots.forEach((mesh, hotspotId) => {
+      const hotspot = mesh.userData.hotspot;
+      const position = viewer.view.coordinatesToVector3(hotspot.position);
+      mesh.position.copy(position);
+      mesh.lookAt(this.camera.position);
+    });
+  }
+
+  animate() {
+    requestAnimationFrame(() => this.animate());
+    
+    if (this.scene && this.camera && this.renderer) {
+      this.renderer.render(this.scene, this.camera);
+    }
+  }
+
+  onWindowResize() {
+    if (this.camera && this.renderer) {
+      this.camera.aspect = window.innerWidth / window.innerHeight;
+      this.camera.updateProjectionMatrix();
+      this.renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+  }
+
+  createProductPreview(product) {
+    const geometry = new THREE.BoxGeometry(1, 1, 1);
+    const material = new THREE.MeshPhongMaterial({
+      color: 0xffffff,
+      transparent: true,
+      opacity: 0.8
+    });
+    
+    const mesh = new THREE.Mesh(geometry, material);
+    mesh.position.set(0, 0, -2);
+    this.scene.add(mesh);
+    
+    return mesh;
+  }
+
+  createHolographicEffect(mesh) {
+    const glowMaterial = new THREE.ShaderMaterial({
+      uniforms: {
+        time: { value: 0 },
+        color: { value: new THREE.Color(0x00ffff) }
+      },
+      vertexShader: `
+        varying vec2 vUv;
+        void main() {
+          vUv = uv;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        uniform float time;
+        uniform vec3 color;
+        varying vec2 vUv;
+        void main() {
+          float glow = sin(time * 2.0) * 0.5 + 0.5;
+          gl_FragColor = vec4(color, glow * 0.5);
+        }
+      `,
+      transparent: true,
+      blending: THREE.AdditiveBlending
+    });
+    
+    const glowMesh = new THREE.Mesh(
+      new THREE.PlaneGeometry(1.2, 1.2),
+      glowMaterial
+    );
+    glowMesh.position.copy(mesh.position);
+    glowMesh.position.z -= 0.1;
+    this.scene.add(glowMesh);
+    
+    return glowMesh;
+  }
+
+  updateHolographicEffect(glowMesh) {
+    if (glowMesh.material.uniforms) {
+      glowMesh.material.uniforms.time.value = this.clock.getElapsedTime();
+    }
+  }
+}
+
+// Initialize Three.js optimizer
+const threeJSOptimizer = new ThreeJSOptimizer();
+threeJSOptimizer.init();
+
+class VoiceCommands {
+    constructor() {
+        this.recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        this.recognition.continuous = false;
+        this.recognition.interimResults = false;
+        this.recognition.lang = 'en-US';
+        
+        this.recognition.onstart = () => {
+            console.log('Voice recognition started');
+            document.querySelector('.voice-command-btn').classList.add('listening');
+        };
+        
+        this.recognition.onend = () => {
+            console.log('Voice recognition ended');
+            document.querySelector('.voice-command-btn').classList.remove('listening');
+        };
+        
+        this.recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            const confidence = event.results[0][0].confidence;
+            console.log('Recognized:', transcript, 'Confidence:', confidence);
+            this.processCommand(transcript, confidence);
+        };
+    }
+
+    processCommand(transcript) {
+        const command = transcript.toLowerCase().trim();
+        console.log('Processing command:', command);
+        
+        // Map of voice commands to scene IDs
+        const sceneMap = {
+            'entrance': '0-entrancee',
+            'dairy': '1-laiterie',
+            'cheese': '2-fromage',
+            'vegetables': '3-vegii',
+            'juice': '4-jus',
+            'butcher': '5-boucherie'
+        };
+        
+        // Check for navigation commands
+        if (command.includes('go to')) {
+            const location = command.replace('go to', '').trim();
+            console.log('Trying to navigate to:', location);
+            
+            const sceneId = sceneMap[location];
+            if (sceneId) {
+                const targetScene = scenes.find(s => s.data.id === sceneId);
+                if (targetScene) {
+                    console.log('Found scene:', targetScene);
+                    switchScene(targetScene);
+                    this.showFeedback(`Navigating to ${location}`);
+                } else {
+                    this.showFeedback(`Could not find ${location} scene`);
+                }
+            } else {
+                this.showFeedback(`Unknown location: ${location}`);
+            }
+        }
+    }
+
+    showFeedback(message) {
+        const popup = document.querySelector('.voice-feedback-popup');
+        popup.textContent = message;
+        popup.classList.add('showing');
+        
+        setTimeout(() => {
+            popup.classList.remove('showing');
+        }, 2000);
+    }
+
+    startListening() {
+        try {
+            this.recognition.start();
+        } catch (error) {
+            console.error('Error starting voice recognition:', error);
+        }
+    }
+}
+
+// Initialize voice commands
+const voiceCommands = new VoiceCommands();
+
+// Add click handler for voice command button
+document.querySelector('.voice-command-btn').addEventListener('click', () => {
+    voiceCommands.startListening();
+});
+
+// ... existing code ...
+function handleVoiceCommand(transcript) {
+  // Convert to lowercase and remove periods
+  transcript = transcript.toLowerCase().replace(/\./g, '').trim();
+  
+  // Simple mapping of voice commands to scene IDs
+  const sceneMap = {
+    'entrance': '0-entrancee',
+    'dairy': '1-laiterie',
+    'cheese': '2-fromage',
+    'vegetables': '3-vegii',
+    'vegetable': '3-vegii',
+    'juice': '4-jus',
+    'butcher': '5-boucherie'
+  };
+
+  // Check if command includes "go to"
+  if (transcript.includes('go to')) {
+    const location = transcript.replace('go to', '').trim();
+    if (sceneMap[location]) {
+      switchScene(findSceneById(sceneMap[location]));
+      return true;
+    }
+  }
+  
+  // Check direct location mentions
+  if (sceneMap[transcript]) {
+    switchScene(findSceneById(sceneMap[transcript]));
+    return true;
+  }
+  
+  return false;
+}
+
+// Add voice recognition setup
+if ('webkitSpeechRecognition' in window) {
+  const recognition = new webkitSpeechRecognition();
+  recognition.continuous = false;
+  recognition.interimResults = false;
+
+  recognition.onresult = function(event) {
+    const transcript = event.results[0][0].transcript;
+    console.log('Recognized:', transcript);
+    handleVoiceCommand(transcript);
+  };
+
+  // Add click handler to voice button
+  document.querySelector('.voice-command-btn').addEventListener('click', function() {
+    recognition.start();
+  });
+}
+// ... existing code ...
+
+// Create feedback element
+const feedbackEl = document.createElement('div');
+feedbackEl.className = 'voice-feedback';
+document.body.appendChild(feedbackEl);
+
+function showFeedback(text, duration = 2000) {
+    feedbackEl.textContent = text;
+    feedbackEl.classList.add('show');
+    setTimeout(() => feedbackEl.classList.remove('show'), duration);
+}
+
+function processVoiceCommand(transcript) {
+    console.log('Processing command:', transcript);
+    const command = transcript.toLowerCase().trim();
+    
+    // Show what was recognized
+    showFeedback(`Recognized: ${transcript}`);
+    
+    // Handle navigation commands
+    if (command.includes('go to')) {
+        const location = command.replace('go to', '').trim();
+        
+        const sceneMap = {
+            'entrance': '0-entrancee',
+            'dairy': '1-laiterie',
+            'cheese': '2-fromage',
+            'vegetables': '3-vegii',
+            'juice': '4-jus',
+            'butcher': '5-boucherie'
+        };
+        
+        if (sceneMap[location]) {
+            const targetScene = scenes.find(s => s.data.id === sceneMap[location]);
+            if (targetScene) {
+                showFeedback(`Navigating to ${location}...`);
+                viewer.switchScene(targetScene);
+                return true;
+            }
+        }
+        
+        showFeedback(`Could not find ${location} scene`);
+        return false;
+    }
+    
+    return false;
+}
+
+// Set up voice recognition
+if ('webkitSpeechRecognition' in window) {
+    const recognition = new webkitSpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    
+    recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        processVoiceCommand(transcript);
+    };
+    
+    recognition.onend = () => {
+        console.log('Voice recognition ended');
+        recognition.start(); // Restart listening
+    };
+    
+    recognition.onerror = (event) => {
+        console.error('Voice recognition error:', event.error);
+        showFeedback('Voice recognition error. Please try again.');
+    };
+    
+    // Start listening
+    recognition.start();
+    console.log('Voice recognition started');
+}
