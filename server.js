@@ -7,8 +7,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 const bodyParser = require('body-parser');
 const WebSocket = require('ws');
-const { sendOrderConfirmationEmail } = require('./utils/email');
-const { sendOrderConfirmationSMS } = require('./utils/sms');
+
 
 dotenv.config();
 
