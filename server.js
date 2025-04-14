@@ -1,35 +1,29 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const axios = require('axios');
 const http = require('http');
 const socketIo = require('socket.io');
 const dotenv = require('dotenv');
 const path = require('path');
 const bodyParser = require('body-parser');
 const WebSocket = require('ws');
-const twilio = require('twilio');
-const { default: Brevo } = require('@getbrevo/brevo');
+const webpush = require('web-push');
 
 dotenv.config();
-
-// Twilio SMS service setup
-const twilioClient = new twilio('YOUR_TWILIO_SID', 'YOUR_TWILIO_TOKEN');
-
-// MongoDB connection
-mongoose.connect('YOUR_MONGO_URI', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
-.then(() => console.log('✅ MongoDB connected'))
-.catch(err => console.error('❌ MongoDB connection error:', err));
 
 const app = express();
 const server = http.createServer(app);
 
-// CORS configuration
+// MongoDB connection
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => console.log('✅ MongoDB connected'))
+.catch(err => console.error('❌ MongoDB connection error:', err));
+
+// CORS config
 const corsOptions = {
-  origin: ['http://localhost:8000', 'https://app-files-1.onrender.com'],
+  origin: ['http://localhost:8000', 'https://supermarketn.loca.lt'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
@@ -40,113 +34,122 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
-// Socket.IO setup
+// Socket.io config
 const io = socketIo(server, {
   cors: {
-    origin: ["https://app-files.onrender.com", "https://app-files-1.onrender.com"],
-    methods: ["GET", "POST"]
+    origin: ['https://supermarketn.loca.lt', 'http://localhost:8000'],
+    methods: ["GET", "POST"],
+    credentials: true
   }
 });
 
-// WebSocket setup
-const wss = new WebSocket.Server({ 
+// WebSocket config
+const wss = new WebSocket.Server({
   server,
   verifyClient: (info) => {
     const origin = info.origin;
-    return origin === 'https://app-files-1.onrender.com' || 
-           origin === 'http://localhost:8000';
+    return origin === 'https://supermarketn.loca.lt' || origin === 'http://localhost:8000';
   }
 });
 
-// Track connected admin panels
 let adminConnections = new Set();
-
 wss.on('connection', (ws) => {
   adminConnections.add(ws);
-  
   ws.on('close', () => {
     adminConnections.delete(ws);
   });
 });
 
-// Mongoose model
-const Order = require('./models/Order');
+// Web Push Notification setup
+webpush.setVapidDetails(
+  'mailto:youremail@gmail.com',
+  process.env.VAPID_PUBLIC_KEY,
+  process.env.VAPID_PRIVATE_KEY
+);
 
-// Email configuration
-const brevo = new Brevo('YOUR_BREVO_API_KEY');
+// Store subscriptions with user ID
+const userSubscriptions = new Map();
 
-// Email service function
-async function sendEmail(to, subject, html) {
-  try {
-    const email = {
-      to: [{ email: to }],
-      subject,
-      html,
-      sender: { email: 'noreply@virtualsupermarket.com' }
-    };
+// Subscribe endpoint
+app.post('/subscribe', (req, res) => {
+    const subscription = req.body;
+    const userId = req.user.id; // Get the current user's ID
     
-    await brevo.sendEmail(email);
-    console.log('Email sent successfully');
-  } catch (error) {
-    console.error('Error sending email:', error);
-    throw error;
-  }
+    // Store subscription with user ID
+    if (!userSubscriptions.has(userId)) {
+        userSubscriptions.set(userId, new Set());
+    }
+    userSubscriptions.get(userId).add(subscription);
+    
+    res.status(201).json({});
+});
+
+// Function to send notification to specific user
+async function sendNotificationToUser(userId, title, body, orderId, status) {
+    const userSubs = userSubscriptions.get(userId);
+    if (!userSubs) return;
+
+    const payload = JSON.stringify({
+        title: title,
+        body: body,
+        orderId: orderId,
+        status: status
+    });
+
+    // Send to all subscriptions of the user (in case they have multiple devices)
+    for (const subscription of userSubs) {
+        try {
+            await webpush.sendNotification(subscription, payload);
+        } catch (error) {
+            console.error('Error sending notification:', error);
+            if (error.statusCode === 410) {
+                // Remove invalid subscription
+                userSubs.delete(subscription);
+            }
+        }
+    }
 }
+
+// Import Order model
+const Order = require('./models/Order');
 
 // API to create a new order
 app.post('/api/orders', async (req, res) => {
-  console.log('Received order:', req.body);
+  console.log('✅ Received order:', req.body);
 
   const orderNumber = `ORD-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
-  const order = new Order({
-    ...req.body,
-    orderNumber: orderNumber
-  });
-  
+  const order = new Order({ ...req.body, orderNumber });
+
   try {
     const savedOrder = await order.save();
     io.emit('newOrder', savedOrder);
     console.log('✅ New order saved:', savedOrder);
 
-    // Send confirmation email
-    const emailSent = await sendEmail(
-      order.email,
-      `Order Confirmation - ${order.orderNumber}`,
-      `
-        <h2>Thank you for your order!</h2>
-        <p>Order Number: ${order.orderNumber}</p>
-        <p><strong>Location:</strong> ${order.address}</p>
-        <h3>Order Summary:</h3>
-        <ul>
-          ${order.items.map(item => `<li>${item.name} — ${item.quantity} × ${item.price} AMD</li>`).join('')}
-        </ul>
-        <p><strong>Total:</strong> ${order.total} AMD</p>
-      `
+    // Send notification only to the user who created the order
+    await sendNotificationToUser(
+        req.user.id,
+        'Order Confirmed',
+        `Your order #${savedOrder._id} has been received`,
+        savedOrder._id,
+        'submitted'
     );
 
-    if (emailSent) {
-      // Notify admin panels
-      adminConnections.forEach(client => {
-        client.send(JSON.stringify({
-          type: 'NEW_ORDER',
-          order: {
-            ...order._doc,
-            _id: savedOrder._id
-          }
-        }));
-      });
+    // Notify admin panels by WebSocket
+    adminConnections.forEach(client => {
+      client.send(JSON.stringify({
+        type: 'NEW_ORDER',
+        order: { ...order._doc, _id: savedOrder._id }
+      }));
+    });
 
-      res.status(200).json({ success: true, orderId: savedOrder._id });
-    } else {
-      res.status(500).json({ success: false, message: 'Error sending email' });
-    }
+    res.status(200).json({ success: true, orderId: savedOrder._id });
   } catch (error) {
     console.error('❌ Error saving order:', error);
     res.status(500).json({ success: false, message: 'Error saving order' });
   }
 });
 
-// Accept order route
+// Accept order API
 app.post('/api/orders/:orderId/accept', async (req, res) => {
   try {
     const order = await Order.findByIdAndUpdate(
@@ -161,30 +164,36 @@ app.post('/api/orders/:orderId/accept', async (req, res) => {
 
     console.log('✅ Order accepted:', order);
 
-    const emailSent = await sendEmail(
-      order.email,
-      `Order ${order.orderNumber} Accepted`,
-      `
-        <h2>Yoawaitur order has been accepted!</h2>
-        <p>Order Number: ${order.orderNumber}</p>
-        <p>Total: ${order.total} AMD</p>
-        <p>Delivery Address: ${order.address || 'Not provided'}</p>
-      `
-    );
+    io.emit('orderAccepted', order);
 
-    if (emailSent) {
-      io.emit('orderAccepted', order);
-      res.json({ success: true, order });
-    } else {
-      res.status(500).json({ success: false, message: 'Error sending email' });
-    }
+    res.json({ success: true, order });
   } catch (error) {
     console.error('❌ Error accepting order:', error);
     res.status(500).json({ success: false, message: 'Error accepting order' });
   }
 });
 
-// Track order route
+// Print order API
+app.get('/api/orders/:orderId/print', async (req, res) => {
+  try {
+    const order = await Order.findById(req.params.orderId);
+    res.json({
+      success: true,
+      printData: {
+        orderNumber: order.orderNumber,
+        date: order.orderDate,
+        customer: order.customerName,
+        items: order.items,
+        total: order.total,
+        address: order.address || 'Not provided'
+      }
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Track order API
 app.get('/api/orders/track/:orderNumber', async (req, res) => {
   try {
     const order = await Order.findOne({ orderNumber: req.params.orderNumber });
@@ -202,7 +211,7 @@ app.get('/api/orders/track/:orderNumber', async (req, res) => {
   }
 });
 
-// Admin panel order list
+// Orders list API
 app.get('/api/orders', async (req, res) => {
   try {
     const orders = await Order.find().sort({ orderDate: -1 });
@@ -212,74 +221,59 @@ app.get('/api/orders', async (req, res) => {
   }
 });
 
-// Update order status
-app.post('/api/orders/:id/status', async (req, res) => {
-  const { status } = req.body;
-  try {
-    const updatedOrder = await Order.findByIdAndUpdate(req.params.id, { status }, { new: true });
-    if (!updatedOrder) {
-      return res.status(404).json({ message: 'Order not found' });
-    }
-    res.json(updatedOrder);
-  } catch (error) {
-    console.error('❌ Error updating order status:', error);
-    res.status(500).json({ message: 'Error updating order status' });
-  }
-});
-
-// Socket.io connection
+// WebSocket socket.io
 io.on('connection', (socket) => {
-  console.log('📡 Admin connected');
+  console.log('✅ Admin connected');
   socket.on('disconnect', () => {
-    console.log('📡 Admin disconnected');
+    console.log('❌ Admin disconnected');
   });
 });
 
-// Admin panel route
+// Serve admin panel
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin.html'));
 });
 
-// Enable CORS preflight
 app.options('/api/orders', cors(corsOptions));
 
-// Update the order notification route to use only email
-app.post('/api/notify-order', async (req, res) => {
-    try {
-        const { orderId, customerEmail, customerName, orderDetails } = req.body;
-        
-        // Send email notification
-        const emailSent = await sendEmail(
-            customerEmail,
-            'Order Confirmation - Virtual Supermarket',
-            `
-            <h1>Order Confirmation</h1>
-            <p>Dear ${customerName},</p>
-            <p>Thank you for your order! Your order ID is: ${orderId}</p>
-            <h2>Order Details:</h2>
-            <ul>
-                ${orderDetails.map(item => `
-                    <li>${item.name} - ${item.quantity} x $${item.price}</li>
-                `).join('')}
-            </ul>
-            <p>Total Amount: $${orderDetails.reduce((total, item) => total + (item.price * item.quantity), 0)}</p>
-            <p>We will notify you once your order is ready for pickup.</p>
-            <p>Best regards,<br>Virtual Supermarket Team</p>
-            `
-        );
+// Update order status API
+app.post('/api/orders/:orderId/status', async (req, res) => {
+  try {
+    const order = await Order.findByIdAndUpdate(
+      req.params.orderId,
+      { status: req.body.status },
+      { new: true }
+    );
 
-        if (emailSent) {
-            res.json({ success: true, message: 'Order notification sent successfully' });
-        } else {
-            res.status(500).json({ success: false, message: 'Failed to send order notification' });
-        }
-    } catch (error) {
-        console.error('Error in order notification:', error);
-        res.status(500).json({ success: false, message: 'Error processing order notification' });
+    if (!order) {
+      return res.status(404).json({ success: false, message: 'Order not found' });
     }
+
+    console.log('✅ Order status updated:', order);
+
+    // Emit status update to all connected clients
+    io.emit('orderStatusUpdated', {
+      orderId: order._id,
+      newStatus: order.status
+    });
+
+    // Notify admin panels by WebSocket
+    adminConnections.forEach(client => {
+      client.send(JSON.stringify({
+        type: 'STATUS_UPDATE',
+        orderId: order._id,
+        newStatus: order.status
+      }));
+    });
+
+    res.json({ success: true, order });
+  } catch (error) {
+    console.error('❌ Error updating order status:', error);
+    res.status(500).json({ success: false, message: 'Error updating order status' });
+  }
 });
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+  console.log(`✅ Server running on port ${PORT}`);
 });
