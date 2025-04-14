@@ -8,19 +8,23 @@ const dotenv = require('dotenv');
 const path = require('path');
 const bodyParser = require('body-parser');
 const WebSocket = require('ws');
+const twilio = require('twilio');
 
 dotenv.config();
 
 // Resend Email service setup
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Twilio SMS service setup
+const twilioClient = new twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
+
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.error('MongoDB connection error:', err));
+.then(() => console.log('✅ MongoDB connected'))
+.catch(err => console.error('❌ MongoDB connection error:', err));
 
 const app = express();
 const server = http.createServer(app);
@@ -83,9 +87,9 @@ app.post('/api/orders', async (req, res) => {
   try {
     const savedOrder = await order.save();
     io.emit('newOrder', savedOrder);
-    console.log('New order saved:', savedOrder);
+    console.log('✅ New order saved:', savedOrder);
 
-    // Send confirmation email to customer
+    // Send confirmation email
     await resend.emails.send({
       from: 'supermarket@resend.dev',
       to: order.email,
@@ -96,13 +100,22 @@ app.post('/api/orders', async (req, res) => {
         <p><strong>Location:</strong> ${order.address}</p>
         <h3>Order Summary:</h3>
         <ul>
-      ${order.items.map(item => `<li>${item.name} — ${item.quantity} × ${item.price} AMD</li>`).join('')}
-    </ul>
-    <p><strong>Total:</strong> ${order.total} AMD</p>>
+          ${order.items.map(item => `<li>${item.name} — ${item.quantity} × ${item.price} AMD</li>`).join('')}
+        </ul>
+        <p><strong>Total:</strong> ${order.total} AMD</p>
       `
     });
 
-    // Notify all connected admin panels via WebSocket
+    // Send SMS confirmation
+    await twilioClient.messages.create({
+      body: `Thank you ${order.customerName}, your order ${order.orderNumber} is confirmed. Total: ${order.total} AMD.`,
+      from: process.env.TWILIO_PHONE,
+      to: order.phone
+    })
+    .then(message => console.log('✅ SMS sent:', message.sid))
+    .catch(error => console.error('❌ SMS error:', error));
+
+    // Notify admin panels
     adminConnections.forEach(client => {
       client.send(JSON.stringify({
         type: 'NEW_ORDER',
@@ -115,7 +128,7 @@ app.post('/api/orders', async (req, res) => {
 
     res.status(200).json({ success: true, orderId: savedOrder._id });
   } catch (error) {
-    console.error('Error saving order:', error);
+    console.error('❌ Error saving order:', error);
     res.status(500).json({ success: false, message: 'Error saving order' });
   }
 });
@@ -133,7 +146,7 @@ app.post('/api/orders/:orderId/accept', async (req, res) => {
       return res.status(404).json({ success: false, message: 'Order not found' });
     }
 
-    console.log('Order accepted:', order);
+    console.log('✅ Order accepted:', order);
 
     await resend.emails.send({
       from: 'supermarket@resend.dev',
@@ -150,7 +163,7 @@ app.post('/api/orders/:orderId/accept', async (req, res) => {
     io.emit('orderAccepted', order);
     res.json({ success: true, order });
   } catch (error) {
-    console.error('Error accepting order:', error);
+    console.error('❌ Error accepting order:', error);
     res.status(500).json({ success: false, message: 'Error accepting order' });
   }
 });
@@ -193,16 +206,16 @@ app.post('/api/orders/:id/status', async (req, res) => {
     }
     res.json(updatedOrder);
   } catch (error) {
-    console.error('Error updating order status:', error);
+    console.error('❌ Error updating order status:', error);
     res.status(500).json({ message: 'Error updating order status' });
   }
 });
 
 // Socket.io connection
 io.on('connection', (socket) => {
-  console.log('Admin connected');
+  console.log('📡 Admin connected');
   socket.on('disconnect', () => {
-    console.log('Admin disconnected');
+    console.log('📡 Admin disconnected');
   });
 });
 
@@ -216,5 +229,5 @@ app.options('/api/orders', cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
