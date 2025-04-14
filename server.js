@@ -8,6 +8,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const WebSocket = require('ws');
 const webpush = require('web-push');
+const { sendOrderConfirmationEmail } = require('./utils/email');
+const { sendOrderConfirmationSMS } = require('./utils/sms');
 
 dotenv.config();
 
@@ -23,10 +25,17 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // CORS config
 const corsOptions = {
-  origin: ['http://localhost:8000', 'https://supermarketn.loca.lt'],
+  origin: [
+    'https://app-files-1.onrender.com',
+    'https://app-files.onrender.com',
+    'http://localhost:3000',
+    'http://localhost:3001'
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+  preflightContinue: false,
+  optionsSuccessStatus: 204
 };
 
 app.use(cors(corsOptions));
@@ -37,8 +46,13 @@ app.use(bodyParser.json());
 // Socket.io config
 const io = socketIo(server, {
   cors: {
-    origin: ['https://supermarketn.loca.lt', 'http://localhost:8000'],
-    methods: ["GET", "POST"],
+    origin: [
+      'https://app-files-1.onrender.com',
+      'https://app-files.onrender.com',
+      'http://localhost:3000',
+      'http://localhost:3001'
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true
   }
 });
