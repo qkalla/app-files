@@ -14,10 +14,10 @@ const { default: Brevo } = require('@getbrevo/brevo');
 dotenv.config();
 
 // Twilio SMS service setup
-const twilioClient = new twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
+const twilioClient = new twilio('YOUR_TWILIO_SID', 'YOUR_TWILIO_TOKEN');
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect('YOUR_MONGO_URI', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -73,7 +73,7 @@ wss.on('connection', (ws) => {
 const Order = require('./models/Order');
 
 // Email configuration
-const brevo = new Brevo(process.env.BREVO_API_KEY);
+const brevo = new Brevo('YOUR_BREVO_API_KEY');
 
 // Email service function
 async function sendEmail(to, subject, html) {
