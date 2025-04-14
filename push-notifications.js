@@ -37,7 +37,10 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
                 },
+                credentials: 'include',
                 body: JSON.stringify({
                     subscription,
                     deviceId
