@@ -9,11 +9,9 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const WebSocket = require('ws');
 const twilio = require('twilio');
+const { default: Brevo } = require('@getbrevo/brevo');
 
 dotenv.config();
-
-// Resend Email service setup
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Twilio SMS service setup
 const twilioClient = new twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
@@ -74,6 +72,27 @@ wss.on('connection', (ws) => {
 // Mongoose model
 const Order = require('./models/Order');
 
+// Email configuration
+const brevo = new Brevo(process.env.BREVO_API_KEY);
+
+// Email service function
+async function sendEmail(to, subject, html) {
+  try {
+    const email = {
+      to: [{ email: to }],
+      subject,
+      html,
+      sender: { email: 'noreply@virtualsupermarket.com' }
+    };
+    
+    await brevo.sendEmail(email);
+    console.log('Email sent successfully');
+  } catch (error) {
+    console.error('Error sending email:', error);
+    throw error;
+  }
+}
+
 // API to create a new order
 app.post('/api/orders', async (req, res) => {
   console.log('Received order:', req.body);
@@ -90,11 +109,10 @@ app.post('/api/orders', async (req, res) => {
     console.log('✅ New order saved:', savedOrder);
 
     // Send confirmation email
-    await axios.post('https://api.brevo.com/v3/smtp/email', {
-      sender: { name: 'Supermarket', email: 'system@brevo.email' },
-      to: [{ email: order.email, name: order.customerName }],
-      subject: `Order Confirmation - ${order.orderNumber}`,
-      htmlContent: `
+    const emailSent = await sendEmail(
+      order.email,
+      `Order Confirmation - ${order.orderNumber}`,
+      `
         <h2>Thank you for your order!</h2>
         <p>Order Number: ${order.orderNumber}</p>
         <p><strong>Location:</strong> ${order.address}</p>
@@ -104,38 +122,24 @@ app.post('/api/orders', async (req, res) => {
         </ul>
         <p><strong>Total:</strong> ${order.total} AMD</p>
       `
-    }, {
-      headers: {
-        'accept': 'application/json',
-        'api-key': process.env.BREVO_API_KEY,
-        'content-type': 'application/json'
-      }
-    })
-    .then(response => console.log('✅ Email sent:', response.data))
-    .catch(error => console.error('❌ Email error:', error));
-    
+    );
 
-    // Send SMS confirmation
-    await twilioClient.messages.create({
-      body: `Thank you ${order.customerName}, your order ${order.orderNumber} is confirmed. Total: ${order.total} AMD.`,
-      from: process.env.TWILIO_PHONE,
-      to: order.phone
-    })
-    .then(message => console.log('✅ SMS sent:', message.sid))
-    .catch(error => console.error('❌ SMS error:', error));
+    if (emailSent) {
+      // Notify admin panels
+      adminConnections.forEach(client => {
+        client.send(JSON.stringify({
+          type: 'NEW_ORDER',
+          order: {
+            ...order._doc,
+            _id: savedOrder._id
+          }
+        }));
+      });
 
-    // Notify admin panels
-    adminConnections.forEach(client => {
-      client.send(JSON.stringify({
-        type: 'NEW_ORDER',
-        order: {
-          ...order._doc,
-          _id: savedOrder._id
-        }
-      }));
-    });
-
-    res.status(200).json({ success: true, orderId: savedOrder._id });
+      res.status(200).json({ success: true, orderId: savedOrder._id });
+    } else {
+      res.status(500).json({ success: false, message: 'Error sending email' });
+    }
   } catch (error) {
     console.error('❌ Error saving order:', error);
     res.status(500).json({ success: false, message: 'Error saving order' });
@@ -157,20 +161,23 @@ app.post('/api/orders/:orderId/accept', async (req, res) => {
 
     console.log('✅ Order accepted:', order);
 
-     resend.emails.send({
-      from: 'supermarket@resend.dev',
-      to: order.email,
-      subject: `Order ${order.orderNumber} Accepted`,
-      html: `
+    const emailSent = await sendEmail(
+      order.email,
+      `Order ${order.orderNumber} Accepted`,
+      `
         <h2>Yoawaitur order has been accepted!</h2>
         <p>Order Number: ${order.orderNumber}</p>
         <p>Total: ${order.total} AMD</p>
         <p>Delivery Address: ${order.address || 'Not provided'}</p>
       `
-    });
+    );
 
-    io.emit('orderAccepted', order);
-    res.json({ success: true, order });
+    if (emailSent) {
+      io.emit('orderAccepted', order);
+      res.json({ success: true, order });
+    } else {
+      res.status(500).json({ success: false, message: 'Error sending email' });
+    }
   } catch (error) {
     console.error('❌ Error accepting order:', error);
     res.status(500).json({ success: false, message: 'Error accepting order' });
@@ -235,6 +242,42 @@ app.get('/', (req, res) => {
 
 // Enable CORS preflight
 app.options('/api/orders', cors(corsOptions));
+
+// Update the order notification route to use only email
+app.post('/api/notify-order', async (req, res) => {
+    try {
+        const { orderId, customerEmail, customerName, orderDetails } = req.body;
+        
+        // Send email notification
+        const emailSent = await sendEmail(
+            customerEmail,
+            'Order Confirmation - Virtual Supermarket',
+            `
+            <h1>Order Confirmation</h1>
+            <p>Dear ${customerName},</p>
+            <p>Thank you for your order! Your order ID is: ${orderId}</p>
+            <h2>Order Details:</h2>
+            <ul>
+                ${orderDetails.map(item => `
+                    <li>${item.name} - ${item.quantity} x $${item.price}</li>
+                `).join('')}
+            </ul>
+            <p>Total Amount: $${orderDetails.reduce((total, item) => total + (item.price * item.quantity), 0)}</p>
+            <p>We will notify you once your order is ready for pickup.</p>
+            <p>Best regards,<br>Virtual Supermarket Team</p>
+            `
+        );
+
+        if (emailSent) {
+            res.json({ success: true, message: 'Order notification sent successfully' });
+        } else {
+            res.status(500).json({ success: false, message: 'Failed to send order notification' });
+        }
+    } catch (error) {
+        console.error('Error in order notification:', error);
+        res.status(500).json({ success: false, message: 'Error processing order notification' });
+    }
+});
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
