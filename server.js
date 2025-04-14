@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const { Resend } = require('resend');
+const axios = require('axios');
 const http = require('http');
 const socketIo = require('socket.io');
 const dotenv = require('dotenv');
@@ -90,13 +90,13 @@ app.post('/api/orders', async (req, res) => {
     console.log('✅ New order saved:', savedOrder);
 
     // Send confirmation email
-    await resend.emails.send({
-      from: 'supermarket@resend.dev',
-      to: order.email,
-      subject: 'Order Confirmation',
-      html: `
+    await axios.post('https://api.brevo.com/v3/smtp/email', {
+      sender: { name: 'Supermarket', email: 'system@brevo.email' },
+      to: [{ email: order.email, name: order.customerName }],
+      subject: `Order Confirmation - ${order.orderNumber}`,
+      htmlContent: `
         <h2>Thank you for your order!</h2>
-        <p>Your order is being processed.</p>
+        <p>Order Number: ${order.orderNumber}</p>
         <p><strong>Location:</strong> ${order.address}</p>
         <h3>Order Summary:</h3>
         <ul>
@@ -104,7 +104,16 @@ app.post('/api/orders', async (req, res) => {
         </ul>
         <p><strong>Total:</strong> ${order.total} AMD</p>
       `
-    });
+    }, {
+      headers: {
+        'accept': 'application/json',
+        'api-key': process.env.BREVO_API_KEY,
+        'content-type': 'application/json'
+      }
+    })
+    .then(response => console.log('✅ Email sent:', response.data))
+    .catch(error => console.error('❌ Email error:', error));
+    
 
     // Send SMS confirmation
     await twilioClient.messages.create({
@@ -148,12 +157,12 @@ app.post('/api/orders/:orderId/accept', async (req, res) => {
 
     console.log('✅ Order accepted:', order);
 
-    await resend.emails.send({
+     resend.emails.send({
       from: 'supermarket@resend.dev',
       to: order.email,
       subject: `Order ${order.orderNumber} Accepted`,
       html: `
-        <h2>Your order has been accepted!</h2>
+        <h2>Yoawaitur order has been accepted!</h2>
         <p>Order Number: ${order.orderNumber}</p>
         <p>Total: ${order.total} AMD</p>
         <p>Delivery Address: ${order.address || 'Not provided'}</p>
