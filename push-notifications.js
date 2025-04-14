@@ -1,3 +1,14 @@
+// Generate a unique device ID
+function generateDeviceId() {
+    // Get existing device ID from localStorage or generate a new one
+    let deviceId = localStorage.getItem('deviceId');
+    if (!deviceId) {
+        deviceId = 'device_' + Math.random().toString(36).substr(2, 9);
+        localStorage.setItem('deviceId', deviceId);
+    }
+    return deviceId;
+}
+
 // Check if browser supports service workers and push notifications
 if ('serviceWorker' in navigator && 'PushManager' in window) {
     window.addEventListener('load', async () => {
@@ -12,25 +23,24 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
                 throw new Error('Permission not granted for notifications');
             }
 
+            // Get device ID
+            const deviceId = generateDeviceId();
+
             // Subscribe to push notifications
             const subscription = await registration.pushManager.subscribe({
                 userVisibleOnly: true,
                 applicationServerKey: process.env.VAPID_PUBLIC_KEY
             });
 
-            // Get the current user's ID (you need to implement this based on your auth system)
-            const userId = getCurrentUserId(); // Implement this function based on your auth system
-
-            // Send subscription to server with user ID
+            // Send subscription to server with device ID
             await fetch('/subscribe', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${getAuthToken()}` // Add your auth token
                 },
                 body: JSON.stringify({
                     subscription,
-                    userId
+                    deviceId
                 })
             });
 
