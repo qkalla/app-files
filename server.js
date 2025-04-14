@@ -67,45 +67,38 @@ webpush.setVapidDetails(
   process.env.VAPID_PRIVATE_KEY
 );
 
-// Store subscriptions with user ID
-const userSubscriptions = new Map();
+// Store subscriptions with device ID
+const deviceSubscriptions = new Map();
 
 // Subscribe endpoint
 app.post('/subscribe', (req, res) => {
-    const subscription = req.body;
-    const userId = req.user.id; // Get the current user's ID
+    const { subscription, deviceId } = req.body;
     
-    // Store subscription with user ID
-    if (!userSubscriptions.has(userId)) {
-        userSubscriptions.set(userId, new Set());
-    }
-    userSubscriptions.get(userId).add(subscription);
-    
+    // Store subscription with device ID
+    deviceSubscriptions.set(deviceId, subscription);
     res.status(201).json({});
 });
 
-// Function to send notification to specific user
-async function sendNotificationToUser(userId, title, body, orderId, status) {
-    const userSubs = userSubscriptions.get(userId);
-    if (!userSubs) return;
+// Function to send notification to specific device
+async function sendNotificationToDevice(deviceId, title, body, orderId, status, amount) {
+    const subscription = deviceSubscriptions.get(deviceId);
+    if (!subscription) return;
 
     const payload = JSON.stringify({
         title: title,
         body: body,
         orderId: orderId,
-        status: status
+        status: status,
+        amount: amount
     });
 
-    // Send to all subscriptions of the user (in case they have multiple devices)
-    for (const subscription of userSubs) {
-        try {
-            await webpush.sendNotification(subscription, payload);
-        } catch (error) {
-            console.error('Error sending notification:', error);
-            if (error.statusCode === 410) {
-                // Remove invalid subscription
-                userSubs.delete(subscription);
-            }
+    try {
+        await webpush.sendNotification(subscription, payload);
+    } catch (error) {
+        console.error('Error sending notification:', error);
+        if (error.statusCode === 410) {
+            // Remove invalid subscription
+            deviceSubscriptions.delete(deviceId);
         }
     }
 }
@@ -125,20 +118,21 @@ app.post('/api/orders', async (req, res) => {
     io.emit('newOrder', savedOrder);
     console.log('✅ New order saved:', savedOrder);
 
-    // Send notification only to the user who created the order
-    await sendNotificationToUser(
-        req.user.id,
+    // Send notification only to the device that created the order
+    await sendNotificationToDevice(
+        savedOrder.deviceId,
         'Order Confirmed',
-        `Your order #${savedOrder._id} has been received`,
+        `Your order #${savedOrder._id} has been received. Total: $${savedOrder.total}`,
         savedOrder._id,
-        'submitted'
+        'submitted',
+        savedOrder.total
     );
 
     // Notify admin panels by WebSocket
     adminConnections.forEach(client => {
       client.send(JSON.stringify({
         type: 'NEW_ORDER',
-        order: { ...order._doc, _id: savedOrder._id }
+        order: { ...savedOrder._doc, _id: savedOrder._id }
       }));
     });
 
@@ -265,6 +259,32 @@ app.post('/api/orders/:orderId/status', async (req, res) => {
         newStatus: order.status
       }));
     });
+
+    // Send notification only to the device that created the order
+    let title, body;
+    switch (order.status) {
+      case 'processing':
+        title = 'Order in Progress';
+        body = `Your order #${order._id} is being prepared. Total: $${order.total}`;
+        break;
+      case 'delivering':
+        title = 'Order on the Way';
+        body = `Your order #${order._id} is out for delivery. Total: $${order.total}`;
+        break;
+      case 'delivered':
+        title = 'Order Delivered';
+        body = `Your order #${order._id} has been delivered. Total: $${order.total}`;
+        break;
+    }
+
+    await sendNotificationToDevice(
+        order.deviceId,
+        title,
+        body,
+        order._id,
+        order.status,
+        order.total
+    );
 
     res.json({ success: true, order });
   } catch (error) {
